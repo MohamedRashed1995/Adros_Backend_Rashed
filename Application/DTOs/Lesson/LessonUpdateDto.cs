@@ -21,6 +21,10 @@ namespace Adros.Application.DTOs.Lesson
         public Guid? ExamId { get; set; }
 
         // optional new file
+<<<<<<< HEAD
         //public IFormFile? Lessonfile { get; set; }
+=======
+        public IFormFile? Lessonfile { get; set; }
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     }
 }

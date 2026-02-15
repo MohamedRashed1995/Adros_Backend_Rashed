@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "AwpTD2Le7/k=",
+=======
+  "dgSpecHash": "tGyR+g56SB0=",
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
   "success": true,
   "projectFilePath": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Adros.Application.csproj",
   "expectedPackageFiles": [

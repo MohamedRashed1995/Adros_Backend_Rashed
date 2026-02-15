@@ -9,7 +9,10 @@ using Adros.Shared.Interfaces;
 using AutoMapper;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
+<<<<<<< HEAD
 using System.Drawing.Printing;
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
 namespace Adros.Application.Services.UsersServices
 {
@@ -47,6 +50,7 @@ namespace Adros.Application.Services.UsersServices
                 Data = teacherDtos,
                 Pagination = new PaginationMetadata
                 {
+<<<<<<< HEAD
                     PageIndex = page,        // بدل Page
                     PageSize = pageSize,
                     Count = totalTeachers,   // بدل TotalCount
@@ -78,6 +82,15 @@ namespace Adros.Application.Services.UsersServices
         }
 
 
+=======
+                    PageIndex = page,
+                    PageSize = pageSize,
+                    Count = totalTeachers,
+                    TotalPages = totalPages
+                }
+            };
+        }
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
         public async Task<Teacher?> GetTeacherByIdAsync(Guid teacherId)
         {
@@ -85,6 +98,7 @@ namespace Adros.Application.Services.UsersServices
             return await _unitOfWork.Repository<Teacher>().GetEntityWithSpec(spec);
         }
 
+<<<<<<< HEAD
 
 
         public async Task<(IReadOnlyList<TeacherEntityDto> Teachers, int TeacherCount)> GetTeachersByStageAsync(Guid stageId)
@@ -104,23 +118,36 @@ namespace Adros.Application.Services.UsersServices
 
 
 
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         public async Task<Teacher> CreateTeacherAsync(TeacherCreateDto dto)
         {
             // التحقق من وجود المستخدم مسبقاً
             var existingUser = await _userManager.FindByEmailAsync(dto.Email);
             if (existingUser != null)
                 throw new ApplicationException("المستخدم موجود مسبقاً");
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             var user = new ApplicationUser
             {
                 UserName = dto.Email,
                 Email = dto.Email,
                 FirstName = dto.FirstName,
+<<<<<<< HEAD
                 Photo = dto.Photo != null ? "temp" : null, // سيتم تحديثها بعد الرفع
                 LastName = dto.LastName,
                 EmailConfirmed = true,
                 PhoneNumberConfirmed = true,
                 IsActive = true,
+=======
+                LastName = dto.LastName,
+                EmailConfirmed = true,
+                PhoneNumberConfirmed = true,
+                IsActive = true
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             };
 
             var createUserResult = await _userManager.CreateAsync(user, dto.Password);
@@ -135,7 +162,11 @@ namespace Adros.Application.Services.UsersServices
             {
                 try
                 {
+<<<<<<< HEAD
                     user.Photo = await FileManager.UploadFileAsync(dto.Photo, "Images/teachers");
+=======
+                    user.Photo = await FileManager.UploadFileAsync(dto.Photo, "teachers");
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                     await _userManager.UpdateAsync(user);
                 }
                 catch
@@ -150,14 +181,21 @@ namespace Adros.Application.Services.UsersServices
             {
                 ApplicationUserId = user.Id,
                 Email = dto.Email,
+<<<<<<< HEAD
                 ProfilePictureUrl = user.Photo,
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 FirstName = dto.FirstName,
                 LastName = dto.LastName,
                 About = dto.About ?? "معلم في منصة أدرس",
                 CreatedAt = DateTime.UtcNow,
+<<<<<<< HEAD
                 UpdatedAt = DateTime.UtcNow,
                 StageId = dto.StageId,
                 phoneNumber = dto.PhoneNumber,
+=======
+                UpdatedAt = DateTime.UtcNow
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             };
 
             await _unitOfWork.Repository<Teacher>().AddAsync(teacher);
@@ -186,6 +224,7 @@ namespace Adros.Application.Services.UsersServices
 
             if (dto.Photo != null)
                 user.Photo = await FileManager.UploadFileAsync(dto.Photo, "teachers");
+<<<<<<< HEAD
                 teacher.ProfilePictureUrl = user.Photo;
             if (!string.IsNullOrEmpty(dto.FirstName))
             {
@@ -201,6 +240,9 @@ namespace Adros.Application.Services.UsersServices
             }
             teacher.IsActive = dto.IsActive;
             teacher.phoneNumber = dto.PhoneNumber;
+=======
+
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             var updateResult = await _userManager.UpdateAsync(user);
             if (!updateResult.Succeeded)
                 throw new ApplicationException("فشل في تحديث المستخدم.");
@@ -211,6 +253,7 @@ namespace Adros.Application.Services.UsersServices
             return teacher;
         }
 
+<<<<<<< HEAD
         //public async Task<bool> DeleteTeacherAsync(Guid teacherId)
         //{
         //    var spec = new TeacherSpecifications(null, null, 1, 1, teacherId);
@@ -258,6 +301,27 @@ namespace Adros.Application.Services.UsersServices
         }
 
 
+=======
+        public async Task<bool> DeleteTeacherAsync(Guid teacherId)
+        {
+            var spec = new TeacherSpecifications(null, null, 1, 1, teacherId);
+            var teacher = await _unitOfWork.Repository<Teacher>().GetEntityWithSpec(spec);
+            if (teacher == null) return false;
+
+            var user = await _userManager.FindByIdAsync(teacher.ApplicationUserId.ToString());
+            if (user == null) return false;
+
+            var result = await _userManager.DeleteAsync(user);
+            if (!result.Succeeded)
+                throw new ApplicationException("فشل في حذف المستخدم.");
+
+            _unitOfWork.Repository<Teacher>().Delete(teacher);
+            await _unitOfWork.CompleteAsync();
+
+            return true;
+        }
+
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         public async Task<bool> ChangeTeacherPasswordAsync(Guid teacherId, string newPassword)
         {
             var spec = new TeacherSpecifications(null, null, 1, 1, teacherId);
@@ -267,8 +331,11 @@ namespace Adros.Application.Services.UsersServices
             var user = await _userManager.FindByIdAsync(teacher.ApplicationUserId.ToString());
             if (user == null) return false;
 
+<<<<<<< HEAD
             
 
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             var token = await _userManager.GeneratePasswordResetTokenAsync(user);
             var result = await _userManager.ResetPasswordAsync(user, token, newPassword);
             if (!result.Succeeded)

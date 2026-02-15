@@ -14,7 +14,11 @@ namespace Adros.Core.Entities.Course
         public Guid SubjectId { get; set; }
         public virtual Subject Subject { get; set; }
 
+<<<<<<< HEAD
         public string Description { get; set; } = string.Empty;
+=======
+
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
         // prerequisite topics
         //public ICollection<Topic> Prerequisites { get; set; } = [];

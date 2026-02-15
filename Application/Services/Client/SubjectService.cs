@@ -9,6 +9,7 @@ using Adros.Shared.Specifications;
 using AutoMapper;
 using Microsoft.Extensions.Logging;
 
+<<<<<<< HEAD
 
 
 namespace Adros.Application.Services.Client
@@ -18,6 +19,15 @@ namespace Adros.Application.Services.Client
         private readonly IUnitOfWork _unitOfWork = unitOfWork;
         private readonly IMapper _mapper = mapper;
         
+=======
+namespace Adros.Application.Services.Client
+{
+    public class SubjectService(IUnitOfWork unitOfWork, IMapper mapper, ILogger<BannerService> logger, ICurrentUserService currentUserService) : ISubjectService
+    {
+        private readonly IUnitOfWork _unitOfWork = unitOfWork;
+        private readonly IMapper _mapper = mapper;
+        private readonly ILogger<BannerService> _logger = logger;
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         private readonly ICurrentUserService _currentUserService = currentUserService;
 
 
@@ -29,7 +39,11 @@ namespace Adros.Application.Services.Client
 
             if (subjectRepo == null)
             {
+<<<<<<< HEAD
                 
+=======
+                _logger.LogError("Subject repository not found");
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 throw new DirectoryNotFoundException("Subject repository not found");
             }
 
@@ -64,8 +78,13 @@ namespace Adros.Application.Services.Client
             subject.UpdatedBy = _currentUserService.UserId;
 
             var subjects = await _unitOfWork.Repository<Subject>().ListAllAsync();
+<<<<<<< HEAD
             //if (subjects.Select(x=>x.Title).Contains(dto.Title))
             //    throw new Exception("there is subject with same name in database");
+=======
+            if (subjects.Select(x=>x.Title).Contains(dto.Title))
+                throw new Exception("there is subject with same name in database");
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             await _unitOfWork.Repository<Subject>().AddAsync(subject);
             await _unitOfWork.CompleteAsync();
 

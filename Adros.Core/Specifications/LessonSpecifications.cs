@@ -10,7 +10,11 @@ namespace Adros.Core.Specifications
         public LessonSpecifications(Guid unitId)
         : base(l => l.UnitId == unitId)
         {
+<<<<<<< HEAD
             AddInclude(l => l.Videos);
+=======
+            //AddInclude(l => l.Videos);
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             AddInclude(l => l.Attachments);
             AddInclude(l => l.Teacher);
             AddInclude(l => l.Unit);
@@ -30,6 +34,7 @@ namespace Adros.Core.Specifications
                
             }
         }
+<<<<<<< HEAD
         public LessonSpecifications(bool includeDetails)
 : base(l => true) // كل الدروس
         {
@@ -43,6 +48,8 @@ namespace Adros.Core.Specifications
             ApplyOrderBy(l => l.Order);
         }
 
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
     }
 }

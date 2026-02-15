@@ -221,16 +221,22 @@
 //    }
 //}
 
+<<<<<<< HEAD
 
 using Adros.Apis.Helpers;
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 using Adros.Application.DTOs.Video;
 using Adros.Application.Interfaces.IService;
 using Adros.Core.Entities.Course;
 using Adros.Core.Enums;
 using Adros.Infrastructure.External;
 using Adros.Persistence.Contexts;
+<<<<<<< HEAD
 using Adros.Shared.Constants;
 using Adros.Shared.Helpers;
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
@@ -245,24 +251,35 @@ namespace Adros.Apis.Controllers
         private readonly BunnyVideoService _bunnyService;
         private readonly AppDbContext _context;
         private readonly ILogger<VideoController> _logger;
+<<<<<<< HEAD
         private readonly IStudentService _studentService;
         private readonly IWebHostEnvironment _env;
+=======
+
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         private const string LibraryId = "378479";
 
         public VideoController(
             IVideoService videoService,
             BunnyVideoService bunnyService,
             AppDbContext context,
+<<<<<<< HEAD
             ILogger<VideoController> logger,
             IStudentService studentService,
             IWebHostEnvironment env)
+=======
+            ILogger<VideoController> logger)
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         {
             _videoService = videoService;
             _bunnyService = bunnyService;
             _context = context;
             _logger = logger;
+<<<<<<< HEAD
             _studentService = studentService;
             _env = env;
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         }
 
         // ================= PUBLIC =================
@@ -271,6 +288,7 @@ namespace Adros.Apis.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> GetAll()
         {
+<<<<<<< HEAD
             try
             {
                 var videos = await _videoService.GetAllVideosAsync();
@@ -297,6 +315,20 @@ namespace Adros.Apis.Controllers
         }
 
 
+=======
+            var videos = await _videoService.GetAllVideosAsync();
+            return Ok(videos);
+        }
+
+        [HttpGet("{id}")]
+        [AllowAnonymous]
+        public async Task<IActionResult> GetById(Guid id)
+        {
+            var video = await _videoService.GetVideoByIdAsync(id);
+            return Ok(video);
+        }
+
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         [HttpGet("lesson/{lessonId}")]
         [AllowAnonymous]
         public async Task<IActionResult> GetByLessonId(Guid lessonId)
@@ -309,6 +341,7 @@ namespace Adros.Apis.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> GetViews(Guid id)
         {
+<<<<<<< HEAD
             var count = await _videoService.GetVideoViewsCountForCurrentStudentAsync(id);
             return Ok(new { videoId = id, viewsCount = count });
         }
@@ -427,6 +460,86 @@ namespace Adros.Apis.Controllers
 
 
 
+=======
+            var count = await _videoService.GetVideoViewsCountAsync(id);
+            return Ok(new { videoId = id, viewsCount = count });
+        }
+
+        [HttpGet("{id}/downloads")]
+        [AllowAnonymous]
+        public async Task<IActionResult> GetDownloads(Guid id)
+        {
+            var count = await _videoService.GetVideoDownloadsCountAsync(id);
+            return Ok(new { videoId = id, downloadsCount = count });
+        }
+
+        // ================= STUDENT =================
+
+        [HttpPost("{id}/view")]
+        [Authorize]
+        public async Task<IActionResult> AddView(Guid id)
+        {
+            var userId = GetUserId();
+            await _videoService.IncrementVideoViewsAsync(id, userId);
+            return Ok(new { message = "View recorded" });
+        }
+
+        [HttpPost("{id}/download")]
+        [Authorize]
+        public async Task<IActionResult> Download(Guid id)
+        {
+            var userId = GetUserId();
+            var result = await _videoService.DownloadVideoAsync(id, userId);
+            return Ok(result);
+        }
+
+        // ================= ADMIN / TEACHER =================
+
+        [HttpPost("upload")]
+        //[Authorize(Roles = "Admin,Teacher")]
+        public async Task<IActionResult> UploadVideo(
+            IFormFile file,
+            [FromQuery] string title,
+            [FromQuery] Guid unitId)
+        {
+            if (file == null || file.Length == 0)
+                return BadRequest("Invalid file");
+
+            var tempPath = Path.GetTempFileName();
+            using (var stream = new FileStream(tempPath, FileMode.Create))
+            {
+                await file.CopyToAsync(stream);
+            }
+
+            var bunnyVideoId = await _bunnyService.UploadVideoAsync(tempPath, title);
+            if (bunnyVideoId == null)
+                return StatusCode(500, "Bunny upload failed");
+
+            var video = new Video
+            {
+                Id = Guid.NewGuid(),
+                Title = title,
+                UnitId = unitId,
+                BunnyVideoId = bunnyVideoId,
+                Status = VideoStatus.Processing,
+                Url = $"https://iframe.mediadelivery.net/embed/{LibraryId}/{bunnyVideoId}",
+                CreatedAt = DateTime.UtcNow
+            };
+
+            _context.Videos.Add(video);
+            await _context.SaveChangesAsync();
+
+            return Ok(new { video.Id, video.Url });
+        }
+
+        [HttpPost]
+        //[Authorize(Roles = "Admin,Teacher")]
+        public async Task<IActionResult> Create(CreateVideoDto dto)
+        {
+            var video = await _videoService.CreateVideoAsync(dto);
+            return CreatedAtAction(nameof(GetById), new { id = video.Id }, video);
+        }
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
         [HttpPut("{id}")]
         //[Authorize(Roles = "Admin,Teacher")]
@@ -444,6 +557,7 @@ namespace Adros.Apis.Controllers
             return result ? Ok() : NotFound();
         }
 
+<<<<<<< HEAD
         [HttpPost("{VideoId}/watchlater")]
         [Authorize(Roles = SystemRoles.Student)]
         public async Task<IActionResult> ToggleWatchLater(Guid VideoId)
@@ -510,6 +624,8 @@ namespace Adros.Apis.Controllers
 
 
 
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         [HttpPatch("{id}/status")]
         //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> ChangeStatus(Guid id, [FromBody] VideoStatus status)
@@ -519,7 +635,11 @@ namespace Adros.Apis.Controllers
         }
 
         // ================= HELPER =================
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         private Guid GetUserId()
         {
             var claim = User.FindFirstValue(ClaimTypes.NameIdentifier);
@@ -529,4 +649,8 @@ namespace Adros.Apis.Controllers
             return Guid.Parse(claim);
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a

@@ -12,6 +12,7 @@ namespace Adros.Application.Mappings
         {
             CreateMap<Student, StudentListDto>()
                 .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Id))
+<<<<<<< HEAD
                 .ForMember(dest => dest.FirstName, opt => opt.MapFrom(src => src.FirstName))
                 .ForMember(dest => dest.lastName, opt => opt.MapFrom(src => src.LastName))
                 .ForMember(dest => dest.Email, opt => opt.MapFrom(src => src.Email))
@@ -21,12 +22,24 @@ namespace Adros.Application.Mappings
                 .ForMember(dest => dest.LoginTimes, opt => opt.MapFrom(src => src.LoginTimes))
                 .ForMember(dest => dest.ViewsCount, opt => opt.MapFrom(src => src.VideoViews.Count))
                 .ForMember(dest => dest.WatchLaterCount, opt => opt.MapFrom(src => src.WatchLater.Count))
+=======
+                .ForMember(dest => dest.FirstName, opt => opt.MapFrom(src => src.ApplicationUser.FirstName))
+                .ForMember(dest => dest.lastName, opt => opt.MapFrom(src => src.ApplicationUser.LastName))
+                .ForMember(dest => dest.Email, opt => opt.MapFrom(src => src.ApplicationUser.Email))
+                .ForMember(dest => dest.PhoneNumber, opt => opt.MapFrom(src => src.ApplicationUser.PhoneNumber))
+                .ForMember(dest => dest.IsActive, opt => opt.MapFrom(src => src.ApplicationUser.IsActive))
+                //.ForMember(dest => dest.CreatedAt, opt => opt.MapFrom(src => src.CreatedAt))
+                .ForMember(dest => dest.LoginTimes, opt => opt.MapFrom(src => src.LoginTimes))
+                .ForMember(dest => dest.ViewsCount, opt => opt.MapFrom(src => src.VideoViews.Count))
+                .ForMember(dest => dest.DownloadsCount, opt => opt.MapFrom(src => src.VideoDownloads.Count))
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 .ForMember(dest => dest.Level, opt => opt.MapFrom(src => src.Level != null ? src.Level.Title : ""))
                 .ForMember(dest => dest.Stage, opt => opt.MapFrom(src => src.Level != null ? src.Level.Stage.Title : ""));
 
 
             CreateMap<Student, StudentEntityDto>()
                 .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Id))
+<<<<<<< HEAD
                 .ForMember(dest => dest.FirstName, opt => opt.MapFrom(src => src.FirstName))
                 .ForMember(dest => dest.lastName, opt => opt.MapFrom(src => src.LastName))
                 .ForMember(dest => dest.Email, opt => opt.MapFrom(src => src.Email))
@@ -36,6 +49,17 @@ namespace Adros.Application.Mappings
                 .ForMember(dest => dest.LoginTimes, opt => opt.MapFrom(src => src.LoginTimes))
                 .ForMember(dest => dest.ViewsCount, opt => opt.MapFrom(src => src.VideoViews.Count))
                 .ForMember(dest => dest.WatchLaterCount, opt => opt.MapFrom(src => src.WatchLater.Count))
+=======
+                .ForMember(dest => dest.FirstName, opt => opt.MapFrom(src => src.ApplicationUser.FirstName))
+                .ForMember(dest => dest.lastName, opt => opt.MapFrom(src => src.ApplicationUser.LastName))
+                .ForMember(dest => dest.Email, opt => opt.MapFrom(src => src.ApplicationUser.Email))
+                .ForMember(dest => dest.PhoneNumber, opt => opt.MapFrom(src => src.ApplicationUser.PhoneNumber))
+                .ForMember(dest => dest.IsActive, opt => opt.MapFrom(src => src.ApplicationUser.IsActive))
+                //.ForMember(dest => dest.Level, opt => opt.MapFrom(src => src.LevelId))
+                .ForMember(dest => dest.LoginTimes, opt => opt.MapFrom(src => src.LoginTimes))
+                .ForMember(dest => dest.ViewsCount, opt => opt.MapFrom(src => src.VideoViews.Count))
+                .ForMember(dest => dest.DownloadsCount, opt => opt.MapFrom(src => src.VideoDownloads.Count))
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 .ForMember(
                 dest => dest.ImagePath,
                 opt => opt.MapFrom<StudentImageUrlResolver<StudentEntityDto>>())
@@ -55,8 +79,13 @@ namespace Adros.Application.Mappings
             // Read from Level
             .ForMember(dest => dest.Level, opt => opt.MapFrom(s => s.Level.Title))
             // Read direct counts
+<<<<<<< HEAD
             .ForMember(dest => dest.ViewsCount, opt => opt.MapFrom(s => s.VideoViews.Count))
             .ForMember(dest => dest.Watchlatercount, opt => opt.MapFrom(s => s.WatchLater.Count))
+=======
+            //.ForMember(dest => dest.vi, opt => opt.MapFrom(s => s.VideoViews.Count))
+            .ForMember(dest => dest.DownloadsCount, opt => opt.MapFrom(s => s.VideoDownloads.Count))
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             // Temporarily map zero for times. We'll fill these in after mapping or in the service.
             .ForMember(dest => dest.TotalStudyTime, opt => opt.Ignore())
             .ForMember(dest => dest.DailyAchievements, opt => opt.Ignore());

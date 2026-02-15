@@ -417,6 +417,9 @@ C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\obj\Release\net9.0\Adros.Apis.pdb
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\obj\Release\net9.0\Adros.Apis.genruntimeconfig.cache
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\obj\Release\net9.0\ref\Adros.Apis.dll
+<<<<<<< HEAD
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\bin\Release\net9.0\Newtonsoft.Json.dll
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\bin\Release\net9.0\Xabe.FFmpeg.dll
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\bin\Release\net9.0\MediaInfo.DotNetWrapper.dll
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a

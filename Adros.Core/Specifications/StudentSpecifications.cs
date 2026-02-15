@@ -27,7 +27,11 @@ namespace Adros.Core.Specifications
             s => s.ApplicationUser,
             s => s.Level,
             s => s.Level.Stage,
+<<<<<<< HEAD
             s => s.WatchLater,
+=======
+            s => s.VideoDownloads,
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             s => s.VideoViews
         ];
 

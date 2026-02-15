@@ -12,7 +12,10 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.0",
           "Microsoft.AspNetCore.Authorization": "9.0.0",
           "Microsoft.AspNetCore.OpenApi": "9.0.0",
+<<<<<<< HEAD
           "Microsoft.EntityFrameworkCore": "9.0.0",
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.0",
           "Pomelo.EntityFrameworkCore.MySql": "9.0.0",

@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 ﻿using System.Linq.Expressions;
 
 namespace Adros.Shared.Interfaces
+=======
+﻿namespace Adros.Shared.Interfaces
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 {
     public interface IRepository<T> where T : BaseEntity
     {
@@ -16,6 +20,7 @@ namespace Adros.Shared.Interfaces
         Func<IQueryable<T>, IQueryable<T>>? include = null,
         Func<IQueryable<T>, IQueryable<T>>? filter = null
     );
+<<<<<<< HEAD
         //Task<IReadOnlyList<T>> GetAllAsync();
         Task<IReadOnlyList<T>> GetAllAsync(
         Func<IQueryable<T>, IQueryable<T>>? include = null,
@@ -40,6 +45,8 @@ namespace Adros.Shared.Interfaces
         void Delete(T entity, bool hardDelete = true);
         Task<int> CountAsync(Expression<Func<T, bool>> predicate);
         
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         //void Delete(T entity, bool hardDelete = true);
         //Task SoftDeleteAsync(Guid id);
     }

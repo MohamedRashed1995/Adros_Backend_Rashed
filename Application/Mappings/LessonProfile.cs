@@ -10,6 +10,7 @@ namespace Adros.Application.Mappings
     {
         public LessonProfile()
         {
+<<<<<<< HEAD
             
             CreateMap<Lesson, LessonDto>()
                 //.ForMember(dest => dest.Videos,
@@ -19,11 +20,34 @@ namespace Adros.Application.Mappings
                 .ForMember(dest => dest.TeacherName,
                     opt => opt.MapFrom(src => src.Teacher.FirstName + " " + src.Teacher.LastName));
 
+=======
+            // ===============================
+            // Lesson
+            // ===============================
+            CreateMap<Lesson, LessonDto>()
+                //.ForMember(dest => dest.Videos,
+                //    opt => opt.MapFrom(src => src.Videos))
+                .ForMember(dest => dest.Attachments,
+                    opt => opt.MapFrom(src => src.Attachments));
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
             CreateMap<LessonCreateDto, Lesson>();
             CreateMap<LessonUpdateDto, Lesson>();
 
+<<<<<<< HEAD
             
+=======
+            // ===============================
+            // Attachment
+            // ===============================
+            CreateMap<Attachment, AttachmentDto>();
+
+            // ===============================
+            // Video
+            // ===============================
+            CreateMap<Video, VideoDto>();
+
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         }
     }
 }

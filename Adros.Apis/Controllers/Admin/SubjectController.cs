@@ -36,7 +36,11 @@ namespace Adros.Apis.Controllers.Admin
                 return StatusCode(500, new ApiResponse<string>(500, "An error occurred while fetching the subjects."));
             }
         }
+<<<<<<< HEAD
        
+=======
+        //[Authorize(Roles =SystemRoles.)]
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         [HttpGet("GetSubjectById/{id}")]
         public async Task<ActionResult<SubjectDto>> GetSubjectById(Guid id)
         {
@@ -69,7 +73,11 @@ namespace Adros.Apis.Controllers.Admin
         //        return BadRequest(new ApiResponse<string>(500, ex.Message));
         //    }
         //}
+<<<<<<< HEAD
         //[Authorize(Roles = SystemRoles.Teacher)]
+=======
+        [Authorize(Roles = SystemRoles.Teacher)]
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         [HttpPost("CreateSubject")]
         public async Task<ActionResult<SubjectDto>> CreateSubject([FromBody] SubjectInputDto dto)
         {
@@ -120,7 +128,11 @@ namespace Adros.Apis.Controllers.Admin
 
 
 
+<<<<<<< HEAD
         //[Authorize(Roles =SystemRoles.Teacher)]
+=======
+        [Authorize(Roles =SystemRoles.Teacher)]
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteSubject(Guid id)
         {

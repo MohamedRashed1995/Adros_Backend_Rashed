@@ -184,7 +184,11 @@ namespace Adros.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+<<<<<<< HEAD
                     b.Property<Guid>("UnitId")
+=======
+                    b.Property<Guid>("TopicId")
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime?>("UpdatedAt")
@@ -195,7 +199,11 @@ namespace Adros.Persistence.Migrations
 
                     b.HasKey("Id");
 
+<<<<<<< HEAD
                     b.HasIndex("UnitId");
+=======
+                    b.HasIndex("TopicId");
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
                     b.ToTable("Assessments");
                 });
@@ -349,6 +357,13 @@ namespace Adros.Persistence.Migrations
                     b.Property<Guid?>("ExamId")
                         .HasColumnType("uniqueidentifier");
 
+<<<<<<< HEAD
+=======
+                    b.Property<string>("LessonfileName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                     b.Property<int>("Order")
                         .HasColumnType("int");
 
@@ -490,11 +505,14 @@ namespace Adros.Persistence.Migrations
                     b.Property<bool>("Deleted")
                         .HasColumnType("bit");
 
+<<<<<<< HEAD
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasMaxLength(2000)
                         .HasColumnType("nvarchar(2000)");
 
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                     b.Property<Guid>("SubjectId")
                         .HasColumnType("uniqueidentifier");
 
@@ -515,7 +533,11 @@ namespace Adros.Persistence.Migrations
 
                     b.HasIndex("SubjectId");
 
+<<<<<<< HEAD
                     b.ToTable("Units");
+=======
+                    b.ToTable("Topics");
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 });
 
             modelBuilder.Entity("Adros.Core.Entities.Course.Video", b =>
@@ -536,11 +558,16 @@ namespace Adros.Persistence.Migrations
                     b.Property<bool>("Deleted")
                         .HasColumnType("bit");
 
+<<<<<<< HEAD
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("Duration")
                         .HasColumnType("int");
+=======
+                    b.Property<TimeSpan>("Duration")
+                        .HasColumnType("time");
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
                     b.Property<Guid>("LessonId")
                         .HasColumnType("uniqueidentifier");
@@ -551,9 +578,12 @@ namespace Adros.Persistence.Migrations
                     b.Property<DateTime?>("ProcessedAt")
                         .HasColumnType("datetime2");
 
+<<<<<<< HEAD
                     b.Property<int>("SourceType")
                         .HasColumnType("int");
 
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
@@ -583,6 +613,45 @@ namespace Adros.Persistence.Migrations
                     b.ToTable("Videos", (string)null);
                 });
 
+<<<<<<< HEAD
+=======
+            modelBuilder.Entity("Adros.Core.Entities.Course.VideoDownload", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("CreatedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("Deleted")
+                        .HasColumnType("bit");
+
+                    b.Property<Guid>("StudentId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("UpdatedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("VideoId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("StudentId");
+
+                    b.HasIndex("VideoId");
+
+                    b.ToTable("VideoDownloads");
+                });
+
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             modelBuilder.Entity("Adros.Core.Entities.Course.VideoView", b =>
                 {
                     b.Property<Guid>("Id")
@@ -601,9 +670,12 @@ namespace Adros.Persistence.Migrations
                     b.Property<TimeSpan>("Duration")
                         .HasColumnType("time");
 
+<<<<<<< HEAD
                     b.Property<int>("LastReportedSecond")
                         .HasColumnType("int");
 
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                     b.Property<Guid>("StudentId")
                         .HasColumnType("uniqueidentifier");
 
@@ -625,6 +697,7 @@ namespace Adros.Persistence.Migrations
                     b.ToTable("VideoViews");
                 });
 
+<<<<<<< HEAD
             modelBuilder.Entity("Adros.Core.Entities.Course.WatchLater", b =>
                 {
                     b.Property<Guid>("Id")
@@ -661,6 +734,8 @@ namespace Adros.Persistence.Migrations
                     b.ToTable("watchlater");
                 });
 
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             modelBuilder.Entity("Adros.Core.Entities.Home.Banner", b =>
                 {
                     b.Property<Guid>("Id")
@@ -862,12 +937,17 @@ namespace Adros.Persistence.Migrations
                     b.ToTable("VariousSkillView");
                 });
 
+<<<<<<< HEAD
             modelBuilder.Entity("Adros.Core.Entities.Subscription.PendingPayment", b =>
+=======
+            modelBuilder.Entity("Adros.Core.Entities.Subscription.Subscription", b =>
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+<<<<<<< HEAD
                     b.Property<decimal>("Amount")
                         .HasColumnType("decimal(18,2)");
 
@@ -907,6 +987,11 @@ namespace Adros.Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+=======
+                    b.Property<decimal>("AmountPaid")
+                        .HasColumnType("decimal(18,2)");
+
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                     b.Property<DateTime?>("CreatedAt")
                         .HasColumnType("datetime2");
 
@@ -919,6 +1004,7 @@ namespace Adros.Persistence.Migrations
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime2");
 
+<<<<<<< HEAD
                     b.Property<bool>("IsPaid")
                         .HasColumnType("bit");
 
@@ -927,14 +1013,46 @@ namespace Adros.Persistence.Migrations
 
                     b.Property<string>("PaymobOrderId")
                         .HasColumnType("nvarchar(max)");
+=======
+                    b.Property<bool>("IsAutoRenew")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Notes")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PaymentMethod")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("PaymentTransactionId")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime2");
 
+<<<<<<< HEAD
                     b.Property<Guid>("StudentId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("SubscriptionId")
+=======
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .ValueGeneratedOnAdd()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)")
+                        .HasDefaultValue("active");
+
+                    b.Property<Guid>("StudentId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("SubscriptionPlanId")
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime?>("UpdatedAt")
@@ -945,6 +1063,7 @@ namespace Adros.Persistence.Migrations
 
                     b.HasKey("Id");
 
+<<<<<<< HEAD
                     b.HasIndex("StudentId");
 
                     b.HasIndex("SubscriptionId");
@@ -953,11 +1072,26 @@ namespace Adros.Persistence.Migrations
                 });
 
             modelBuilder.Entity("Adros.Core.Entities.Subscription.Subscription", b =>
+=======
+                    b.HasIndex("EndDate");
+
+                    b.HasIndex("Status");
+
+                    b.HasIndex("StudentId");
+
+                    b.HasIndex("SubscriptionPlanId");
+
+                    b.ToTable("Subscriptions");
+                });
+
+            modelBuilder.Entity("Adros.Core.Entities.Subscription.SubscriptionPlan", b =>
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+<<<<<<< HEAD
                     b.Property<string>("Benefits")
                         .IsRequired()
                         .HasMaxLength(1000)
@@ -967,11 +1101,16 @@ namespace Adros.Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
                         .HasDefaultValueSql("GETUTCDATE()");
+=======
+                    b.Property<DateTime?>("CreatedAt")
+                        .HasColumnType("datetime2");
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
                     b.Property<Guid>("CreatedBy")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<bool>("Deleted")
+<<<<<<< HEAD
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
                         .HasDefaultValue(false);
@@ -980,17 +1119,41 @@ namespace Adros.Persistence.Migrations
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
+=======
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<int>("DurationInDays")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
+<<<<<<< HEAD
                     b.Property<string>("Price")
+=======
+                    b.Property<string>("PlanType")
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+<<<<<<< HEAD
+=======
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime2");
 
@@ -999,11 +1162,56 @@ namespace Adros.Persistence.Migrations
 
                     b.HasKey("Id");
 
+<<<<<<< HEAD
                     b.HasIndex("Deleted");
 
                     b.HasIndex("Name");
 
                     b.ToTable("Subscriptions");
+=======
+                    b.ToTable("subscriptionPlans");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("30d55309-fa38-43b7-910b-0a1a7d0a327e"),
+                            CreatedAt = new DateTime(2026, 1, 8, 15, 29, 53, 85, DateTimeKind.Local).AddTicks(2908),
+                            CreatedBy = new Guid("00000000-0000-0000-0000-000000000000"),
+                            Deleted = false,
+                            Description = "Basic monthly subscription",
+                            DurationInDays = 30,
+                            IsActive = true,
+                            Name = "Basic Monthly",
+                            PlanType = "monthly",
+                            Price = 9.99m
+                        },
+                        new
+                        {
+                            Id = new Guid("299d99fc-c025-45d4-be79-39a6a431216e"),
+                            CreatedAt = new DateTime(2026, 1, 8, 15, 29, 53, 87, DateTimeKind.Local).AddTicks(5544),
+                            CreatedBy = new Guid("00000000-0000-0000-0000-000000000000"),
+                            Deleted = false,
+                            Description = "Premium monthly subscription",
+                            DurationInDays = 30,
+                            IsActive = true,
+                            Name = "Premium Monthly",
+                            PlanType = "monthly",
+                            Price = 19.99m
+                        },
+                        new
+                        {
+                            Id = new Guid("e0419d92-ae8f-4778-ab5c-2a8d6657f4ea"),
+                            CreatedAt = new DateTime(2026, 1, 8, 15, 29, 53, 87, DateTimeKind.Local).AddTicks(5579),
+                            CreatedBy = new Guid("00000000-0000-0000-0000-000000000000"),
+                            Deleted = false,
+                            Description = "Annual subscription with discount",
+                            DurationInDays = 365,
+                            IsActive = true,
+                            Name = "Annual Plan",
+                            PlanType = "annual",
+                            Price = 99.99m
+                        });
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 });
 
             modelBuilder.Entity("Adros.Core.Entities.Users.Student", b =>
@@ -1043,9 +1251,12 @@ namespace Adros.Persistence.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
+<<<<<<< HEAD
                     b.Property<bool>("IsSubscriped")
                         .HasColumnType("bit");
 
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                     b.Property<string>("LastName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -1058,7 +1269,12 @@ namespace Adros.Persistence.Migrations
                         .HasColumnType("int")
                         .HasDefaultValue(0);
 
+<<<<<<< HEAD
                     b.Property<string>("PhoneNumber")
+=======
+                    b.Property<string>("SubscriptionStatus")
+                        .IsRequired()
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("UpdatedAt")
@@ -1074,7 +1290,11 @@ namespace Adros.Persistence.Migrations
 
                     b.HasIndex("LevelId");
 
+<<<<<<< HEAD
                     b.ToTable("Students");
+=======
+                    b.ToTable("Student");
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 });
 
             modelBuilder.Entity("Adros.Core.Entities.Users.Teacher", b =>
@@ -1107,37 +1327,50 @@ namespace Adros.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+<<<<<<< HEAD
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                     b.Property<string>("LastName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+<<<<<<< HEAD
                     b.Property<string>("ProfilePictureUrl")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid?>("StageId")
                         .HasColumnType("uniqueidentifier");
 
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<Guid?>("UpdatedBy")
                         .HasColumnType("uniqueidentifier");
 
+<<<<<<< HEAD
                     b.Property<string>("phoneNumber")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                     b.HasKey("Id");
 
                     b.HasIndex("ApplicationUserId")
                         .IsUnique();
 
+<<<<<<< HEAD
                     b.HasIndex("StageId");
 
                     b.ToTable("Teachers");
+=======
+                    b.ToTable("Teacher");
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 });
 
             modelBuilder.Entity("Adros.Core.Entities.Users.UserOtp", b =>
@@ -1327,6 +1560,7 @@ namespace Adros.Persistence.Migrations
 
             modelBuilder.Entity("Adros.Core.Entities.Assessements.Assessment", b =>
                 {
+<<<<<<< HEAD
                     b.HasOne("Adros.Core.Entities.Course.Unit", "Unit")
                         .WithMany("Assessments")
                         .HasForeignKey("UnitId")
@@ -1334,6 +1568,15 @@ namespace Adros.Persistence.Migrations
                         .IsRequired();
 
                     b.Navigation("Unit");
+=======
+                    b.HasOne("Adros.Core.Entities.Course.Unit", "Topic")
+                        .WithMany("Assessments")
+                        .HasForeignKey("TopicId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Topic");
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 });
 
             modelBuilder.Entity("Adros.Core.Entities.Assessements.AssessmentQuestion", b =>
@@ -1445,7 +1688,11 @@ namespace Adros.Persistence.Migrations
             modelBuilder.Entity("Adros.Core.Entities.Course.Unit", b =>
                 {
                     b.HasOne("Adros.Core.Entities.Course.Subject", "Subject")
+<<<<<<< HEAD
                         .WithMany("Units")
+=======
+                        .WithMany("topics")
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                         .HasForeignKey("SubjectId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -1458,10 +1705,17 @@ namespace Adros.Persistence.Migrations
                     b.HasOne("Adros.Core.Entities.Course.Lesson", "Lesson")
                         .WithMany("Videos")
                         .HasForeignKey("LessonId")
+<<<<<<< HEAD
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("Adros.Core.Entities.Course.Unit", "Unit")
+=======
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Adros.Core.Entities.Course.Unit", "Topic")
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                         .WithMany()
                         .HasForeignKey("UnitId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1469,7 +1723,30 @@ namespace Adros.Persistence.Migrations
 
                     b.Navigation("Lesson");
 
+<<<<<<< HEAD
                     b.Navigation("Unit");
+=======
+                    b.Navigation("Topic");
+                });
+
+            modelBuilder.Entity("Adros.Core.Entities.Course.VideoDownload", b =>
+                {
+                    b.HasOne("Adros.Core.Entities.Users.Student", "Student")
+                        .WithMany("VideoDownloads")
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("Adros.Core.Entities.Course.Video", "Video")
+                        .WithMany("Downloads")
+                        .HasForeignKey("VideoId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("Student");
+
+                    b.Navigation("Video");
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 });
 
             modelBuilder.Entity("Adros.Core.Entities.Course.VideoView", b =>
@@ -1491,6 +1768,7 @@ namespace Adros.Persistence.Migrations
                     b.Navigation("Video");
                 });
 
+<<<<<<< HEAD
             modelBuilder.Entity("Adros.Core.Entities.Course.WatchLater", b =>
                 {
                     b.HasOne("Adros.Core.Entities.Users.Student", "Student")
@@ -1510,6 +1788,8 @@ namespace Adros.Persistence.Migrations
                     b.Navigation("Video");
                 });
 
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             modelBuilder.Entity("Adros.Core.Entities.Home.VariousSkillView", b =>
                 {
                     b.HasOne("Adros.Core.Entities.ApplicationUser", "User")
@@ -1529,11 +1809,16 @@ namespace Adros.Persistence.Migrations
                     b.Navigation("VariousSkill");
                 });
 
+<<<<<<< HEAD
             modelBuilder.Entity("Adros.Core.Entities.Subscription.StudentSubscription", b =>
+=======
+            modelBuilder.Entity("Adros.Core.Entities.Subscription.Subscription", b =>
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 {
                     b.HasOne("Adros.Core.Entities.Users.Student", "Student")
                         .WithMany()
                         .HasForeignKey("StudentId")
+<<<<<<< HEAD
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -1541,11 +1826,24 @@ namespace Adros.Persistence.Migrations
                         .WithMany()
                         .HasForeignKey("SubscriptionId")
                         .OnDelete(DeleteBehavior.Cascade)
+=======
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Adros.Core.Entities.Subscription.SubscriptionPlan", "SubscriptionPlan")
+                        .WithMany("Subscriptions")
+                        .HasForeignKey("SubscriptionPlanId")
+                        .OnDelete(DeleteBehavior.Restrict)
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                         .IsRequired();
 
                     b.Navigation("Student");
 
+<<<<<<< HEAD
                     b.Navigation("Subscription");
+=======
+                    b.Navigation("SubscriptionPlan");
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 });
 
             modelBuilder.Entity("Adros.Core.Entities.Users.Student", b =>
@@ -1574,6 +1872,7 @@ namespace Adros.Persistence.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+<<<<<<< HEAD
                     b.HasOne("Adros.Core.Entities.Home.Stage", "Stage")
                         .WithMany("Teachers")
                         .HasForeignKey("StageId");
@@ -1581,6 +1880,9 @@ namespace Adros.Persistence.Migrations
                     b.Navigation("ApplicationUser");
 
                     b.Navigation("Stage");
+=======
+                    b.Navigation("ApplicationUser");
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 });
 
             modelBuilder.Entity("Adros.Core.Entities.Users.UserOtp", b =>
@@ -1687,7 +1989,11 @@ namespace Adros.Persistence.Migrations
 
             modelBuilder.Entity("Adros.Core.Entities.Course.Subject", b =>
                 {
+<<<<<<< HEAD
                     b.Navigation("Units");
+=======
+                    b.Navigation("topics");
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 });
 
             modelBuilder.Entity("Adros.Core.Entities.Course.Unit", b =>
@@ -1701,16 +2007,25 @@ namespace Adros.Persistence.Migrations
 
             modelBuilder.Entity("Adros.Core.Entities.Course.Video", b =>
                 {
+<<<<<<< HEAD
                     b.Navigation("Views");
 
                     b.Navigation("Watchlater");
+=======
+                    b.Navigation("Downloads");
+
+                    b.Navigation("Views");
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 });
 
             modelBuilder.Entity("Adros.Core.Entities.Home.Stage", b =>
                 {
                     b.Navigation("Levels");
+<<<<<<< HEAD
 
                     b.Navigation("Teachers");
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 });
 
             modelBuilder.Entity("Adros.Core.Entities.Home.VariousSkill", b =>
@@ -1718,11 +2033,24 @@ namespace Adros.Persistence.Migrations
                     b.Navigation("Views");
                 });
 
+<<<<<<< HEAD
             modelBuilder.Entity("Adros.Core.Entities.Users.Student", b =>
                 {
                     b.Navigation("VideoViews");
 
                     b.Navigation("WatchLater");
+=======
+            modelBuilder.Entity("Adros.Core.Entities.Subscription.SubscriptionPlan", b =>
+                {
+                    b.Navigation("Subscriptions");
+                });
+
+            modelBuilder.Entity("Adros.Core.Entities.Users.Student", b =>
+                {
+                    b.Navigation("VideoDownloads");
+
+                    b.Navigation("VideoViews");
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 });
 
             modelBuilder.Entity("Adros.Core.Entities.Users.Teacher", b =>

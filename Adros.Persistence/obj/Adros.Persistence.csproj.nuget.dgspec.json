@@ -113,7 +113,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.310/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         }
       }
     },
@@ -167,10 +171,13 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+<<<<<<< HEAD
             "MediaInfo.DotNetWrapper": {
               "target": "Package",
               "version": "[1.0.7, )"
             },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.0, )"
@@ -200,10 +207,13 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[7.0.0, )"
+<<<<<<< HEAD
             },
             "Xabe.FFmpeg": {
               "target": "Package",
               "version": "[5.1.0, )"
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             }
           },
           "imports": [
@@ -222,7 +232,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.310/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         }
       }
     },
@@ -335,7 +349,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.310/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         }
       }
     }

@@ -2,6 +2,14 @@
   "openapi": "3.0.1",
   "info": {
     "title": "Adros API",
+<<<<<<< HEAD
+=======
+    "description": "Educational Platform API",
+    "contact": {
+      "name": "Adros Team",
+      "email": "support@adros.com"
+    },
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "version": "v1"
   },
   "paths": {
@@ -49,17 +57,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/AssesmentDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Assesment.AssesmentDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/AssesmentDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Assesment.AssesmentDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/AssesmentDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Assesment.AssesmentDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -69,17 +89,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -99,6 +131,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "/api/Attachment": {
       "get": {
         "tags": [
@@ -245,6 +278,8 @@
         }
       }
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "/api/Auth/Register": {
       "post": {
         "tags": [
@@ -254,17 +289,29 @@
           "content": {
             "application/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/RegisterDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.RegisterDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "text/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/RegisterDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.RegisterDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "application/*+json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/RegisterDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.RegisterDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             }
           }
@@ -285,17 +332,29 @@
           "content": {
             "application/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/LoginDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.LoginDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "text/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/LoginDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.LoginDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "application/*+json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/LoginDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.LoginDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             }
           }
@@ -316,17 +375,29 @@
           "content": {
             "application/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/ResetPasswordDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.ResetPasswordDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "text/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/ResetPasswordDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.ResetPasswordDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "application/*+json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/ResetPasswordDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.ResetPasswordDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             }
           }
@@ -347,17 +418,29 @@
           "content": {
             "application/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/CheckEmailRequest"
+=======
+                "$ref": "#/components/schemas/Adros.Apis.Controllers.CheckEmailRequest"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "text/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/CheckEmailRequest"
+=======
+                "$ref": "#/components/schemas/Adros.Apis.Controllers.CheckEmailRequest"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "application/*+json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/CheckEmailRequest"
+=======
+                "$ref": "#/components/schemas/Adros.Apis.Controllers.CheckEmailRequest"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             }
           }
@@ -390,17 +473,29 @@
           "content": {
             "application/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/ForgotPasswordDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.ForgotPasswordDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "text/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/ForgotPasswordDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.ForgotPasswordDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "application/*+json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/ForgotPasswordDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.ForgotPasswordDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             }
           }
@@ -607,7 +702,11 @@
                 "schema": {
                   "type": "array",
                   "items": {
+<<<<<<< HEAD
                     "$ref": "#/components/schemas/CalenderEntityDto"
+=======
+                    "$ref": "#/components/schemas/Adros.Application.DTOs.Calender.CalenderEntityDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                   }
                 }
               },
@@ -615,7 +714,11 @@
                 "schema": {
                   "type": "array",
                   "items": {
+<<<<<<< HEAD
                     "$ref": "#/components/schemas/CalenderEntityDto"
+=======
+                    "$ref": "#/components/schemas/Adros.Application.DTOs.Calender.CalenderEntityDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                   }
                 }
               },
@@ -623,7 +726,11 @@
                 "schema": {
                   "type": "array",
                   "items": {
+<<<<<<< HEAD
                     "$ref": "#/components/schemas/CalenderEntityDto"
+=======
+                    "$ref": "#/components/schemas/Adros.Application.DTOs.Calender.CalenderEntityDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                   }
                 }
               }
@@ -639,17 +746,29 @@
           "content": {
             "application/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/CalenderCreateDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Calender.CalenderCreateDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "text/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/CalenderCreateDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Calender.CalenderCreateDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "application/*+json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/CalenderCreateDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Calender.CalenderCreateDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             }
           }
@@ -660,17 +779,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/CalenderEntityDto"
+=======
+                  "$ref": "#/components/schemas/Adros.Application.DTOs.Calender.CalenderEntityDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/CalenderEntityDto"
+=======
+                  "$ref": "#/components/schemas/Adros.Application.DTOs.Calender.CalenderEntityDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/CalenderEntityDto"
+=======
+                  "$ref": "#/components/schemas/Adros.Application.DTOs.Calender.CalenderEntityDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -700,17 +831,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/CalenderEntityDto"
+=======
+                  "$ref": "#/components/schemas/Adros.Application.DTOs.Calender.CalenderEntityDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/CalenderEntityDto"
+=======
+                  "$ref": "#/components/schemas/Adros.Application.DTOs.Calender.CalenderEntityDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/CalenderEntityDto"
+=======
+                  "$ref": "#/components/schemas/Adros.Application.DTOs.Calender.CalenderEntityDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -736,17 +879,29 @@
           "content": {
             "application/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/CalenderUpdateDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Calender.CalenderUpdateDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "text/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/CalenderUpdateDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Calender.CalenderUpdateDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "application/*+json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/CalenderUpdateDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Calender.CalenderUpdateDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             }
           }
@@ -757,17 +912,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/CalenderEntityDto"
+=======
+                  "$ref": "#/components/schemas/Adros.Application.DTOs.Calender.CalenderEntityDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/CalenderEntityDto"
+=======
+                  "$ref": "#/components/schemas/Adros.Application.DTOs.Calender.CalenderEntityDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/CalenderEntityDto"
+=======
+                  "$ref": "#/components/schemas/Adros.Application.DTOs.Calender.CalenderEntityDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -796,7 +963,11 @@
         }
       }
     },
+<<<<<<< HEAD
     "/api/Home/GetHome": {
+=======
+    "/api/Home": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       "get": {
         "tags": [
           "Home"
@@ -821,7 +992,68 @@
         ],
         "responses": {
           "200": {
+<<<<<<< HEAD
             "description": "OK"
+=======
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Home.HomeResponseDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Home.HomeResponseDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Home.HomeResponseDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              }
+            }
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
           }
         }
       }
@@ -833,7 +1065,37 @@
         ],
         "responses": {
           "200": {
+<<<<<<< HEAD
             "description": "OK"
+=======
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Adros.Application.DTOs.Lesson.LessonDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Adros.Application.DTOs.Lesson.LessonDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Adros.Application.DTOs.Lesson.LessonDto"
+                  }
+                }
+              }
+            }
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
           }
         }
       }
@@ -862,7 +1124,11 @@
                 "schema": {
                   "type": "array",
                   "items": {
+<<<<<<< HEAD
                     "$ref": "#/components/schemas/LessonDto"
+=======
+                    "$ref": "#/components/schemas/Adros.Application.DTOs.Lesson.LessonDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                   }
                 }
               },
@@ -870,7 +1136,11 @@
                 "schema": {
                   "type": "array",
                   "items": {
+<<<<<<< HEAD
                     "$ref": "#/components/schemas/LessonDto"
+=======
+                    "$ref": "#/components/schemas/Adros.Application.DTOs.Lesson.LessonDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                   }
                 }
               },
@@ -878,7 +1148,11 @@
                 "schema": {
                   "type": "array",
                   "items": {
+<<<<<<< HEAD
                     "$ref": "#/components/schemas/LessonDto"
+=======
+                    "$ref": "#/components/schemas/Adros.Application.DTOs.Lesson.LessonDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                   }
                 }
               }
@@ -894,6 +1168,7 @@
         ],
         "requestBody": {
           "content": {
+<<<<<<< HEAD
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/LessonCreateDto"
@@ -907,6 +1182,62 @@
             "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/LessonCreateDto"
+=======
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Lessonfile": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "Order": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Title": {
+                    "type": "string"
+                  },
+                  "Description": {
+                    "type": "string"
+                  },
+                  "TeacherId": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "SubjectId": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "ExamId": {
+                    "type": "string",
+                    "format": "uuid"
+                  }
+                }
+              },
+              "encoding": {
+                "Lessonfile": {
+                  "style": "form"
+                },
+                "Order": {
+                  "style": "form"
+                },
+                "Title": {
+                  "style": "form"
+                },
+                "Description": {
+                  "style": "form"
+                },
+                "TeacherId": {
+                  "style": "form"
+                },
+                "SubjectId": {
+                  "style": "form"
+                },
+                "ExamId": {
+                  "style": "form"
+                }
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             }
           }
@@ -917,17 +1248,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/LessonDto"
+=======
+                  "$ref": "#/components/schemas/Adros.Application.DTOs.Lesson.LessonDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/LessonDto"
+=======
+                  "$ref": "#/components/schemas/Adros.Application.DTOs.Lesson.LessonDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/LessonDto"
+=======
+                  "$ref": "#/components/schemas/Adros.Application.DTOs.Lesson.LessonDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -1004,6 +1347,13 @@
                   "ExamId": {
                     "type": "string",
                     "format": "uuid"
+<<<<<<< HEAD
+=======
+                  },
+                  "Lessonfile": {
+                    "type": "string",
+                    "format": "binary"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                   }
                 }
               },
@@ -1025,6 +1375,12 @@
                 },
                 "ExamId": {
                   "style": "form"
+<<<<<<< HEAD
+=======
+                },
+                "Lessonfile": {
+                  "style": "form"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -1058,6 +1414,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "/api/Lessons/Get-Lessons-by-UnitId/{unitId}": {
       "get": {
         "tags": [
@@ -1098,6 +1455,8 @@
         }
       }
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "/api/Levels/create": {
       "post": {
         "tags": [
@@ -1147,17 +1506,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/LevelEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Level.LevelEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/LevelEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Level.LevelEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/LevelEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Level.LevelEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -1176,17 +1547,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/LevelEntityDtoIReadOnlyListApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[Adros.Application.DTOs.Level.LevelEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/LevelEntityDtoIReadOnlyListApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[Adros.Application.DTOs.Level.LevelEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/LevelEntityDtoIReadOnlyListApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[Adros.Application.DTOs.Level.LevelEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -1216,17 +1599,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/LevelEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Level.LevelEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/LevelEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Level.LevelEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/LevelEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Level.LevelEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -1236,17 +1631,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -1276,17 +1683,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/LevelEntityDtoIReadOnlyListApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[Adros.Application.DTOs.Level.LevelEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/LevelEntityDtoIReadOnlyListApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[Adros.Application.DTOs.Level.LevelEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/LevelEntityDtoIReadOnlyListApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[Adros.Application.DTOs.Level.LevelEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -1354,17 +1773,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/LevelEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Level.LevelEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/LevelEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Level.LevelEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/LevelEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Level.LevelEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -1394,17 +1825,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -1412,6 +1855,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "/api/payments/subscribe/{subscriptionId}": {
       "post": {
         "tags": [
@@ -1510,6 +1954,8 @@
         }
       }
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "/api/Skills/CreateSkill": {
       "post": {
         "tags": [
@@ -1517,6 +1963,7 @@
         ],
         "requestBody": {
           "content": {
+<<<<<<< HEAD
             "multipart/form-data": {
               "schema": {
                 "type": "object",
@@ -1542,6 +1989,21 @@
                 "videoURL": {
                   "style": "form"
                 }
+=======
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Skills.SkillDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Skills.SkillDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Skills.SkillDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             }
           }
@@ -1565,7 +2027,11 @@
         }
       }
     },
+<<<<<<< HEAD
     "/api/Skills/{skillId}": {
+=======
+    "/api/Skills/{SkillId}": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       "get": {
         "tags": [
           "Skills"
@@ -1588,19 +2054,31 @@
         }
       }
     },
+<<<<<<< HEAD
     "/api/Skills/Update/{Id}": {
+=======
+    "/api/Skills/Update/{Skillid}": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       "put": {
         "tags": [
           "Skills"
         ],
         "parameters": [
           {
+<<<<<<< HEAD
             "name": "Id",
             "in": "path",
             "required": true,
             "schema": {
               "type": "string",
               "format": "uuid"
+=======
+            "name": "Skillid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             }
           }
         ],
@@ -1608,17 +2086,29 @@
           "content": {
             "application/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/SkillDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Skills.SkillDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "text/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/SkillDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Skills.SkillDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "application/*+json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/SkillDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Skills.SkillDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             }
           }
@@ -1660,6 +2150,7 @@
         ],
         "responses": {
           "200": {
+<<<<<<< HEAD
             "description": "OK"
           }
         }
@@ -1737,10 +2228,28 @@
                 },
                 "Order": {
                   "style": "form"
+=======
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[Adros.Application.DTOs.Stage.StageEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[Adros.Application.DTOs.Stage.StageEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[Adros.Application.DTOs.Stage.StageEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
           }
+<<<<<<< HEAD
         },
         "responses": {
           "200": {
@@ -1767,6 +2276,8 @@
           "200": {
             "description": "OK"
           }
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         }
       }
     },
@@ -1781,7 +2292,11 @@
               "schema": {
                 "allOf": [
                   {
+<<<<<<< HEAD
                     "$ref": "#/components/schemas/StageType"
+=======
+                    "$ref": "#/components/schemas/Adros.Core.Enums.StageType"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                   },
                   {
                     "required": [
@@ -1822,7 +2337,184 @@
         },
         "responses": {
           "200": {
+<<<<<<< HEAD
             "description": "OK"
+=======
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Stage.StageEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Stage.StageEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Stage.StageEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Stages/{stageId}": {
+      "put": {
+        "tags": [
+          "Stages"
+        ],
+        "parameters": [
+          {
+            "name": "stageId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Adros.Core.Enums.StageType"
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "Title": {
+                        "type": "string"
+                      },
+                      "Image": {
+                        "type": "string",
+                        "format": "binary"
+                      },
+                      "Order": {
+                        "type": "integer",
+                        "format": "int32"
+                      }
+                    }
+                  }
+                ]
+              },
+              "encoding": {
+                "Title": {
+                  "style": "form"
+                },
+                "Image": {
+                  "style": "form"
+                },
+                "Order": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Stage.StageEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Stage.StageEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Stage.StageEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Stages"
+        ],
+        "parameters": [
+          {
+            "name": "stageId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Stage.StageEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Stage.StageEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Stage.StageEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Stages"
+        ],
+        "parameters": [
+          {
+            "name": "stageId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              }
+            }
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
           }
         }
       }
@@ -1838,17 +2530,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StudentProfileDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Student.StudentProfileDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StudentProfileDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Student.StudentProfileDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StudentProfileDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Student.StudentProfileDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -1858,17 +2562,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/ProblemDetails"
+=======
+                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/ProblemDetails"
+=======
+                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/ProblemDetails"
+=======
+                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -1878,17 +2594,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/ProblemDetails"
+=======
+                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/ProblemDetails"
+=======
+                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/ProblemDetails"
+=======
+                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -1925,26 +2653,58 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/ClientCalenderDto"
                   }
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[Adros.Application.DTOs.Calender.ClientCalenderDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/ClientCalenderDto"
                   }
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[Adros.Application.DTOs.Calender.ClientCalenderDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/ClientCalenderDto"
                   }
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[Adros.Application.DTOs.Calender.ClientCalenderDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -1974,17 +2734,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/CalenderEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Calender.CalenderEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/CalenderEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Calender.CalenderEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/CalenderEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Calender.CalenderEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -1994,17 +2766,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -2014,17 +2798,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -2041,17 +2837,29 @@
           "content": {
             "application/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/CalenderCreateDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Calender.CalenderCreateDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "text/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/CalenderCreateDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Calender.CalenderCreateDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "application/*+json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/CalenderCreateDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Calender.CalenderCreateDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             }
           }
@@ -2062,17 +2870,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/CalenderEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Calender.CalenderEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/CalenderEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Calender.CalenderEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/CalenderEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Calender.CalenderEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -2082,17 +2902,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -2102,17 +2934,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -2140,17 +2984,29 @@
           "content": {
             "application/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/CalenderUpdateDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Calender.CalenderUpdateDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "text/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/CalenderUpdateDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Calender.CalenderUpdateDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "application/*+json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/CalenderUpdateDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Calender.CalenderUpdateDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             }
           }
@@ -2161,17 +3017,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/CalenderEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Calender.CalenderEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/CalenderEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Calender.CalenderEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/CalenderEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Calender.CalenderEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -2181,17 +3049,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -2201,17 +3081,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -2221,17 +3113,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -2261,17 +3165,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -2281,17 +3197,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -2301,17 +3229,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -2330,17 +3270,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StudentListDtoPaginatedResult"
+=======
+                  "$ref": "#/components/schemas/Adros.Application.DTOs.Pagination.PaginatedResult`1[[Adros.Application.DTOs.Student.StudentListDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StudentListDtoPaginatedResult"
+=======
+                  "$ref": "#/components/schemas/Adros.Application.DTOs.Pagination.PaginatedResult`1[[Adros.Application.DTOs.Student.StudentListDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StudentListDtoPaginatedResult"
+=======
+                  "$ref": "#/components/schemas/Adros.Application.DTOs.Pagination.PaginatedResult`1[[Adros.Application.DTOs.Student.StudentListDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -2350,17 +3302,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/ProblemDetails"
+=======
+                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/ProblemDetails"
+=======
+                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/ProblemDetails"
+=======
+                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -2370,17 +3334,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/ProblemDetails"
+=======
+                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/ProblemDetails"
+=======
+                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/ProblemDetails"
+=======
+                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -2388,6 +3364,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "/api/Students/{studentId}": {
       "delete": {
         "tags": [
@@ -2411,6 +3388,8 @@
         }
       }
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "/api/Students/{id}": {
       "get": {
         "tags": [
@@ -2433,17 +3412,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StudentEntityDto"
+=======
+                  "$ref": "#/components/schemas/Adros.Application.DTOs.Student.StudentEntityDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StudentEntityDto"
+=======
+                  "$ref": "#/components/schemas/Adros.Application.DTOs.Student.StudentEntityDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StudentEntityDto"
+=======
+                  "$ref": "#/components/schemas/Adros.Application.DTOs.Student.StudentEntityDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -2453,17 +3444,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/ProblemDetails"
+=======
+                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/ProblemDetails"
+=======
+                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/ProblemDetails"
+=======
+                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -2473,17 +3476,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/ProblemDetails"
+=======
+                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/ProblemDetails"
+=======
+                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/ProblemDetails"
+=======
+                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -2532,17 +3547,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -2552,17 +3579,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/ProblemDetails"
+=======
+                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/ProblemDetails"
+=======
+                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/ProblemDetails"
+=======
+                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -2572,17 +3611,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/ProblemDetails"
+=======
+                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/ProblemDetails"
+=======
+                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/ProblemDetails"
+=======
+                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -2641,17 +3692,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/SubjectDtoPagination"
+=======
+                  "$ref": "#/components/schemas/Adros.Shared.Helpers.Pagination`1[[Adros.Core.Entities.Course.SubjectDto, Adros.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/SubjectDtoPagination"
+=======
+                  "$ref": "#/components/schemas/Adros.Shared.Helpers.Pagination`1[[Adros.Core.Entities.Course.SubjectDto, Adros.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/SubjectDtoPagination"
+=======
+                  "$ref": "#/components/schemas/Adros.Shared.Helpers.Pagination`1[[Adros.Core.Entities.Course.SubjectDto, Adros.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -2681,17 +3744,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/SubjectDto"
+=======
+                  "$ref": "#/components/schemas/Adros.Core.Entities.Course.SubjectDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/SubjectDto"
+=======
+                  "$ref": "#/components/schemas/Adros.Core.Entities.Course.SubjectDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/SubjectDto"
+=======
+                  "$ref": "#/components/schemas/Adros.Core.Entities.Course.SubjectDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -2708,17 +3783,29 @@
           "content": {
             "application/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/SubjectInputDto"
+=======
+                "$ref": "#/components/schemas/Adros.Core.Entities.Course.SubjectInputDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "text/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/SubjectInputDto"
+=======
+                "$ref": "#/components/schemas/Adros.Core.Entities.Course.SubjectInputDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "application/*+json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/SubjectInputDto"
+=======
+                "$ref": "#/components/schemas/Adros.Core.Entities.Course.SubjectInputDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             }
           }
@@ -2729,17 +3816,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/SubjectDto"
+=======
+                  "$ref": "#/components/schemas/Adros.Core.Entities.Course.SubjectDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/SubjectDto"
+=======
+                  "$ref": "#/components/schemas/Adros.Core.Entities.Course.SubjectDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/SubjectDto"
+=======
+                  "$ref": "#/components/schemas/Adros.Core.Entities.Course.SubjectDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -2767,17 +3866,29 @@
           "content": {
             "application/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/SubjectInputDto"
+=======
+                "$ref": "#/components/schemas/Adros.Core.Entities.Course.SubjectInputDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "text/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/SubjectInputDto"
+=======
+                "$ref": "#/components/schemas/Adros.Core.Entities.Course.SubjectInputDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "application/*+json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/SubjectInputDto"
+=======
+                "$ref": "#/components/schemas/Adros.Core.Entities.Course.SubjectInputDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             }
           }
@@ -2834,7 +3945,11 @@
                 "schema": {
                   "type": "array",
                   "items": {
+<<<<<<< HEAD
                     "$ref": "#/components/schemas/SubjectDto"
+=======
+                    "$ref": "#/components/schemas/Adros.Core.Entities.Course.SubjectDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                   }
                 }
               },
@@ -2842,7 +3957,11 @@
                 "schema": {
                   "type": "array",
                   "items": {
+<<<<<<< HEAD
                     "$ref": "#/components/schemas/SubjectDto"
+=======
+                    "$ref": "#/components/schemas/Adros.Core.Entities.Course.SubjectDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                   }
                 }
               },
@@ -2850,7 +3969,11 @@
                 "schema": {
                   "type": "array",
                   "items": {
+<<<<<<< HEAD
                     "$ref": "#/components/schemas/SubjectDto"
+=======
+                    "$ref": "#/components/schemas/Adros.Core.Entities.Course.SubjectDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                   }
                 }
               }
@@ -2868,17 +3991,29 @@
           "content": {
             "application/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/CreateSubscriptionDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Subscription.CreateSubscriptionDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "text/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/CreateSubscriptionDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Subscription.CreateSubscriptionDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "application/*+json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/CreateSubscriptionDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Subscription.CreateSubscriptionDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             }
           }
@@ -2911,7 +4046,85 @@
             "description": "OK"
           }
         }
+<<<<<<< HEAD
       },
+=======
+      }
+    },
+    "/api/Subscriptions/my-subscriptions": {
+      "get": {
+        "tags": [
+          "Subscriptions"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Subscriptions/check-status": {
+      "get": {
+        "tags": [
+          "Subscriptions"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Subscriptions/all": {
+      "get": {
+        "tags": [
+          "Subscriptions"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Subscriptions/active": {
+      "get": {
+        "tags": [
+          "Subscriptions"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Subscriptions/expired": {
+      "get": {
+        "tags": [
+          "Subscriptions"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Subscriptions/stats": {
+      "get": {
+        "tags": [
+          "Subscriptions"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Subscriptions/{id}/cancel": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       "put": {
         "tags": [
           "Subscriptions"
@@ -2927,6 +4140,7 @@
             }
           }
         ],
+<<<<<<< HEAD
         "requestBody": {
           "content": {
             "application/json": {
@@ -2979,6 +4193,8 @@
         "tags": [
           "Subscriptions"
         ],
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         "responses": {
           "200": {
             "description": "OK"
@@ -3031,17 +4247,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/TeacherEntityDtoPaginatedResultApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Pagination.PaginatedResult`1[[Adros.Application.DTOs.Teacher.TeacherEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/TeacherEntityDtoPaginatedResultApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Pagination.PaginatedResult`1[[Adros.Application.DTOs.Teacher.TeacherEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/TeacherEntityDtoPaginatedResultApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Pagination.PaginatedResult`1[[Adros.Application.DTOs.Teacher.TeacherEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -3058,8 +4286,12 @@
               "schema": {
                 "required": [
                   "Email",
+<<<<<<< HEAD
                   "Password",
                   "StageId"
+=======
+                  "Password"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 ],
                 "type": "object",
                 "properties": {
@@ -3085,6 +4317,7 @@
                   "Photo": {
                     "type": "string",
                     "format": "binary"
+<<<<<<< HEAD
                   },
                   "StageId": {
                     "type": "string",
@@ -3092,6 +4325,8 @@
                   },
                   "PhoneNumber": {
                     "type": "string"
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                   }
                 }
               },
@@ -3113,12 +4348,15 @@
                 },
                 "Photo": {
                   "style": "form"
+<<<<<<< HEAD
                 },
                 "StageId": {
                   "style": "form"
                 },
                 "PhoneNumber": {
                   "style": "form"
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -3130,17 +4368,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/TeacherEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Teacher.TeacherEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/TeacherEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Teacher.TeacherEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/TeacherEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Teacher.TeacherEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -3170,17 +4420,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/TeacherEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Teacher.TeacherEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/TeacherEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Teacher.TeacherEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/TeacherEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Teacher.TeacherEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -3206,11 +4468,14 @@
           "content": {
             "multipart/form-data": {
               "schema": {
+<<<<<<< HEAD
                 "required": [
                   "FirstName",
                   "LastName",
                   "StageId"
                 ],
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 "type": "object",
                 "properties": {
                   "Email": {
@@ -3223,6 +4488,7 @@
                   "Photo": {
                     "type": "string",
                     "format": "binary"
+<<<<<<< HEAD
                   },
                   "FirstName": {
                     "type": "string"
@@ -3239,6 +4505,8 @@
                   },
                   "PhoneNumber": {
                     "type": "string"
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                   }
                 }
               },
@@ -3251,6 +4519,7 @@
                 },
                 "Photo": {
                   "style": "form"
+<<<<<<< HEAD
                 },
                 "FirstName": {
                   "style": "form"
@@ -3266,6 +4535,8 @@
                 },
                 "PhoneNumber": {
                   "style": "form"
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -3277,17 +4548,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/TeacherEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Teacher.TeacherEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/TeacherEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Teacher.TeacherEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/TeacherEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Teacher.TeacherEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -3315,17 +4598,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -3333,6 +4628,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "/api/Teachers/by-stage/{stageId}": {
       "get": {
         "tags": [
@@ -3341,6 +4637,45 @@
         "parameters": [
           {
             "name": "stageId",
+=======
+    "/api/Topics/all": {
+      "get": {
+        "tags": [
+          "Topics"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[Adros.Application.DTOs.Topic.TopicEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[Adros.Application.DTOs.Topic.TopicEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[Adros.Application.DTOs.Topic.TopicEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Topics/{topicId}": {
+      "get": {
+        "tags": [
+          "Topics"
+        ],
+        "parameters": [
+          {
+            "name": "topicId",
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             "in": "path",
             "required": true,
             "schema": {
@@ -3355,16 +4690,25 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/ObjectApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Topic.TopicEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/ObjectApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Topic.TopicEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/ObjectApiResponse"
                 }
               }
@@ -3435,6 +4779,9 @@
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/UnitEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Topic.TopicEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -3443,11 +4790,16 @@
       },
       "put": {
         "tags": [
+<<<<<<< HEAD
           "Units"
+=======
+          "Topics"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         ],
         "parameters": [
           {
             "name": "topicId",
+<<<<<<< HEAD
             "in": "query",
             "schema": {
               "type": "string",
@@ -3460,6 +4812,13 @@
             "required": true,
             "schema": {
               "type": "string"
+=======
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             }
           }
         ],
@@ -3467,17 +4826,29 @@
           "content": {
             "application/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/UnitUpdateDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Topic.TopicUpdateDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "text/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/UnitUpdateDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Topic.TopicUpdateDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "application/*+json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/UnitUpdateDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Topic.TopicUpdateDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             }
           }
@@ -3488,17 +4859,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/UnitEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Topic.TopicEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/UnitEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Topic.TopicEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/UnitEntityDtoApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Topic.TopicEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -3507,11 +4890,16 @@
       },
       "delete": {
         "tags": [
+<<<<<<< HEAD
           "Units"
+=======
+          "Topics"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         ],
         "parameters": [
           {
             "name": "topicId",
+<<<<<<< HEAD
             "in": "query",
             "schema": {
               "type": "string",
@@ -3524,6 +4912,13 @@
             "required": true,
             "schema": {
               "type": "string"
+=======
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             }
           }
         ],
@@ -3533,17 +4928,29 @@
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/StringApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -3551,32 +4958,52 @@
         }
       }
     },
+<<<<<<< HEAD
     "/api/Units/create": {
       "post": {
         "tags": [
           "Units"
+=======
+    "/api/Topics/create": {
+      "post": {
+        "tags": [
+          "Topics"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/UnitCreateDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Topic.TopicCreateDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "text/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/UnitCreateDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Topic.TopicCreateDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "application/*+json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/UnitCreateDto"
+=======
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Topic.TopicCreateDto"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             }
           }
         },
         "responses": {
           "200": {
+<<<<<<< HEAD
             "description": "OK"
           }
         }
@@ -3600,21 +5027,35 @@
         ],
         "responses": {
           "200": {
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             "description": "OK",
             "content": {
               "text/plain": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/UnitEntityDtoIReadOnlyListApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Topic.TopicEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "application/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/UnitEntityDtoIReadOnlyListApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Topic.TopicEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               },
               "text/json": {
                 "schema": {
+<<<<<<< HEAD
                   "$ref": "#/components/schemas/UnitEntityDtoIReadOnlyListApiResponse"
+=======
+                  "$ref": "#/components/schemas/Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Topic.TopicEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 }
               }
             }
@@ -3632,16 +5073,116 @@
             "description": "OK"
           }
         }
+<<<<<<< HEAD
       }
     },
     "/api/Video/{videoId}": {
+=======
+      },
+      "post": {
+        "tags": [
+          "Video"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Video.CreateVideoDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Video.CreateVideoDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Video.CreateVideoDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Video/{id}": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       "get": {
         "tags": [
           "Video"
         ],
         "parameters": [
           {
+<<<<<<< HEAD
             "name": "videoId",
+=======
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Video"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Video.UpdateVideoDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Video.UpdateVideoDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Adros.Application.DTOs.Video.UpdateVideoDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Video"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             "in": "path",
             "required": true,
             "schema": {
@@ -3680,6 +5221,32 @@
         }
       }
     },
+<<<<<<< HEAD
+=======
+    "/api/Video/topic/{topicId}": {
+      "get": {
+        "tags": [
+          "Video"
+        ],
+        "parameters": [
+          {
+            "name": "topicId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "/api/Video/{id}/views": {
       "get": {
         "tags": [
@@ -3703,6 +5270,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "/api/Video/{videoId}/view": {
       "post": {
         "tags": [
@@ -3746,12 +5314,16 @@
       }
     },
     "/api/Video/{videoId}/MyViews": {
+=======
+    "/api/Video/{id}/downloads": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       "get": {
         "tags": [
           "Video"
         ],
         "parameters": [
           {
+<<<<<<< HEAD
             "name": "videoId",
             "in": "path",
             "required": true,
@@ -3879,6 +5451,8 @@
         ],
         "parameters": [
           {
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             "name": "id",
             "in": "path",
             "required": true,
@@ -3895,14 +5469,22 @@
         }
       }
     },
+<<<<<<< HEAD
     "/api/Video/{VideoId}/watchlater": {
+=======
+    "/api/Video/{id}/view": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       "post": {
         "tags": [
           "Video"
         ],
         "parameters": [
           {
+<<<<<<< HEAD
             "name": "VideoId",
+=======
+            "name": "id",
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             "in": "path",
             "required": true,
             "schema": {
@@ -3918,11 +5500,30 @@
         }
       }
     },
+<<<<<<< HEAD
     "/api/Video/watchlater": {
       "get": {
         "tags": [
           "Video"
         ],
+=======
+    "/api/Video/{id}/download": {
+      "post": {
+        "tags": [
+          "Video"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         "responses": {
           "200": {
             "description": "OK"
@@ -3950,17 +5551,29 @@
           "content": {
             "application/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/VideoStatus"
+=======
+                "$ref": "#/components/schemas/Adros.Core.Enums.VideoStatus"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "text/json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/VideoStatus"
+=======
+                "$ref": "#/components/schemas/Adros.Core.Enums.VideoStatus"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             },
             "application/*+json": {
               "schema": {
+<<<<<<< HEAD
                 "$ref": "#/components/schemas/VideoStatus"
+=======
+                "$ref": "#/components/schemas/Adros.Core.Enums.VideoStatus"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
               }
             }
           }
@@ -3971,11 +5584,354 @@
           }
         }
       }
+<<<<<<< HEAD
+=======
+    },
+    "/api/Video/upload": {
+      "post": {
+        "tags": [
+          "Video"
+        ],
+        "parameters": [
+          {
+            "name": "title",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "topicId",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "file": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Video/{videoId}": {
+      "get": {
+        "tags": [
+          "Video"
+        ],
+        "parameters": [
+          {
+            "name": "videoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     }
   },
   "components": {
     "schemas": {
+<<<<<<< HEAD
       "AssesmentDto": {
+=======
+      "Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Assesment.AssesmentDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "$ref": "#/components/schemas/Adros.Application.DTOs.Assesment.AssesmentDto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Calender.CalenderEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "$ref": "#/components/schemas/Adros.Application.DTOs.Calender.CalenderEntityDto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Home.HomeResponseDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "$ref": "#/components/schemas/Adros.Application.DTOs.Home.HomeResponseDto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Level.LevelEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "$ref": "#/components/schemas/Adros.Application.DTOs.Level.LevelEntityDto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Pagination.PaginatedResult`1[[Adros.Application.DTOs.Teacher.TeacherEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "$ref": "#/components/schemas/Adros.Application.DTOs.Pagination.PaginatedResult`1[[Adros.Application.DTOs.Teacher.TeacherEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Stage.StageEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "$ref": "#/components/schemas/Adros.Application.DTOs.Stage.StageEntityDto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Student.StudentProfileDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "$ref": "#/components/schemas/Adros.Application.DTOs.Student.StudentProfileDto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Teacher.TeacherEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "$ref": "#/components/schemas/Adros.Application.DTOs.Teacher.TeacherEntityDto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Adros.Apis.ApiResponse.ApiResponse`1[[Adros.Application.DTOs.Topic.TopicEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "$ref": "#/components/schemas/Adros.Application.DTOs.Topic.TopicEntityDto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Adros.Apis.ApiResponse.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[Adros.Application.DTOs.Calender.ClientCalenderDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Adros.Application.DTOs.Calender.ClientCalenderDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Adros.Apis.ApiResponse.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[Adros.Application.DTOs.Level.LevelEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Adros.Application.DTOs.Level.LevelEntityDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Adros.Apis.ApiResponse.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[Adros.Application.DTOs.Stage.StageEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Adros.Application.DTOs.Stage.StageEntityDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Adros.Apis.ApiResponse.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[Adros.Application.DTOs.Topic.TopicEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Adros.Application.DTOs.Topic.TopicEntityDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Adros.Apis.ApiResponse.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Adros.Apis.Controllers.CheckEmailRequest": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Adros.Application.DTOs.Assesment.AssesmentDto": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         "type": "object",
         "properties": {
           "id": {
@@ -3997,6 +5953,7 @@
         },
         "additionalProperties": false
       },
+<<<<<<< HEAD
       "AssesmentDtoApiResponse": {
         "type": "object",
         "properties": {
@@ -4010,10 +5967,27 @@
           },
           "data": {
             "$ref": "#/components/schemas/AssesmentDto"
+=======
+      "Adros.Application.DTOs.Banner.ClientBannerDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "imageUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "order": {
+            "type": "integer",
+            "format": "int32"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
           }
         },
         "additionalProperties": false
       },
+<<<<<<< HEAD
       "AttachmentDto": {
         "type": "object",
         "properties": {
@@ -4033,6 +6007,9 @@
         "additionalProperties": false
       },
       "CalenderCreateDto": {
+=======
+      "Adros.Application.DTOs.Calender.CalenderCreateDto": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         "type": "object",
         "properties": {
           "date": {
@@ -4050,7 +6027,11 @@
         },
         "additionalProperties": false
       },
+<<<<<<< HEAD
       "CalenderEntityDto": {
+=======
+      "Adros.Application.DTOs.Calender.CalenderEntityDto": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         "type": "object",
         "properties": {
           "id": {
@@ -4072,6 +6053,7 @@
         },
         "additionalProperties": false
       },
+<<<<<<< HEAD
       "CalenderEntityDtoApiResponse": {
         "type": "object",
         "properties": {
@@ -4090,6 +6072,9 @@
         "additionalProperties": false
       },
       "CalenderUpdateDto": {
+=======
+      "Adros.Application.DTOs.Calender.CalenderUpdateDto": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         "type": "object",
         "properties": {
           "date": {
@@ -4107,6 +6092,7 @@
         },
         "additionalProperties": false
       },
+<<<<<<< HEAD
       "CheckEmailRequest": {
         "type": "object",
         "properties": {
@@ -4118,6 +6104,9 @@
         "additionalProperties": false
       },
       "ClientCalenderDto": {
+=======
+      "Adros.Application.DTOs.Calender.ClientCalenderDto": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         "type": "object",
         "properties": {
           "id": {
@@ -4139,6 +6128,7 @@
         },
         "additionalProperties": false
       },
+<<<<<<< HEAD
       "CreateSubscriptionDto": {
         "type": "object",
         "properties": {
@@ -4165,6 +6155,9 @@
         "additionalProperties": false
       },
       "ForgotPasswordDto": {
+=======
+      "Adros.Application.DTOs.ForgotPasswordDto": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         "required": [
           "email"
         ],
@@ -4178,6 +6171,7 @@
         },
         "additionalProperties": false
       },
+<<<<<<< HEAD
       "LessonCreateDto": {
         "type": "object",
         "properties": {
@@ -4200,17 +6194,49 @@
           "unitId": {
             "type": "string",
             "format": "uuid"
+=======
+      "Adros.Application.DTOs.Home.HomeResponseDto": {
+        "type": "object",
+        "properties": {
+          "banners": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Adros.Application.DTOs.Banner.ClientBannerDto"
+            },
+            "nullable": true
+          },
+          "levels": {
+            "$ref": "#/components/schemas/Adros.Application.DTOs.Level.LevelEntityDto"
+          },
+          "calenders": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Adros.Application.DTOs.Calender.ClientCalenderDto"
+            },
+            "nullable": true
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
           }
         },
         "additionalProperties": false
       },
+<<<<<<< HEAD
       "LessonDto": {
+=======
+      "Adros.Application.DTOs.Lesson.LessonDto": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         "type": "object",
         "properties": {
           "id": {
             "type": "string",
             "format": "uuid"
           },
+<<<<<<< HEAD
+=======
+          "lessonfileName": {
+            "type": "string",
+            "nullable": true
+          },
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
           "order": {
             "type": "integer",
             "format": "int32"
@@ -4225,13 +6251,18 @@
           },
           "teacherId": {
             "type": "string",
+<<<<<<< HEAD
             "format": "uuid",
             "nullable": true
+=======
+            "format": "uuid"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
           },
           "teacherName": {
             "type": "string",
             "nullable": true
           },
+<<<<<<< HEAD
           "aboutTeacher": {
             "type": "string",
             "nullable": true
@@ -4240,6 +6271,11 @@
             "type": "string",
             "format": "uuid",
             "nullable": true
+=======
+          "subjectId": {
+            "type": "string",
+            "format": "uuid"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
           },
           "examId": {
             "type": "string",
@@ -4253,20 +6289,29 @@
           "attachments": {
             "type": "array",
             "items": {
+<<<<<<< HEAD
               "$ref": "#/components/schemas/AttachmentDto"
+=======
+              "type": "string"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             },
             "nullable": true
           },
           "videos": {
             "type": "array",
             "items": {
+<<<<<<< HEAD
               "$ref": "#/components/schemas/LessonVideoDto"
+=======
+              "type": "string"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             },
             "nullable": true
           }
         },
         "additionalProperties": false
       },
+<<<<<<< HEAD
       "LessonEntityDto": {
         "type": "object",
         "properties": {
@@ -4350,6 +6395,9 @@
         "additionalProperties": false
       },
       "LevelEntityDto": {
+=======
+      "Adros.Application.DTOs.Level.LevelEntityDto": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         "type": "object",
         "properties": {
           "id": {
@@ -4364,10 +6412,13 @@
             "type": "string",
             "format": "uuid"
           },
+<<<<<<< HEAD
           "studentsCount": {
             "type": "integer",
             "format": "int32"
           },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
           "createdBy": {
             "type": "string",
             "format": "uuid"
@@ -4397,6 +6448,7 @@
         },
         "additionalProperties": false
       },
+<<<<<<< HEAD
       "LevelEntityDtoApiResponse": {
         "type": "object",
         "properties": {
@@ -4436,6 +6488,9 @@
         "additionalProperties": false
       },
       "LoginDto": {
+=======
+      "Adros.Application.DTOs.LoginDto": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         "type": "object",
         "properties": {
           "email": {
@@ -4451,6 +6506,7 @@
         },
         "additionalProperties": false
       },
+<<<<<<< HEAD
       "ObjectApiResponse": {
         "type": "object",
         "properties": {
@@ -4464,11 +6520,45 @@
           },
           "data": {
             "nullable": true
+=======
+      "Adros.Application.DTOs.Pagination.PaginatedResult`1[[Adros.Application.DTOs.Student.StudentListDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Adros.Application.DTOs.Student.StudentListDto"
+            },
+            "nullable": true
+          },
+          "pagination": {
+            "$ref": "#/components/schemas/Adros.Application.DTOs.Pagination.PaginationMetadata"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
           }
         },
         "additionalProperties": false
       },
+<<<<<<< HEAD
       "PaginationMetadata": {
+=======
+      "Adros.Application.DTOs.Pagination.PaginatedResult`1[[Adros.Application.DTOs.Teacher.TeacherEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Adros.Application.DTOs.Teacher.TeacherEntityDto"
+            },
+            "nullable": true
+          },
+          "pagination": {
+            "$ref": "#/components/schemas/Adros.Application.DTOs.Pagination.PaginationMetadata"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Adros.Application.DTOs.Pagination.PaginationMetadata": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         "type": "object",
         "properties": {
           "pageIndex": {
@@ -4490,6 +6580,7 @@
         },
         "additionalProperties": false
       },
+<<<<<<< HEAD
       "ProblemDetails": {
         "type": "object",
         "properties": {
@@ -4518,6 +6609,9 @@
         "additionalProperties": { }
       },
       "RegisterDto": {
+=======
+      "Adros.Application.DTOs.RegisterDto": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         "required": [
           "email",
           "firstName",
@@ -4556,7 +6650,11 @@
         },
         "additionalProperties": false
       },
+<<<<<<< HEAD
       "ResetPasswordDto": {
+=======
+      "Adros.Application.DTOs.ResetPasswordDto": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         "required": [
           "confirmPassword",
           "email",
@@ -4583,9 +6681,19 @@
         },
         "additionalProperties": false
       },
+<<<<<<< HEAD
       "SkillDto": {
         "type": "object",
         "properties": {
+=======
+      "Adros.Application.DTOs.Skills.SkillDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
           "title": {
             "type": "string",
             "nullable": true
@@ -4597,6 +6705,7 @@
           "videoURL": {
             "type": "string",
             "nullable": true
+<<<<<<< HEAD
           }
         },
         "additionalProperties": false
@@ -4623,12 +6732,75 @@
           },
           "data": {
             "type": "string",
+=======
+          },
+          "viewsCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             "nullable": true
           }
         },
         "additionalProperties": false
       },
+<<<<<<< HEAD
       "StudentDailyAchievement": {
+=======
+      "Adros.Application.DTOs.Stage.StageEntityDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "imagePath": {
+            "type": "string",
+            "nullable": true
+          },
+          "type": {
+            "$ref": "#/components/schemas/Adros.Core.Enums.StageType"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "updatedBy": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "order": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Adros.Application.DTOs.Student.StudentDailyAchievement": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         "type": "object",
         "properties": {
           "day": {
@@ -4642,7 +6814,11 @@
         },
         "additionalProperties": false
       },
+<<<<<<< HEAD
       "StudentEntityDto": {
+=======
+      "Adros.Application.DTOs.Student.StudentEntityDto": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         "type": "object",
         "properties": {
           "id": {
@@ -4665,7 +6841,11 @@
             "type": "string",
             "nullable": true
           },
+<<<<<<< HEAD
           "isSubscriped": {
+=======
+          "isActive": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             "type": "boolean"
           },
           "createdAt": {
@@ -4701,7 +6881,11 @@
             "type": "integer",
             "format": "int32"
           },
+<<<<<<< HEAD
           "watchLaterCount": {
+=======
+          "downloadsCount": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             "type": "integer",
             "format": "int32"
           },
@@ -4712,7 +6896,11 @@
         },
         "additionalProperties": false
       },
+<<<<<<< HEAD
       "StudentListDto": {
+=======
+      "Adros.Application.DTOs.Student.StudentListDto": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         "type": "object",
         "properties": {
           "id": {
@@ -4735,7 +6923,11 @@
             "type": "string",
             "nullable": true
           },
+<<<<<<< HEAD
           "isSubscriped": {
+=======
+          "isActive": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             "type": "boolean"
           },
           "createdAt": {
@@ -4771,13 +6963,18 @@
             "type": "integer",
             "format": "int32"
           },
+<<<<<<< HEAD
           "watchLaterCount": {
+=======
+          "downloadsCount": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             "type": "integer",
             "format": "int32"
           }
         },
         "additionalProperties": false
       },
+<<<<<<< HEAD
       "StudentListDtoPaginatedResult": {
         "type": "object",
         "properties": {
@@ -4801,6 +6998,11 @@
             "type": "string",
             "nullable": true
           },
+=======
+      "Adros.Application.DTOs.Student.StudentProfileDto": {
+        "type": "object",
+        "properties": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
           "imagePath": {
             "type": "string",
             "nullable": true
@@ -4822,6 +7024,7 @@
             "type": "integer",
             "format": "int32"
           },
+<<<<<<< HEAD
           "watchlatercount": {
             "type": "integer",
             "format": "int32"
@@ -4833,6 +7036,12 @@
           "isSubscribed": {
             "type": "boolean"
           },
+=======
+          "downloadsCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
           "totalStudyTime": {
             "type": "string",
             "format": "date-span"
@@ -4840,13 +7049,18 @@
           "dailyAchievements": {
             "type": "array",
             "items": {
+<<<<<<< HEAD
               "$ref": "#/components/schemas/StudentDailyAchievement"
+=======
+              "$ref": "#/components/schemas/Adros.Application.DTOs.Student.StudentDailyAchievement"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             },
             "nullable": true
           }
         },
         "additionalProperties": false
       },
+<<<<<<< HEAD
       "StudentProfileDtoApiResponse": {
         "type": "object",
         "properties": {
@@ -4921,11 +7135,52 @@
           "levelId": {
             "type": "string",
             "format": "uuid"
+=======
+      "Adros.Application.DTOs.Subscription.CreateSubscriptionDto": {
+        "required": [
+          "paymentTransactionId",
+          "subscriptionPlanId",
+          "userId"
+        ],
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "subscriptionPlanId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "paymentTransactionId": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "paymentMethod": {
+            "type": "string",
+            "nullable": true
+          },
+          "amountPaid": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "isAutoRenew": {
+            "type": "boolean"
+          },
+          "notes": {
+            "type": "string",
+            "nullable": true
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
           }
         },
         "additionalProperties": false
       },
+<<<<<<< HEAD
       "TeacherEntityDto": {
+=======
+      "Adros.Application.DTOs.Teacher.TeacherEntityDto": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         "type": "object",
         "properties": {
           "teacherID": {
@@ -4948,6 +7203,7 @@
             "type": "string",
             "nullable": true
           },
+<<<<<<< HEAD
           "profilePictureUrl": {
             "type": "string",
             "nullable": true
@@ -4957,6 +7213,8 @@
             "format": "uuid",
             "nullable": true
           },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
           "applicationUserId": {
             "type": "string",
             "format": "uuid"
@@ -4978,10 +7236,13 @@
           "isActive": {
             "type": "boolean"
           },
+<<<<<<< HEAD
           "phoneNumber": {
             "type": "string",
             "nullable": true
           },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
           "lessonCount": {
             "type": "integer",
             "format": "int32"
@@ -4989,6 +7250,7 @@
         },
         "additionalProperties": false
       },
+<<<<<<< HEAD
       "TeacherEntityDtoApiResponse": {
         "type": "object",
         "properties": {
@@ -5042,6 +7304,11 @@
       "UnitCreateDto": {
         "required": [
           "subjectId",
+=======
+      "Adros.Application.DTOs.Topic.TopicCreateDto": {
+        "required": [
+          "lessonId",
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
           "title"
         ],
         "type": "object",
@@ -5050,6 +7317,7 @@
             "minLength": 1,
             "type": "string"
           },
+<<<<<<< HEAD
           "subjectId": {
             "type": "string",
             "format": "uuid"
@@ -5057,17 +7325,37 @@
           "description": {
             "type": "string",
             "nullable": true
+=======
+          "lessonId": {
+            "type": "string",
+            "format": "uuid"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
           }
         },
         "additionalProperties": false
       },
+<<<<<<< HEAD
       "UnitEntityDto": {
+=======
+      "Adros.Application.DTOs.Topic.TopicEntityDto": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         "type": "object",
         "properties": {
           "id": {
             "type": "string",
             "format": "uuid"
           },
+<<<<<<< HEAD
+=======
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "lessonId": {
+            "type": "string",
+            "format": "uuid"
+          },
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
           "createdAt": {
             "type": "string",
             "format": "date-time",
@@ -5086,6 +7374,7 @@
             "type": "string",
             "format": "uuid",
             "nullable": true
+<<<<<<< HEAD
           },
           "deleted": {
             "type": "boolean"
@@ -5101,10 +7390,13 @@
           "description": {
             "type": "string",
             "nullable": true
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
           }
         },
         "additionalProperties": false
       },
+<<<<<<< HEAD
       "UnitEntityDtoApiResponse": {
         "type": "object",
         "properties": {
@@ -5144,6 +7436,9 @@
         "additionalProperties": false
       },
       "UnitUpdateDto": {
+=======
+      "Adros.Application.DTOs.Topic.TopicUpdateDto": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         "type": "object",
         "properties": {
           "title": {
@@ -5154,14 +7449,18 @@
             "type": "string",
             "format": "uuid",
             "nullable": true
+<<<<<<< HEAD
           },
           "description": {
             "type": "string",
             "nullable": true
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
           }
         },
         "additionalProperties": false
       },
+<<<<<<< HEAD
       "UnitWithLessonsDto": {
         "type": "object",
         "properties": {
@@ -5230,6 +7529,9 @@
         "additionalProperties": false
       },
       "UpdateVideoDto": {
+=======
+      "Adros.Application.DTOs.Video.CreateVideoDto": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         "type": "object",
         "properties": {
           "title": {
@@ -5237,16 +7539,55 @@
             "nullable": true
           },
           "duration": {
+<<<<<<< HEAD
+=======
+            "type": "string",
+            "format": "date-span"
+          },
+          "url": {
+            "type": "string",
+            "nullable": true
+          },
+          "order": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             "type": "integer",
             "format": "int32",
             "nullable": true
           },
+<<<<<<< HEAD
           "description": {
             "type": "string",
             "nullable": true
           },
           "thumbnailUrl": {
             "type": "string",
+=======
+          "lessonId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "topicId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "bunnyVideoId": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Adros.Application.DTOs.Video.UpdateVideoDto": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "duration": {
+            "type": "string",
+            "format": "date-span",
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             "nullable": true
           },
           "url": {
@@ -5259,12 +7600,56 @@
             "nullable": true
           },
           "status": {
+<<<<<<< HEAD
             "$ref": "#/components/schemas/VideoStatus"
+=======
+            "$ref": "#/components/schemas/Adros.Core.Enums.VideoStatus"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
           }
         },
         "additionalProperties": false
       },
+<<<<<<< HEAD
       "VideoStatus": {
+=======
+      "Adros.Core.Entities.Course.SubjectDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "levelId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "lessonCount": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Adros.Core.Entities.Course.SubjectInputDto": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "levelId": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Adros.Core.Enums.StageType": {
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         "enum": [
           0,
           1,
@@ -5273,6 +7658,7 @@
         "type": "integer",
         "format": "int32"
       },
+<<<<<<< HEAD
       "VideoViewRequest": {
         "type": "object",
         "properties": {
@@ -5282,14 +7668,83 @@
           }
         },
         "additionalProperties": false
+=======
+      "Adros.Core.Enums.VideoStatus": {
+        "enum": [
+          0,
+          1,
+          2
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "Adros.Shared.Helpers.Pagination`1[[Adros.Core.Entities.Course.SubjectDto, Adros.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]": {
+        "type": "object",
+        "properties": {
+          "pageIndex": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageSize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "count": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Adros.Core.Entities.Course.SubjectDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Microsoft.AspNetCore.Mvc.ProblemDetails": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "detail": {
+            "type": "string",
+            "nullable": true
+          },
+          "instance": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": { }
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       }
     },
     "securitySchemes": {
       "Bearer": {
+<<<<<<< HEAD
         "type": "http",
         "description": "Enter JWT token like this: Bearer {your token}",
         "scheme": "bearer",
         "bearerFormat": "JWT"
+=======
+        "type": "apiKey",
+        "description": "ضع التوكن مباشرة بدون كلمة Bearer",
+        "name": "Authorization",
+        "in": "header"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       }
     }
   },

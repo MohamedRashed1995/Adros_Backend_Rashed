@@ -11,8 +11,11 @@ namespace Adros.Application.Interfaces.IService
         Task<StudentEntityDto> GetStudentByIdAsync(Guid studentId);
         Task ChangeStudentActivationAsync(Guid studentId, bool isActive);
         Task<StudentProfileDto> GetStudentProfileAsync(Guid userId);
+<<<<<<< HEAD
         Task<Guid> GetStudentIdByUserIdAsync(Guid applicationUserId);
         Task<bool> DeleteStudentAsync(Guid studentId);
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     }
 }
 

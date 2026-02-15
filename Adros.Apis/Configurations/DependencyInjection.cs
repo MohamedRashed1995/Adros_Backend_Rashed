@@ -63,7 +63,10 @@ namespace Adros.Apis.Configurations
 
             // ========== 4. AutoMapper Configuration ==========
             services.AddAutoMapper(typeof(BaseProfile).Assembly);
+<<<<<<< HEAD
             services.AddAutoMapper(typeof(AttachmentProfile));
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             services.AddTransient(typeof(ImageUrlResolver<>));
 
             // ========== 5. External Services ==========

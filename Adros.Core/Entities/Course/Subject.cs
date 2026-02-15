@@ -7,7 +7,11 @@ namespace Adros.Core.Entities.Course
         public string Title { get; set; } = default!;
         public Guid LevelId { get; set; }
         public Level Level { get; set; }
+<<<<<<< HEAD
         public ICollection<Unit> Units { get; set; } = new List<Unit>();
+=======
+        public ICollection<Unit> topics { get; set; } = [];
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         //public ICollection<Lesson> Lessons { get; set; } = [];
     }
     public class SubjectDto

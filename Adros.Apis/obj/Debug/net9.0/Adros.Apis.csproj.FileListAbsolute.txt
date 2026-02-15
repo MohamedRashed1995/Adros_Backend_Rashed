@@ -224,7 +224,10 @@ C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\bin\Debug\net9.0\Humanizer.dll
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\bin\Debug\net9.0\LinqKit.dll
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\bin\Debug\net9.0\LinqKit.Core.dll
+<<<<<<< HEAD
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\bin\Debug\net9.0\MediaInfo.DotNetWrapper.dll
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
@@ -256,7 +259,10 @@ C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\bin\Debug\net9.0\Mono.TextTemplating.dll
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\bin\Debug\net9.0\MySqlConnector.dll
+<<<<<<< HEAD
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\bin\Debug\net9.0\Newtonsoft.Json.dll
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\bin\Debug\net9.0\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\bin\Debug\net9.0\Serilog.dll
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\bin\Debug\net9.0\Serilog.AspNetCore.dll
@@ -290,7 +296,10 @@ C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\bin\Debug\net9.0\System.ServiceModel.Security.dll
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\bin\Debug\net9.0\System.ServiceModel.dll
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\bin\Debug\net9.0\System.Windows.Extensions.dll
+<<<<<<< HEAD
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\bin\Debug\net9.0\Xabe.FFmpeg.dll
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll

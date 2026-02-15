@@ -12,7 +12,11 @@ namespace Adros.Core.Entities
         public DateTime? ResetPasswordTokenExpiry { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+<<<<<<< HEAD
         //public string PhoneNumber { get; set; }
+=======
+
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         public string? Photo { get; set; }
         public Guid? StudentId { get; set; }
         public Student? Student { get; set; }

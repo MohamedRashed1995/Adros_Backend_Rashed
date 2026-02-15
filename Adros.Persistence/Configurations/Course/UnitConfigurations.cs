@@ -16,9 +16,12 @@ namespace Adros.Persistence.Configurations.Course
                 .IsRequired()
                 .HasMaxLength(200);
 
+<<<<<<< HEAD
             builder.Property(x => x.Description)
                 .HasMaxLength(2000);
 
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             builder.Property(x => x.CreatedAt)
                 .IsRequired()
                   .HasDefaultValueSql("GETUTCDATE()"); ;

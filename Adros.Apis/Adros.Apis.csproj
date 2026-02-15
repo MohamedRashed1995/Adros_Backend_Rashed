@@ -45,8 +45,11 @@
     <Folder Include="wwwroot\Images\Banners\" />
     <Folder Include="wwwroot\Images\Banners\" />
     <Folder Include="wwwroot\Images\Levels\" />
+<<<<<<< HEAD
     <Folder Include="wwwroot\Attachments\" />
     <Folder Include="wwwroot\Videos\" />
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
   </ItemGroup>
 
 </Project>

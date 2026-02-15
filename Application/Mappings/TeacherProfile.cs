@@ -39,11 +39,16 @@ namespace Adros.Application.Mappings
                 // ✅ IsActive جاية من ApplicationUser
                 .ForMember(d => d.IsActive,
                     o => o.MapFrom(s =>
+<<<<<<< HEAD
                         s.IsActive != null && s.IsActive))
+=======
+                        s.ApplicationUser != null && s.ApplicationUser.IsActive))
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
                 // ✅ LessonCount محسوبة
                 .ForMember(d => d.LessonCount,
                     o => o.MapFrom(s =>
+<<<<<<< HEAD
                         s.Lessons != null ? s.Lessons.Count : 0))
 
                 .ForMember(d => d.ProfilePictureUrl,
@@ -57,6 +62,9 @@ namespace Adros.Application.Mappings
 
                 .ForMember(d => d.PhoneNumber, q => 
                 q.MapFrom(s => s.phoneNumber));
+=======
+                        s.Lessons != null ? s.Lessons.Count : 0));
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         }
     }
 

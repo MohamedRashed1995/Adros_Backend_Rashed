@@ -2,8 +2,11 @@
 using Adros.Application.Interfaces.IService;
 using Adros.Core.DomainServices.IDomainService;
 using Adros.Core.Entities.Home;
+<<<<<<< HEAD
 using Adros.Shared.Constants;
 using Adros.Shared.Helpers;
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 using Adros.Shared.Interfaces;
 using AutoMapper;
 
@@ -25,13 +28,18 @@ namespace Adros.Application.Services.HomeService
             _currentUser = currentUser;
         }
 
+<<<<<<< HEAD
         public async Task<SkillShowDto> CreateAsync(SkillDto dto)
+=======
+        public async Task<SkillDto> CreateAsync(SkillDto dto)
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         {
             var skill = _mapper.Map<Skill>(dto);
 
             skill.Id = Guid.NewGuid();
             skill.CreatedAt = DateTime.UtcNow;
             skill.CreatedBy = _currentUser.UserId;
+<<<<<<< HEAD
             skill.Title = dto.title;
             skill.Description = dto.description;    
             skill.VideoURL = dto.videoURL;
@@ -44,6 +52,15 @@ namespace Adros.Application.Services.HomeService
 
 
 
+=======
+
+            await _unitOfWork.Repository<Skill>().AddAsync(skill);
+            await _unitOfWork.CompleteAsync();
+
+            return _mapper.Map<SkillDto>(skill);
+        }
+
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         public async Task<bool> DeleteAsync(Guid id)
         {
             var skill = await _unitOfWork.Repository<Skill>().GetByIdAsync(id);
@@ -54,6 +71,7 @@ namespace Adros.Application.Services.HomeService
             return true;
         }
 
+<<<<<<< HEAD
         public async Task<IReadOnlyList<SkillShowDto>> GetAllAsync(int? take, int? skip)
         {
             var skills = await _unitOfWork.Repository<Skill>().ListAllAsync();
@@ -69,6 +87,23 @@ namespace Adros.Application.Services.HomeService
         public async Task<SkillDto?> UpdateAsync(Guid Id, SkillDto dto)
         {
             var skill = await _unitOfWork.Repository<Skill>().GetByIdAsync(Id);
+=======
+        public async Task<IReadOnlyList<SkillDto>> GetAllAsync(int? take, int? skip)
+        {
+            var skills = await _unitOfWork.Repository<Skill>().ListAllAsync();
+            return _mapper.Map<IReadOnlyList<SkillDto>>(skills);
+        }
+
+        public async Task<SkillDto?> GetByIdAsync(Guid id)
+        {
+            var skill = await _unitOfWork.Repository<Skill>().GetByIdAsync(id);
+            return skill == null ? null : _mapper.Map<SkillDto>(skill);
+        }
+
+        public async Task<SkillDto?> UpdateAsync(SkillDto dto)
+        {
+            var skill = await _unitOfWork.Repository<Skill>().GetByIdAsync(dto.id);
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             if (skill == null) return null;
 
             _mapper.Map(dto, skill);

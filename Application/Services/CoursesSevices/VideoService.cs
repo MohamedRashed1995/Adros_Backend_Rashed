@@ -1,17 +1,24 @@
 ﻿using Adros.Application.DTOs.Video;
 using Adros.Application.Interfaces.IService;
+<<<<<<< HEAD
 using Adros.Application.Services.CoursesSevices;
 using Adros.Application.Services.UsersServices;
 using Adros.Core.DomainServices.IDomainService;
 using Adros.Core.Entities.Course;
 using Adros.Core.Entities.Users;
+=======
+using Adros.Core.Entities.Course;
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 using Adros.Core.Enums;
 using Adros.Shared.Interfaces;
 using AutoMapper;
 using Microsoft.Extensions.Logging;
+<<<<<<< HEAD
 using System.Data.Entity;
 
 
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
 namespace Adros.Application.Services.CourseServices
 {
@@ -20,6 +27,7 @@ namespace Adros.Application.Services.CourseServices
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
         private readonly ILogger<VideoService> _logger;
+<<<<<<< HEAD
         private readonly ICurrentUserService _currentUserService;
         private readonly IStudentService _studentService;
         private readonly IVimeoService _vimeoService;
@@ -30,21 +38,50 @@ namespace Adros.Application.Services.CourseServices
             ICurrentUserService currentUserService,
             IStudentService studentService,
             IVimeoService vimeoService)
+=======
+
+        public VideoService(
+            IUnitOfWork unitOfWork,
+            IMapper mapper,
+            ILogger<VideoService> logger)
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
             _logger = logger;
+<<<<<<< HEAD
             _currentUserService = currentUserService;
             _studentService = studentService;
             _vimeoService = vimeoService;
         }
 
 
+=======
+        }
+
+        public async Task<VideoDto> GetVideoByIdAsync(Guid id)
+        {
+            try
+            {
+                var video = await _unitOfWork.Repository<Video>().GetByIdAsync(id);
+                if (video == null)
+                    throw new Exception($"Video with ID {id} not found");
+
+                return _mapper.Map<VideoDto>(video);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error getting video by ID: {Id}", id);
+                throw;
+            }
+        }
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
         public async Task<IEnumerable<VideoDto>> GetAllVideosAsync()
         {
             try
             {
+<<<<<<< HEAD
                 var baseUrl = "http://adros-mrashed.runasp.net";
 
                 // جلب البيانات من الـ database
@@ -102,10 +139,15 @@ namespace Adros.Application.Services.CourseServices
                 }).ToList();
 
                 return videoDtos;
+=======
+                var videos = await _unitOfWork.Repository<Video>().ListAllAsync();
+                return _mapper.Map<IEnumerable<VideoDto>>(videos);
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Error getting all videos");
+<<<<<<< HEAD
                 throw new Exception("GetAllVideosAsync failed: " + ex.Message, ex);
 
             }
@@ -398,10 +440,70 @@ namespace Adros.Application.Services.CourseServices
         }
 
 
+=======
+                throw;
+            }
+        }
+
+        public async Task<IEnumerable<VideoDto>> GetVideosByLessonIdAsync(Guid lessonId)
+        {
+            try
+            {
+                var videos = await _unitOfWork.Repository<Video>().ListAllAsync();
+                var lessonVideos = videos.Where(v => v.LessonId == lessonId);
+                return _mapper.Map<IEnumerable<VideoDto>>(lessonVideos);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error getting videos by lesson ID: {LessonId}", lessonId);
+                throw;
+            }
+        }
+
+        public async Task<VideoDto> GetVideosByIdAsync(Guid id)
+        {
+            try
+            {
+                var video = await _unitOfWork.Repository<Video>()
+                    .GetByIdAsync(id);
+
+                if (video == null || video.Deleted)
+                    throw new Exception("Video not found");
+
+                return new VideoDto
+                {
+                    Id = video.Id,
+                    Title = video.Title,
+                    Url = video.Url,
+                    Order = video.Order,
+                    LessonId = video.LessonId,
+                    UnitId = video.UnitId,
+                    Status = video.Status,
+                    CreatedAt = video.CreatedAt,
+                    ProcessedAt = video.ProcessedAt,
+
+                    // Safe counts (من غير Includes)
+                    ViewsCount = video.Views?.Count ?? 0,
+                    DownloadsCount = video.Downloads?.Count ?? 0,
+
+                    // قيم فاضية آمنة
+                    //LessonTitle = string.Empty,
+                    //UnitTitle = string.Empty,
+                    //Duration = video.Duration.ToString()
+                };
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error getting video by ID: {Id}", id);
+                throw;
+            }
+        }
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
 
         public async Task<int> GetVideoViewsCountAsync(Guid videoId)
         {
+<<<<<<< HEAD
             return await _unitOfWork.Repository<VideoView>()
                 .CountAsync(v => v.VideoId == videoId);
         }
@@ -512,6 +614,97 @@ namespace Adros.Application.Services.CourseServices
                     ProcessedAt = DateTime.UtcNow
                 };
 
+=======
+            try
+            {
+                var video = await _unitOfWork.Repository<Video>().GetByIdAsync(videoId);
+                return video?.Views?.Count ?? 0;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error getting video views count: {VideoId}", videoId);
+                throw;
+            }
+        }
+
+        public async Task<int> GetVideoDownloadsCountAsync(Guid videoId)
+        {
+            try
+            {
+                var video = await _unitOfWork.Repository<Video>().GetByIdAsync(videoId);
+                return video?.Downloads?.Count ?? 0;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error getting video downloads count: {VideoId}", videoId);
+                throw;
+            }
+        }
+
+        public async Task IncrementVideoViewsAsync(Guid videoId, Guid userId)
+        {
+            try
+            {
+                var videoView = new VideoView
+                {
+                    VideoId = videoId,
+                    StudentId = userId,
+                    //ViewedAt = DateTime.UtcNow
+                };
+
+                await _unitOfWork.Repository<VideoView>().AddAsync(videoView);
+                await _unitOfWork.CompleteAsync();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error incrementing video views: {VideoId}, User: {UserId}", videoId, userId);
+                throw;
+            }
+        }
+
+        public async Task<VideoDownloadDto> DownloadVideoAsync(Guid videoId, Guid userId)
+        {
+            try
+            {
+                var video = await _unitOfWork.Repository<Video>().GetByIdAsync(videoId);
+                if (video == null)
+                    throw new Exception($"Video with ID {videoId} not found");
+
+                var download = new VideoDownload
+                {
+                    VideoId = videoId,
+                    StudentId = userId,
+                    //DownloadedAt = DateTime.UtcNow
+                };
+
+                await _unitOfWork.Repository<VideoDownload>().AddAsync(download);
+                await _unitOfWork.CompleteAsync();
+
+                return new VideoDownloadDto
+                {
+                    Id = download.Id,
+                    DownloadUrl = video.Url,
+                    //DownloadedAt = download.CreatedAt,
+                    VideoTitle = video.Title
+                };
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error downloading video: {VideoId}, User: {UserId}", videoId, userId);
+                throw;
+            }
+        }
+
+        public async Task<VideoDto> CreateVideoAsync(CreateVideoDto dto)
+        {
+            try
+            {
+                var video = _mapper.Map<Video>(dto);
+                video.Id = Guid.NewGuid();
+                video.CreatedAt = DateTime.UtcNow;
+                video.Status = VideoStatus.Processing;
+
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 await _unitOfWork.Repository<Video>().AddAsync(video);
                 await _unitOfWork.CompleteAsync();
 
@@ -519,6 +712,7 @@ namespace Adros.Application.Services.CourseServices
             }
             catch (Exception ex)
             {
+<<<<<<< HEAD
                 _logger.LogError(ex, "Error creating video {@Dto}", dto);
                 throw; // تقدر تعدل هنا لو حابب ترجع null بدل exception
             }
@@ -529,11 +723,22 @@ namespace Adros.Application.Services.CourseServices
 
 
 
+=======
+                _logger.LogError(ex, "Error creating video: {@Dto}", dto);
+                throw;
+            }
+        }
+
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         public async Task<VideoDto> UpdateVideoAsync(Guid id, UpdateVideoDto dto)
         {
             try
             {
+<<<<<<< HEAD
                 var video = await _unitOfWork.Repository<Video>().GetBYIdAsync(id);
+=======
+                var video = await _unitOfWork.Repository<Video>().GetByIdAsync(id);
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 if (video == null)
                     throw new Exception($"Video with ID {id} not found");
 
@@ -556,12 +761,20 @@ namespace Adros.Application.Services.CourseServices
         {
             try
             {
+<<<<<<< HEAD
                 var video = await _unitOfWork.Repository<Video>().GetBYIdAsync(id);
+=======
+                var video = await _unitOfWork.Repository<Video>().GetByIdAsync(id);
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 if (video == null)
                     return false;
 
                 video.Deleted = true;
+<<<<<<< HEAD
                 _unitOfWork.Repository<Video>().Delete(video);
+=======
+                _unitOfWork.Repository<Video>().Update(video);
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 await _unitOfWork.CompleteAsync();
 
                 return true;
@@ -572,6 +785,7 @@ namespace Adros.Application.Services.CourseServices
                 throw;
             }
         }
+<<<<<<< HEAD
         public async Task<bool> ToggleWatchLaterAsync(Guid videoId, Guid studentId)
         {
 
@@ -642,12 +856,18 @@ namespace Adros.Application.Services.CourseServices
 
 
 
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
         public async Task<bool> ChangeVideoStatusAsync(Guid id, VideoStatus status)
         {
             try
             {
+<<<<<<< HEAD
                 var video = await _unitOfWork.Repository<Video>().GetBYIdAsync(id);
+=======
+                var video = await _unitOfWork.Repository<Video>().GetByIdAsync(id);
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 if (video == null)
                     return false;
 
@@ -665,11 +885,14 @@ namespace Adros.Application.Services.CourseServices
                 throw;
             }
         }
+<<<<<<< HEAD
         private string ExtractVimeoVideoId(string url)
         {
             var uri = new Uri(url);
             return uri.Segments.Last().Trim('/');
         }
 
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     }
 }

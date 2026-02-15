@@ -2,6 +2,7 @@
 
 # CS8618: Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
 dotnet_diagnostic.CS8618.severity = none
+<<<<<<< HEAD
 csharp_using_directive_placement = outside_namespace:silent
 csharp_prefer_simple_using_statement = true:suggestion
 csharp_prefer_braces = true:silent
@@ -136,3 +137,5 @@ dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:silent
 dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:silent
 dotnet_code_quality_unused_parameters = all:suggestion
 dotnet_style_qualification_for_event = false:silent
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a

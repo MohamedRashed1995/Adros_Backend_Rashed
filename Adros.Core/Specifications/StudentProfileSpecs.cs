@@ -18,7 +18,11 @@ namespace Adros.Core.Specifications
             Includes.Add(s => s.Level);
 
             // Load the VideoDownloads
+<<<<<<< HEAD
             Includes.Add(s => s.WatchLater);
+=======
+            Includes.Add(s => s.VideoDownloads);
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
             // Load the VideoViews
             Includes.Add(s => s.VideoViews);

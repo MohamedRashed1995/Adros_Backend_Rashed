@@ -1,9 +1,12 @@
 ﻿using Adros.Application.DTOs.Banner;
 using Adros.Application.Interfaces.IService;
 using Microsoft.AspNetCore.Mvc;
+<<<<<<< HEAD
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
 namespace Adros.Apis.Controllers
 {
@@ -18,7 +21,11 @@ namespace Adros.Apis.Controllers
             _bannerService = bannerService;
         }
 
+<<<<<<< HEAD
         // =================== GET ALL ===================
+=======
+        // =================== GET: api/Banners ===================
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         [HttpGet]
         public async Task<IActionResult> GetAllBanners()
         {
@@ -27,6 +34,7 @@ namespace Adros.Apis.Controllers
             {
                 StatusCode = 200,
                 Message = "Banners retrieved successfully",
+<<<<<<< HEAD
                 Data = banners.Select(b => new
                 {
                     b.Id,
@@ -37,10 +45,18 @@ namespace Adros.Apis.Controllers
         }
 
         // =================== GET BY ID ===================
+=======
+                Data = banners
+            });
+        }
+
+        // =================== GET: api/Banners/{id} ===================
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         [HttpGet("{id}")]
         public async Task<IActionResult> GetBannerById(Guid id)
         {
             var banner = await _bannerService.GetBannerByIdAsync(id);
+<<<<<<< HEAD
             if (banner == null)
                 return NotFound(new { StatusCode = 404, Message = "Banner not found" });
 
@@ -58,6 +74,14 @@ namespace Adros.Apis.Controllers
         }
 
         // =================== CREATE ===================
+=======
+            if (banner == null) return NotFound(new { StatusCode = 404, Message = "Banner not found" });
+
+            return Ok(new { StatusCode = 200, Message = "Banner retrieved successfully", Data = banner });
+        }
+
+        // =================== POST: api/Banners ===================
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         [HttpPost]
         public async Task<IActionResult> CreateBanner([FromForm] BannerCreateDto dto)
         {
@@ -65,6 +89,7 @@ namespace Adros.Apis.Controllers
                 return BadRequest(ModelState);
 
             var banner = await _bannerService.CreateBannerAsync(dto);
+<<<<<<< HEAD
             return Ok(new
             {
                 StatusCode = 200,
@@ -79,10 +104,17 @@ namespace Adros.Apis.Controllers
         }
 
         // =================== UPDATE ===================
+=======
+            return Ok(new { StatusCode = 200, Message = "Banner created successfully", Data = banner });
+        }
+
+        // =================== PUT: api/Banners/{id} ===================
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateBanner(Guid id, [FromForm] BannerUpdateDto dto)
         {
             var banner = await _bannerService.UpdateBannerAsync(id, dto);
+<<<<<<< HEAD
             if (banner == null)
                 return NotFound(new { StatusCode = 404, Message = "Banner not found" });
 
@@ -107,6 +139,18 @@ namespace Adros.Apis.Controllers
             if (!deleted)
                 return NotFound(new { StatusCode = 404, Message = "Banner not found" });
 
+=======
+            if (banner == null) return NotFound(new { StatusCode = 404, Message = "Banner not found" });
+
+            return Ok(new { StatusCode = 200, Message = "Banner updated successfully", Data = banner });
+        }
+
+        // =================== DELETE: api/Banners/{id} ===================
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteBanner(Guid id)
+        {
+            await _bannerService.DeleteBannerAsync(id);
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             return Ok(new { StatusCode = 200, Message = "Banner deleted successfully" });
         }
     }

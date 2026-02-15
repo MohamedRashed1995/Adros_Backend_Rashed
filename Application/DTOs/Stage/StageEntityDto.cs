@@ -13,8 +13,11 @@ namespace Adros.Application.DTOs.Stage
         public Guid CreatedBy { get; set; }
         public Guid? UpdatedBy { get; set; }
         public int? Order { get; set; }
+<<<<<<< HEAD
         public int TeachersCount { get; set; } 
         public int StudentsCount { get; set; }
 
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     }
 }

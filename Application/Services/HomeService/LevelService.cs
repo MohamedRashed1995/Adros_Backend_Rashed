@@ -242,6 +242,7 @@
 
 
 using Adros.Application.DTOs.Level;
+<<<<<<< HEAD
 using Adros.Application.DTOs.Stage;
 using Adros.Application.Interfaces.IService;
 using Adros.Core.DomainServices.IDomainService;
@@ -250,11 +251,20 @@ using Adros.Core.Entities.Home;
 using Adros.Core.Entities.Users;
 using Adros.Core.Specifications;
 using Adros.Shared.Helpers;
+=======
+using Adros.Application.Interfaces.IService;
+using Adros.Core.DomainServices.IDomainService;
+using Adros.Core.Entities.Course;
+using Adros.Core.Specifications;
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 using Adros.Shared.Interfaces;
 using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
+<<<<<<< HEAD
 using System.Data.Entity;
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
 namespace Adros.Application.Services.HomeService
 {
@@ -286,6 +296,7 @@ namespace Adros.Application.Services.HomeService
         }
 
         // ================= Helpers =================
+<<<<<<< HEAD
         //private string BuildImageUrl(string? imageName)
         //{
         //    if (string.IsNullOrEmpty(imageName))
@@ -306,11 +317,23 @@ namespace Adros.Application.Services.HomeService
                 : string.Empty;
 
             return $"{baseUrl}/Uploads/{LEVEL_IMAGE_FOLDER}/{imageName}";
+=======
+        private string BuildImageUrl(string? imageName)
+        {
+            if (string.IsNullOrEmpty(imageName))
+                return string.Empty;
+
+            var request = _httpContextAccessor.HttpContext?.Request;
+            if (request == null) return imageName;
+
+            return $"{request.Scheme}://{request.Host}/{LEVEL_IMAGE_FOLDER}/{imageName}";
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         }
 
         // ================= GET ALL =================
         public async Task<IReadOnlyList<LevelEntityDto>> GetLevelsAsync()
         {
+<<<<<<< HEAD
             // جلب كل المستويات مع Stage
             var levels = await _unitOfWork.Repository<Level>().GetAllAsync(
                 include: q => q
@@ -343,6 +366,22 @@ namespace Adros.Application.Services.HomeService
         }
 
 
+=======
+            var levels = await _unitOfWork.Repository<Level>().ListAllAsync();
+
+            return levels.Select(level => new LevelEntityDto
+            {
+                Id = level.Id,
+                Title = level.Title,
+                StageId = level.StageId,
+                ImagePath = BuildImageUrl(level.ImageName),
+                CreatedAt = level.CreatedAt,
+                UpdatedAt = level.UpdatedAt,
+                StageName = level.Stage?.Title
+            }).ToList();
+        }
+
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         // ================= GET BY STAGE (CLIENT) =================
         public async Task<IReadOnlyList<ClientLevelDto>> GetLevelsForClientByStageIdAsync(Guid stageId)
         {
@@ -353,7 +392,11 @@ namespace Adros.Application.Services.HomeService
 
             foreach (var item in mapped)
             {
+<<<<<<< HEAD
                 item.Imagepath = GetLevelImageUrl(item.Imagepath);
+=======
+                item.Imagepath = BuildImageUrl(item.Imagepath);
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             }
 
             return mapped;
@@ -370,16 +413,30 @@ namespace Adros.Application.Services.HomeService
             foreach (var level in levels)
             {
                 var dto = _mapper.Map<LevelEntityDto>(level);
+<<<<<<< HEAD
                 var studentsCount = await _unitOfWork.Repository<Student>()
                     .CountAsync(s => s.LevelId == level.Id);
                 dto.ImagePath = GetLevelImageUrl(level.ImageName);
+=======
+
+                dto.ImagePath = BuildImageUrl(level.ImageName);
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 dto.StageName = level.Stage?.Title;
                 dto.CreatedAt = level.CreatedAt;
                 dto.UpdatedAt = level.UpdatedAt;
                 dto.Id = level.Id;
                 dto.StageId = level.StageId;
                 dto.Title = level.Title;
+<<<<<<< HEAD
                 dto.StudentsCount = studentsCount;
+=======
+                //if (level.CreatedBy != Guid.Empty)
+                //    dto.CreatedBy = await _sharedUserService.GetUserNameById(level.CreatedBy);
+
+                //if (level.UpdatedBy.HasValue)
+                //    dto.UpdatedBy = await _sharedUserService.GetUserNameById(level.UpdatedBy.Value);
+
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 result.Add(dto);
             }
 
@@ -389,6 +446,7 @@ namespace Adros.Application.Services.HomeService
         // ================= CREATE =================
         public async Task<LevelEntityDto> CreateLevelAsync(LevelCreateDto levelCreateDto)
         {
+<<<<<<< HEAD
             
             var level = _mapper.Map<Level>(levelCreateDto);
             level.CreatedBy = _currentUserService.UserId != Guid.Empty ? _currentUserService.UserId : Guid.NewGuid();
@@ -409,6 +467,18 @@ namespace Adros.Application.Services.HomeService
             var dto = _mapper.Map<LevelEntityDto>(level);
             dto.ImagePath = GetLevelImageUrl(level.ImageName);
             dto.StageName = level.Stage?.Title;
+=======
+            var level = _mapper.Map<Level>(levelCreateDto);
+
+            level.CreatedBy = _currentUserService.UserId;
+            level.CreatedAt = DateTime.UtcNow;
+
+            await _unitOfWork.Repository<Level>().AddAsync(level);
+            await _unitOfWork.CompleteAsync();
+
+            var dto = _mapper.Map<LevelEntityDto>(level);
+            dto.ImagePath = BuildImageUrl(level.ImageName);
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
             return dto;
         }
@@ -419,6 +489,7 @@ namespace Adros.Application.Services.HomeService
             var level = await _unitOfWork.Repository<Level>().GetByIdAsync(levelId);
             if (level == null) return null;
 
+<<<<<<< HEAD
             if (!string.IsNullOrWhiteSpace(levelUpdateDto.Title))
                 level.Title = levelUpdateDto.Title;
 
@@ -453,6 +524,35 @@ namespace Adros.Application.Services.HomeService
             levelDto.ImagePath = GetLevelImageUrl(level.ImageName);
 
             return levelDto;
+=======
+            _mapper.Map(levelUpdateDto, level);
+            level.UpdatedBy = _currentUserService.UserId;
+            level.UpdatedAt = DateTime.UtcNow;
+            if (levelUpdateDto.Image != null)
+            {
+                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Images", "Levels");
+                if (!Directory.Exists(uploadsFolder))
+                    Directory.CreateDirectory(uploadsFolder);
+
+                var fileName = $"{Guid.NewGuid()}{Path.GetExtension(levelUpdateDto.Image.FileName)}";
+                var filePath = Path.Combine(uploadsFolder, fileName);
+
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    await levelUpdateDto.Image.CopyToAsync(fileStream);
+                }
+
+                // Update entity
+                level.ImageName = fileName;
+            }
+            _unitOfWork.Repository<Level>().Update(level);
+            await _unitOfWork.CompleteAsync();
+
+            var dto = _mapper.Map<LevelEntityDto>(level);
+            dto.ImagePath = BuildImageUrl(level.ImageName);
+
+            return dto;
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         }
 
         // ================= DELETE =================
@@ -489,7 +589,11 @@ namespace Adros.Application.Services.HomeService
 
             // Mapping للـ DTO
             var dto = _mapper.Map<LevelEntityDto>(level);
+<<<<<<< HEAD
             dto.ImagePath = GetLevelImageUrl(level.ImageName);
+=======
+            dto.ImagePath = BuildImageUrl(level.ImageName);
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             dto.StageName = level.Stage?.Title;
             
             if (level.UpdatedBy.HasValue)

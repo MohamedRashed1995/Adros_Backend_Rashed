@@ -28,8 +28,11 @@ namespace Adros.Application.DTOs.Teacher
         [AllowedExtensions(new[] { ".jpg", ".jpeg", ".png", ".gif" }, ErrorMessage = "Only .jpg, .jpeg, .png, and .gif files are allowed.")]
         [DataType(DataType.Upload)]
         public IFormFile? Photo { get; set; }
+<<<<<<< HEAD
         [Required]
         public Guid StageId { get; set; }
         public string PhoneNumber { get; set; } = string.Empty;
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     }
 }

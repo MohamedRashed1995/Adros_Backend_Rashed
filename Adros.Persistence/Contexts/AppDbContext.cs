@@ -25,7 +25,11 @@ namespace Adros.Persistence.Contexts
         }
 
         // DbSets
+<<<<<<< HEAD
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
+=======
+        //public DbSet<ApplicationUser> ApplicationUsers { get; set; }
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         //public DbSet<IdentityRole<Guid>> Roles { get; set; }
         //public DbSet<IdentityUserClaim<Guid>> UserClaims { get; set; }
         //public DbSet<IdentityUserRole<Guid>> UserRoles { get; set; }
@@ -42,11 +46,20 @@ namespace Adros.Persistence.Contexts
         public DbSet<Stage> Stages { get; set; }
         public DbSet<Level> Levels { get; set; }
         public DbSet<Subject> Subjects { get; set; }
+<<<<<<< HEAD
         public DbSet<Lesson> Lessons { get; set; } = default!;
         public DbSet<Unit> Units { get; set; } = default!;
         public DbSet<Attachment> Attachments { get; set; }
         public DbSet<VideoView> VideoViews { get; set; }
         public DbSet<WatchLater> watchlater { get; set; }
+=======
+        public DbSet<Lesson> Lessons { get; set; }
+        public DbSet<Unit> Topics { get; set; }
+        public DbSet<Attachment> Attachments { get; set; }
+        public DbSet<Video> Videos { get; set; }
+        public DbSet<VideoView> VideoViews { get; set; }
+        public DbSet<VideoDownload> VideoDownloads { get; set; }
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         public DbSet<StudentProgress> StudentProgresses { get; set; }
         public DbSet<AssessmentQuestion> AssessmentQuestions { get; set; }
         public DbSet<Assessment> Assessments { get; set; }
@@ -54,12 +67,17 @@ namespace Adros.Persistence.Contexts
         public DbSet<DificultyLevel> DificultyLevels { get; set; }
         public DbSet<Answer> Answers { get; set; }
         public DbSet<Subscription> Subscriptions { get; set; }
+<<<<<<< HEAD
         public DbSet<StudentSubscription> StudentSubscriptions { get; set; }
         public DbSet<Video> videos { get; set; } = default!;
         //public DbSet<>
         public DbSet<Teacher> Teachers { get; set; } = default!;
         public DbSet<Student> Students { get; set; }
         public DbSet<PendingPayment> pendingPayments { get; set; }
+=======
+        public DbSet<SubscriptionPlan> subscriptionPlans { get; set; }
+        public DbSet<Video> videos{ get; set; }
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -72,9 +90,12 @@ namespace Adros.Persistence.Contexts
             modelBuilder.Entity<IdentityUserLogin<Guid>>().ToTable("UserLogins");
             modelBuilder.Entity<IdentityRoleClaim<Guid>>().ToTable("RoleClaims");
             modelBuilder.Entity<IdentityUserToken<Guid>>().ToTable("UserTokens");
+<<<<<<< HEAD
     //        modelBuilder.Entity<Unit>()
     //.Ignore(u => u.);
 
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
             modelBuilder.Entity<Level>()
                 .HasOne(l => l.Stage)
@@ -116,6 +137,7 @@ namespace Adros.Persistence.Contexts
                 .OnDelete(DeleteBehavior.NoAction);
 
 
+<<<<<<< HEAD
             modelBuilder.Entity<Video>()
                 .HasOne(v => v.Lesson)
                 .WithMany(l => l.Videos)
@@ -129,6 +151,8 @@ namespace Adros.Persistence.Contexts
                         v => v.Split("||", StringSplitOptions.RemoveEmptyEntries).ToList()
                     );
 
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
         }
 

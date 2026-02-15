@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿//////using Adros.Apis.ApiResponse;
 //////using Adros.Application.DTOs.Banner;
 //////using Adros.Application.DTOs.Stage;
@@ -369,6 +370,229 @@
 ////            _stageService = stageService;
 ////            _logger = logger;
 ////        }
+=======
+﻿////using Adros.Apis.ApiResponse;
+////using Adros.Application.DTOs.Banner;
+////using Adros.Application.DTOs.Stage;
+////using Adros.Application.Interfaces.IService;
+////using Adros.Application.Services.HomeService;
+////using Adros.Shared.Constants;
+////using Microsoft.AspNetCore.Authorization;
+////using Microsoft.AspNetCore.Mvc;
+////using System.Net;
+////using System.ServiceModel.Channels;
+
+////namespace Adros.Apis.Controllers.Admin
+////{
+
+////    //[ApiController]
+////    //[Route("api/[controller]")]
+////    //public class StagesController(IStageService stageService, ILogger<StagesController> logger) : BaseApiController
+////    //{
+////    //    private readonly IStageService _stageService = stageService;
+////    //    private readonly ILogger<StagesController> _logger = logger;
+////    //    [HttpGet("all")]
+////    //    public async Task<ActionResult<ApiResponse<IReadOnlyList<StageEntityDto>>>> GetAllStagesAsync()
+////    //    {
+////    //        try
+////    //        {
+////    //            var stages = await _stageService.GetClientStagesAsync();
+
+////    //            if (stages == null || !stages.Any())
+////    //            {
+////    //                return Ok(new ApiResponse<IReadOnlyList<StageEntityDto>>(
+////    //                    (int)HttpStatusCode.OK,
+////    //                    "No stages found.",
+////    //                    new List<StageEntityDto>()
+////    //                ));
+////    //            }
+
+////    //            return Ok(new ApiResponse<IReadOnlyList<StageEntityDto>>(
+////    //                (int)HttpStatusCode.OK,
+////    //                "Stage list retrieved successfully.",
+////    //                stages
+////    //            ));
+////    //        }
+////    //        catch (Exception ex)
+////    //        {
+////    //            _logger.LogError(ex, "Error occurred while fetching all stages.");
+
+////    //            return StatusCode((int)HttpStatusCode.InternalServerError,
+////    //                new ApiResponse<string>(
+////    //                    (int)HttpStatusCode.InternalServerError,
+////    //                    "An error occurred while processing your request.",
+////    //                    ex.Message
+////    //                )
+////    //            );
+////    //        }
+////    //    }
+
+////    //    //[HttpPost("create")]
+////    //    //public async Task<ActionResult<ApiResponse<StageEntityDto>>> Create([FromForm] StageCreateDto stageCreateDto)
+////    //    //{
+////    //    //    if (!ModelState.IsValid)
+////    //    //    {
+////    //    //        var errors = string.Join("; ", ModelState.Values
+////    //    //                                        .SelectMany(x => x.Errors)
+////    //    //                                        .Select(x => x.ErrorMessage));
+////    //    //        return BadRequest(new ApiResponse<string>((int)HttpStatusCode.BadRequest, "Validation Errors", errors));
+////    //    //    }
+
+////    //    //    try
+////    //    //    {
+////    //    //        var createdStage = await _stageService.CreateStageAsync(stageCreateDto);
+
+////    //    //        return Ok(new ApiResponse<StageEntityDto>(
+////    //    //            (int)HttpStatusCode.Created,
+////    //    //            "Stage Created Successfully",
+////    //    //            createdStage
+////    //    //        ));
+////    //    //    }
+////    //    //    catch (Exception ex)
+////    //    //    {
+////    //    //        _logger.LogError(ex, "Error creating stage.");
+////    //    //        // ترجع response 200 مع رسالة لو حصل أي خطأ بدل 500
+////    //    //        return Ok(new ApiResponse<string>(
+////    //    //            (int)HttpStatusCode.OK,
+////    //    //            "Stage created with warning",
+////    //    //            "Image upload or mapping failed, stage created without image."
+////    //    //        ));
+////    //    //    }
+////    //    //}
+////    //    [HttpPost("create")]
+////    //    [ProducesResponseType(typeof(ApiResponse<BannerEntityDto>), (int)HttpStatusCode.Created)]
+////    //    [ProducesResponseType(typeof(ApiResponse<string>), (int)HttpStatusCode.BadRequest)]
+////    //    public async Task<ActionResult<StageEntityDto>> Create([FromForm] StageCreateDto stageCreateDto)
+////    //    {
+////    //        if (!ModelState.IsValid)
+////    //        {
+////    //            // Collect all validation errors
+////    //            var errors = string.Join("; ", ModelState.Values
+////    //                                                    .SelectMany(x => x.Errors)
+////    //                                                    .Select(x => x.ErrorMessage));
+
+////    //            return BadRequest(new ApiResponse<string>((int)HttpStatusCode.BadRequest, "Validation Errors", errors));
+////    //        }
+
+////    //        try
+////    //        {
+////    //            var createdStage = await _stageService.CreateStageAsync(stageCreateDto);
+
+////    //            return Ok(
+////    //                       new ApiResponse<StageEntityDto>((int)HttpStatusCode.Created, "Stage Created Successfully", createdStage)
+////    //            );
+
+
+////    //        }
+////    //        catch (Exception ex)
+////    //        {
+////    //            // Optionally, log the exception
+////    //            _logger.LogError(ex, "Error creating Stage.");
+
+////    //            // Return a generic error response
+////    //            return StatusCode((int)HttpStatusCode.InternalServerError,
+////    //                new ApiResponse<string>((int)HttpStatusCode.InternalServerError, "An error occurred while creating the stage.", string.Empty));
+////    //        }
+////    //    }
+
+
+////    //    [HttpPut("{stageId}")]
+////    //    public async Task<ActionResult<ClientStageDto>> Update(Guid stageId, [FromForm] StageUpdateDto stageUpdateDto)
+////    //    {
+////    //        if (!ModelState.IsValid)
+////    //        {
+////    //            // Collect all validation errors
+////    //            var errors = string.Join("; ", ModelState.Values
+////    //                                                    .SelectMany(x => x.Errors)
+////    //                                                    .Select(x => x.ErrorMessage));
+////    //            return BadRequest(new ApiResponse<string>((int)HttpStatusCode.BadRequest, "Validation Errors", errors));
+////    //        }
+
+////    //        try
+////    //        {
+////    //            var updatedStage = await _stageService.UpdateStageAsync(stageId, stageUpdateDto);
+////    //            if (updatedStage == null) return NotFound(new ApiResponse<string>((int)HttpStatusCode.NotFound, "stage not found.", string.Empty));
+////    //            return Ok(new ApiResponse<StageEntityDto>((int)HttpStatusCode.OK,"Stage Updated Successfully.",updatedStage));
+////    //        }
+////    //        catch (Exception ex)
+////    //        {
+////    //            // Optionally, log the exception
+////    //            _logger.LogError(ex, "Error updating stage.");
+////    //            // Return a generic error response
+////    //            return StatusCode((int)HttpStatusCode.InternalServerError,
+////    //                new ApiResponse<string>((int)HttpStatusCode.InternalServerError, "An error occurred while updating the stage.", string.Empty));
+////    //        }
+
+////    //    }
+
+////    //    /// <summary>
+////    //    /// Retrieves a specific stage by its ID.
+////    //    /// </summary>
+////    //    /// <param name="stageId">The ID of the stage to retrieve.</param>
+////    //    /// <returns>The requested stage details.</returns>
+////    //    [HttpGet("{stageId}")]
+////    //    [ProducesResponseType(typeof(ApiResponse<StageEntityDto>), (int)HttpStatusCode.OK)]
+////    //    [ProducesResponseType(typeof(ApiResponse<string>), (int)HttpStatusCode.NotFound)]
+////    //    public async Task<ActionResult<StageEntityDto>> GetById(Guid stageId)
+////    //    {
+////    //        try
+////    //        {
+////    //            var stage = await _stageService.GetStageByIdAsync(stageId);
+////    //            if (stage == null)
+////    //            {
+////    //                return NotFound(new ApiResponse<string>((int)HttpStatusCode.NotFound, "Stage not found.", string.Empty));
+////    //            }
+
+////    //            return Ok(new ApiResponse<StageEntityDto>((int)HttpStatusCode.OK, "Stage Retrieved Successfully", stage));
+////    //        }
+////    //        catch (Exception ex)
+////    //        {
+////    //            // Log the exception
+////    //            _logger.LogError(ex, "Error retrieving Stage.");
+
+////    //            // Return a generic error response
+////    //            return StatusCode((int)HttpStatusCode.InternalServerError,
+////    //                new ApiResponse<string>((int)HttpStatusCode.InternalServerError, "An error occurred while retrieving the Stage.", string.Empty));
+////    //        }
+////    //    }
+
+////    //    /// <summary>
+////    //    /// Deletes an existing stage.
+////    //    /// </summary>
+////    //    /// <param name="stageId">The ID of the stage to delete.</param>
+////    //    /// <returns>Status of the deletion.</returns>
+////    //    [HttpDelete("{stageId}")]
+////    //    [ProducesResponseType(typeof(ApiResponse<string>), (int)HttpStatusCode.OK)]
+////    //    [ProducesResponseType(typeof(ApiResponse<string>), (int)HttpStatusCode.NotFound)]
+////    //    public async Task<ActionResult<string>> Delete(Guid stageId)
+////    //    {
+////    //        try
+////    //        {
+////    //            var isDeleted = await _stageService.DeleteStageAsync(stageId);
+////    //            if (!isDeleted)
+////    //            {
+////    //                return NotFound(new ApiResponse<string>((int)HttpStatusCode.NotFound, "Stage not found.", string.Empty));
+////    //            }
+////    //            await _stageService.DeleteStageAsync(stageId);
+////    //            return Ok(new ApiResponse<string>((int)HttpStatusCode.OK, "Stage deleted successfully.", string.Empty));
+////    //        }
+////    //        catch (Exception ex)
+////    //        {
+////    //            // Optionally, log the exception
+////    //            _logger.LogError(ex, "Error deleting Stage.");
+
+////    //            // Return a generic error response
+////    //            return StatusCode((int)HttpStatusCode.InternalServerError,
+////    //                new ApiResponse<string>((int)HttpStatusCode.InternalServerError, "An error occurred while deleting the stage.", string.Empty));
+////    //        }
+////    //    }
+////    [ApiController]
+////    [Route("api/[controller]")]
+////    public class StagesController(IStageService stageService, ILogger<StagesController> logger) : BaseApiController
+////    {
+////        private readonly IStageService _stageService = stageService;
+////        private readonly ILogger<StagesController> _logger = logger;
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
 ////        [HttpGet("all")]
 ////        public async Task<ActionResult<ApiResponse<IReadOnlyList<StageEntityDto>>>> GetAllStagesAsync()
@@ -376,31 +600,69 @@
 ////            try
 ////            {
 ////                var stages = await _stageService.GetClientStagesAsync();
+<<<<<<< HEAD
 ////                return Ok(new ApiResponse<IReadOnlyList<StageEntityDto>>(200, "Stage list retrieved successfully", stages));
 ////            }
 ////            catch (Exception ex)
 ////            {
 ////                _logger.LogError(ex, "Failed to fetch stages");
 ////                return Ok(new ApiResponse<string>(200, "Stage fetch failed", ex.Message));
+=======
+////                return Ok(new ApiResponse<IReadOnlyList<StageEntityDto>>(
+////                    200,
+////                    "Stage list retrieved successfully.",
+////                    stages ?? new List<StageEntityDto>()
+////                ));
+////            }
+////            catch (Exception ex)
+////            {
+////                _logger.LogError(ex, "Error occurred while fetching all stages.");
+////                return Ok(new ApiResponse<string>(
+////                    200,
+////                    "Failed to fetch stages",
+////                    ex.Message
+////                ));
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 ////            }
 ////        }
 
 ////        [HttpPost("create")]
+<<<<<<< HEAD
 ////        public async Task<ActionResult<ApiResponse<StageEntityDto>>> Create([FromForm] StageCreateDto dto)
 ////        {
 ////            try
 ////            {
 ////                var stage = await _stageService.CreateStageAsync(dto);
+=======
+////        public async Task<ActionResult<ApiResponse<StageEntityDto>>> Create([FromForm] StageCreateDto stageCreateDto)
+////        {
+////            if (!ModelState.IsValid)
+////            {
+////                var errors = string.Join("; ", ModelState.Values
+////                                                        .SelectMany(x => x.Errors)
+////                                                        .Select(x => x.ErrorMessage));
+////                return Ok(new ApiResponse<string>(200, "Stage creation failed", errors));
+////            }
+
+////            try
+////            {
+////                var stage = await _stageService.CreateStageAsync(stageCreateDto);
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 ////                return Ok(new ApiResponse<StageEntityDto>(200, "Stage created successfully", stage));
 ////            }
 ////            catch (Exception ex)
 ////            {
+<<<<<<< HEAD
 ////                _logger.LogError(ex, "Stage creation failed");
+=======
+////                _logger.LogError(ex, "Error creating stage");
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 ////                return Ok(new ApiResponse<string>(200, "Stage creation failed", ex.Message));
 ////            }
 ////        }
 
 ////        [HttpPut("{stageId}")]
+<<<<<<< HEAD
 ////        public async Task<ActionResult<ApiResponse<StageEntityDto>>> Update(Guid stageId, [FromForm] StageUpdateDto dto)
 ////        {
 ////            try
@@ -408,22 +670,48 @@
 ////                var stage = await _stageService.UpdateStageAsync(stageId, dto);
 ////                if (stage == null)
 ////                    return Ok(new ApiResponse<string>(200, "Stage update failed", "Stage not found"));
+=======
+////        public async Task<ActionResult<ApiResponse<StageEntityDto>>> Update(Guid stageId, [FromForm] StageUpdateDto stageUpdateDto)
+////        {
+////            if (!ModelState.IsValid)
+////            {
+////                var errors = string.Join("; ", ModelState.Values
+////                                                        .SelectMany(x => x.Errors)
+////                                                        .Select(x => x.ErrorMessage));
+////                return Ok(new ApiResponse<string>(200, "Stage update failed", errors));
+////            }
+
+////            try
+////            {
+////                var stage = await _stageService.UpdateStageAsync(stageId, stageUpdateDto);
+////                if (stage == null)
+////                    return Ok(new ApiResponse<string>(200, "Stage update failed", "Stage not found."));
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
 ////                return Ok(new ApiResponse<StageEntityDto>(200, "Stage updated successfully", stage));
 ////            }
 ////            catch (Exception ex)
 ////            {
+<<<<<<< HEAD
 ////                _logger.LogError(ex, "Stage update failed");
+=======
+////                _logger.LogError(ex, "Error updating stage");
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 ////                return Ok(new ApiResponse<string>(200, "Stage update failed", ex.Message));
 ////            }
 ////        }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 ////        [HttpGet("{stageId}")]
 ////        public async Task<ActionResult<ApiResponse<StageEntityDto>>> GetById(Guid stageId)
 ////        {
 ////            try
 ////            {
 ////                var stage = await _stageService.GetStageByIdAsync(stageId);
+<<<<<<< HEAD
 ////                if (stage == null) return Ok(new ApiResponse<string>(200, "Stage not found", string.Empty));
 
 ////                return Ok(new ApiResponse<StageEntityDto>(200, "Stage retrieved successfully", stage));
@@ -431,6 +719,16 @@
 ////            catch (Exception ex)
 ////            {
 ////                _logger.LogError(ex, "Stage retrieval failed");
+=======
+////                if (stage == null)
+////                    return NotFound(new ApiResponse<string>(404, "Stage not found", string.Empty));
+
+////                return Ok(new ApiResponse<StageEntityDto>(200, "Stage Retrieved Successfully", stage));
+////            }
+////            catch (Exception ex)
+////            {
+////                _logger.LogError(ex, "Error retrieving stage.");
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 ////                return Ok(new ApiResponse<string>(200, "Stage retrieval failed", ex.Message));
 ////            }
 ////        }
@@ -441,6 +739,7 @@
 ////            try
 ////            {
 ////                var deleted = await _stageService.DeleteStageAsync(stageId);
+<<<<<<< HEAD
 ////                if (!deleted) return Ok(new ApiResponse<string>(200, "Stage not found", string.Empty));
 
 ////                return Ok(new ApiResponse<string>(200, "Stage deleted successfully", string.Empty));
@@ -452,22 +751,71 @@
 ////            }
 ////        }
 ////    }
+=======
+////                if (!deleted)
+////                    return Ok(new ApiResponse<string>(200, "Stage not found", string.Empty));
+
+////                return Ok(new ApiResponse<string>(200, "Stage deleted successfully", string.Empty));
+////            }
+////            catch (InvalidOperationException ex)
+////            {
+////                // هنا نرجع رسالة واضحة لو فيه Students مرتبطين
+////                return Ok(new ApiResponse<string>(200, "Stage deletion failed", ex.Message));
+////            }
+////            catch (Exception ex)
+////            {
+////                _logger.LogError(ex, "Error deleting stage.");
+////                return Ok(new ApiResponse<string>(200, "Stage deletion failed", ex.InnerException?.Message ?? ex.Message));
+////            }
+////        }
+
+
+
+
+////    }
+
+
+
+
+
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 ////}
 
 //using Adros.Apis.ApiResponse;
 //using Adros.Application.DTOs.Stage;
 //using Adros.Application.Interfaces.IService;
 //using Microsoft.AspNetCore.Mvc;
+<<<<<<< HEAD
 //using System.Net;
+=======
+//using Microsoft.Extensions.Logging;
+//using System;
+//using System.Collections.Generic;
+//using System.Net;
+//using System.Threading.Tasks;
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
 //namespace Adros.Apis.Controllers.Admin
 //{
 //    [ApiController]
 //    [Route("api/[controller]")]
+<<<<<<< HEAD
 //    public class StagesController(IStageService stageService, ILogger<StagesController> logger) : BaseApiController
 //    {
 //        private readonly IStageService _stageService = stageService;
 //        private readonly ILogger<StagesController> _logger = logger;
+=======
+//    public class StagesController : ControllerBase
+//    {
+//        private readonly IStageService _stageService;
+//        private readonly ILogger<StagesController> _logger;
+
+//        public StagesController(IStageService stageService, ILogger<StagesController> logger)
+//        {
+//            _stageService = stageService;
+//            _logger = logger;
+//        }
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
 //        [HttpGet("all")]
 //        public async Task<ActionResult<ApiResponse<IReadOnlyList<StageEntityDto>>>> GetAllStagesAsync()
@@ -475,16 +823,26 @@
 //            try
 //            {
 //                var stages = await _stageService.GetClientStagesAsync();
+<<<<<<< HEAD
 //                return Ok(new ApiResponse<IReadOnlyList<StageEntityDto>>(200, "Stage list retrieved successfully", stages ?? new List<StageEntityDto>()));
 //            }
 //            catch (Exception ex)
 //            {
 //                _logger.LogError(ex, "Error fetching stages");
 //                return Ok(new ApiResponse<string>(200, "Failed to fetch stages", ex.Message));
+=======
+//                return Ok(new ApiResponse<IReadOnlyList<StageEntityDto>>(200, "Stage list retrieved successfully", stages));
+//            }
+//            catch (Exception ex)
+//            {
+//                _logger.LogError(ex, "Failed to fetch stages");
+//                return Ok(new ApiResponse<string>(200, "Stage fetch failed", ex.Message));
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 //            }
 //        }
 
 //        [HttpPost("create")]
+<<<<<<< HEAD
 //        public async Task<ActionResult<ApiResponse<StageEntityDto>>> Create([FromForm] StageCreateDto stageCreateDto)
 //        {
 //            if (!ModelState.IsValid)
@@ -496,16 +854,28 @@
 //            try
 //            {
 //                var stage = await _stageService.CreateStageAsync(stageCreateDto);
+=======
+//        public async Task<ActionResult<ApiResponse<StageEntityDto>>> Create([FromForm] StageCreateDto dto)
+//        {
+//            try
+//            {
+//                var stage = await _stageService.CreateStageAsync(dto);
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 //                return Ok(new ApiResponse<StageEntityDto>(200, "Stage created successfully", stage));
 //            }
 //            catch (Exception ex)
 //            {
+<<<<<<< HEAD
 //                _logger.LogError(ex, "Error creating stage");
+=======
+//                _logger.LogError(ex, "Stage creation failed");
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 //                return Ok(new ApiResponse<string>(200, "Stage creation failed", ex.Message));
 //            }
 //        }
 
 //        [HttpPut("{stageId}")]
+<<<<<<< HEAD
 //        public async Task<ActionResult<ApiResponse<StageEntityDto>>> Update(Guid stageId, [FromForm] StageUpdateDto stageUpdateDto)
 //        {
 //            if (!ModelState.IsValid)
@@ -518,12 +888,25 @@
 //            {
 //                var stage = await _stageService.UpdateStageAsync(stageId, stageUpdateDto);
 //                if (stage == null) return Ok(new ApiResponse<string>(200, "Stage update failed", "Stage not found"));
+=======
+//        public async Task<ActionResult<ApiResponse<StageEntityDto>>> Update(Guid stageId, [FromForm] StageUpdateDto dto)
+//        {
+//            try
+//            {
+//                var stage = await _stageService.UpdateStageAsync(stageId, dto);
+//                if (stage == null)
+//                    return Ok(new ApiResponse<string>(200, "Stage update failed", "Stage not found"));
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
 //                return Ok(new ApiResponse<StageEntityDto>(200, "Stage updated successfully", stage));
 //            }
 //            catch (Exception ex)
 //            {
+<<<<<<< HEAD
 //                _logger.LogError(ex, "Error updating stage");
+=======
+//                _logger.LogError(ex, "Stage update failed");
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 //                return Ok(new ApiResponse<string>(200, "Stage update failed", ex.Message));
 //            }
 //        }
@@ -534,13 +917,21 @@
 //            try
 //            {
 //                var stage = await _stageService.GetStageByIdAsync(stageId);
+<<<<<<< HEAD
 //                if (stage == null) return NotFound(new ApiResponse<string>(404, "Stage not found", string.Empty));
+=======
+//                if (stage == null) return Ok(new ApiResponse<string>(200, "Stage not found", string.Empty));
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
 //                return Ok(new ApiResponse<StageEntityDto>(200, "Stage retrieved successfully", stage));
 //            }
 //            catch (Exception ex)
 //            {
+<<<<<<< HEAD
 //                _logger.LogError(ex, "Error retrieving stage");
+=======
+//                _logger.LogError(ex, "Stage retrieval failed");
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 //                return Ok(new ApiResponse<string>(200, "Stage retrieval failed", ex.Message));
 //            }
 //        }
@@ -557,13 +948,18 @@
 //            }
 //            catch (Exception ex)
 //            {
+<<<<<<< HEAD
 //                _logger.LogError(ex, "Error deleting stage");
+=======
+//                _logger.LogError(ex, "Stage deletion failed");
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 //                return Ok(new ApiResponse<string>(200, "Stage deletion failed", ex.InnerException?.Message ?? ex.Message));
 //            }
 //        }
 //    }
 //}
 
+<<<<<<< HEAD
 
 using Adros.Application.DTOs.Stage;
 using Adros.Application.Interfaces.IService;
@@ -659,3 +1055,116 @@ namespace Adros.Apis.Controllers
         }
     }
 }
+=======
+using Adros.Apis.ApiResponse;
+using Adros.Application.DTOs.Stage;
+using Adros.Application.Interfaces.IService;
+using Microsoft.AspNetCore.Mvc;
+using System.Net;
+
+namespace Adros.Apis.Controllers.Admin
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class StagesController(IStageService stageService, ILogger<StagesController> logger) : BaseApiController
+    {
+        private readonly IStageService _stageService = stageService;
+        private readonly ILogger<StagesController> _logger = logger;
+
+        [HttpGet("all")]
+        public async Task<ActionResult<ApiResponse<IReadOnlyList<StageEntityDto>>>> GetAllStagesAsync()
+        {
+            try
+            {
+                var stages = await _stageService.GetClientStagesAsync();
+                return Ok(new ApiResponse<IReadOnlyList<StageEntityDto>>(200, "Stage list retrieved successfully", stages ?? new List<StageEntityDto>()));
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error fetching stages");
+                return Ok(new ApiResponse<string>(200, "Failed to fetch stages", ex.Message));
+            }
+        }
+
+        [HttpPost("create")]
+        public async Task<ActionResult<ApiResponse<StageEntityDto>>> Create([FromForm] StageCreateDto stageCreateDto)
+        {
+            if (!ModelState.IsValid)
+            {
+                var errors = string.Join("; ", ModelState.Values.SelectMany(x => x.Errors).Select(x => x.ErrorMessage));
+                return Ok(new ApiResponse<string>(200, "Stage creation failed", errors));
+            }
+
+            try
+            {
+                var stage = await _stageService.CreateStageAsync(stageCreateDto);
+                return Ok(new ApiResponse<StageEntityDto>(200, "Stage created successfully", stage));
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error creating stage");
+                return Ok(new ApiResponse<string>(200, "Stage creation failed", ex.Message));
+            }
+        }
+
+        [HttpPut("{stageId}")]
+        public async Task<ActionResult<ApiResponse<StageEntityDto>>> Update(Guid stageId, [FromForm] StageUpdateDto stageUpdateDto)
+        {
+            if (!ModelState.IsValid)
+            {
+                var errors = string.Join("; ", ModelState.Values.SelectMany(x => x.Errors).Select(x => x.ErrorMessage));
+                return Ok(new ApiResponse<string>(200, "Stage update failed", errors));
+            }
+
+            try
+            {
+                var stage = await _stageService.UpdateStageAsync(stageId, stageUpdateDto);
+                if (stage == null) return Ok(new ApiResponse<string>(200, "Stage update failed", "Stage not found"));
+
+                return Ok(new ApiResponse<StageEntityDto>(200, "Stage updated successfully", stage));
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error updating stage");
+                return Ok(new ApiResponse<string>(200, "Stage update failed", ex.Message));
+            }
+        }
+
+        [HttpGet("{stageId}")]
+        public async Task<ActionResult<ApiResponse<StageEntityDto>>> GetById(Guid stageId)
+        {
+            try
+            {
+                var stage = await _stageService.GetStageByIdAsync(stageId);
+                if (stage == null) return NotFound(new ApiResponse<string>(404, "Stage not found", string.Empty));
+
+                return Ok(new ApiResponse<StageEntityDto>(200, "Stage retrieved successfully", stage));
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error retrieving stage");
+                return Ok(new ApiResponse<string>(200, "Stage retrieval failed", ex.Message));
+            }
+        }
+
+        [HttpDelete("{stageId}")]
+        public async Task<ActionResult<ApiResponse<string>>> Delete(Guid stageId)
+        {
+            try
+            {
+                var deleted = await _stageService.DeleteStageAsync(stageId);
+                if (!deleted) return Ok(new ApiResponse<string>(200, "Stage not found", string.Empty));
+
+                return Ok(new ApiResponse<string>(200, "Stage deleted successfully", string.Empty));
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error deleting stage");
+                return Ok(new ApiResponse<string>(200, "Stage deletion failed", ex.InnerException?.Message ?? ex.Message));
+            }
+        }
+    }
+}
+
+
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a

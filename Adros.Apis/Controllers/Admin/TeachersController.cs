@@ -47,6 +47,7 @@ namespace Adros.Apis.Controllers.Admin
                 FirstName = teacher.FirstName,
                 LastName = teacher.LastName,
                 About = teacher.About,
+<<<<<<< HEAD
                 StageId = teacher.StageId,
                 ProfilePictureUrl = "https://adros-mrashed.runasp.net/" + "Uploads/Images/teachers/" + teacher.ProfilePictureUrl,
                 ApplicationUserId = teacher.ApplicationUserId,
@@ -56,11 +57,20 @@ namespace Adros.Apis.Controllers.Admin
                 UpdatedAt = teacher.UpdatedAt,
                 CreatedBy = teacher.CreatedBy,
                 PhoneNumber = teacher.phoneNumber,
+=======
+                ApplicationUserId = teacher.ApplicationUserId,
+                IsActive = teacher.ApplicationUser.IsActive,
+                LessonCount = teacher.Lessons.Count,
+                CreatedAt = teacher.CreatedAt,
+                UpdatedAt = teacher.UpdatedAt,
+                CreatedBy = teacher.CreatedBy
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             };
 
             return Ok(new ApiResponse<TeacherEntityDto>((int)HttpStatusCode.OK, "Teacher retrieved successfully.", teacherDto));
         }
 
+<<<<<<< HEAD
         [HttpGet("by-stage/{stageId}")]
         public async Task<ActionResult<ApiResponse<object>>> GetTeachersByStage(Guid stageId)
         {
@@ -79,6 +89,8 @@ namespace Adros.Apis.Controllers.Admin
 
 
 
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         [HttpPost]
         public async Task<ActionResult<ApiResponse<TeacherEntityDto>>> CreateTeacher([FromForm] TeacherCreateDto dto)
         {
@@ -95,6 +107,7 @@ namespace Adros.Apis.Controllers.Admin
                 TeacherID = teacher.Id,
                 Email = teacher.Email,
                 FirstName = teacher.FirstName,
+<<<<<<< HEAD
                 ProfilePictureUrl = teacher.ProfilePictureUrl,
                 LastName = teacher.LastName,
                 About = teacher.About,
@@ -106,6 +119,16 @@ namespace Adros.Apis.Controllers.Admin
                 CreatedBy = teacher.CreatedBy,
                 StageId = teacher.StageId,
                 PhoneNumber = teacher.phoneNumber,
+=======
+                LastName = teacher.LastName,
+                About = teacher.About,
+                ApplicationUserId = teacher.ApplicationUserId,
+                IsActive = teacher.ApplicationUser.IsActive,
+                LessonCount = teacher.Lessons.Count,
+                CreatedAt = teacher.CreatedAt,
+                UpdatedAt = teacher.UpdatedAt,
+                CreatedBy = teacher.CreatedBy
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             };
 
             return CreatedAtAction(nameof(GetTeacherById), new { id = teacherDto.TeacherID }, new ApiResponse<TeacherEntityDto>((int)HttpStatusCode.Created, "Teacher created successfully", teacherDto));
@@ -125,6 +148,7 @@ namespace Adros.Apis.Controllers.Admin
             {
                 TeacherID = updatedTeacher.Id,
                 Email = updatedTeacher.Email,
+<<<<<<< HEAD
                 ProfilePictureUrl = updatedTeacher.ProfilePictureUrl,
                 FirstName = updatedTeacher.FirstName,
                 LastName = updatedTeacher.LastName,
@@ -137,6 +161,17 @@ namespace Adros.Apis.Controllers.Admin
                 CreatedBy = updatedTeacher.CreatedBy,
                 StageId = updatedTeacher.StageId,
                 PhoneNumber = updatedTeacher.phoneNumber,   
+=======
+                FirstName = updatedTeacher.FirstName,
+                LastName = updatedTeacher.LastName,
+                About = updatedTeacher.About,
+                ApplicationUserId = updatedTeacher.ApplicationUserId,
+                IsActive = updatedTeacher.ApplicationUser.IsActive,
+                LessonCount = updatedTeacher.Lessons.Count,
+                CreatedAt = updatedTeacher.CreatedAt,
+                UpdatedAt = updatedTeacher.UpdatedAt,
+                CreatedBy = updatedTeacher.CreatedBy
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             };
 
             return Ok(new ApiResponse<TeacherEntityDto>((int)HttpStatusCode.OK, "Teacher updated successfully", teacherDto));
@@ -151,6 +186,7 @@ namespace Adros.Apis.Controllers.Admin
 
             return Ok(new ApiResponse<string>((int)HttpStatusCode.OK, "Teacher deleted successfully", "Teacher has been deleted."));
         }
+<<<<<<< HEAD
 
 
 
@@ -163,5 +199,7 @@ namespace Adros.Apis.Controllers.Admin
 
 
 
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     }
 }

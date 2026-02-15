@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿////using Microsoft.AspNetCore.Http;
 ////using System;
 ////using System.IO;
@@ -263,10 +264,14 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
+=======
+﻿using Microsoft.AspNetCore.Http;
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 namespace Adros.Shared.Helpers
 {
     public static class FileManager
     {
+<<<<<<< HEAD
         private static string _webRootPath = string.Empty;
 
         // Base folders relative to wwwroot/Uploads
@@ -385,3 +390,39 @@ namespace Adros.Shared.Helpers
         }
     }
 }
+=======
+        public static async Task<string> UploadFileAsync(IFormFile file, string folderName)
+        {
+            if (file == null || file.Length == 0)
+                throw new ArgumentException("File is null or empty.", nameof(file));
+
+            string folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Images", folderName);
+
+
+            if (!Directory.Exists(folderPath))
+                Directory.CreateDirectory(folderPath);
+
+            string fileName = $"{Guid.NewGuid()}{Path.GetExtension(file.FileName)}";
+
+            string filePath = Path.Combine(folderPath, fileName);
+
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await file.CopyToAsync(stream);
+            }
+
+            return fileName;
+        }
+
+        // Delete File
+
+        public static void DeleteFile(string fileName, string folderName)
+        {
+            string folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Images", folderName);
+            string filePath = Path.Combine(folderPath, fileName);
+            if (File.Exists(filePath))
+                File.Delete(filePath);
+        }
+    }
+}
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a

@@ -14,7 +14,11 @@ namespace Adros.Application.DTOs.Lesson
 {
     public class LessonCreateDto
     {
+<<<<<<< HEAD
         //public IFormFile? Lessonfile { get; set; }
+=======
+        public IFormFile? Lessonfile { get; set; }
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         //public string LessonfileName { get; set; }
         public int Order { get; set; }
         public string Title { get; set; } = default!;

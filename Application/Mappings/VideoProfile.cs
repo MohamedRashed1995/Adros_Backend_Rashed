@@ -9,6 +9,7 @@ namespace Adros.Application.Mappings
     {
         public VideoProfile()
         {
+<<<<<<< HEAD
             // ================= CreateVideoDto => Video =================
             CreateMap<CreateVideoDto, Video>()
     .ForMember(dest => dest.Id, opt => opt.MapFrom(_ => Guid.NewGuid()))
@@ -61,6 +62,25 @@ namespace Adros.Application.Mappings
                     opt => opt.MapFrom(src =>
                         //"http://adros-mrashed.runasp.net" +
                         src.Url));
+=======
+            CreateMap<CreateVideoDto, Video>()
+                .ForMember(dest => dest.Id, opt => opt.MapFrom(_ => Guid.NewGuid()))
+                .ForMember(dest => dest.CreatedAt, opt => opt.MapFrom(_ => DateTime.UtcNow))
+                .ForMember(dest => dest.Status, opt => opt.MapFrom(_ => VideoStatus.Processing))
+                .ForMember(dest => dest.Lesson, opt => opt.Ignore())
+                .ForMember(dest => dest.Topic, opt => opt.Ignore())
+                .ForMember(dest => dest.Views, opt => opt.Ignore())
+                .ForMember(dest => dest.Downloads, opt => opt.Ignore());
+
+            CreateMap<UpdateVideoDto, Video>()
+                .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
+
+            CreateMap<Video, VideoDto>()
+                .ForMember(dest => dest.LessonTitle, opt => opt.MapFrom(src => src.Lesson.Title))
+                .ForMember(dest => dest.UnitTitle, opt => opt.MapFrom(src => src.Topic.Title))
+                .ForMember(dest => dest.ViewsCount, opt => opt.MapFrom(src => src.Views.Count))
+                .ForMember(dest => dest.DownloadsCount, opt => opt.MapFrom(src => src.Downloads.Count));
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         }
     }
 }

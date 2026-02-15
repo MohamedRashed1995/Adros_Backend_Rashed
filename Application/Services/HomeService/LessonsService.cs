@@ -1,7 +1,10 @@
 ﻿using Adros.Application.DTOs.Lesson;
 using Adros.Application.DTOs.Topic;
 using Adros.Application.Interfaces.IService;
+<<<<<<< HEAD
 using Adros.Application.Services.UsersServices;
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 using Adros.Core.DomainServices.IDomainService;
 using Adros.Core.Entities.Course;
 using Adros.Core.Entities.Users;
@@ -13,7 +16,10 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+<<<<<<< HEAD
 using static System.Net.WebRequestMethods;
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
 namespace Adros.Application.Services.HomeService
 {
@@ -23,18 +29,27 @@ namespace Adros.Application.Services.HomeService
         private readonly IMapper _mapper;
         private readonly ILogger<LessonsService> _logger;
         private readonly ICurrentUserService _currentUserService;
+<<<<<<< HEAD
         private readonly IStudentService _studentService;
+=======
+
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         public LessonsService(
             IUnitOfWork unitOfWork,
             IMapper mapper,
             ILogger<LessonsService> logger,
+<<<<<<< HEAD
             ICurrentUserService currentUserService,
             IStudentService studentService)
+=======
+            ICurrentUserService currentUserService)
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
             _logger = logger;
             _currentUserService = currentUserService;
+<<<<<<< HEAD
             _studentService = studentService;
 
         }
@@ -128,12 +143,23 @@ namespace Adros.Application.Services.HomeService
 
 
 
+=======
+        }
+
+        public async Task<IReadOnlyList<LessonDto>> GetAllLessonsAsync()
+        {
+            var lessons = await _unitOfWork.Repository<Lesson>().ListAllAsync();
+            return _mapper.Map<IReadOnlyList<LessonDto>>(lessons);
+        }
+
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         public async Task<LessonDto> CreateLessonAsync(LessonCreateDto dto)
         {
             // التحقق من Teacher
             var teacherExists = await _unitOfWork.Repository<Teacher>().GetByIdAsync(dto.TeacherId);
             if (teacherExists == null) throw new Exception($"Teacher {dto.TeacherId} not found.");
 
+<<<<<<< HEAD
             // التحقق من Unit
             var unitExists = await _unitOfWork.Repository<Unit>().GetByIdAsync(dto.UnitId);
             if (unitExists == null) throw new Exception($"Unit {dto.UnitId} not found.");
@@ -147,14 +173,40 @@ namespace Adros.Application.Services.HomeService
             lesson.CreatedBy = _currentUserService.UserId != Guid.Empty ? _currentUserService.UserId : Guid.NewGuid();
             lesson.UpdatedBy = lesson.CreatedBy;
             //lesson.TeacherId = _currentUserService.UserId;
+=======
+            // التحقق من Subject
+            var TopicExists = await _unitOfWork.Repository<Unit>().GetByIdAsync(dto.UnitId);
+            if (TopicExists == null) throw new Exception($"Topic {dto.UnitId} not found.");
+
+            // رفع الملف إذا موجود
+            string? uploadedFileName = null;
+            if (dto.Lessonfile != null)
+            {
+                uploadedFileName = await FileManager.UploadFileAsync(dto.Lessonfile, "Lessons");
+            }
+
+            // التحقق من Current User
+            var userId = _currentUserService.UserId;
+            if (userId == Guid.Empty) throw new Exception("Current user not found.");
+
+            // إنشاء الـ Lesson
+            var lesson = _mapper.Map<Lesson>(dto);
+            lesson.LessonfileName = uploadedFileName;
+            lesson.CreatedBy = userId;
+            lesson.UpdatedBy = userId;
+
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             await _unitOfWork.Repository<Lesson>().AddAsync(lesson);
             await _unitOfWork.CompleteAsync();
 
             return _mapper.Map<LessonDto>(lesson);
         }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         public async Task<IReadOnlyList<LessonDto>> GetLessonsBySubjectIdAsync(Guid subjectId)
         {
             var spec = new LessonSpecifications(subjectId);
@@ -164,6 +216,7 @@ namespace Adros.Application.Services.HomeService
 
         public async Task<LessonDto?> GetLessonByIdAsync(Guid lessonId)
         {
+<<<<<<< HEAD
             var spec = new LessonSpecifications(lessonId, true);
             var lessons = await _unitOfWork.Repository<Lesson>().ListAsync(spec);
             var lesson = lessons.FirstOrDefault();
@@ -258,12 +311,27 @@ namespace Adros.Application.Services.HomeService
 
 
 
+=======
+            var lesson = await _unitOfWork.Repository<Lesson>().GetByIdAsync(lessonId);
+            if (lesson == null) return null;
+            return _mapper.Map<LessonDto>(lesson);
+        }
+
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         public async Task<LessonDto?> UpdateLessonAsync(Guid lessonId, LessonUpdateDto dto)
         {
             var lesson = await _unitOfWork.Repository<Lesson>().GetByIdAsync(lessonId);
             if (lesson == null) return null;
 
+<<<<<<< HEAD
             
+=======
+            if (dto.Lessonfile != null)
+            {
+                var fileName = await FileManager.UploadFileAsync(dto.Lessonfile, "Lessons");
+                lesson.LessonfileName = fileName;
+            }
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
             _mapper.Map(dto, lesson);
             lesson.UpdatedBy = _currentUserService.UserId;
@@ -283,6 +351,7 @@ namespace Adros.Application.Services.HomeService
             await _unitOfWork.CompleteAsync();
             return true;
         }
+<<<<<<< HEAD
         public async Task<UnitWithLessonsDto> GetLessonsByUnitIdAsync(Guid unitId)
         {
             var unit = await _unitOfWork.Repository<Unit>().GetByIdAsync(unitId);
@@ -320,6 +389,31 @@ namespace Adros.Application.Services.HomeService
             return segments.LastOrDefault();
         }
 
+=======
+        public async Task<List<LessonDto>> GetLessonsByTopicIdAsync(Guid topicId)
+        {
+            var spec = new LessonByUnitSpecifications(topicId);
+            var lessons = await _unitOfWork.Repository<Lesson>().ListAsync(spec);
+
+            return lessons.Select(l => new LessonDto
+            {
+                Id = l.Id,
+                LessonfileName = l.LessonfileName,
+                Order = l.Order,
+                Title = l.Title,
+                Description = l.Description,
+                TeacherId = l.TeacherId,
+                TeacherName = $"{l.Teacher.FirstName} {l.Teacher.LastName}",
+                UnitId = l.UnitId,
+                ExamId = l.ExamId,
+                //ExamTitle = l.Exam?.Title,
+                Attachments = l.Attachments.Select(a => a.Url).ToList(),
+                Videos = l.Videos.Select(v => v.Url).ToList()
+
+            }).ToList();
+        }
+        
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
 
     }

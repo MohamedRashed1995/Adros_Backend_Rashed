@@ -118,6 +118,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "MediaInfo.DotNetWrapper/1.0.7": {
         "dependencies": {
           "NETStandard.Library": "1.6.1",
@@ -132,6 +133,8 @@
           }
         }
       },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       "Microsoft.AspNetCore.Authentication.JwtBearer/9.0.0": {
         "dependencies": {
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "8.0.1"
@@ -813,8 +816,11 @@
           }
         }
       },
+<<<<<<< HEAD
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       "Microsoft.OpenApi/1.6.22": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
@@ -831,6 +837,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "Microsoft.Win32.Primitives/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -838,6 +845,8 @@
           "System.Runtime": "4.3.0"
         }
       },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       "Microsoft.Win32.Registry/4.7.0": {
         "dependencies": {
           "System.Security.AccessControl": "6.0.0",
@@ -883,6 +892,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "NETStandard.Library/1.6.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -963,6 +973,8 @@
           }
         }
       },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       "Pomelo.EntityFrameworkCore.MySql/9.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Relational": "9.0.0",
@@ -975,6 +987,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
@@ -984,6 +997,8 @@
           "Microsoft.NETCore.Targets": "1.1.0"
         }
       },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "dependencies": {
           "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
@@ -991,6 +1006,7 @@
           "runtime.win-x86.runtime.native.System.Data.SqlClient.sni": "4.4.0"
         }
       },
+<<<<<<< HEAD
       "runtime.native.System.IO.Compression/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -1030,6 +1046,8 @@
       "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
         "runtimeTargets": {
           "runtimes/win-arm64/native/sni.dll": {
@@ -1204,6 +1222,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "System.AppContext/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -1218,6 +1237,8 @@
           "System.Threading": "4.3.0"
         }
       },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       "System.ClientModel/1.0.0": {
         "dependencies": {
           "System.Memory.Data": "1.0.2",
@@ -1238,6 +1259,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "System.Collections/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -1259,6 +1281,8 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       "System.Collections.Immutable/7.0.0": {},
       "System.ComponentModel.Annotations/5.0.0": {},
       "System.Composition/7.0.0": {
@@ -1333,6 +1357,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "System.Console/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -1342,6 +1367,8 @@
           "System.Text.Encoding": "4.3.0"
         }
       },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       "System.Data.SqlClient/4.8.6": {
         "dependencies": {
           "Microsoft.Win32.Registry": "4.7.0",
@@ -1369,6 +1396,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "System.Diagnostics.Debug/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -1376,11 +1404,14 @@
           "System.Runtime": "4.3.0"
         }
       },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       "System.Diagnostics.DiagnosticSource/6.0.1": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         }
       },
+<<<<<<< HEAD
       "System.Diagnostics.Tools/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -1395,6 +1426,8 @@
           "System.Runtime": "4.3.0"
         }
       },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       "System.Drawing.Common/6.0.0": {
         "dependencies": {
           "Microsoft.Win32.SystemEvents": "6.0.0"
@@ -1420,6 +1453,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "System.Drawing.Primitives/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0",
@@ -1471,6 +1505,9 @@
           "System.Runtime.InteropServices": "4.3.0"
         }
       },
+=======
+      "System.Formats.Asn1/9.0.0": {},
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       "System.IdentityModel.Tokens.Jwt/8.0.1": {
         "dependencies": {
           "Microsoft.IdentityModel.JsonWebTokens": "8.0.1",
@@ -1483,6 +1520,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "System.IO/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -1572,6 +1610,9 @@
           "System.Threading": "4.3.0"
         }
       },
+=======
+      "System.IO.Pipelines/7.0.0": {},
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       "System.Memory/4.5.4": {},
       "System.Memory.Data/1.0.2": {
         "dependencies": {
@@ -1585,6 +1626,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "System.Net.Http/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -1684,11 +1726,15 @@
           "System.Runtime": "4.3.0"
         }
       },
+=======
+      "System.Numerics.Vectors/4.5.0": {},
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       "System.Reflection.Metadata/7.0.0": {
         "dependencies": {
           "System.Collections.Immutable": "7.0.0"
         }
       },
+<<<<<<< HEAD
       "System.Reflection.Primitives/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -1717,6 +1763,8 @@
           "Microsoft.NETCore.Targets": "1.1.0"
         }
       },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       "System.Runtime.Caching/6.0.0": {
         "dependencies": {
           "System.Configuration.ConfigurationManager": "6.0.1"
@@ -1737,6 +1785,7 @@
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
+<<<<<<< HEAD
       "System.Runtime.Extensions/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -1805,11 +1854,15 @@
           "runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0"
         }
       },
+=======
+      "System.Security.AccessControl/6.0.0": {},
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       "System.Security.Cryptography.Cng/5.0.0": {
         "dependencies": {
           "System.Formats.Asn1": "9.0.0"
         }
       },
+<<<<<<< HEAD
       "System.Security.Cryptography.Csp/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -1872,6 +1925,9 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
+=======
+      "System.Security.Cryptography.Pkcs/8.0.1": {},
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       "System.Security.Cryptography.ProtectedData/6.0.0": {
         "runtime": {
           "lib/net6.0/System.Security.Cryptography.ProtectedData.dll": {
@@ -1888,6 +1944,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "System.Security.Cryptography.X509Certificates/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -1917,6 +1974,8 @@
           "runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0"
         }
       },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       "System.Security.Cryptography.Xml/8.0.2": {
         "dependencies": {
           "System.Security.Cryptography.Pkcs": "8.0.1"
@@ -2000,6 +2059,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "System.Text.Encoding/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -2007,11 +2067,14 @@
           "System.Runtime": "4.3.0"
         }
       },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       "System.Text.Encoding.CodePages/6.0.0": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         }
       },
+<<<<<<< HEAD
       "System.Text.Encoding.Extensions/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -2020,12 +2083,15 @@
           "System.Text.Encoding": "4.3.0"
         }
       },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       "System.Text.Encodings.Web/6.0.0": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         }
       },
       "System.Text.Json/9.0.0": {},
+<<<<<<< HEAD
       "System.Text.RegularExpressions/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -2053,6 +2119,10 @@
           "System.Runtime": "4.3.0"
         }
       },
+=======
+      "System.Threading.Channels/7.0.0": {},
+      "System.Threading.Tasks.Extensions/4.5.4": {},
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       "System.Windows.Extensions/6.0.0": {
         "dependencies": {
           "System.Drawing.Common": "6.0.0"
@@ -2072,6 +2142,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "System.Xml.ReaderWriter/4.3.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -2118,13 +2189,18 @@
           }
         }
       },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       "Adros.Application/1.0.0": {
         "dependencies": {
           "Adros.Core": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.0",
           "Microsoft.AspNetCore.Authorization": "9.0.0",
           "Microsoft.AspNetCore.OpenApi": "9.0.0",
+<<<<<<< HEAD
           "Microsoft.EntityFrameworkCore": "9.0.0",
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0",
           "Pomelo.EntityFrameworkCore.MySql": "9.0.0",
           "Serilog": "4.2.0",
@@ -2179,14 +2255,21 @@
       "Adros.Persistence/1.0.0": {
         "dependencies": {
           "Adros.Core": "1.0.0",
+<<<<<<< HEAD
           "MediaInfo.DotNetWrapper": "1.0.7",
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.0",
           "Microsoft.AspNetCore.OpenApi": "9.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0",
           "Pomelo.EntityFrameworkCore.MySql": "9.0.0",
           "Serilog": "4.2.0",
+<<<<<<< HEAD
           "Swashbuckle.AspNetCore": "7.0.0",
           "Xabe.FFmpeg": "5.1.0"
+=======
+          "Swashbuckle.AspNetCore": "7.0.0"
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         },
         "runtime": {
           "Adros.Persistence.dll": {
@@ -2272,6 +2355,7 @@
       "path": "linqkit.core/1.2.8",
       "hashPath": "linqkit.core.1.2.8.nupkg.sha512"
     },
+<<<<<<< HEAD
     "MediaInfo.DotNetWrapper/1.0.7": {
       "type": "package",
       "serviceable": true,
@@ -2279,6 +2363,8 @@
       "path": "mediainfo.dotnetwrapper/1.0.7",
       "hashPath": "mediainfo.dotnetwrapper.1.0.7.nupkg.sha512"
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "Microsoft.AspNetCore.Authentication.JwtBearer/9.0.0": {
       "type": "package",
       "serviceable": true,
@@ -2657,6 +2743,7 @@
       "path": "microsoft.identitymodel.tokens/8.0.1",
       "hashPath": "microsoft.identitymodel.tokens.8.0.1.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
       "serviceable": true,
@@ -2671,6 +2758,8 @@
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "Microsoft.OpenApi/1.6.22": {
       "type": "package",
       "serviceable": true,
@@ -2685,6 +2774,7 @@
       "path": "microsoft.sqlserver.server/1.0.0",
       "hashPath": "microsoft.sqlserver.server.1.0.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Microsoft.Win32.Primitives/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -2692,6 +2782,8 @@
       "path": "microsoft.win32.primitives/4.3.0",
       "hashPath": "microsoft.win32.primitives.4.3.0.nupkg.sha512"
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "Microsoft.Win32.Registry/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -2720,6 +2812,7 @@
       "path": "mysqlconnector/2.4.0",
       "hashPath": "mysqlconnector.2.4.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "NETStandard.Library/1.6.1": {
       "type": "package",
       "serviceable": true,
@@ -2734,6 +2827,8 @@
       "path": "newtonsoft.json/9.0.1",
       "hashPath": "newtonsoft.json.9.0.1.nupkg.sha512"
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "Pomelo.EntityFrameworkCore.MySql/9.0.0": {
       "type": "package",
       "serviceable": true,
@@ -2741,6 +2836,7 @@
       "path": "pomelo.entityframeworkcore.mysql/9.0.0",
       "hashPath": "pomelo.entityframeworkcore.mysql.9.0.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -2769,6 +2865,8 @@
       "path": "runtime.native.system/4.3.0",
       "hashPath": "runtime.native.system.4.3.0.nupkg.sha512"
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "runtime.native.System.Data.SqlClient.sni/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -2776,6 +2874,7 @@
       "path": "runtime.native.system.data.sqlclient.sni/4.7.0",
       "hashPath": "runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "runtime.native.System.IO.Compression/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -2860,6 +2959,8 @@
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "hashPath": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512"
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
       "type": "package",
       "serviceable": true,
@@ -2972,6 +3073,7 @@
       "path": "swashbuckle.aspnetcore.swaggerui/7.0.0",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.7.0.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.AppContext/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -2986,6 +3088,8 @@
       "path": "system.buffers/4.3.0",
       "hashPath": "system.buffers.4.3.0.nupkg.sha512"
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "System.ClientModel/1.0.0": {
       "type": "package",
       "serviceable": true,
@@ -3000,6 +3104,7 @@
       "path": "system.codedom/6.0.0",
       "hashPath": "system.codedom.6.0.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.Collections/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3014,6 +3119,8 @@
       "path": "system.collections.concurrent/4.3.0",
       "hashPath": "system.collections.concurrent.4.3.0.nupkg.sha512"
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "System.Collections.Immutable/7.0.0": {
       "type": "package",
       "serviceable": true,
@@ -3077,6 +3184,7 @@
       "path": "system.configuration.configurationmanager/6.0.1",
       "hashPath": "system.configuration.configurationmanager.6.0.1.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.Console/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3084,6 +3192,8 @@
       "path": "system.console/4.3.0",
       "hashPath": "system.console.4.3.0.nupkg.sha512"
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "System.Data.SqlClient/4.8.6": {
       "type": "package",
       "serviceable": true,
@@ -3091,6 +3201,7 @@
       "path": "system.data.sqlclient/4.8.6",
       "hashPath": "system.data.sqlclient.4.8.6.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.Diagnostics.Debug/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3098,6 +3209,8 @@
       "path": "system.diagnostics.debug/4.3.0",
       "hashPath": "system.diagnostics.debug.4.3.0.nupkg.sha512"
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "System.Diagnostics.DiagnosticSource/6.0.1": {
       "type": "package",
       "serviceable": true,
@@ -3105,6 +3218,7 @@
       "path": "system.diagnostics.diagnosticsource/6.0.1",
       "hashPath": "system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.Diagnostics.Tools/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3119,6 +3233,8 @@
       "path": "system.diagnostics.tracing/4.3.0",
       "hashPath": "system.diagnostics.tracing.4.3.0.nupkg.sha512"
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "System.Drawing.Common/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -3126,6 +3242,7 @@
       "path": "system.drawing.common/6.0.0",
       "hashPath": "system.drawing.common.6.0.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.Drawing.Primitives/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3140,6 +3257,8 @@
       "path": "system.dynamic.runtime/4.0.11",
       "hashPath": "system.dynamic.runtime.4.0.11.nupkg.sha512"
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "System.Formats.Asn1/9.0.0": {
       "type": "package",
       "serviceable": true,
@@ -3147,6 +3266,7 @@
       "path": "system.formats.asn1/9.0.0",
       "hashPath": "system.formats.asn1.9.0.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.Globalization/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3168,6 +3288,8 @@
       "path": "system.globalization.extensions/4.3.0",
       "hashPath": "system.globalization.extensions.4.3.0.nupkg.sha512"
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "System.IdentityModel.Tokens.Jwt/8.0.1": {
       "type": "package",
       "serviceable": true,
@@ -3175,6 +3297,7 @@
       "path": "system.identitymodel.tokens.jwt/8.0.1",
       "hashPath": "system.identitymodel.tokens.jwt.8.0.1.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.IO/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3210,6 +3333,8 @@
       "path": "system.io.filesystem.primitives/4.3.0",
       "hashPath": "system.io.filesystem.primitives.4.3.0.nupkg.sha512"
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "System.IO.Pipelines/7.0.0": {
       "type": "package",
       "serviceable": true,
@@ -3217,6 +3342,7 @@
       "path": "system.io.pipelines/7.0.0",
       "hashPath": "system.io.pipelines.7.0.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.Linq/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3231,6 +3357,8 @@
       "path": "system.linq.expressions/4.3.0",
       "hashPath": "system.linq.expressions.4.3.0.nupkg.sha512"
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "System.Memory/4.5.4": {
       "type": "package",
       "serviceable": true,
@@ -3245,6 +3373,7 @@
       "path": "system.memory.data/1.0.2",
       "hashPath": "system.memory.data.1.0.2.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.Net.Http/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3266,6 +3395,8 @@
       "path": "system.net.sockets/4.3.0",
       "hashPath": "system.net.sockets.4.3.0.nupkg.sha512"
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "System.Numerics.Vectors/4.5.0": {
       "type": "package",
       "serviceable": true,
@@ -3273,6 +3404,7 @@
       "path": "system.numerics.vectors/4.5.0",
       "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.ObjectModel/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3315,6 +3447,8 @@
       "path": "system.reflection.extensions/4.3.0",
       "hashPath": "system.reflection.extensions.4.3.0.nupkg.sha512"
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "System.Reflection.Metadata/7.0.0": {
       "type": "package",
       "serviceable": true,
@@ -3322,6 +3456,7 @@
       "path": "system.reflection.metadata/7.0.0",
       "hashPath": "system.reflection.metadata.7.0.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.Reflection.Primitives/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3350,6 +3485,8 @@
       "path": "system.runtime/4.3.0",
       "hashPath": "system.runtime.4.3.0.nupkg.sha512"
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "System.Runtime.Caching/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -3364,6 +3501,7 @@
       "path": "system.runtime.compilerservices.unsafe/6.0.0",
       "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.Runtime.Extensions/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3406,6 +3544,8 @@
       "path": "system.runtime.serialization.primitives/4.1.1",
       "hashPath": "system.runtime.serialization.primitives.4.1.1.nupkg.sha512"
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "System.Security.AccessControl/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -3413,6 +3553,7 @@
       "path": "system.security.accesscontrol/6.0.0",
       "hashPath": "system.security.accesscontrol.6.0.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.Security.Cryptography.Algorithms/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3420,6 +3561,8 @@
       "path": "system.security.cryptography.algorithms/4.3.0",
       "hashPath": "system.security.cryptography.algorithms.4.3.0.nupkg.sha512"
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "System.Security.Cryptography.Cng/5.0.0": {
       "type": "package",
       "serviceable": true,
@@ -3427,6 +3570,7 @@
       "path": "system.security.cryptography.cng/5.0.0",
       "hashPath": "system.security.cryptography.cng.5.0.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.Security.Cryptography.Csp/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3448,6 +3592,8 @@
       "path": "system.security.cryptography.openssl/4.3.0",
       "hashPath": "system.security.cryptography.openssl.4.3.0.nupkg.sha512"
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "System.Security.Cryptography.Pkcs/8.0.1": {
       "type": "package",
       "serviceable": true,
@@ -3455,6 +3601,7 @@
       "path": "system.security.cryptography.pkcs/8.0.1",
       "hashPath": "system.security.cryptography.pkcs.8.0.1.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.Security.Cryptography.Primitives/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3462,6 +3609,8 @@
       "path": "system.security.cryptography.primitives/4.3.0",
       "hashPath": "system.security.cryptography.primitives.4.3.0.nupkg.sha512"
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "System.Security.Cryptography.ProtectedData/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -3469,6 +3618,7 @@
       "path": "system.security.cryptography.protecteddata/6.0.0",
       "hashPath": "system.security.cryptography.protecteddata.6.0.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.Security.Cryptography.X509Certificates/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3476,6 +3626,8 @@
       "path": "system.security.cryptography.x509certificates/4.3.0",
       "hashPath": "system.security.cryptography.x509certificates.4.3.0.nupkg.sha512"
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "System.Security.Cryptography.Xml/8.0.2": {
       "type": "package",
       "serviceable": true,
@@ -3504,6 +3656,7 @@
       "path": "system.servicemodel.primitives/8.1.0",
       "hashPath": "system.servicemodel.primitives.8.1.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.Text.Encoding/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3511,6 +3664,8 @@
       "path": "system.text.encoding/4.3.0",
       "hashPath": "system.text.encoding.4.3.0.nupkg.sha512"
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "System.Text.Encoding.CodePages/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -3518,6 +3673,7 @@
       "path": "system.text.encoding.codepages/6.0.0",
       "hashPath": "system.text.encoding.codepages.6.0.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.Text.Encoding.Extensions/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3525,6 +3681,8 @@
       "path": "system.text.encoding.extensions/4.3.0",
       "hashPath": "system.text.encoding.extensions.4.3.0.nupkg.sha512"
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "System.Text.Encodings.Web/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -3539,6 +3697,7 @@
       "path": "system.text.json/9.0.0",
       "hashPath": "system.text.json.9.0.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.Text.RegularExpressions/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3553,6 +3712,8 @@
       "path": "system.threading/4.3.0",
       "hashPath": "system.threading.4.3.0.nupkg.sha512"
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "System.Threading.Channels/7.0.0": {
       "type": "package",
       "serviceable": true,
@@ -3560,6 +3721,7 @@
       "path": "system.threading.channels/7.0.0",
       "hashPath": "system.threading.channels.7.0.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.Threading.Tasks/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3567,6 +3729,8 @@
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "System.Threading.Tasks.Extensions/4.5.4": {
       "type": "package",
       "serviceable": true,
@@ -3574,6 +3738,7 @@
       "path": "system.threading.tasks.extensions/4.5.4",
       "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.Threading.Timer/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3581,6 +3746,8 @@
       "path": "system.threading.timer/4.3.0",
       "hashPath": "system.threading.timer.4.3.0.nupkg.sha512"
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "System.Windows.Extensions/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -3588,6 +3755,7 @@
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.Xml.ReaderWriter/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3609,6 +3777,8 @@
       "path": "xabe.ffmpeg/5.1.0",
       "hashPath": "xabe.ffmpeg.5.1.0.nupkg.sha512"
     },
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "Adros.Application/1.0.0": {
       "type": "project",
       "serviceable": false,

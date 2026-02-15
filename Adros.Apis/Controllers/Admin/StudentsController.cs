@@ -54,6 +54,7 @@ namespace Adros.Apis.Controllers.Admin
                     statusCode: StatusCodes.Status500InternalServerError);
             }
         }
+<<<<<<< HEAD
         [HttpDelete("{studentId}")]
         public async Task<IActionResult> DeleteStudent(Guid studentId)
         {
@@ -64,6 +65,8 @@ namespace Adros.Apis.Controllers.Admin
 
             return Ok(new { message = "Student and related data deleted successfully" });
         }
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
 
 

@@ -17,12 +17,15 @@ namespace Adros.Application.Interfaces.IService
         );
 
         Task<IReadOnlyList<ClientCalenderDto>> GetClientCalendersAsync(
+<<<<<<< HEAD
             Guid? userId,
             DateTime? startDate = null,
             DateTime? endDate = null
         );
         Task<IReadOnlyList<ClientCalenderDto>> GetClientCalendersAsync(
            
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             DateTime? startDate = null,
             DateTime? endDate = null
         );

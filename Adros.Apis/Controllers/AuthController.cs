@@ -126,7 +126,11 @@ namespace Adros.Apis.Controllers
 
             var user = new ApplicationUser
             {
+<<<<<<< HEAD
                 
+=======
+                Id = Guid.NewGuid(),
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 UserName = model.Email,
                 Email = model.Email,
                 FirstName = model.FirstName,   
@@ -155,7 +159,11 @@ namespace Adros.Apis.Controllers
             {
                 var student = new Student
                 {
+<<<<<<< HEAD
                     Id =Guid.NewGuid(),
+=======
+                    Id = user.Id,
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                     ApplicationUser = user,
                     FirstName = model.FirstName,
                     LastName = model.LastName,
@@ -166,9 +174,15 @@ namespace Adros.Apis.Controllers
                     CreatedAt = DateTime.UtcNow,
                     CreatedBy = user.Id,
                     ApplicationUserId = user.Id,
+<<<<<<< HEAD
                     IsSubscriped = false,
                     LevelId = model.LevelId,
                     WatchLater = new List<WatchLater>(),
+=======
+                    SubscriptionStatus = "inactive",
+                    LevelId = model.LevelId,
+                    VideoDownloads = new List<VideoDownload>(),
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                     VideoViews = new List<VideoView>()
                 };
                 await _unitOfWork.Repository<Student>().AddAsync(student);
@@ -400,7 +414,10 @@ namespace Adros.Apis.Controllers
                 issuedAt = DateTime.UtcNow
             });
         }
+<<<<<<< HEAD
         
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         [HttpPost("forget-password")]
         [AllowAnonymous]
         public async Task<ActionResult> ForgetPassword([FromBody] ForgotPasswordDto request)

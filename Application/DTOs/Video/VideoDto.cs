@@ -1,9 +1,13 @@
 ﻿using Adros.Core.Enums;
+<<<<<<< HEAD
 using Microsoft.AspNetCore.Http;
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+<<<<<<< HEAD
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using System.Text.Json.Serialization;
@@ -11,6 +15,9 @@ using Swashbuckle.AspNetCore.Annotations;
 
 
 
+=======
+using System.Threading.Tasks;
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
 namespace Adros.Application.DTOs.Video
 {
@@ -19,6 +26,7 @@ namespace Adros.Application.DTOs.Video
 
         public Guid Id { get; set; }
         public string Title { get; set; }
+<<<<<<< HEAD
         //[JsonIgnore]
         public int? Duration { get; set; } 
         public string? Description { get; set; }      // 🆕
@@ -34,6 +42,17 @@ namespace Adros.Application.DTOs.Video
         public int ViewsCount { get; set; }
         public bool IsWatchLater { get; set; }
         public int WatchLaterCount { get; set; }
+=======
+        public TimeSpan Duration { get; set; } // Formatted as "HH:mm:ss"
+        public string Url { get; set; }
+        public int? Order { get; set; }
+        public Guid LessonId { get; set; }
+        public string LessonTitle { get; set; }
+        public Guid UnitId { get; set; }
+        public string UnitTitle { get; set; }
+        public int ViewsCount { get; set; }
+        public int DownloadsCount { get; set; }
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         public VideoStatus Status { get; set; }
         public DateTime? ProcessedAt { get; set; }
         public DateTime? CreatedAt { get; set; }
@@ -42,6 +61,7 @@ namespace Adros.Application.DTOs.Video
     public class CreateVideoDto
     {
         public string Title { get; set; }
+<<<<<<< HEAD
         public string? Description { get; set; }
         public int? Duration { get; set; }
         public string Url { get; set; }
@@ -79,6 +99,20 @@ namespace Adros.Application.DTOs.Video
         public int? Duration { get; set; }
         public string? Description { get; set; }      // 🆕
         public string? ThumbnailUrl { get; set; }
+=======
+        public TimeSpan Duration { get; set; }
+        public string Url { get; set; }
+        public int? Order { get; set; }
+        public Guid LessonId { get; set; }
+        public Guid UnitId { get; set; }
+        //public string BunnyVideoId { get; set; }
+    }
+
+    public class UpdateVideoDto
+    {
+        public string Title { get; set; }
+        public TimeSpan? Duration { get; set; }
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         public string Url { get; set; }
         public int? Order { get; set; }
         public VideoStatus? Status { get; set; }
@@ -101,6 +135,7 @@ namespace Adros.Application.DTOs.Video
         public TimeSpan TotalWatchTime { get; set; }
         public double AverageWatchPercentage { get; set; }
     }
+<<<<<<< HEAD
     public class WatchLaterVideoDto
     {
         public Guid WatchLaterId { get; set; }
@@ -111,5 +146,7 @@ namespace Adros.Application.DTOs.Video
         public DateTime CreatedAt { get; set; } 
     }
 
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 }
 

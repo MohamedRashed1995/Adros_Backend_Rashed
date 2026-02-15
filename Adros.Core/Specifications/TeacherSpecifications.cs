@@ -36,7 +36,11 @@ namespace Adros.Core.Specifications
             switch (sort?.ToLower())
             {
                 case "email":
+<<<<<<< HEAD
                     ApplyOrderBy(t => t.Email);
+=======
+                    ApplyOrderBy(t => t.ApplicationUser!.Email);
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                     break;
 
                 case "lessoncount":
@@ -44,7 +48,11 @@ namespace Adros.Core.Specifications
                     break;
 
                 default:
+<<<<<<< HEAD
                     ApplyOrderBy(t => t.FirstName + " " + t.LastName);
+=======
+                    ApplyOrderBy(t => t.ApplicationUser!.UserName);
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                     break;
             }
 

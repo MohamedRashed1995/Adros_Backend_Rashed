@@ -179,13 +179,19 @@ namespace Adros.Application.Services.HomeService
                 throw;
             }
         }
+<<<<<<< HEAD
         public async Task<IReadOnlyList<ClientCalenderDto>> GetClientCalendersAsync(
     DateTime? startDate = null,
     DateTime? endDate = null)
+=======
+
+        public async Task<IReadOnlyList<ClientCalenderDto>> GetClientCalendersAsync(DateTime? startDate = null, DateTime? endDate = null)
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         {
             try
             {
                 var userId = _currentUserService.UserId;
+<<<<<<< HEAD
                 _logger.LogInformation(
                     "Fetching client calenders for user: {UserId}, StartDate: {StartDate}, EndDate: {EndDate}",
                     userId, startDate, endDate);
@@ -222,6 +228,8 @@ namespace Adros.Application.Services.HomeService
         {
             try
             {
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 _logger.LogInformation("Fetching client calenders for user: {UserId}, StartDate: {StartDate}, EndDate: {EndDate}", userId, startDate, endDate);
 
                 var spec = new CalenderSpecifications(
@@ -231,17 +239,27 @@ namespace Adros.Application.Services.HomeService
                 );
 
                 var calenders = await _unitOfWork.Repository<Calender>().ListAsync(spec);
+<<<<<<< HEAD
 
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 _logger.LogInformation("Successfully retrieved {Count} client calenders for user: {UserId}", calenders.Count, userId);
 
                 return _mapper.Map<IReadOnlyList<Calender>, IReadOnlyList<ClientCalenderDto>>(calenders);
             }
             catch (Exception ex)
             {
+<<<<<<< HEAD
                 _logger.LogError(ex, "Error occurred while fetching client calenders for user: {UserId}", userId);
                 throw;
             }
         }
 
+=======
+                _logger.LogError(ex, "Error occurred while fetching client calenders for user: {UserId}", _currentUserService.UserId);
+                throw;
+            }
+        }
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     }
 }

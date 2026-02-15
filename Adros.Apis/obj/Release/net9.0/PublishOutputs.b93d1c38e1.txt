@@ -11,7 +11,10 @@ C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\obj\Release\net9.0\PubTmp\Out\EntityFramework.dll
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\obj\Release\net9.0\PubTmp\Out\LinqKit.dll
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\obj\Release\net9.0\PubTmp\Out\LinqKit.Core.dll
+<<<<<<< HEAD
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\obj\Release\net9.0\PubTmp\Out\MediaInfo.DotNetWrapper.dll
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\obj\Release\net9.0\PubTmp\Out\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\obj\Release\net9.0\PubTmp\Out\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\obj\Release\net9.0\PubTmp\Out\Microsoft.AspNetCore.OpenApi.dll
@@ -34,7 +37,10 @@ C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\obj\Release\net9.0\PubTmp\Out\Microsoft.SqlServer.Server.dll
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\obj\Release\net9.0\PubTmp\Out\Microsoft.Win32.SystemEvents.dll
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\obj\Release\net9.0\PubTmp\Out\MySqlConnector.dll
+<<<<<<< HEAD
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\obj\Release\net9.0\PubTmp\Out\Newtonsoft.Json.dll
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\obj\Release\net9.0\PubTmp\Out\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\obj\Release\net9.0\PubTmp\Out\Serilog.dll
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\obj\Release\net9.0\PubTmp\Out\Serilog.AspNetCore.dll
@@ -63,7 +69,10 @@ C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\obj\Release\net9.0\PubTmp\Out\System.ServiceModel.Security.dll
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\obj\Release\net9.0\PubTmp\Out\System.ServiceModel.dll
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\obj\Release\net9.0\PubTmp\Out\System.Windows.Extensions.dll
+<<<<<<< HEAD
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\obj\Release\net9.0\PubTmp\Out\Xabe.FFmpeg.dll
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\obj\Release\net9.0\PubTmp\Out\cs\System.ServiceModel.Primitives.resources.dll
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\obj\Release\net9.0\PubTmp\Out\de\System.ServiceModel.Primitives.resources.dll
 C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Apis\obj\Release\net9.0\PubTmp\Out\es\System.ServiceModel.Primitives.resources.dll

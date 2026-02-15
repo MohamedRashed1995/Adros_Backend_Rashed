@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Adros.Apis.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9ca122f7d7aacda575e772d6d4c12ab48bbb8f4")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 [assembly: System.Reflection.AssemblyProductAttribute("Adros.Apis.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Adros.Apis.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

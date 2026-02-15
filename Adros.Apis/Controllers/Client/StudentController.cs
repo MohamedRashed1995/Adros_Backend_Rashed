@@ -461,7 +461,11 @@ namespace Adros.Apis.Controllers.Client
 {
     [Route("api/[controller]")]
     [ApiController]
+<<<<<<< HEAD
     //[Authorize(Roles = SystemRoles.Student)]
+=======
+    [Authorize(Roles = SystemRoles.Student)]
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     public class StudentController : ControllerBase
     {
         private readonly IStudentService _studentService;

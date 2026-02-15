@@ -15,7 +15,10 @@ namespace Adros.Application.DTOs.Home
         public LevelEntityDto? levels { get; set; }    
         //public IReadOnlyList<ClientCalenderDto> Calenders { get; set; } = [];
         public IReadOnlyList<ClientCalenderDto> calenders { get; set; }
+<<<<<<< HEAD
         public bool IsSubscribed { get; set; }
+=======
+>>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         //public IReadOnlyList<SkillDto> Skills { get; set; } = [];
     }
 }
