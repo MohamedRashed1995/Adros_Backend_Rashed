@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+	  <RestoreSources>https://api.nuget.org/v3/index.json</RestoreSources>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>d161e8ff-8a6a-46f8-b465-88cc3b067967</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Properties\PublishProfiles\web.config" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<!-- إصدارات موحدة 9.0.0 -->
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="7.0.0" />
+	</ItemGroup>
+
+  <ItemGroup>
+    
+	  <ProjectReference Include="..\Application\Adros.Application.csproj" />
+	  <ProjectReference Include="..\Adros.Persistence\Adros.Persistence.csproj" />
+	  <ProjectReference Include="..\Adros.Infrastructure\Adros.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Filters\" />
+    <Folder Include="wwwroot\Images\Banners\" />
+    <Folder Include="wwwroot\Images\Banners\" />
+    <Folder Include="wwwroot\Images\Banners\" />
+    <Folder Include="wwwroot\Images\Levels\" />
+    <Folder Include="wwwroot\Attachments\" />
+    <Folder Include="wwwroot\Videos\" />
+  </ItemGroup>
+
+</Project>

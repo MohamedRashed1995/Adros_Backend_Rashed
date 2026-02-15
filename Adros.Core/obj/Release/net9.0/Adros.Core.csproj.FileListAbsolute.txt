@@ -1,0 +1,52 @@
+C:\Users\lenovo\Desktop\ADROS Mohamed Rashed\Adros-Backend-MohamedRashed\Adros-BackEnd-main\Adros.Core\bin\Release\net9.0\Adros.Core.deps.json
+C:\Users\lenovo\Desktop\ADROS Mohamed Rashed\Adros-Backend-MohamedRashed\Adros-BackEnd-main\Adros.Core\bin\Release\net9.0\Adros.Core.runtimeconfig.json
+C:\Users\lenovo\Desktop\ADROS Mohamed Rashed\Adros-Backend-MohamedRashed\Adros-BackEnd-main\Adros.Core\bin\Release\net9.0\Adros.Core.dll
+C:\Users\lenovo\Desktop\ADROS Mohamed Rashed\Adros-Backend-MohamedRashed\Adros-BackEnd-main\Adros.Core\bin\Release\net9.0\Adros.Core.pdb
+C:\Users\lenovo\Desktop\ADROS Mohamed Rashed\Adros-Backend-MohamedRashed\Adros-BackEnd-main\Adros.Core\bin\Release\net9.0\Adros.Shared.dll
+C:\Users\lenovo\Desktop\ADROS Mohamed Rashed\Adros-Backend-MohamedRashed\Adros-BackEnd-main\Adros.Core\bin\Release\net9.0\Adros.Shared.pdb
+C:\Users\lenovo\Desktop\ADROS Mohamed Rashed\Adros-Backend-MohamedRashed\Adros-BackEnd-main\Adros.Core\obj\Release\net9.0\Adros.Core.csproj.AssemblyReference.cache
+C:\Users\lenovo\Desktop\ADROS Mohamed Rashed\Adros-Backend-MohamedRashed\Adros-BackEnd-main\Adros.Core\obj\Release\net9.0\Adros.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lenovo\Desktop\ADROS Mohamed Rashed\Adros-Backend-MohamedRashed\Adros-BackEnd-main\Adros.Core\obj\Release\net9.0\Adros.Core.AssemblyInfoInputs.cache
+C:\Users\lenovo\Desktop\ADROS Mohamed Rashed\Adros-Backend-MohamedRashed\Adros-BackEnd-main\Adros.Core\obj\Release\net9.0\Adros.Core.AssemblyInfo.cs
+C:\Users\lenovo\Desktop\ADROS Mohamed Rashed\Adros-Backend-MohamedRashed\Adros-BackEnd-main\Adros.Core\obj\Release\net9.0\Adros.Core.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Desktop\ADROS Mohamed Rashed\Adros-Backend-MohamedRashed\Adros-BackEnd-main\Adros.Core\obj\Release\net9.0\Adros.Core.csproj.Up2Date
+C:\Users\lenovo\Desktop\ADROS Mohamed Rashed\Adros-Backend-MohamedRashed\Adros-BackEnd-main\Adros.Core\obj\Release\net9.0\Adros.Core.dll
+C:\Users\lenovo\Desktop\ADROS Mohamed Rashed\Adros-Backend-MohamedRashed\Adros-BackEnd-main\Adros.Core\obj\Release\net9.0\refint\Adros.Core.dll
+C:\Users\lenovo\Desktop\ADROS Mohamed Rashed\Adros-Backend-MohamedRashed\Adros-BackEnd-main\Adros.Core\obj\Release\net9.0\Adros.Core.pdb
+C:\Users\lenovo\Desktop\ADROS Mohamed Rashed\Adros-Backend-MohamedRashed\Adros-BackEnd-main\Adros.Core\obj\Release\net9.0\Adros.Core.genruntimeconfig.cache
+C:\Users\lenovo\Desktop\ADROS Mohamed Rashed\Adros-Backend-MohamedRashed\Adros-BackEnd-main\Adros.Core\obj\Release\net9.0\ref\Adros.Core.dll
+C:\Users\lenovo\Desktop\ADRS\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\bin\Release\net9.0\Adros.Core.deps.json
+C:\Users\lenovo\Desktop\ADRS\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\bin\Release\net9.0\Adros.Core.runtimeconfig.json
+C:\Users\lenovo\Desktop\ADRS\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\bin\Release\net9.0\Adros.Core.dll
+C:\Users\lenovo\Desktop\ADRS\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\bin\Release\net9.0\Adros.Core.pdb
+C:\Users\lenovo\Desktop\ADRS\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\bin\Release\net9.0\Adros.Shared.dll
+C:\Users\lenovo\Desktop\ADRS\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\bin\Release\net9.0\Adros.Shared.pdb
+C:\Users\lenovo\Desktop\ADRS\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\obj\Release\net9.0\Adros.Core.csproj.AssemblyReference.cache
+C:\Users\lenovo\Desktop\ADRS\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\obj\Release\net9.0\Adros.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lenovo\Desktop\ADRS\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\obj\Release\net9.0\Adros.Core.AssemblyInfoInputs.cache
+C:\Users\lenovo\Desktop\ADRS\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\obj\Release\net9.0\Adros.Core.AssemblyInfo.cs
+C:\Users\lenovo\Desktop\ADRS\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\obj\Release\net9.0\Adros.Core.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Desktop\ADRS\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\obj\Release\net9.0\Adros.Core.csproj.Up2Date
+C:\Users\lenovo\Desktop\ADRS\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\obj\Release\net9.0\Adros.Core.dll
+C:\Users\lenovo\Desktop\ADRS\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\obj\Release\net9.0\refint\Adros.Core.dll
+C:\Users\lenovo\Desktop\ADRS\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\obj\Release\net9.0\Adros.Core.pdb
+C:\Users\lenovo\Desktop\ADRS\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\obj\Release\net9.0\Adros.Core.genruntimeconfig.cache
+C:\Users\lenovo\Desktop\ADRS\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\obj\Release\net9.0\ref\Adros.Core.dll
+C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\bin\Release\net9.0\Adros.Core.deps.json
+C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\bin\Release\net9.0\Adros.Core.runtimeconfig.json
+C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\bin\Release\net9.0\Adros.Core.dll
+C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\bin\Release\net9.0\Adros.Core.pdb
+C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\bin\Release\net9.0\Adros.Shared.dll
+C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\bin\Release\net9.0\Adros.Shared.pdb
+C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\obj\Release\net9.0\Adros.Core.csproj.AssemblyReference.cache
+C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\obj\Release\net9.0\Adros.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\obj\Release\net9.0\Adros.Core.AssemblyInfoInputs.cache
+C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\obj\Release\net9.0\Adros.Core.AssemblyInfo.cs
+C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\obj\Release\net9.0\Adros.Core.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\obj\Release\net9.0\Adros.Core.sourcelink.json
+C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\obj\Release\net9.0\Adros.Core.csproj.Up2Date
+C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\obj\Release\net9.0\Adros.Core.dll
+C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\obj\Release\net9.0\refint\Adros.Core.dll
+C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\obj\Release\net9.0\Adros.Core.pdb
+C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\obj\Release\net9.0\Adros.Core.genruntimeconfig.cache
+C:\Users\lenovo\Desktop\========= ADRS =========\Adros_Backend_Rashed-main\Adros_Backend_Rashed-main\Adros.Core\obj\Release\net9.0\ref\Adros.Core.dll

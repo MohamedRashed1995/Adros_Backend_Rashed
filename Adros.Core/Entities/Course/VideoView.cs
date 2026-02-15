@@ -1,0 +1,15 @@
+﻿using Adros.Core.Entities.Users;
+using Adros.Shared;
+
+namespace Adros.Core.Entities.Course
+{
+    public class VideoView : BaseEntity
+    {
+        public Guid VideoId { get; set; }
+        public Video Video { get; set; }
+        public TimeSpan Duration { get; set; }
+        public int LastReportedSecond { get; set; }
+        public Guid StudentId { get; set; }
+        public Student Student { get; set; }
+    }
+}
