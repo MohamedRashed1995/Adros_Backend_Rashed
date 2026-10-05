@@ -1,1 +1,0 @@
-wwwroot\Images\Stages\Stage1.png
