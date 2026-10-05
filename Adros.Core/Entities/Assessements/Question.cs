@@ -11,7 +11,7 @@ namespace Adros.Core.Entities.Assessements
 
         #region Relations
         public Guid TopicId { get; set; }
-        public virtual Unit Topic { get; set; }
+        public virtual Topic Topic { get; set; }
 
         public Guid DificultyLevelId { get; set; }
         public virtual DificultyLevel DificultyLevel { get; set; }

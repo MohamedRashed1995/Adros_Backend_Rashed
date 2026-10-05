@@ -1,157 +1,21 @@
 [
   {
-    "ContainingType": "Adros.Apis.Controllers.Assesments.AssesmentController",
-    "Method": "CreateAssessmentAsync",
-    "RelativePath": "api/Assesment/create",
-    "HttpMethod": "POST",
-    "IsController": true,
+    "ContainingType": "Adros.Apis.Program\u002B\u003C\u003Ec",
+    "Method": "\u003CMain\u003Eb__0_6",
+    "RelativePath": "",
+    "HttpMethod": "GET",
+    "IsController": false,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "TopicId",
-        "Type": "System.Guid",
-        "IsRequired": false
-      },
-      {
-        "Name": "Title",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Score",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[Adros.Application.DTOs.Assesment.AssesmentDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 201
-      },
-      {
-        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 400
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
       }
     ]
   },
   {
-    "ContainingType": "Adros.Apis.Controllers.Assesments.AssesmentController",
-    "Method": "Test",
-    "RelativePath": "api/Assesment/test",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-<<<<<<< HEAD
-    "ContainingType": "Adros.Apis.Controllers.Admin.AttachmentController",
-    "Method": "GetAllAttachments",
-    "RelativePath": "api/Attachment",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.Admin.AttachmentController",
-    "Method": "CreateAttachment",
-    "RelativePath": "api/Attachment",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "Title",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "FormFile",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
-      },
-      {
-        "Name": "LessonId",
-        "Type": "System.Guid",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.Admin.AttachmentController",
-    "Method": "GetById",
-    "RelativePath": "api/Attachment/{attachmentId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "attachmentId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.Admin.AttachmentController",
-    "Method": "Delete",
-    "RelativePath": "api/Attachment/{attachmentId}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "attachmentId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.Admin.AttachmentController",
-    "Method": "Update",
-    "RelativePath": "api/Attachment/{attachmentId}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "attachmentId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      },
-      {
-        "Name": "Title",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "formFile",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-=======
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "ContainingType": "Adros.Apis.Controllers.AuthController",
     "Method": "CheckEmail",
     "RelativePath": "api/Auth/CheckEmail",
@@ -232,74 +96,152 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Adros.Apis.Controllers.AuthController",
-    "Method": "ValidateToken",
-    "RelativePath": "api/Auth/validate-token",
+    "ContainingType": "Adros.Apis.Controllers.Admin.BannersController",
+    "Method": "GetById",
+    "RelativePath": "api/Banners/{bannerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bannerId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[Adros.Application.DTOs.Banner.BannerEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "Adros.Apis.Controllers.Admin.BannersController",
+    "Method": "Delete",
+    "RelativePath": "api/Banners/{bannerId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bannerId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "Adros.Apis.Controllers.Admin.BannersController",
+    "Method": "GetAllBannersAsync",
+    "RelativePath": "api/Banners/Banners",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[Adros.Application.DTOs.Stage.ClientStageDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
-    "ContainingType": "Adros.Apis.Controllers.BannersController",
-    "Method": "GetAllBanners",
-    "RelativePath": "api/Banners",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.BannersController",
-    "Method": "CreateBanner",
-    "RelativePath": "api/Banners",
+    "ContainingType": "Adros.Apis.Controllers.Admin.BannersController",
+    "Method": "CreateBannerAsync",
+    "RelativePath": "api/Banners/create",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Order",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
         "Name": "Image",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.BannersController",
-    "Method": "GetBannerById",
-    "RelativePath": "api/Banners/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
+      },
       {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
+        "Name": "Order",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[Adros.Application.DTOs.Banner.BannerEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
   },
   {
-    "ContainingType": "Adros.Apis.Controllers.BannersController",
-    "Method": "UpdateBanner",
-    "RelativePath": "api/Banners/{id}",
+    "ContainingType": "Adros.Apis.Controllers.Admin.BannersController",
+    "Method": "Update",
+    "RelativePath": "api/Banners/update/{bannerId}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "bannerId",
         "Type": "System.Guid",
         "IsRequired": true
+      },
+      {
+        "Name": "Image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       },
       {
         "Name": "Order",
@@ -307,28 +249,65 @@
         "IsRequired": false
       },
       {
-        "Name": "Image",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "CreatedAt",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "UpdatedAt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CreatedBy",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "UpdatedBy",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Deleted",
+        "Type": "System.Boolean",
         "IsRequired": false
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.BannersController",
-    "Method": "DeleteBanner",
-    "RelativePath": "api/Banners/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
+    "ReturnTypes": [
       {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
+        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[Adros.Application.DTOs.Banner.ClientBannerDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
       }
-    ],
-    "ReturnTypes": []
+    ]
   },
   {
     "ContainingType": "Adros.Apis.Controllers.Admin.CalendersController",
@@ -377,112 +356,9 @@
     ]
   },
   {
-    "ContainingType": "Adros.Apis.Controllers.Admin.CalendersController",
-    "Method": "CreateCalender",
-    "RelativePath": "api/Calenders",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "createDto",
-        "Type": "Adros.Application.DTOs.Calender.CalenderCreateDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Adros.Application.DTOs.Calender.CalenderEntityDto",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.Admin.CalendersController",
-    "Method": "GetCalenderById",
-    "RelativePath": "api/Calenders/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Adros.Application.DTOs.Calender.CalenderEntityDto",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.Admin.CalendersController",
-    "Method": "UpdateCalender",
-    "RelativePath": "api/Calenders/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      },
-      {
-        "Name": "updateDto",
-        "Type": "Adros.Application.DTOs.Calender.CalenderUpdateDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Adros.Application.DTOs.Calender.CalenderEntityDto",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.Admin.CalendersController",
-    "Method": "DeleteCalender",
-    "RelativePath": "api/Calenders/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "Adros.Apis.Controllers.Client.HomeController",
     "Method": "GetHomeContentAsync",
-<<<<<<< HEAD
-    "RelativePath": "api/Home/GetHome",
-=======
     "RelativePath": "api/Home",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -498,9 +374,6 @@
         "IsRequired": false
       }
     ],
-<<<<<<< HEAD
-    "ReturnTypes": []
-=======
     "ReturnTypes": [
       {
         "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[Adros.Application.DTOs.Home.HomeResponseDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
@@ -530,240 +403,8 @@
         "StatusCode": 500
       }
     ]
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
   },
   {
-    "ContainingType": "Adros.Apis.Controllers.Admin.LessonsController",
-    "Method": "GetById",
-    "RelativePath": "api/Lessons/{lessonId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "lessonId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.Admin.LessonsController",
-    "Method": "Update",
-    "RelativePath": "api/Lessons/{lessonId}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "lessonId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      },
-      {
-        "Name": "Title",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Description",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Order",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "SubjectId",
-        "Type": "System.Guid",
-        "IsRequired": false
-      },
-      {
-        "Name": "TeacherId",
-        "Type": "System.Guid",
-        "IsRequired": false
-      },
-      {
-        "Name": "ExamId",
-        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-<<<<<<< HEAD
-=======
-      },
-      {
-        "Name": "Lessonfile",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.Admin.LessonsController",
-    "Method": "Delete",
-    "RelativePath": "api/Lessons/{lessonId}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "lessonId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.Admin.LessonsController",
-<<<<<<< HEAD
-    "Method": "GetAllLessons",
-=======
-    "Method": "GetAllLessonsAsync",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-    "RelativePath": "api/Lessons/all",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-<<<<<<< HEAD
-    "ReturnTypes": []
-=======
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[Adros.Application.DTOs.Lesson.LessonDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.Admin.LessonsController",
-    "Method": "GetBySubjectIdAsync",
-    "RelativePath": "api/Lessons/by-subject/{subjectId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "subjectId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[Adros.Application.DTOs.Lesson.LessonDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.Admin.LessonsController",
-    "Method": "Create",
-    "RelativePath": "api/Lessons/create",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-<<<<<<< HEAD
-        "Name": "lessonCreateDto",
-        "Type": "Adros.Application.DTOs.Lesson.LessonCreateDto",
-        "IsRequired": true
-=======
-        "Name": "Lessonfile",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
-      },
-      {
-        "Name": "Order",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Title",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Description",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "TeacherId",
-        "Type": "System.Guid",
-        "IsRequired": false
-      },
-      {
-        "Name": "SubjectId",
-        "Type": "System.Guid",
-        "IsRequired": false
-      },
-      {
-        "Name": "ExamId",
-        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Adros.Application.DTOs.Lesson.LessonDto",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-<<<<<<< HEAD
-    "ContainingType": "Adros.Apis.Controllers.Admin.LessonsController",
-    "Method": "GetLessonsByUnit",
-    "RelativePath": "api/Lessons/Get-Lessons-by-UnitId/{unitId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "unitId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[Adros.Application.DTOs.Lesson.UnitWithLessonsDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-=======
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "ContainingType": "Adros.Apis.Controllers.Admin.LevelsController",
     "Method": "GetByIdAsync",
     "RelativePath": "api/Levels/{levelId}",
@@ -795,26 +436,6 @@
           "text/json"
         ],
         "StatusCode": 404
-      }
-    ]
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.Admin.LevelsController",
-    "Method": "GetAllAsync",
-    "RelativePath": "api/Levels/all",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.Collections.Generic.IReadOnlyList\u00601[[Adros.Application.DTOs.Level.LevelEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
       }
     ]
   },
@@ -853,19 +474,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Title",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "StageId",
-        "Type": "System.Guid",
-        "IsRequired": false
-      },
-      {
-        "Name": "Image",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
+        "Name": "levelCreateDto",
+        "Type": "Adros.Application.DTOs.Level.LevelCreateDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
@@ -877,6 +488,15 @@
           "text/json"
         ],
         "StatusCode": 201
+      },
+      {
+        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
       }
     ]
   },
@@ -903,6 +523,15 @@
           "text/json"
         ],
         "StatusCode": 200
+      },
+      {
+        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
       }
     ]
   },
@@ -920,19 +549,9 @@
         "IsRequired": true
       },
       {
-        "Name": "Title",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "StageId",
-        "Type": "System.Guid",
-        "IsRequired": false
-      },
-      {
-        "Name": "Image",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
+        "Name": "levelUpdateDto",
+        "Type": "Adros.Application.DTOs.Level.LevelUpdateDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
@@ -944,233 +563,271 @@
           "text/json"
         ],
         "StatusCode": 200
+      },
+      {
+        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
       }
     ]
   },
   {
-<<<<<<< HEAD
-    "ContainingType": "Adros.Apis.Controllers.Subscriptions.PaymentsController",
-    "Method": "TestPaymobWebhook",
-    "RelativePath": "api/payments/paymob/test-webhook",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "merchant_order_id",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "success",
-        "Type": "System.Boolean",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.Subscriptions.PaymentsController",
-    "Method": "PaymobWebhook",
-    "RelativePath": "api/payments/paymob/webhook",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.Subscriptions.PaymentsController",
-    "Method": "PaymentRedirect",
-    "RelativePath": "api/payments/redirect",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.Subscriptions.PaymentsController",
-    "Method": "Subscribe",
-    "RelativePath": "api/payments/subscribe/{subscriptionId}",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "subscriptionId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.Subscriptions.PaymentsController",
-    "Method": "DeleteSubscriptionByStudent",
-    "RelativePath": "api/payments/unsubscribe/{studentId}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "studentId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "Adros.Apis.Controllers.Admin.SkillsController",
-    "Method": "GetSkillById",
-    "RelativePath": "api/Skills/{skillId}",
-=======
-    "ContainingType": "Adros.Apis.Controllers.Admin.SkillsController",
-    "Method": "GetSkillById",
-    "RelativePath": "api/Skills/{SkillId}",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "skillId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.Admin.SkillsController",
-    "Method": "Create",
+    "Method": "CreateSkillAsync",
     "RelativePath": "api/Skills/CreateSkill",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-<<<<<<< HEAD
-        "Name": "title",
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "VideoURL",
         "Type": "System.String",
         "IsRequired": false
       },
       {
-        "Name": "description",
+        "Name": "Title",
         "Type": "System.String",
         "IsRequired": false
       },
       {
-        "Name": "videoURL",
+        "Name": "Description",
         "Type": "System.String",
         "IsRequired": false
-=======
-        "Name": "dto",
-        "Type": "Adros.Application.DTOs.Skills.SkillDto",
-        "IsRequired": true
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
+      },
+      {
+        "Name": "ViewsCount",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[Adros.Application.DTOs.Skills.SkillDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
   },
   {
     "ContainingType": "Adros.Apis.Controllers.Admin.SkillsController",
-    "Method": "Delete",
-    "RelativePath": "api/Skills/Delete/{Skillid}",
+    "Method": "DeleteSkillAsync",
+    "RelativePath": "api/Skills/delete/{SkillId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Skillid",
+        "Name": "SkillId",
         "Type": "System.Guid",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
   },
   {
     "ContainingType": "Adros.Apis.Controllers.Admin.SkillsController",
-    "Method": "GetAll",
+    "Method": "GetAllSkills",
     "RelativePath": "api/Skills/GetAllSkills",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
+    "Parameters": [
+      {
+        "Name": "take",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "skip",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.Collections.Generic.IReadOnlyList\u00601[[Adros.Application.DTOs.Skills.SkillDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
   },
   {
     "ContainingType": "Adros.Apis.Controllers.Admin.SkillsController",
-    "Method": "Update",
-<<<<<<< HEAD
-    "RelativePath": "api/Skills/Update/{Id}",
-=======
-    "RelativePath": "api/Skills/Update/{Skillid}",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-<<<<<<< HEAD
-        "Name": "Id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      },
-      {
-        "Name": "dto",
-        "Type": "Adros.Application.DTOs.Skills.SkillDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.StagesController",
-    "Method": "GetStageById",
-    "RelativePath": "api/Stages/{id}",
+    "Method": "GetSkillByIdAsync",
+    "RelativePath": "api/Skills/SkillById/{SkillId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "SkillId",
         "Type": "System.Guid",
-=======
-        "Name": "dto",
-        "Type": "Adros.Application.DTOs.Skills.SkillDto",
-        "IsRequired": true
-      },
-      {
-        "Name": "Skillid",
-        "Type": "",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[Adros.Application.DTOs.Skills.SkillDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
   },
   {
-<<<<<<< HEAD
-    "ContainingType": "Adros.Apis.Controllers.StagesController",
-    "Method": "UpdateStage",
-    "RelativePath": "api/Stages/{id}",
-=======
-    "ContainingType": "Adros.Apis.Controllers.Admin.StagesController",
-    "Method": "Update",
-    "RelativePath": "api/Stages/{stageId}",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
+    "ContainingType": "Adros.Apis.Controllers.Admin.SkillsController",
+    "Method": "UpdateSkillAsync",
+    "RelativePath": "api/Skills/update/{SkillId}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-<<<<<<< HEAD
-        "Name": "id",
-=======
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "VideoURL",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ViewsCount",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SkillId",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[Adros.Application.DTOs.Skills.SkillDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "Adros.Apis.Controllers.Admin.StagesController",
+    "Method": "Update",
+    "RelativePath": "api/Stages/{stageId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
         "Name": "stageId",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         "Type": "System.Guid",
         "IsRequired": true
       },
@@ -1188,24 +845,11 @@
         "Name": "Order",
         "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
-      },
-      {
-        "Name": "Type",
-        "Type": "System.String",
-        "IsRequired": false
       }
     ],
-<<<<<<< HEAD
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.StagesController",
-    "Method": "DeleteStage",
-    "RelativePath": "api/Stages/{id}",
-=======
     "ReturnTypes": [
       {
-        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[Adros.Application.DTOs.Stage.StageEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "Adros.Application.DTOs.Stage.ClientStageDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1238,6 +882,15 @@
           "text/json"
         ],
         "StatusCode": 200
+      },
+      {
+        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
       }
     ]
   },
@@ -1245,28 +898,16 @@
     "ContainingType": "Adros.Apis.Controllers.Admin.StagesController",
     "Method": "Delete",
     "RelativePath": "api/Stages/{stageId}",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-<<<<<<< HEAD
-        "Name": "id",
-=======
         "Name": "stageId",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         "Type": "System.Guid",
         "IsRequired": true
       }
     ],
-<<<<<<< HEAD
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.StagesController",
-    "Method": "GetAllStages",
-=======
     "ReturnTypes": [
       {
         "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
@@ -1276,28 +917,29 @@
           "text/json"
         ],
         "StatusCode": 200
+      },
+      {
+        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
       }
     ]
   },
   {
     "ContainingType": "Adros.Apis.Controllers.Admin.StagesController",
     "Method": "GetAllStagesAsync",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "RelativePath": "api/Stages/all",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-<<<<<<< HEAD
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.StagesController",
-    "Method": "CreateStage",
-=======
     "ReturnTypes": [
       {
-        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.Collections.Generic.IReadOnlyList\u00601[[Adros.Application.DTOs.Stage.StageEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[Adros.Application.DTOs.Stage.StageEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1310,7 +952,6 @@
   {
     "ContainingType": "Adros.Apis.Controllers.Admin.StagesController",
     "Method": "Create",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "RelativePath": "api/Stages/create",
     "HttpMethod": "POST",
     "IsController": true,
@@ -1330,19 +971,11 @@
         "Name": "Order",
         "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
-      },
-      {
-        "Name": "Type",
-        "Type": "System.String",
-        "IsRequired": false
       }
     ],
-<<<<<<< HEAD
-    "ReturnTypes": []
-=======
     "ReturnTypes": [
       {
-        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[Adros.Application.DTOs.Stage.StageEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "Adros.Application.DTOs.Stage.StageEntityDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1351,11 +984,36 @@
         "StatusCode": 200
       }
     ]
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
   },
   {
     "ContainingType": "Adros.Apis.Controllers.Client.StudentController",
-    "Method": "GetProfile",
+    "Method": "GetByStageIdAsync",
+    "RelativePath": "api/Student/levels/{stageId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "stageId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[Adros.Application.DTOs.Level.ClientLevelDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Adros.Apis.Controllers.Client.StudentController",
+    "Method": "GetStudentProfile",
     "RelativePath": "api/Student/profile",
     "HttpMethod": "GET",
     "IsController": true,
@@ -1363,7 +1021,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[Adros.Application.DTOs.Student.StudentProfileDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "Adros.Application.DTOs.Student.StudentProfileDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1378,7 +1036,7 @@
           "application/json",
           "text/json"
         ],
-        "StatusCode": 401
+        "StatusCode": 404
       },
       {
         "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
@@ -1387,7 +1045,7 @@
           "application/json",
           "text/json"
         ],
-        "StatusCode": 403
+        "StatusCode": 500
       }
     ]
   },
@@ -1412,19 +1070,13 @@
     ],
     "ReturnTypes": [
       {
-<<<<<<< HEAD
-        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[Adros.Application.DTOs.Calender.ClientCalenderDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-=======
         "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.Collections.Generic.IReadOnlyList\u00601[[Adros.Application.DTOs.Calender.ClientCalenderDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         "MediaTypes": [
           "text/plain",
           "application/json",
           "text/json"
         ],
         "StatusCode": 200
-<<<<<<< HEAD
-=======
       },
       {
         "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
@@ -1434,7 +1086,6 @@
           "text/json"
         ],
         "StatusCode": 500
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       }
     ]
   },
@@ -1760,25 +1411,6 @@
     ]
   },
   {
-<<<<<<< HEAD
-    "ContainingType": "Adros.Apis.Controllers.Admin.StudentsController",
-    "Method": "DeleteStudent",
-    "RelativePath": "api/Students/{studentId}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "studentId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-=======
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "ContainingType": "Adros.Apis.Controllers.Admin.SubjectController",
     "Method": "UpdateSubject",
     "RelativePath": "api/Subject/{id}",
@@ -1914,32 +1546,6 @@
     ]
   },
   {
-    "ContainingType": "Adros.Apis.Controllers.Admin.SubjectController",
-    "Method": "GetSubjectsByLevel",
-    "RelativePath": "api/Subject/GetSubjectsByLevel/{levelId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "levelId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[Adros.Core.Entities.Course.SubjectDto, Adros.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
     "ContainingType": "Adros.Apis.Controllers.Subscriptions.SubscriptionsController",
     "Method": "Create",
     "RelativePath": "api/Subscriptions",
@@ -1973,13 +1579,8 @@
   },
   {
     "ContainingType": "Adros.Apis.Controllers.Subscriptions.SubscriptionsController",
-<<<<<<< HEAD
-    "Method": "Update",
-    "RelativePath": "api/Subscriptions/{id}",
-=======
     "Method": "Cancel",
     "RelativePath": "api/Subscriptions/{id}/cancel",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -1988,41 +1589,18 @@
         "Name": "id",
         "Type": "System.Guid",
         "IsRequired": true
-<<<<<<< HEAD
-      },
-      {
-        "Name": "dto",
-        "Type": "Adros.Application.DTOs.Subscription.UpdateSubscriptionDto",
-        "IsRequired": true
-=======
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       }
     ],
     "ReturnTypes": []
   },
   {
     "ContainingType": "Adros.Apis.Controllers.Subscriptions.SubscriptionsController",
-<<<<<<< HEAD
-    "Method": "Delete",
-    "RelativePath": "api/Subscriptions/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-=======
     "Method": "GetActiveSubscriptions",
     "RelativePath": "api/Subscriptions/active",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "ReturnTypes": []
   },
   {
@@ -2036,8 +1614,6 @@
     "ReturnTypes": []
   },
   {
-<<<<<<< HEAD
-=======
     "ContainingType": "Adros.Apis.Controllers.Subscriptions.SubscriptionsController",
     "Method": "CheckMySubscriptionStatus",
     "RelativePath": "api/Subscriptions/check-status",
@@ -2078,7 +1654,6 @@
     "ReturnTypes": []
   },
   {
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "ContainingType": "Adros.Apis.Controllers.Admin.TeachersController",
     "Method": "GetAllTeachers",
     "RelativePath": "api/Teachers",
@@ -2156,19 +1731,6 @@
         "Name": "Photo",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
-<<<<<<< HEAD
-      },
-      {
-        "Name": "StageId",
-        "Type": "System.Guid",
-        "IsRequired": false
-      },
-      {
-        "Name": "PhoneNumber",
-        "Type": "System.String",
-        "IsRequired": false
-=======
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       }
     ],
     "ReturnTypes": [
@@ -2206,6 +1768,15 @@
           "text/json"
         ],
         "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
       }
     ]
   },
@@ -2236,34 +1807,6 @@
         "Name": "Photo",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
-<<<<<<< HEAD
-      },
-      {
-        "Name": "FirstName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "LastName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "StageId",
-        "Type": "System.Guid",
-        "IsRequired": false
-      },
-      {
-        "Name": "IsActive",
-        "Type": "System.Boolean",
-        "IsRequired": false
-      },
-      {
-        "Name": "PhoneNumber",
-        "Type": "System.String",
-        "IsRequired": false
-=======
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
       }
     ],
     "ReturnTypes": [
@@ -2275,6 +1818,24 @@
           "text/json"
         ],
         "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
       }
     ]
   },
@@ -2301,154 +1862,34 @@
           "text/json"
         ],
         "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
       }
     ]
   },
   {
-<<<<<<< HEAD
     "ContainingType": "Adros.Apis.Controllers.Admin.TeachersController",
-    "Method": "GetTeachersByStage",
-    "RelativePath": "api/Teachers/by-stage/{stageId}",
-    "HttpMethod": "GET",
+    "Method": "ChangeTeacherPassword",
+    "RelativePath": "api/Teachers/{id}/change-password",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "stageId",
+        "Name": "id",
         "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.Admin.UnitsController",
-    "Method": "GetById",
-    "RelativePath": "api/Units/{unitId}",
-=======
-    "ContainingType": "Adros.Apis.Controllers.Admin.TopicsController",
-    "Method": "GetById",
-    "RelativePath": "api/Topics/{topicId}",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-<<<<<<< HEAD
-        "Name": "unitId",
-=======
-        "Name": "topicId",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-<<<<<<< HEAD
-        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[Adros.Application.DTOs.Topic.UnitEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-=======
-        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[Adros.Application.DTOs.Topic.TopicEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-<<<<<<< HEAD
-    "ContainingType": "Adros.Apis.Controllers.Admin.UnitsController",
-    "Method": "Update",
-    "RelativePath": "api/Units/{unitId}",
-=======
-    "ContainingType": "Adros.Apis.Controllers.Admin.TopicsController",
-    "Method": "Update",
-    "RelativePath": "api/Topics/{topicId}",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "topicId",
-        "Type": "System.Guid",
-<<<<<<< HEAD
-        "IsRequired": false
-      },
-      {
-        "Name": "dto",
-        "Type": "Adros.Application.DTOs.Topic.UnitUpdateDto",
         "IsRequired": true
       },
       {
-        "Name": "unitId",
-        "Type": "",
-=======
-        "IsRequired": true
-      },
-      {
-        "Name": "dto",
-        "Type": "Adros.Application.DTOs.Topic.TopicUpdateDto",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-<<<<<<< HEAD
-        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[Adros.Application.DTOs.Topic.UnitEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-=======
-        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[Adros.Application.DTOs.Topic.TopicEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-<<<<<<< HEAD
-    "ContainingType": "Adros.Apis.Controllers.Admin.UnitsController",
-    "Method": "Delete",
-    "RelativePath": "api/Units/{unitId}",
-=======
-    "ContainingType": "Adros.Apis.Controllers.Admin.TopicsController",
-    "Method": "Delete",
-    "RelativePath": "api/Topics/{topicId}",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "topicId",
-        "Type": "System.Guid",
-<<<<<<< HEAD
-        "IsRequired": false
-      },
-      {
-        "Name": "unitId",
-        "Type": "",
-=======
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
+        "Name": "changePasswordDto",
+        "Type": "Adros.Application.DTOs.Teacher.TeacherChangePasswordDto",
         "IsRequired": true
       }
     ],
@@ -2461,216 +1902,31 @@
           "text/json"
         ],
         "StatusCode": 200
-      }
-    ]
-  },
-  {
-<<<<<<< HEAD
-    "ContainingType": "Adros.Apis.Controllers.Admin.UnitsController",
-    "Method": "GetAll",
-    "RelativePath": "api/Units/all",
-=======
-    "ContainingType": "Adros.Apis.Controllers.Admin.TopicsController",
-    "Method": "GetAll",
-    "RelativePath": "api/Topics/all",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-<<<<<<< HEAD
-        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.Collections.Generic.IReadOnlyList\u00601[[Adros.Application.DTOs.Topic.UnitEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-=======
-        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.Collections.Generic.IReadOnlyList\u00601[[Adros.Application.DTOs.Topic.TopicEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-<<<<<<< HEAD
-    "ContainingType": "Adros.Apis.Controllers.Admin.UnitsController",
-    "Method": "Create",
-    "RelativePath": "api/Units/create",
-=======
-    "ContainingType": "Adros.Apis.Controllers.Admin.TopicsController",
-    "Method": "Create",
-    "RelativePath": "api/Topics/create",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "dto",
-<<<<<<< HEAD
-        "Type": "Adros.Application.DTOs.Topic.UnitCreateDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.Admin.UnitsController",
-    "Method": "GetBySubjectId",
-    "RelativePath": "api/Units/Get-Units-by-subject/{subjectId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "subjectId",
-        "Type": "System.Guid",
-=======
-        "Type": "Adros.Application.DTOs.Topic.TopicCreateDto",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-<<<<<<< HEAD
-        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.Collections.Generic.IReadOnlyList\u00601[[Adros.Application.DTOs.Topic.UnitEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-=======
-        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[Adros.Application.DTOs.Topic.TopicEntityDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.VideoController",
-    "Method": "GetAll",
-    "RelativePath": "api/Video",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.VideoController",
-<<<<<<< HEAD
-=======
-    "Method": "Create",
-    "RelativePath": "api/Video",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "dto",
-        "Type": "Adros.Application.DTOs.Video.CreateVideoDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.VideoController",
-    "Method": "GetById",
-    "RelativePath": "api/Video/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.VideoController",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-    "Method": "Update",
-    "RelativePath": "api/Video/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
       },
       {
-        "Name": "dto",
-        "Type": "Adros.Application.DTOs.Video.UpdateVideoDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.VideoController",
-    "Method": "Delete",
-    "RelativePath": "api/Video/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
       {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
       }
-    ],
-    "ReturnTypes": []
+    ]
   },
   {
-    "ContainingType": "Adros.Apis.Controllers.VideoController",
-<<<<<<< HEAD
-=======
-    "Method": "Download",
-    "RelativePath": "api/Video/{id}/download",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.VideoController",
-    "Method": "GetDownloadsCount",
-    "RelativePath": "api/Video/{id}/downloads",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.VideoController",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-    "Method": "ChangeStatus",
-    "RelativePath": "api/Video/{id}/status",
+    "ContainingType": "Adros.Apis.Controllers.Admin.TeachersController",
+    "Method": "UpdateTeacherStatus",
+    "RelativePath": "api/Teachers/{id}/status",
     "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
@@ -2681,57 +1937,44 @@
         "IsRequired": true
       },
       {
-        "Name": "status",
-        "Type": "System.String",
+        "Name": "statusUpdateDto",
+        "Type": "Adros.Application.DTOs.Teacher.TeacherStatusUpdateDto",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.VideoController",
-<<<<<<< HEAD
-    "Method": "GetViews",
-=======
-    "Method": "IncrementViews",
-    "RelativePath": "api/Video/{id}/view",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
+    "ReturnTypes": [
       {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.VideoController",
-    "Method": "GetViewsCount",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-    "RelativePath": "api/Video/{id}/views",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
+        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
       {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
       }
-    ],
-    "ReturnTypes": []
+    ]
   },
   {
-<<<<<<< HEAD
-    "ContainingType": "Adros.Apis.Controllers.VideoController",
-    "Method": "GetById",
-=======
     "ContainingType": "Adros.Apis.Controllers.Admin.VideoController",
     "Method": "GetVideoUrl",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     "RelativePath": "api/Video/{videoId}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -2739,146 +1982,7 @@
     "Parameters": [
       {
         "Name": "videoId",
-<<<<<<< HEAD
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.VideoController",
-    "Method": "GetMyViews",
-    "RelativePath": "api/Video/{videoId}/MyViews",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "videoId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.VideoController",
-    "Method": "AddView",
-    "RelativePath": "api/Video/{videoId}/view",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "videoId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      },
-      {
-        "Name": "request",
-        "Type": "Adros.Application.DTOs.Video.VideoViewRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.VideoController",
-    "Method": "ToggleWatchLater",
-    "RelativePath": "api/Video/{VideoId}/watchlater",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "VideoId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.VideoController",
-    "Method": "Create",
-    "RelativePath": "api/Video/Create",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "Title",
         "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Description",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Order",
-        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "LessonId",
-        "Type": "System.Guid",
-        "IsRequired": false
-      },
-      {
-        "Name": "UnitId",
-        "Type": "System.Guid",
-        "IsRequired": false
-      },
-      {
-        "Name": "VideoUrl",
-        "Type": "System.String",
-        "IsRequired": false
-=======
-        "Type": "System.String",
-        "IsRequired": true
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.VideoController",
-    "Method": "GetByLessonId",
-    "RelativePath": "api/Video/lesson/{lessonId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "lessonId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Adros.Apis.Controllers.VideoController",
-<<<<<<< HEAD
-    "Method": "GetMyWatchLaterVideos",
-    "RelativePath": "api/Video/watchlater",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-=======
-    "Method": "GetByTopicId",
-    "RelativePath": "api/Video/topic/{topicId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "topicId",
-        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -2908,7 +2012,61 @@
         "IsRequired": false
       }
     ],
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Adros.Apis.Controllers.Assesments.AssesmentController",
+    "Method": "CreateAssessmentAsync",
+    "RelativePath": "create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TopicId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Score",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[Adros.Application.DTOs.Assesment.AssesmentDto, Adros.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Adros.Apis.ApiResponse.ApiResponse\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Adros.Apis.Controllers.Assesments.AssesmentController",
+    "Method": "Test",
+    "RelativePath": "test",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]

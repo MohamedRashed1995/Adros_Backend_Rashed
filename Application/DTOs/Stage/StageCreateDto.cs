@@ -1,5 +1,4 @@
 ﻿using Adros.Application.ValidationAttributes;
-using Adros.Core.Enums;
 using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
@@ -20,6 +19,5 @@ namespace Adros.Application.DTOs.Stage
         public IFormFile? Image { get; set; }
         [Range(1, int.MaxValue)]
         public int? Order { get; set; }
-        public StageType? Type { get; set; }
     }
 }

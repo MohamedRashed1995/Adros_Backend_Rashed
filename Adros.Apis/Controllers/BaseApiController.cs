@@ -2,9 +2,10 @@
 
 namespace Adros.Apis.Controllers
 {
-    [ApiController]
     [Route("api/[controller]")]
-    public abstract class BaseApiController : ControllerBase
+    [ApiController]
+    public class BaseApiController : ControllerBase
     {
+
     }
 }

@@ -1,119 +1,142 @@
-﻿using Adros.Application.DTOs.Skills;
+﻿using Adros.Application.DTOs.Banner;
+using Adros.Application.DTOs.Skills;
 using Adros.Application.Interfaces.IService;
 using Adros.Core.DomainServices.IDomainService;
 using Adros.Core.Entities.Home;
-<<<<<<< HEAD
+using Adros.Core.Specifications;
 using Adros.Shared.Constants;
 using Adros.Shared.Helpers;
-=======
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 using Adros.Shared.Interfaces;
 using AutoMapper;
+using Microsoft.Extensions.Logging;
 
 namespace Adros.Application.Services.HomeService
 {
-    public class SkillsService : ISkillsService
+    public class SkillsService(IUnitOfWork unitOfWork, IMapper mapper, ILogger<SkillsService> logger, ICurrentUserService currentUserService) : ISkillsService
     {
-        private readonly IUnitOfWork _unitOfWork;
-        private readonly IMapper _mapper;
-        private readonly ICurrentUserService _currentUser;
 
-        public SkillsService(
-            IUnitOfWork unitOfWork,
-            IMapper mapper,
-            ICurrentUserService currentUser)
+        private readonly IUnitOfWork _unitOfWork = unitOfWork;
+        private readonly IMapper _mapper = mapper;
+        private readonly ILogger<SkillsService> _logger = logger;
+        private readonly ICurrentUserService _currentUserService = currentUserService;
+
+        public async Task<SkillDto> CreateVariousSkillAsync(SkillDto Skill)
         {
-            _unitOfWork = unitOfWork;
-            _mapper = mapper;
-            _currentUser = currentUser;
+            if (string.IsNullOrWhiteSpace(Skill.Title) || string.IsNullOrWhiteSpace(Skill.Description))
+            {
+                throw new ArgumentException("Title and Description are required fields.");
+            }
+
+            try
+            {
+                // Map DTO to entity
+                var skill = _mapper.Map<VariousSkill>(Skill);
+
+                // Assign created/updated metadata
+                skill.CreatedBy =  _currentUserService.UserId;
+                skill.UpdatedBy = _currentUserService.UserId;
+                skill.VideoURL = Skill.VideoURL;
+                skill.Title = Skill.Title;
+                skill.Description = Skill.Description;
+                //skill.Views = Skill.ViewsCount;
+                skill.Id = Skill.Id;
+
+                // Add the skill to the repository
+                var createdSkill = await _unitOfWork.Repository<VariousSkill>().AddAsync(skill);
+                await _unitOfWork.CompleteAsync();
+
+                _logger.LogInformation("Skill created successfully: {Title}", skill.Title);
+                
+                // Return the mapped SkillDto
+                return _mapper.Map<SkillDto>(skill);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while creating a new skill.");
+                throw;
+            }
         }
 
-<<<<<<< HEAD
-        public async Task<SkillShowDto> CreateAsync(SkillDto dto)
-=======
-        public async Task<SkillDto> CreateAsync(SkillDto dto)
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
+        public async Task<bool> DeleteVariousSkillAsync(Guid VariousSkillId)
         {
-            var skill = _mapper.Map<Skill>(dto);
+            var Skill = await _unitOfWork.Repository<VariousSkill>().GetByIdAsync(VariousSkillId);
+            if (Skill == null)
+                return false;
 
-            skill.Id = Guid.NewGuid();
-            skill.CreatedAt = DateTime.UtcNow;
-            skill.CreatedBy = _currentUser.UserId;
-<<<<<<< HEAD
-            skill.Title = dto.title;
-            skill.Description = dto.description;    
-            skill.VideoURL = dto.videoURL;
-            skill.ViewsCount = 0;
-            await _unitOfWork.Repository<Skill>().AddAsync(skill);
+            // Soft delete the banner
+            _unitOfWork.Repository<VariousSkill>().Delete(Skill);
             await _unitOfWork.CompleteAsync();
 
-            return _mapper.Map<SkillShowDto>(skill);
-        }
-
-
-
-=======
-
-            await _unitOfWork.Repository<Skill>().AddAsync(skill);
-            await _unitOfWork.CompleteAsync();
-
-            return _mapper.Map<SkillDto>(skill);
-        }
-
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-        public async Task<bool> DeleteAsync(Guid id)
-        {
-            var skill = await _unitOfWork.Repository<Skill>().GetByIdAsync(id);
-            if (skill == null) return false;
-
-            _unitOfWork.Repository<Skill>().Delete(skill);
-            await _unitOfWork.CompleteAsync();
             return true;
         }
 
-<<<<<<< HEAD
-        public async Task<IReadOnlyList<SkillShowDto>> GetAllAsync(int? take, int? skip)
+        public async Task<IReadOnlyList<SkillDto>> GetVariousSkillAsync(int? take = null, int? skip = null)
         {
-            var skills = await _unitOfWork.Repository<Skill>().ListAllAsync();
-            return _mapper.Map<IReadOnlyList<SkillShowDto>>(skills);
+            try
+            {
+                var specs = new HomeSkillsSpecifications(take , skip);
+                var Skills = await _unitOfWork.Repository<VariousSkill>().ListAsync(specs);
+                return _mapper.Map<IReadOnlyList<VariousSkill>, IReadOnlyList<SkillDto>>(Skills);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while fetching Various Skills.");
+                throw;
+            }
         }
 
-        public async Task<SkillShowDto?> GetByIdAsync(Guid id)
+        public async Task<SkillDto?> GetVariousSkillByIdAsync(Guid VariousSkillId)
         {
-            var skill = await _unitOfWork.Repository<Skill>().GetByIdAsync(id);
-            return _mapper.Map<SkillShowDto>(skill);
+
+            var Skill = await _unitOfWork.Repository<VariousSkill>().GetByIdAsync(VariousSkillId);
+            if (Skill == null || Skill.Deleted == true)
+                return null;
+
+            return _mapper.Map<SkillDto>(Skill);
         }
 
-        public async Task<SkillDto?> UpdateAsync(Guid Id, SkillDto dto)
+        public async Task<SkillDto?> UpdateVariousSkillAsync( SkillDto SkillUpdateDto)
         {
-            var skill = await _unitOfWork.Repository<Skill>().GetByIdAsync(Id);
-=======
-        public async Task<IReadOnlyList<SkillDto>> GetAllAsync(int? take, int? skip)
-        {
-            var skills = await _unitOfWork.Repository<Skill>().ListAllAsync();
-            return _mapper.Map<IReadOnlyList<SkillDto>>(skills);
-        }
+            // Validate the input
+            if (SkillUpdateDto == null)
+            {
+                throw new ArgumentNullException(nameof(SkillUpdateDto));
+            }
 
-        public async Task<SkillDto?> GetByIdAsync(Guid id)
-        {
-            var skill = await _unitOfWork.Repository<Skill>().GetByIdAsync(id);
-            return skill == null ? null : _mapper.Map<SkillDto>(skill);
-        }
+            if (string.IsNullOrWhiteSpace(SkillUpdateDto.Title) || string.IsNullOrWhiteSpace(SkillUpdateDto.Description))
+            {
+                throw new ArgumentException("Title and Description are required fields.");
+            }
 
-        public async Task<SkillDto?> UpdateAsync(SkillDto dto)
-        {
-            var skill = await _unitOfWork.Repository<Skill>().GetByIdAsync(dto.id);
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-            if (skill == null) return null;
+            try
+            {
+                // Retrieve the entity to update
+                var skill = await _unitOfWork.Repository<VariousSkill>().GetByIdAsync(SkillUpdateDto.Id);
+                if (skill == null)
+                {
+                    throw new KeyNotFoundException($"Skill with ID {SkillUpdateDto.Id} not found.");
+                }
 
-            _mapper.Map(dto, skill);
-            skill.UpdatedAt = DateTime.UtcNow;
-            skill.UpdatedBy = _currentUser.UserId;
+                // Map updated values from DTO to entity
+                _mapper.Map(SkillUpdateDto, skill);
 
-            _unitOfWork.Repository<Skill>().Update(skill);
-            await _unitOfWork.CompleteAsync();
+                // Update metadata
+                skill.UpdatedBy = _currentUserService.UserId;
+                //skill.
+                // Persist the changes
+                _unitOfWork.Repository<VariousSkill>().Update(skill);
+                await _unitOfWork.CompleteAsync();
 
-            return _mapper.Map<SkillDto>(skill);
+                _logger.LogInformation("Skill with ID {Id} updated successfully.", SkillUpdateDto.Id);
+
+                // Return the updated SkillDto
+                return _mapper.Map<SkillDto>(skill);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error occurred while updating the skill with ID {Id}.", SkillUpdateDto.Id);
+                throw;
+            }
         }
     }
 }

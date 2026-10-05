@@ -9,7 +9,7 @@ namespace Adros.Core.Entities.Course
         public virtual Student Student { get; set; }
 
         public Guid TopicId { get; set; }
-        public virtual Unit Topic { get; set; }
+        public virtual Topic Topic { get; set; }
         #endregion
 
         #region Props

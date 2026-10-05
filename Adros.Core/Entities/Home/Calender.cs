@@ -6,7 +6,8 @@ namespace Adros.Core.Entities.Home
 {
     public class Calender : BaseEntity
     {
-        
+        [Key]
+        public Guid CalenderId { get; set; }
         //public DateTime CreatedAt { get; set; } = DateTime.Now;
         //public DateTime? UpdatedAt { get; set; }
         //public Guid CreatedBy { get; set; }

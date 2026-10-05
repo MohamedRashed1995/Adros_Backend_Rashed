@@ -20,8 +20,9 @@ namespace Adros.Core.Specifications
                     case "title":
                         ApplyOrderBy(x => x.Title);
                         break;
-                    
-                        
+                    case "createddate":
+                        ApplyOrderByDescending(x => x.CreatedAt);
+                        break;
                     default:
                         ApplyOrderBy(x => x.Title);
                         break;

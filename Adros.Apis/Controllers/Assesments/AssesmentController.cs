@@ -5,7 +5,7 @@ using Adros.Application.Interfaces.IService;
 using Adros.Application.Services.HomeService;
 using Adros.Core.Entities.Assessements;
 using Adros.Shared.Constants;
-//using Grpc.Core;
+using Grpc.Core;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -13,10 +13,10 @@ using System.Net;
 
 namespace Adros.Apis.Controllers.Assesments
 {
-    [Route("api/[controller]")]
+    //[Route("api/[controller]")]
     [ApiController]
     [Authorize(Roles = SystemRoles.Teacher)]
-    public class AssesmentController(IAssesmentService assesmentService, ILogger<AssesmentController> logger) : BaseApiController
+    public class AssesmentController(IAssesmentService assesmentService, ILogger<AssesmentController> logger) : ControllerBase
     {
         private readonly IAssesmentService _iassessmentservice = assesmentService;
         private readonly ILogger<AssesmentController> _logger = logger;

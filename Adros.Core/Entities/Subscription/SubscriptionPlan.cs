@@ -10,8 +10,8 @@ namespace Adros.Core.Entities.Subscription
 {
     public class SubscriptionPlan : BaseEntity
     {
-        //[Key]
-        //public Guid SubscriptionPlanId { get; set; }
+        [Key]
+        public Guid SubscriptionPlanId { get; set; }
         [Required]
         [StringLength(100)]
         public string Name { get; set; }

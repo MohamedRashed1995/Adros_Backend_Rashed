@@ -2,170 +2,91 @@
 using Adros.Core.Entities.Assessements;
 using Adros.Core.Entities.Course;
 using Adros.Core.Entities.Home;
-using Adros.Core.Entities.Subscription;
 using Adros.Core.Entities.Users;
 using Microsoft.AspNetCore.Identity;
-using System;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-//using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Diagnostics;
-
-
+using Microsoft.EntityFrameworkCore;
 
 namespace Adros.Persistence.Contexts
 {
-
-
-    public class AppDbContext : IdentityDbContext<ApplicationUser, IdentityRole<Guid>, Guid>
+    public class AppDbContext : 
+        IdentityDbContext<ApplicationUser, IdentityRole<Guid>, Guid>
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options)
-            : base(options)
+
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base (options)
         {
+            
         }
 
-        // DbSets
-<<<<<<< HEAD
+        #region IdentityModels
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
-=======
-        //public DbSet<ApplicationUser> ApplicationUsers { get; set; }
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-        //public DbSet<IdentityRole<Guid>> Roles { get; set; }
-        //public DbSet<IdentityUserClaim<Guid>> UserClaims { get; set; }
-        //public DbSet<IdentityUserRole<Guid>> UserRoles { get; set; }
-        //public DbSet<IdentityUserLogin<Guid>> UserLogins { get; set; }
-        //public DbSet<IdentityRoleClaim<Guid>> RoleClaims { get; set; }
-        //public DbSet<IdentityUserToken<Guid>> UserTokens { get; set; }
-
+        public new DbSet<IdentityRole<Guid>> Roles { get; set; }
+        public new DbSet<IdentityUserClaim<Guid>> UserClaims { get; set; }
+        public new DbSet<IdentityUserRole<Guid>> UserRoles { get; set; }
+        public new DbSet<IdentityUserLogin<Guid>> UserLogins { get; set; }
+        public new DbSet<IdentityRoleClaim<Guid>> RoleClaims { get; set; }
+        public new DbSet<IdentityUserToken<Guid>> UserTokens { get; set; }
         public DbSet<UserOtp> UserOtps { get; set; }
+        #endregion
+        #region Users
+        public DbSet<Teacher> Teachers { get; set; }
+        public DbSet<Student> Students { get; set; }
+        #endregion
+        #region Home
         public DbSet<Banner> Banners { get; set; }
         public DbSet<Calender> Calenders { get; set; }
         public DbSet<VariousSkill> VariousSkills { get; set; }
-        //public DbSet<VariousSkillView> VariousSkillsViews { get; set; }
-        public DbSet<Skill> Skills { get; set; }
+        public DbSet<VariousSkillView> VariousSkillsViews { get; set; }
         public DbSet<Stage> Stages { get; set; }
+        #endregion
+        #region Courses
         public DbSet<Level> Levels { get; set; }
         public DbSet<Subject> Subjects { get; set; }
-<<<<<<< HEAD
-        public DbSet<Lesson> Lessons { get; set; } = default!;
-        public DbSet<Unit> Units { get; set; } = default!;
-        public DbSet<Attachment> Attachments { get; set; }
-        public DbSet<VideoView> VideoViews { get; set; }
-        public DbSet<WatchLater> watchlater { get; set; }
-=======
         public DbSet<Lesson> Lessons { get; set; }
-        public DbSet<Unit> Topics { get; set; }
+        public DbSet<Topic> Topics { get; set; }
         public DbSet<Attachment> Attachments { get; set; }
         public DbSet<Video> Videos { get; set; }
         public DbSet<VideoView> VideoViews { get; set; }
         public DbSet<VideoDownload> VideoDownloads { get; set; }
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         public DbSet<StudentProgress> StudentProgresses { get; set; }
         public DbSet<AssessmentQuestion> AssessmentQuestions { get; set; }
+        #endregion
+        #region Exams
         public DbSet<Assessment> Assessments { get; set; }
         public DbSet<Question> Questions { get; set; }
         public DbSet<DificultyLevel> DificultyLevels { get; set; }
         public DbSet<Answer> Answers { get; set; }
-        public DbSet<Subscription> Subscriptions { get; set; }
-<<<<<<< HEAD
-        public DbSet<StudentSubscription> StudentSubscriptions { get; set; }
-        public DbSet<Video> videos { get; set; } = default!;
-        //public DbSet<>
-        public DbSet<Teacher> Teachers { get; set; } = default!;
-        public DbSet<Student> Students { get; set; }
-        public DbSet<PendingPayment> pendingPayments { get; set; }
-=======
-        public DbSet<SubscriptionPlan> subscriptionPlans { get; set; }
-        public DbSet<Video> videos{ get; set; }
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
+
+        #endregion
+
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            // Rename Identity tables
-            modelBuilder.Entity<ApplicationUser>().ToTable("Users");
-            modelBuilder.Entity<IdentityRole<Guid>>().ToTable("Roles");
-            modelBuilder.Entity<IdentityUserClaim<Guid>>().ToTable("UserClaims");
-            modelBuilder.Entity<IdentityUserRole<Guid>>().ToTable("UserRoles");
-            modelBuilder.Entity<IdentityUserLogin<Guid>>().ToTable("UserLogins");
-            modelBuilder.Entity<IdentityRoleClaim<Guid>>().ToTable("RoleClaims");
-            modelBuilder.Entity<IdentityUserToken<Guid>>().ToTable("UserTokens");
-<<<<<<< HEAD
-    //        modelBuilder.Entity<Unit>()
-    //.Ignore(u => u.);
+            modelBuilder.Entity<ApplicationUser>()
+                .ToTable("Users");
 
-=======
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
+            modelBuilder.Entity<IdentityRole<Guid>>()
+                .ToTable("Roles");
 
-            modelBuilder.Entity<Level>()
-                .HasOne(l => l.Stage)
-                .WithMany(s => s.Levels)
-                .HasForeignKey(l => l.StageId)
-                .OnDelete(DeleteBehavior.Cascade);
+            modelBuilder.Entity<IdentityUserClaim<Guid>>()
+                .ToTable("UserClaims");
 
-            modelBuilder.Entity<Subject>()
-                .HasOne(s => s.Level)
-                .WithMany(l => l.Subjects)
-                .HasForeignKey(s => s.LevelId)
-                .OnDelete(DeleteBehavior.Cascade);
+            modelBuilder.Entity<IdentityUserRole<Guid>>()
+                .ToTable("UserRoles");
 
-            // ← السطر الجديد/المؤكد:
-            modelBuilder.Entity<Student>()
-                .HasOne(s => s.Level)
-                .WithMany(l => l.Students)
-                .HasForeignKey(s => s.LevelId)
-                .OnDelete(DeleteBehavior.Cascade);
+            modelBuilder.Entity<IdentityUserLogin<Guid>>()
+                .ToTable("UserLogins");
 
-            modelBuilder.Entity<Unit>()
-                .HasMany(t => t.Lessons)
-                .WithOne(l => l.Unit)
-                .HasForeignKey(l => l.UnitId)
-                .OnDelete(DeleteBehavior.Cascade);
+            modelBuilder.Entity<IdentityRoleClaim<Guid>>()
+                .ToTable("RoleClaims");
 
-            modelBuilder.Entity<Lesson>()
-                .HasMany(l => l.Videos)
-                .WithOne(v => v.Lesson)
-                .HasForeignKey(v => v.LessonId)
-                .OnDelete(DeleteBehavior.Cascade);
+            modelBuilder.Entity<IdentityUserToken<Guid>>()
+                .ToTable("UserTokens");
 
-            modelBuilder.Entity<Video>().ToTable("Videos");
-            // Apply configurations from assembly
-            modelBuilder.Entity<Lesson>()
-                .HasOne(l => l.Unit)
-                .WithMany(u => u.Lessons)
-                .HasForeignKey(l => l.UnitId)
-                .OnDelete(DeleteBehavior.NoAction);
-
-
-<<<<<<< HEAD
-            modelBuilder.Entity<Video>()
-                .HasOne(v => v.Lesson)
-                .WithMany(l => l.Videos)
-                .HasForeignKey(v => v.LessonId)
-                .OnDelete(DeleteBehavior.Restrict);
-
-            modelBuilder.Entity<Subscription>()
-                    .Property(s => s.Benefits)
-                    .HasConversion(
-                        v => string.Join("||", v),
-                        v => v.Split("||", StringSplitOptions.RemoveEmptyEntries).ToList()
-                    );
-
-=======
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
-        }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
-            {
-                optionsBuilder.UseSqlServer("Server=db36362.public.databaseasp.net; Database=db36362; User Id=db36362; Password=H_b2zE4#!9yB; Encrypt=True; TrustServerCertificate=True; MultipleActiveResultSets=True;");
-            }
-
-            // هذا السطر مهم لحل التحذير
-            optionsBuilder.ConfigureWarnings(warnings =>
-                warnings.Ignore(RelationalEventId.PendingModelChangesWarning));
         }
     }
 }

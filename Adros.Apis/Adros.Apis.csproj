@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
-	  <RestoreSources>https://api.nuget.org/v3/index.json</RestoreSources>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>d161e8ff-8a6a-46f8-b465-88cc3b067967</UserSecretsId>
@@ -10,33 +9,40 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Properties\PublishProfiles\web.config" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
+
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
+
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="9.0.0-preview.3.efcore.9.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.6" />
+    
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="9.0.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="9.0.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="9.0.6" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	  <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
+	  <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
-	<ItemGroup>
-		<!-- إصدارات موحدة 9.0.0 -->
-		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.0" />
-		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.0" />
-		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
-		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
-		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
-		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
-			<PrivateAssets>all</PrivateAssets>
-			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-		</PackageReference>
-		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0">
-			<PrivateAssets>all</PrivateAssets>
-			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-		</PackageReference>
-		<PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
-		<PackageReference Include="Swashbuckle.AspNetCore" Version="7.0.0" />
-	</ItemGroup>
-
   <ItemGroup>
-    
-	  <ProjectReference Include="..\Application\Adros.Application.csproj" />
-	  <ProjectReference Include="..\Adros.Persistence\Adros.Persistence.csproj" />
-	  <ProjectReference Include="..\Adros.Infrastructure\Adros.Infrastructure.csproj" />
+    <ProjectReference Include="..\Adros.Apis.ServiceDefaults\Adros.Apis.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\Adros.Infrastructure\Adros.Infrastructure.csproj" />
+    <ProjectReference Include="..\Adros.Persistence\Adros.Persistence.csproj" />
+    <ProjectReference Include="..\Application\Adros.Application.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -44,12 +50,8 @@
     <Folder Include="wwwroot\Images\Banners\" />
     <Folder Include="wwwroot\Images\Banners\" />
     <Folder Include="wwwroot\Images\Banners\" />
-    <Folder Include="wwwroot\Images\Levels\" />
-<<<<<<< HEAD
-    <Folder Include="wwwroot\Attachments\" />
-    <Folder Include="wwwroot\Videos\" />
-=======
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
   </ItemGroup>
 
 </Project>
+
+
