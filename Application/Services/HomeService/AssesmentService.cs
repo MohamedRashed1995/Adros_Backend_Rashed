@@ -48,14 +48,10 @@ namespace Adros.Application.Services.HomeService
                 var assessment = new Assessment
                 {
                     Id = new Guid(),
-<<<<<<< HEAD
-                    UnitId = assessmentCreateDto.TopicId,
-=======
                     TopicId = assessmentCreateDto.TopicId,
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                     Title = assessmentCreateDto.Title,
                     Score = assessmentCreateDto.Score,
-                    //CreatedAt = DateTime.UtcNow,
+                    CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow,
                     CreatedBy = _currentUserService.UserId,
                     UpdatedBy = _currentUserService.UserId,

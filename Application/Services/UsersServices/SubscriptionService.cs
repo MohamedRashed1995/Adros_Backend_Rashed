@@ -1,14 +1,5 @@
 ﻿using Adros.Application.DTOs.Subscription;
 using Adros.Application.Interfaces.IService;
-<<<<<<< HEAD
-using Adros.Core.DomainServices.IDomainService;
-using Adros.Core.Entities.Subscription;
-using Adros.Core.Entities.Users;
-using Adros.Shared.Interfaces;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-=======
 using Adros.Core.Entities.Subscription;
 using Adros.Core.Entities.Users;
 using Adros.Shared.Interfaces;
@@ -16,7 +7,6 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 using System.Threading.Tasks;
 
 namespace Adros.Application.Services
@@ -24,12 +14,6 @@ namespace Adros.Application.Services
     public class SubscriptionService : ISubscriptionService
     {
         private readonly IUnitOfWork _unitOfWork;
-<<<<<<< HEAD
-
-        public SubscriptionService(IUnitOfWork unitOfWork)
-        {
-            _unitOfWork = unitOfWork;
-=======
         private readonly ILogger<SubscriptionService> _logger;
 
         public SubscriptionService(
@@ -38,26 +22,10 @@ namespace Adros.Application.Services
         {
             _unitOfWork = unitOfWork;
             _logger = logger;
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         }
 
         public async Task<SubscriptionResponseDto> CreateAsync(CreateSubscriptionDto dto)
         {
-<<<<<<< HEAD
-            var subscription = new Subscription
-            {
-                Name = dto.Name,
-                Price = dto.Price,
-                Duration = dto.Duration,
-                Benefits = dto.Benefits,
-                CreatedAt = DateTime.UtcNow
-            };
-
-            await _unitOfWork.Repository<Subscription>().AddAsync(subscription);
-            await _unitOfWork.CompleteAsync();
-
-            return MapToDto(subscription);
-=======
             try
             {
                 _logger.LogInformation("Creating subscription for user {UserId}", dto.UserId);
@@ -112,7 +80,7 @@ namespace Adros.Application.Services
                     Status = "active",
                     IsAutoRenew = dto.IsAutoRenew,
                     Notes = dto.Notes,
-                    //CreatedAt = DateTime.UtcNow
+                    CreatedAt = DateTime.UtcNow
                 };
 
                 // 6️⃣ Save subscription
@@ -144,7 +112,7 @@ namespace Adros.Application.Services
                     Amount = subscription.AmountPaid,
                     IsAutoRenew = subscription.IsAutoRenew,
                     Notes = subscription.Notes,
-                    //CreatedAt = subscription.CreatedAt
+                    CreatedAt = subscription.CreatedAt
                 };
             }
             catch (Exception ex)
@@ -152,87 +120,10 @@ namespace Adros.Application.Services
                 _logger.LogError(ex, "Error creating subscription for user {UserId}", dto.UserId);
                 throw;
             }
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         }
 
         public async Task<SubscriptionResponseDto> GetByIdAsync(Guid id)
         {
-<<<<<<< HEAD
-            var subscription = await _unitOfWork.Repository<Subscription>()
-                .GetByIdAsync(id);
-
-            if (subscription == null) return null;
-
-            return MapToDto(subscription);
-        }
-
-        //public async Task<IEnumerable<SubscriptionResponseDto>> GetAllAsync()
-        //{
-        //    var list = await _unitOfWork.Repository<Subscription>().GetAllAsync();
-        //    var result = new List<SubscriptionResponseDto>();
-        //    foreach (var sub in list)
-        //    {
-        //        result.Add(MapToDto(sub));
-        //    }
-        //    return result;
-        //}
-        public async Task<SubscriptionsWithStudentDto> GetAllAsync(ICurrentUserService currentUserService,IStudentService studentService)
-        {
-            var userId = currentUserService.UserId;
-            var studentId = await studentService.GetStudentIdByUserIdAsync(userId);
-
-            var studentSubscriptions = await _unitOfWork
-                .Repository<StudentSubscription>()
-                .GetAllAsync(filter: q => q.Where(x => x.StudentId == studentId));
-
-            // نخزن الـ ids في HashSet عشان السرعة
-            var subscribedIds = studentSubscriptions 
-                .Select(x => x.SubscriptionId)
-                .ToHashSet();
-
-            var subscriptions = await _unitOfWork
-                .Repository<Subscription>()
-                .GetAllAsync();
-
-            var result = subscriptions.Select(sub => new SubscriptionResponseDto
-            {
-                Id = sub.Id,
-                Name = sub.Name,
-                Price = sub.Price,
-                Duration = sub.Duration,
-                Benefits = sub.Benefits,
-                CreatedAt = sub.CreatedAt,
-                UpdatedAt = sub.UpdatedAt,
-                IsSubscribed = subscribedIds.Contains(sub.Id)
-            }).ToList();
-
-            return new SubscriptionsWithStudentDto
-            {
-                StudentId = studentId.ToString(),
-                Subscriptions = result
-            };
-        }
-
-
-
-
-
-        public async Task<SubscriptionResponseDto> UpdateAsync(Guid id, UpdateSubscriptionDto dto)
-        {
-            var subscription = await _unitOfWork.Repository<Subscription>().GetByIdAsync(id);
-            if (subscription == null) return null;
-
-            subscription.Name = dto.Name ?? subscription.Name;
-            subscription.Price = dto.Price ?? subscription.Price;
-            subscription.Duration = dto.Duration ?? subscription.Duration;
-            subscription.Benefits = dto.Benefits ?? subscription.Benefits;
-            subscription.UpdatedAt = DateTime.UtcNow;
-
-            _unitOfWork.Repository<Subscription>().Update(subscription);
-            await _unitOfWork.CompleteAsync();
-
-            return MapToDto(subscription);
-=======
             try
             {
                 var subscription = await _unitOfWork.Repository<Subscription>()
@@ -266,7 +157,7 @@ namespace Adros.Application.Services
                     Amount = subscription.AmountPaid,
                     IsAutoRenew = subscription.IsAutoRenew,
                     Notes = subscription.Notes,
-                    //CreatedAt = subscription.CreatedAt,
+                    CreatedAt = subscription.CreatedAt,
                     UpdatedAt = subscription.UpdatedAt
                 };
             }
@@ -295,7 +186,7 @@ namespace Adros.Application.Services
 
                 var subscriptions = allSubscriptions
                     .Where(s => s.StudentId == student.Id)
-                    //.OrderByDescending(s => s.CreatedAt)
+                    .OrderByDescending(s => s.CreatedAt)
                     .ToList();
 
                 var result = new List<SubscriptionResponseDto>();
@@ -323,7 +214,7 @@ namespace Adros.Application.Services
                         Amount = subscription.AmountPaid,
                         IsAutoRenew = subscription.IsAutoRenew,
                         Notes = subscription.Notes,
-                        //CreatedAt = subscription.CreatedAt,
+                        CreatedAt = subscription.CreatedAt,
                         UpdatedAt = subscription.UpdatedAt
                     });
                 }
@@ -352,32 +243,32 @@ namespace Adros.Application.Services
 
                 var result = new List<SubscriptionResponseDto>();
 
-                //foreach (var subscription in allSubscriptions.OrderByDescending(s => s.))
-                //{
-                //    var student = allStudents.FirstOrDefault(s => s.Id == subscription.StudentId);
-                //    var plan = allPlans.FirstOrDefault(p => p.Id == subscription.SubscriptionPlanId);
+                foreach (var subscription in allSubscriptions.OrderByDescending(s => s.CreatedAt))
+                {
+                    var student = allStudents.FirstOrDefault(s => s.Id == subscription.StudentId);
+                    var plan = allPlans.FirstOrDefault(p => p.Id == subscription.SubscriptionPlanId);
 
-                //    result.Add(new SubscriptionResponseDto
-                //    {
-                //        Id = subscription.Id,
-                //        UserId = student?.ApplicationUserId ?? Guid.Empty,
-                //        StudentId = subscription.StudentId,
-                //        //StudentName = student != null ? $"{student.FirstName} {student.LastName}" : string.Empty,
-                //        StudentEmail = student?.Email ?? string.Empty,
-                //        SubscriptionPlanId = subscription.SubscriptionPlanId,
-                //        SubscriptionPlanName = plan?.Name ?? string.Empty,
-                //        PaymentTransactionId = subscription.PaymentTransactionId,
-                //        PaymentMethod = subscription.PaymentMethod,
-                //        StartDate = subscription.StartDate,
-                //        EndDate = subscription.EndDate,
-                //        Status = subscription.Status,
-                //        Amount = subscription.AmountPaid,
-                //        IsAutoRenew = subscription.IsAutoRenew,
-                //        Notes = subscription.Notes,
-                //        CreatedAt = subscription.CreatedAt,
-                //        UpdatedAt = subscription.UpdatedAt
-                //    });
-                //}
+                    result.Add(new SubscriptionResponseDto
+                    {
+                        Id = subscription.Id,
+                        UserId = student?.ApplicationUserId ?? Guid.Empty,
+                        StudentId = subscription.StudentId,
+                        //StudentName = student != null ? $"{student.FirstName} {student.LastName}" : string.Empty,
+                        StudentEmail = student?.Email ?? string.Empty,
+                        SubscriptionPlanId = subscription.SubscriptionPlanId,
+                        SubscriptionPlanName = plan?.Name ?? string.Empty,
+                        PaymentTransactionId = subscription.PaymentTransactionId,
+                        PaymentMethod = subscription.PaymentMethod,
+                        StartDate = subscription.StartDate,
+                        EndDate = subscription.EndDate,
+                        Status = subscription.Status,
+                        Amount = subscription.AmountPaid,
+                        IsAutoRenew = subscription.IsAutoRenew,
+                        Notes = subscription.Notes,
+                        CreatedAt = subscription.CreatedAt,
+                        UpdatedAt = subscription.UpdatedAt
+                    });
+                }
 
                 return result;
             }
@@ -440,7 +331,7 @@ namespace Adros.Application.Services
                     Amount = subscription.AmountPaid,
                     IsAutoRenew = subscription.IsAutoRenew,
                     Notes = subscription.Notes,
-                    //CreatedAt = subscription.CreatedAt,
+                    CreatedAt = subscription.CreatedAt,
                     UpdatedAt = subscription.UpdatedAt
                 };
             }
@@ -449,36 +340,10 @@ namespace Adros.Application.Services
                 _logger.LogError(ex, "Error updating subscription {Id}", id);
                 throw;
             }
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         }
 
         public async Task<bool> DeleteAsync(Guid id)
         {
-<<<<<<< HEAD
-            var subscription = await _unitOfWork.Repository<Subscription>().GetByIdAsync(id);
-            if (subscription == null) return false;
-
-            _unitOfWork.Repository<Subscription>().Delete(subscription);
-            await _unitOfWork.CompleteAsync();
-            return true;
-        }
-
-        private SubscriptionResponseDto MapToDto(Subscription sub)
-        {
-            return new SubscriptionResponseDto
-            {
-                Id = sub.Id,
-                Name = sub.Name,
-                Price = sub.Price,
-                Duration = sub.Duration,
-                Benefits = sub.Benefits,
-                CreatedAt = sub.CreatedAt,
-                UpdatedAt = sub.UpdatedAt
-            };
-        }
-    }
-}
-=======
             try
             {
                 var subscription = await _unitOfWork.Repository<Subscription>()
@@ -585,7 +450,7 @@ namespace Adros.Application.Services
 
                 var activeSubscriptions = allSubscriptions
                     .Where(s => s.Status == "active" && s.EndDate > DateTime.UtcNow)
-                    //.OrderByDescending(s => s.CreatedAt)
+                    .OrderByDescending(s => s.CreatedAt)
                     .ToList();
 
                 var result = new List<SubscriptionResponseDto>();
@@ -612,7 +477,7 @@ namespace Adros.Application.Services
                         Amount = subscription.AmountPaid,
                         IsAutoRenew = subscription.IsAutoRenew,
                         Notes = subscription.Notes,
-                        //CreatedAt = subscription.CreatedAt,
+                        CreatedAt = subscription.CreatedAt,
                         UpdatedAt = subscription.UpdatedAt
                     });
                 }
@@ -669,7 +534,7 @@ namespace Adros.Application.Services
                         Amount = subscription.AmountPaid,
                         IsAutoRenew = subscription.IsAutoRenew,
                         Notes = subscription.Notes,
-                        //CreatedAt = subscription.CreatedAt,
+                        CreatedAt = subscription.CreatedAt,
                         UpdatedAt = subscription.UpdatedAt
                     });
                 }
@@ -708,10 +573,10 @@ namespace Adros.Application.Services
                     CancelledSubscriptions = allSubscriptions.Count(s => s.Status == "cancelled"),
                     TotalRevenue = allSubscriptions.Sum(s => s.AmountPaid),
                     MonthlyRevenue = allSubscriptions
-                        //.Where(s => s.CreatedAt >= startOfMonth)
+                        .Where(s => s.CreatedAt >= startOfMonth)
                         .Sum(s => s.AmountPaid),
                     YearlyRevenue = allSubscriptions
-                        //.Where(s => s.CreatedAt >= startOfYear)
+                        .Where(s => s.CreatedAt >= startOfYear)
                         .Sum(s => s.AmountPaid)
                 };
 
@@ -729,13 +594,13 @@ namespace Adros.Application.Services
                     .ToDictionary(g => g.Key, g => g.Count());
 
                 // Group by month
-                //stats.SubscriptionsByMonth = allSubscriptions
-                //    //.GroupBy(s => new { s.CreatedAt.Year, s.CreatedAt.Month })
-                //    //.OrderBy(g => g.Key.Year).ThenBy(g => g.Key.Month)
-                //    .ToDictionary(
-                //        g => $"{g.Key.Year}-{g.Key.Month:D2}",
-                //        g => g.Count()
-                //    );
+                stats.SubscriptionsByMonth = allSubscriptions
+                    .GroupBy(s => new { s.CreatedAt.Year, s.CreatedAt.Month })
+                    .OrderBy(g => g.Key.Year).ThenBy(g => g.Key.Month)
+                    .ToDictionary(
+                        g => $"{g.Key.Year}-{g.Key.Month:D2}",
+                        g => g.Count()
+                    );
 
                 return stats;
             }
@@ -747,4 +612,3 @@ namespace Adros.Application.Services
         }
     }
 }
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a

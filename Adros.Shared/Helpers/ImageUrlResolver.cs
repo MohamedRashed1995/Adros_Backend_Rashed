@@ -2,40 +2,49 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 
-public class ImageUrlResolver<TSource> : IValueResolver<TSource, object, string>
-    where TSource : class
+namespace Adros.Shared.Helpers
 {
-    private readonly string _baseImageUrl;
-    private readonly IHttpContextAccessor _httpContextAccessor;
-
-    public ImageUrlResolver(IConfiguration configuration, IHttpContextAccessor httpContextAccessor)
+    public class ImageUrlResolver<TSource>(IConfiguration configuration , IHttpContextAccessor httpContextAccessor) : IValueResolver<TSource, object, string> where TSource : class
     {
-        _baseImageUrl = configuration["ImageSettings:BaseImageUrl"] ?? "/Images";
-        _httpContextAccessor = httpContextAccessor;
-    }
+        private readonly string _baseImageUrl = configuration["ImageSettings:BaseImageUrl"] ?? "/Images";
+        private readonly IHttpContextAccessor _httpContextAccessor = httpContextAccessor;
 
-    public string Resolve(TSource source, object destination, string destMember, ResolutionContext context)
-    {
-        // 1️⃣ FolderName (safe)
-        var folderName = context.Items.TryGetValue("FolderName", out var folderObj) && folderObj is string f
-            ? f
-            : "Images";
+        public string Resolve(TSource source, object destination, string destMember, ResolutionContext context)
+        {
+            
+            string folderName;
 
-        // 2️⃣ ImageName (SAFE – no exception)
-        var imageNameProp = source.GetType().GetProperty("ImageName");
-        if (imageNameProp == null)
-            return string.Empty;
+            
+            if (!context.Items.TryGetValue("FolderName", out var folderNameObj) || folderNameObj is not string folderNameValue)
+            {
+                folderName = "Images"; 
+            }
+            else
+            {
+                folderName = folderNameValue;
+            }
 
-        var imageName = imageNameProp.GetValue(source)?.ToString();
-        if (string.IsNullOrWhiteSpace(imageName))
-            return string.Empty;
 
-        // 3️⃣ Base URL (SAFE)
-        var request = _httpContextAccessor.HttpContext?.Request;
-        var baseUrl = request != null
-            ? $"{request.Scheme}://{request.Host}"
-            : string.Empty;
+            
+            var imageNameProperty = typeof(TSource).GetProperty("ImageName");
 
-        return $"{baseUrl}{_baseImageUrl.TrimEnd('/')}/{folderName}/{imageName}";
+            
+            string imageName;
+            if (imageNameProperty != null)
+            {
+                var value = imageNameProperty.GetValue(source);
+                imageName = value?.ToString() ?? string.Empty;
+            }
+            else
+            {
+                throw new ArgumentException($"Type {typeof(TSource).Name} does not contain an 'ImageName' property.");
+            }
+            var request = _httpContextAccessor.HttpContext?.Request;
+            if (request == null)
+                return string.Empty;
+            var baseUrl = $"{request.Scheme}://{request.Host}";
+
+            return $"{baseUrl}{_baseImageUrl.TrimEnd('/')}/{folderName}/{imageName}";
+        }
     }
 }

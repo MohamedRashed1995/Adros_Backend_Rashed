@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="IIS Web Application Name" description="" value="site46181" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\lenovo\\Desktop\\=========\ ADRS\ =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros\.Apis\\obj\\Release\\net9\.0\\PubTmp\\Out\\$" />
-  </parameter>
-</parameters>

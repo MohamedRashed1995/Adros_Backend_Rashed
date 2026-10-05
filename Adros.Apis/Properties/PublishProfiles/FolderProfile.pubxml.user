@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-This file is used by the publish/package process of your Web project. You can customize the behavior of this process
-by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
--->
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- https://go.microsoft.com/fwlink/?LinkID=208121. -->
 <Project>
   <PropertyGroup>
-    <_PublishTargetUrl>C:\Users\lenovo\Desktop\Publish</_PublishTargetUrl>
-    <History>True|2026-01-06T20:37:52.6802221Z||;</History>
-    <LastFailureDetails />
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
   </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=db36495.public.databasesp.net,1433%3bDatabase=db36495%3bUser Id=db36495%3bPassword=Nibs=3XgbxRk82%3bEncrypt=True%3bTrustServerCertificate=True%3bMultipleActiveResultSets=True%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
 </Project>

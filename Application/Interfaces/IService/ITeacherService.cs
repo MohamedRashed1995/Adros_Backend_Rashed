@@ -14,10 +14,5 @@ namespace Adros.Application.Interfaces.IService
         Task<bool> ChangeTeacherPasswordAsync(Guid teacherId, string newPassword);
         Task<bool> UpdateTeacherStatusAsync(Guid teacherId, bool isActive);
         Task<IReadOnlyList<ClientTeacherDto>> GetClientTeachersAsync();
-<<<<<<< HEAD
-        Task<(IReadOnlyList<TeacherEntityDto> Teachers, int TeacherCount)> GetTeachersByStageAsync(Guid stageId);
-        Task<string> ChangePasswordAsync(Guid teacherId,TeacherChangePasswordDto dto);
-=======
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     }
 }

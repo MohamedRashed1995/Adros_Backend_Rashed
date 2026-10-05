@@ -5,6 +5,10 @@ VisualStudioVersion = 17.12.35514.174
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adros.Apis", "Adros.Apis\Adros.Apis.csproj", "{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adros.Apis.AppHost", "Adros.Apis.AppHost\Adros.Apis.AppHost.csproj", "{CCEB1588-7657-46C7-9F6C-B793192A08B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adros.Apis.ServiceDefaults", "Adros.Apis.ServiceDefaults\Adros.Apis.ServiceDefaults.csproj", "{26C56094-1489-4F15-845D-753F8B91B8C9}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adros.Core", "Adros.Core\Adros.Core.csproj", "{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adros.Application", "Application\Adros.Application.csproj", "{DB9EA867-52C1-4D25-9926-4252B01CE6AC}"
@@ -18,12 +22,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8C996153-D721-4D73-81BC-E6EB4100C7A6}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
-		web.config = web.config
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adros.Apis.AppHost", "Adros.Apis.AppHost", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
-	ProjectSection(SolutionItems) = preProject
-		Adros.Apis.AppHost.csproj = Adros.Apis.AppHost.csproj
 	EndProjectSection
 EndProject
 Global
@@ -36,6 +34,14 @@ Global
 		{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCEB1588-7657-46C7-9F6C-B793192A08B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCEB1588-7657-46C7-9F6C-B793192A08B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCEB1588-7657-46C7-9F6C-B793192A08B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCEB1588-7657-46C7-9F6C-B793192A08B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26C56094-1489-4F15-845D-753F8B91B8C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26C56094-1489-4F15-845D-753F8B91B8C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26C56094-1489-4F15-845D-753F8B91B8C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26C56094-1489-4F15-845D-753F8B91B8C9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -59,8 +65,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {10567E90-A680-4C6D-844C-5D0D31C8DE09}
 	EndGlobalSection
 EndGlobal

@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Adros.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fefa8d2d6076bd4b411be9d876b84bbfd8ef810a")]
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Adros.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Adros.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

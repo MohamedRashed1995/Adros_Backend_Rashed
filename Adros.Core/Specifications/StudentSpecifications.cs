@@ -15,7 +15,7 @@ namespace Adros.Core.Specifications
             )
             {
                 [SortField.Name] = s => s.ApplicationUser.UserName,
-                //[SortField.CreatedAt] = s => s.CreatedAt,
+                [SortField.CreatedAt] = s => s.CreatedAt,
                 [SortField.Email] = s => s.ApplicationUser.Email,
                 [SortField.Government] = s => s.Government,
                 [SortField.City] = s => s.City
@@ -27,11 +27,7 @@ namespace Adros.Core.Specifications
             s => s.ApplicationUser,
             s => s.Level,
             s => s.Level.Stage,
-<<<<<<< HEAD
-            s => s.WatchLater,
-=======
             s => s.VideoDownloads,
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
             s => s.VideoViews
         ];
 
@@ -166,7 +162,7 @@ namespace Adros.Core.Specifications
 
         private void ApplyDefaultSorting()
         {
-            //ApplyOrderByDescending(s => s.CreatedAt);
+            ApplyOrderByDescending(s => s.CreatedAt);
         }
 
         private void ApplySort(

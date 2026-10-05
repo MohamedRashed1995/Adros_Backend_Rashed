@@ -6,7 +6,6 @@ using Adros.Application.Interfaces.IService;
 using Adros.Core.Entities;
 using Adros.Core.Entities.Course;
 using Adros.Core.Entities.Users;
-using Adros.Core.Specifications;
 using Adros.Shared.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -14,7 +13,6 @@ using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using System.Net;
-using System.Security.Claims;
 
 namespace Adros.Apis.Controllers
 {
@@ -35,14 +33,13 @@ namespace Adros.Apis.Controllers
             ILogger<AuthController> logger,
             IUnitOfWork unitOfWork,
             
-            IConfiguration configuration,
-            IEmailService? emailService = null)
+            IConfiguration configuration)
         {
             _userManager = userManager;
             _tokenService = tokenService;
             _logger = logger;
             _unitOfWork = unitOfWork;
-            _emailService = emailService ;
+            //_emailService = emailService;
             _configuration = configuration;
         }
 
@@ -126,21 +123,16 @@ namespace Adros.Apis.Controllers
 
             var user = new ApplicationUser
             {
-<<<<<<< HEAD
-                
-=======
                 Id = Guid.NewGuid(),
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 UserName = model.Email,
                 Email = model.Email,
-                FirstName = model.FirstName,   
-                LastName = model.LastName,  
-                
+                FirstName = model.FirstName,    // ⬅️ أضف هذا
+                LastName = model.LastName,      // ⬅️ أضف هذا
                 SecurityStamp = Guid.NewGuid().ToString(),
-                EmailConfirmed = true,          
-                PhoneNumberConfirmed = true,    
+                EmailConfirmed = true,          // ⬅️ أضف إذا تريد
+                PhoneNumberConfirmed = true,    // ⬅️ أضف إذا تريد
                 IsActive = true ,
-               
+                // ⬅️ أضف إذا تريد
             };
 
             var result = await _userManager.CreateAsync(user, model.Password);
@@ -155,46 +147,28 @@ namespace Adros.Apis.Controllers
                 _logger.LogWarning("Failed to assign Student role to user.");
                 throw new ApplicationException("Failed to assign role.");
             }
-            try
-            {
-                var student = new Student
-                {
-<<<<<<< HEAD
-                    Id =Guid.NewGuid(),
-=======
-                    Id = user.Id,
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-                    ApplicationUser = user,
-                    FirstName = model.FirstName,
-                    LastName = model.LastName,
-                    Email = user.Email,
-                    Government = "",
-                    City = "",
-                    BirthDate = null,
-                    CreatedAt = DateTime.UtcNow,
-                    CreatedBy = user.Id,
-                    ApplicationUserId = user.Id,
-<<<<<<< HEAD
-                    IsSubscriped = false,
-                    LevelId = model.LevelId,
-                    WatchLater = new List<WatchLater>(),
-=======
-                    SubscriptionStatus = "inactive",
-                    LevelId = model.LevelId,
-                    VideoDownloads = new List<VideoDownload>(),
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-                    VideoViews = new List<VideoView>()
-                };
-                await _unitOfWork.Repository<Student>().AddAsync(student);
-                await _unitOfWork.CompleteAsync();
 
-            }
-            catch
+            var student = new Student
             {
-                await _userManager.DeleteAsync(user);
-                throw;
-            }
+                Id = user.Id,
+                ApplicationUser = user,
+                FirstName = model.FirstName,    // ⬅️ أضف هذا
+                LastName = model.LastName,      // ⬅️ أضف هذا
+                Email = user.Email,
+                Government = "",
+                City = "",
+                BirthDate = null,
+                CreatedAt = DateTime.UtcNow,
+                CreatedBy = user.Id,
+                ApplicationUserId = user.Id,
+                SubscriptionStatus = "inactive",
+                LevelId = null,
+                VideoDownloads = new List<VideoDownload>(),
+                VideoViews = new List<VideoView>() 
+            };
 
+            await _unitOfWork.Repository<Student>().AddAsync(student);
+            await _unitOfWork.CompleteAsync();
 
             if (result.Succeeded)
             {
@@ -210,54 +184,45 @@ namespace Adros.Apis.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest(new ApiResponse<ModelStateDictionary>(
-                    (int)HttpStatusCode.BadRequest, "Invalid data!", ModelState));
+                return BadRequest(new ApiResponse<ModelStateDictionary>((int)HttpStatusCode.BadRequest, "Invalid data!", ModelState));
             }
 
             ApplicationUser? user = null;
 
             if (!string.IsNullOrEmpty(model.Email))
             {
-                user = await _userManager.FindByNameAsync(model.Email)
-                    ?? await _userManager.FindByEmailAsync(model.Email);
+                user = await _userManager.FindByNameAsync(model.Email);
+            }
+
+            if (user == null && !string.IsNullOrEmpty(model.Email))
+            {
+                user = await _userManager.FindByEmailAsync(model.Email);
             }
 
             if (user == null)
             {
-                return BadRequest(new ApiResponse<string>(
-                    (int)HttpStatusCode.BadRequest, "User does not exist!", string.Empty));
+                return BadRequest(new ApiResponse<string>((int)HttpStatusCode.BadRequest, "User does not exist!", string.Empty));
             }
 
             var isPasswordValid = await _userManager.CheckPasswordAsync(user, model.Password);
             if (!isPasswordValid)
             {
-                return BadRequest(new ApiResponse<string>(
-                    (int)HttpStatusCode.BadRequest, "Invalid credentials!", string.Empty));
+                return BadRequest(new ApiResponse<string>((int)HttpStatusCode.BadRequest, "Invalid credentials!", string.Empty));
             }
-
-            // ✅ هنا بقى نجيب Student
-            var student = await _unitOfWork.Repository<Student>()
-                .GetEntityWithSpec(new StudentByUserIdSpecification(user.Id));
 
             var token = await _tokenService.CreateTokenAsync(user, _userManager);
             var roles = await _userManager.GetRolesAsync(user);
-
-            return Ok(new ApiResponse<LoginResponse>(
-                (int)HttpStatusCode.OK,
-                "Login successful!",
-                new LoginResponse
-                {
-                    Id = user.Id,
-                    FirstName = user.FirstName,
-                    LastName = user.LastName,
-                    Email = user.Email,
-                    LevelId = student?.LevelId, // ✅ آمن
-                    Token = token,
-                    ValidTo = DateTime.UtcNow.AddDays(30).ToString(),
-                    Role = roles.FirstOrDefault()
-                }));
+            return Ok(new ApiResponse<LoginResponse>((int)HttpStatusCode.OK, "Login successful!", new LoginResponse
+            {
+                FirstName= user.FirstName,
+                LastName = user.LastName,
+                Email = user.Email,
+                Phone = user.PhoneNumber,
+                Token = token,
+                ValidTo = DateTime.UtcNow.AddDays(30).ToString(),
+                Role = roles.FirstOrDefault()
+            }));
         }
-
 
         // ========== إعادة تعيين كلمة المرور (الطريقة المباشرة) ==========
         [HttpPost("ResetPassword")]
@@ -394,30 +359,6 @@ namespace Adros.Apis.Controllers
                 user != null
             ));
         }
-        [HttpGet("validate-token")]
-        [Authorize]
-        public IActionResult ValidateToken()
-        {
-            var claims = User.Claims.Select(c => new
-            {
-                Type = c.Type,
-                Value = c.Value
-            }).ToList();
-
-            return Ok(new
-            {
-                isValid = true,
-                userId = User.FindFirstValue(ClaimTypes.NameIdentifier),
-                email = User.FindFirstValue(ClaimTypes.Email),
-                roles = User.FindAll(ClaimTypes.Role).Select(r => r.Value),
-                claims = claims,
-                issuedAt = DateTime.UtcNow
-            });
-        }
-<<<<<<< HEAD
-        
-=======
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         [HttpPost("forget-password")]
         [AllowAnonymous]
         public async Task<ActionResult> ForgetPassword([FromBody] ForgotPasswordDto request)
@@ -497,8 +438,6 @@ namespace Adros.Apis.Controllers
             }
         }
     }
-
-
 
 
 

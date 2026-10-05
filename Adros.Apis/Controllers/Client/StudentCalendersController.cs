@@ -33,8 +33,8 @@ namespace Adros.Apis.Controllers.Client
         /// <response code="200">Returns the list of calendar entries</response>
         /// <response code="500">Internal server error</response>
         [HttpGet]
-        //[ProducesResponseType(typeof(ApiResponse<IReadOnlyList<ClientCalenderDto>>), StatusCodes.Status200OK)]
-        //[ProducesResponseType(typeof(ApiResponse<string>), StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<ClientCalenderDto>>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiResponse<string>), StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<IReadOnlyList<ClientCalenderDto>>> GetMyCalender(
             [FromQuery] DateTime? startDate,
             [FromQuery] DateTime? endDate)
@@ -49,10 +49,11 @@ namespace Adros.Apis.Controllers.Client
 
                 _logger.LogInformation("{Operation} completed successfully. Found {Count} entries",
                     operation, calenders?.Count ?? 0);
-                //new ApiResponse<IReadOnlyList<ClientCalenderDto>>(
-                //    (int)HttpStatusCode.OK,
-                //    "Calendar items retrieved successfully",
-                return Ok(calenders);
+
+                return Ok(new ApiResponse<IReadOnlyList<ClientCalenderDto>>(
+                    (int)HttpStatusCode.OK,
+                    "Calendar items retrieved successfully",
+                    calenders ?? []));
             }
             catch (Exception ex)
             {

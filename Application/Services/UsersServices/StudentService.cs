@@ -3,7 +3,6 @@ using Adros.Application.DTOs.Level;
 using Adros.Application.DTOs.Pagination;
 using Adros.Application.DTOs.Student;
 using Adros.Application.Interfaces.IService;
-using Adros.Core.Entities.Course;
 using Adros.Core.Entities.Home;
 using Adros.Core.Entities.Users;
 using Adros.Core.Specifications;
@@ -14,10 +13,7 @@ using Adros.Shared.Interfaces;
 using Adros.Shared.Settings;
 using AutoMapper;
 using Microsoft.Extensions.Logging;
-<<<<<<< HEAD
-using System.Globalization;
-=======
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
+
 namespace Adros.Application.Services.UsersServices
 {
     /// <summary>
@@ -42,7 +38,7 @@ namespace Adros.Application.Services.UsersServices
         private readonly IMapper _mapper = mapper;
         private readonly ILogger<StudentService> _logger = logger;
         private readonly ISharedUserService _sharedUserService = sharedUserService;
-        
+
 
         /// <summary>
         /// Retrieves paginated list of students with filtering and sorting capabilities
@@ -77,19 +73,9 @@ namespace Adros.Application.Services.UsersServices
                 //var (totalCount, students) = await FetchPaginatedDataAsync(spec);
 
                 //return CreatePaginatedResult(students, totalCount, pageIndex, pageSize);
-<<<<<<< HEAD
-                var spec = new StudentListSpecification();
-                var students = await _unitOfWork.Repository<Student>().ListAsync(spec);
-                
-                return _mapper.Map<IReadOnlyList<StudentListDto>>(students, opts =>
-                {
-                    
-=======
                 var students = await _unitOfWork.Repository<Student>().ListAllAsync();
-                
                 return _mapper.Map<IReadOnlyList<StudentListDto>>(students, opts =>
                 {
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                     opts.Items["FolderName"] = FoldersNames.Media.StudentsFolder;
                 });
             }
@@ -152,217 +138,56 @@ namespace Adros.Application.Services.UsersServices
             }
         }
 
-<<<<<<< HEAD
-        public async Task<Guid> GetStudentIdByUserIdAsync(Guid userId)
-        {
-            var student = await _unitOfWork.Repository<Student>()
-                .GetFirstOrDefaultAsync(q =>
-                    q.Where(s => s.ApplicationUserId == userId));
-
-            //if (student == null)
-            //    throw new UnauthorizedAccessException("Student not found");
-
-            return student?.Id ?? Guid.Empty;
-        }
-
-=======
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
         public async Task<StudentProfileDto> GetStudentProfileAsync(Guid userId)
         {
             try
             {
-                _logger.LogInformation($"جلب ملف الطالب للمستخدم: {userId}");
+                // 1️⃣ جلب الطالب مع الـ ApplicationUser و Level
+                var students = await _unitOfWork.Repository<Student>().ListAllAsync();
+                var student = students.FirstOrDefault(s => s.ApplicationUserId == userId);
 
-                // هنا جلب بيانات الطالب من الداتابيز
-                var spec = new StudentProfileSpecs(userId);
-                var student = await _unitOfWork.Repository<Student>().GetEntityWithSpec(spec);
-<<<<<<< HEAD
-                var lessonCount = await _unitOfWork
-                    .Repository<Lesson>()
-                    .CountAsync(l => l.Unit.Subject.LevelId == student.LevelId);
+                // 3️⃣ نرجع DTO بدل الـ Entity مباشرة
+                var totalStudyMinutes = student.VideoViews?
+            .Where(vv => vv.Video != null)
+            .Sum(vv => vv.Video.Duration.Hour * 60 + vv.Video.Duration.Minute) ?? 0;
 
-
-
-
-=======
-                
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-                if (student == null)
-                {
-                    throw new NotFoundException($"Student not found for user ID: {userId}");
-                }
-
-                if (student.ApplicationUser == null)
-                {
-                    throw new NotFoundException($"User not found for ID: {userId}");
-                }
-
-<<<<<<< HEAD
-
-                var videoViews = student.VideoViews ?? new List<VideoView>();
-                var watchLater = student.WatchLater ?? new List<WatchLater>();
-                
-
-                var viewsCount = videoViews
-                    .Select(v => v.VideoId)
-                    .Distinct()
-                    .Count();
-
-                var watchLaterCount = watchLater
-                    .Select(w => w.VideoId)
-                    .Distinct()
-                    .Count();
-
-                var totalStudyTime = TimeSpan.FromMinutes(
-                    videoViews.Sum(v => v.Duration.TotalMinutes)
-                );
-
-
-
-                var culture = new CultureInfo("ar-EG");
-
-                var today = DateTime.UtcNow.Date;
-                var startOfWeek = today.AddDays(-(int)today.DayOfWeek);
-                var endOfWeek = startOfWeek.AddDays(7);
-
-                // 1️⃣ نحسب الوقت للأيام اللي فيها مشاهدة
-                var studyTimeByDay = videoViews
-                    .Where(v =>
-                        v.CreatedAt.HasValue &&
-                        v.CreatedAt.Value.Date >= startOfWeek &&
-                        v.CreatedAt.Value.Date < endOfWeek
-                    )
-                    .GroupBy(v => v.CreatedAt!.Value.DayOfWeek)
-                    .ToDictionary(
-                        g => g.Key,
-                        g => TimeSpan.FromMinutes(g.Sum(v => v.Duration.TotalMinutes))
-                    );
-
-                // 2️⃣ نطلع كل أيام الأسبوع حتى اللي مفيهاش مشاهدة
-                var dailyAchievements = Enum.GetValues<DayOfWeek>()
-                    .Select(day => new StudentDailyAchievement
-                    {
-                        Day = culture.DateTimeFormat.GetDayName(day),
-                        StudyTime = studyTimeByDay.TryGetValue(day, out var time)
-                            ? time
-                            : TimeSpan.Zero
-                    })
-                    .ToList();
-                
-
-
-                var profile = new StudentProfileDto
-                {
-                    StudentId = (student.Id).ToString(),
-=======
-                //// إنشاء الـ DTO
-                //var profile = new StudentProfileDto
-                //{
-                //    ImagePath = student.ApplicationUser.Photo ?? string.Empty,
-                //    Name = $"{student.ApplicationUser.FirstName} {student.ApplicationUser.LastName}".Trim(),
-                //    Level = student.Level?.Title ?? "غير محدد",
-                //    LevelId = student.LevelId,
-                //    ViewsCount = student.VideoViews?.Count ?? 0,
-                //    DownloadsCount = student.VideoDownloads?.Count ?? 0,
-                //    TotalStudyTime = TimeSpan.FromHours(120), // مثال
-                //    DailyAchievements = new List<StudentDailyAchievement>()
-                //};
-                var videoViews = student.VideoViews?.Where(v => v.Video != null).ToList() ?? new List<VideoView>();
-
-                // 1. حساب الوقت الكلي
-                //var totalStudyTime = TimeSpan.FromMinutes(
-                //    videoViews.Sum(v => v.Video.Duration.Hour * 60 + v.Video.Duration.Minute)
-                //);
-                var totalStudyTime = TimeSpan.FromMinutes(
-                    videoViews.Sum(v => v.Duration.TotalMinutes));
-                var dailyAchievements = videoViews
-                    .GroupBy(v => v.CreatedAt?.Date ?? DateTime.Now.Date) // لو CreatedAt nullable
+                // 4️⃣ حساب DailyAchievements (وقت دراسة يومي)
+                var dailyAchievements = student.VideoViews?
+                    .GroupBy(vv => vv.CreatedAt.Date)
                     .Select(g => new StudentDailyAchievement
                     {
                         Day = g.Key.ToString("yyyy-MM-dd"),
-                        StudyTime = TimeSpan.FromMinutes(g.Sum(v => v.Duration.TotalMinutes))
-                    })
-                    .ToList();
+                        StudyTime = TimeSpan.FromMinutes(
+                            g.Where(x => x.Video != null)
+                             .Sum(x => x.Video.Duration.Hour * 60 + x.Video.Duration.Minute))
+                    }).ToList() ?? new List<StudentDailyAchievement>();
 
-
-                // 3. ملء DTO
+                // 5️⃣ تجهيز DTO
                 var profile = new StudentProfileDto
                 {
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-                    ImagePath = student.ApplicationUser.Photo ?? string.Empty,
-                    Name = $"{student.ApplicationUser.FirstName} {student.ApplicationUser.LastName}".Trim(),
-                    Level = student.Level?.Title ?? "غير محدد",
-                    LevelId = student.LevelId,
-<<<<<<< HEAD
-                    LessonCount = lessonCount,
-                    ViewsCount = viewsCount,
-                    Watchlatercount = watchLaterCount,
-                    TotalStudyTime = totalStudyTime,
-                    DailyAchievements = dailyAchievements,
-                    IsSubscribed = student.IsSubscriped
-                };
-
-
-=======
-                    ViewsCount = videoViews.Count,
+                    
+                    ImagePath = student.ApplicationUser?.Photo ?? "",
+                    Name = student.Email,
+                    
+                    //ViewsCount = student.ApplicationUser.view,
                     DownloadsCount = student.VideoDownloads?.Count ?? 0,
-                    TotalStudyTime = totalStudyTime,
+                    TotalStudyTime = TimeSpan.FromMinutes(totalStudyMinutes),
                     DailyAchievements = dailyAchievements
                 };
 
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
                 return profile;
+
+                
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "خطأ في جلب ملف الطالب");
-                throw;
+                _logger.LogError(ex, "Error retrieving student profile. UserId: {UserId}", userId);
+                throw new StudentServiceException(
+                    "An error occurred while retrieving the student profile.", ex);
             }
         }
 
-<<<<<<< HEAD
-        public async Task<bool> DeleteStudentAsync(Guid studentId)
-        {
-            try
-            {
-                // جلب الطالب
-                var student = await _unitOfWork.Repository<Student>().GetBYIdAsync(studentId);
-                if (student == null)
-                    return false;
-
-                // 1️⃣ حذف كل الـ WatchLater المرتبطة
-                var watchLaterList = await _unitOfWork.Repository<WatchLater>()
-                    .GetAllAsync(q => q.Where(w => w.StudentId == studentId));
-
-                foreach (var item in watchLaterList)
-                {
-                    _unitOfWork.Repository<WatchLater>().Delete(item);
-                }
-
-                // 2️⃣ حذف كل الـ VideoViews المرتبطة
-                var videoViews = await _unitOfWork.Repository<VideoView>()
-                    .GetAllAsync(q => q.Where(v => v.StudentId == studentId));
-
-                foreach (var view in videoViews)
-                {
-                    _unitOfWork.Repository<VideoView>().Delete(view);
-                }
-
-                // 3️⃣ حذف الطالب نفسه
-                _unitOfWork.Repository<Student>().Delete(student);
-
-                await _unitOfWork.CompleteAsync();
-                return true;
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error deleting student: {StudentId}", studentId);
-                throw;
-            }
-        }
-
-=======
 
         //public async Task<Student> GetStudentProfileAsync(Guid userId)
         //{
@@ -472,7 +297,6 @@ namespace Adros.Application.Services.UsersServices
         //        throw new StudentServiceException("An error occurred while retrieving the student profile.", ex);
         //    }
         //}
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
 
 

@@ -1,375 +1,422 @@
 ﻿using Adros.Application.DTOs.Pagination;
 using Adros.Application.DTOs.Teacher;
 using Adros.Application.Interfaces.IService;
-using Adros.Core.Entities;
 using Adros.Core.Entities.Users;
-using Adros.Core.Specifications;
+using Adros.Core.Entities;
 using Adros.Shared.Helpers;
 using Adros.Shared.Interfaces;
 using AutoMapper;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
-<<<<<<< HEAD
-using System.Drawing.Printing;
-=======
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
+using Adros.Core.Specifications;
 
 namespace Adros.Application.Services.UsersServices
 {
-    public class TeacherService : ITeacherService
+    public class TeacherService(
+        IUnitOfWork unitOfWork,
+        IMapper mapper,
+        ILogger<TeacherService> logger,
+        UserManager<ApplicationUser> userManager) : ITeacherService
     {
-        private readonly IUnitOfWork _unitOfWork;
-        private readonly IMapper _mapper;
-        private readonly ILogger<TeacherService> _logger;
-        private readonly UserManager<ApplicationUser> _userManager;
-
-        public TeacherService(
-            IUnitOfWork unitOfWork,
-            IMapper mapper,
-            ILogger<TeacherService> logger,
-            UserManager<ApplicationUser> userManager)
-        {
-            _unitOfWork = unitOfWork;
-            _mapper = mapper;
-            _logger = logger;
-            _userManager = userManager;
-        }
+        private readonly IUnitOfWork _unitOfWork = unitOfWork;
+        private readonly IMapper _mapper = mapper;
+        private readonly ILogger<TeacherService> _logger = logger;
+        private readonly UserManager<ApplicationUser> _userManager = userManager;
 
         public async Task<PaginatedResult<TeacherEntityDto>> GetAllTeachersAsync(int page, int pageSize, bool? isActive, string? sort)
         {
-            var spec = new TeacherSpecifications(isActive, sort, page, pageSize);
-            var totalTeachers = await _unitOfWork.Repository<Teacher>().GetCountWithSpecAsync(spec);
-            var teachers = await _unitOfWork.Repository<Teacher>().ListAsync(spec);
-
-            var teacherDtos = _mapper.Map<IReadOnlyList<TeacherEntityDto>>(teachers);
-
-            var totalPages = (int)Math.Ceiling(totalTeachers / (double)pageSize);
-
-            return new PaginatedResult<TeacherEntityDto>
+            try
             {
-                Data = teacherDtos,
-                Pagination = new PaginationMetadata
+                _logger.LogInformation("Fetching all teachers with page {Page}, pageSize {PageSize}, isActive {IsActive}, sort {Sort}", page, pageSize, isActive, sort);
+
+                var spec = new TeacherSpecifications(isActive, sort, page, pageSize);
+                var totalTeachers = await _unitOfWork.Repository<Teacher>().GetCountWithSpecAsync(spec);
+                var teachers = await _unitOfWork.Repository<Teacher>().ListAsync(spec);
+
+                var teacherDtos = _mapper.Map<IReadOnlyList<TeacherEntityDto>>(teachers);
+
+                var totalPages = (int)Math.Ceiling(totalTeachers / (double)pageSize);
+
+                var paginatedResult = new PaginatedResult<TeacherEntityDto>
                 {
-<<<<<<< HEAD
-                    PageIndex = page,        // بدل Page
-                    PageSize = pageSize,
-                    Count = totalTeachers,   // بدل TotalCount
-                    TotalPages = (int)Math.Ceiling(totalTeachers / (double)pageSize)
-                }
-            };
+                    Data = teacherDtos,
+                    Pagination = new PaginationMetadata
+                    {
+                        PageIndex = page,
+                        PageSize = pageSize,
+                        Count = totalTeachers,
+                        TotalPages = totalPages
+                    }
+                };
 
+                return paginatedResult;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error occurred while fetching all teachers.");
+                throw;
+            }
         }
-        public async Task<string> ChangePasswordAsync(
-    Guid teacherId,
-    TeacherChangePasswordDto dto)
-        {
-            var teacher = await _userManager.FindByIdAsync(teacherId.ToString());
-
-            if (teacher == null)
-                throw new Exception("Teacher not found");
-
-            var result = await _userManager.ChangePasswordAsync(
-                teacher,
-                dto.OldPassword,
-                dto.NewPassword
-            );
-
-            if (!result.Succeeded)
-                throw new Exception(string.Join(", ",
-                    result.Errors.Select(e => e.Description)));
-
-            return "Password changed successfully";
-        }
-
-
-=======
-                    PageIndex = page,
-                    PageSize = pageSize,
-                    Count = totalTeachers,
-                    TotalPages = totalPages
-                }
-            };
-        }
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
         public async Task<Teacher?> GetTeacherByIdAsync(Guid teacherId)
         {
-            var spec = new TeacherSpecifications(null, null, 1, 1, teacherId);
-            return await _unitOfWork.Repository<Teacher>().GetEntityWithSpec(spec);
-        }
-
-<<<<<<< HEAD
-
-
-        public async Task<(IReadOnlyList<TeacherEntityDto> Teachers, int TeacherCount)> GetTeachersByStageAsync(Guid stageId)
-        {
-            var teachers = await _unitOfWork.Repository<Teacher>().GetAllAsync();
-
-            var filtered = teachers
-                .Where(t => t.StageId == stageId && t.IsActive)
-                .ToList();
-
-            var teacherDtos = _mapper.Map<IReadOnlyList<TeacherEntityDto>>(filtered);
-
-            var teacherCount = teacherDtos.Count;
-
-            return (teacherDtos, teacherCount);
-        }
-
-
-
-=======
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-        public async Task<Teacher> CreateTeacherAsync(TeacherCreateDto dto)
-        {
-            // التحقق من وجود المستخدم مسبقاً
-            var existingUser = await _userManager.FindByEmailAsync(dto.Email);
-            if (existingUser != null)
-                throw new ApplicationException("المستخدم موجود مسبقاً");
-<<<<<<< HEAD
-                
-=======
-
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-            var user = new ApplicationUser
+            try
             {
-                UserName = dto.Email,
-                Email = dto.Email,
-                FirstName = dto.FirstName,
-<<<<<<< HEAD
-                Photo = dto.Photo != null ? "temp" : null, // سيتم تحديثها بعد الرفع
-                LastName = dto.LastName,
-                EmailConfirmed = true,
-                PhoneNumberConfirmed = true,
-                IsActive = true,
-=======
-                LastName = dto.LastName,
-                EmailConfirmed = true,
-                PhoneNumberConfirmed = true,
-                IsActive = true
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-            };
+                _logger.LogInformation("Fetching teacher with ID: {TeacherId}", teacherId);
 
-            var createUserResult = await _userManager.CreateAsync(user, dto.Password);
-            if (!createUserResult.Succeeded)
-            {
-                var errors = string.Join(", ", createUserResult.Errors.Select(e => e.Description));
-                throw new ApplicationException($"فشل في إنشاء المستخدم: {errors}");
+                var spec = new TeacherSpecifications(null, null, 1, 1, teacherId);
+                var teacher = await _unitOfWork.Repository<Teacher>().GetEntityWithSpec(spec);
+                if (teacher == null)
+                {
+                    _logger.LogWarning("Teacher with ID: {TeacherId} not found.", teacherId);
+                    return null;
+                }
+
+                //var teacherDto = _mapper.Map<TeacherEntityDto>(teacher);
+                return teacher;
             }
-
-            // رفع الصورة لو موجودة
-            if (dto.Photo != null)
+            catch (Exception ex)
             {
+                _logger.LogError(ex, "Error occurred while fetching teacher with ID: {TeacherId}", teacherId);
+                throw;
+            }
+        }
+
+        public async Task<Teacher> CreateTeacherAsync(TeacherCreateDto teacherCreateDto)
+        {
+            try
+            {
+                _logger.LogInformation("🚀 بدء إنشاء معلم جديد: {Email}", teacherCreateDto.Email);
+
+                // 1. التحقق من عدم وجود المستخدم مسبقاً
+                var existingUser = await _userManager.FindByEmailAsync(teacherCreateDto.Email);
+                if (existingUser != null)
+                {
+                    _logger.LogWarning("❌ المستخدم موجود مسبقاً: {Email}", teacherCreateDto.Email);
+                    throw new ApplicationException("المستخدم موجود مسبقاً");
+                }
+
+                // 2. إنشاء ApplicationUser أولاً
+                var user = new ApplicationUser
+                {
+                    UserName = teacherCreateDto.Email,
+                    
+                    FirstName = teacherCreateDto.FirstName,
+                    LastName = teacherCreateDto.LastName,
+                    Email = teacherCreateDto.Email,
+                    EmailConfirmed = true,
+                    PhoneNumberConfirmed = true,
+                    IsActive = true
+                };
+
+                _logger.LogInformation("👤 إنشاء ApplicationUser...");
+
+                // 3. حفظ الـ User أولاً في Identity
+                var createUserResult = await _userManager.CreateAsync(user, teacherCreateDto.Password);
+                if (!createUserResult.Succeeded)
+                {
+                    var errors = string.Join(", ", createUserResult.Errors.Select(e => e.Description));
+                    _logger.LogError("❌ فشل في إنشاء المستخدم: {Errors}", errors);
+                    throw new ApplicationException($"فشل في إنشاء المستخدم: {errors}");
+                }
+
+                _logger.LogInformation("✅ تم إنشاء ApplicationUser - ID: {UserId}", user.Id);
+
+                // 4. إضافة الصورة (إذا وجدت)
+                if (teacherCreateDto.Photo != null)
+                {
+                    _logger.LogInformation("📸 رفع صورة المعلم...");
+                    try
+                    {
+                        user.Photo = await FileManager.UploadFileAsync(teacherCreateDto.Photo, "teachers");
+                        await _userManager.UpdateAsync(user);
+                        _logger.LogInformation("✅ تم رفع الصورة: {Photo}", user.Photo);
+                    }
+                    catch (Exception ex)
+                    {
+                        _logger.LogWarning(ex, "⚠️ لم أتمكن من رفع الصورة، المتابعة بدون صورة");
+                    }
+                }
+
+                // 5. إضافة دور المعلم
+                _logger.LogInformation("🎭 إضافة دور Teacher...");
+                var roleResult = await _userManager.AddToRoleAsync(user, "Teacher");
+                if (!roleResult.Succeeded)
+                {
+                    _logger.LogWarning("⚠️ لم أتمكن من إضافة الدور، لكن المستخدم تم إنشاؤه");
+                }
+
+                // 6. الآن فقط، إنشاء Teacher entity
+                var teacher = new Teacher
+                {
+                    ApplicationUserId = user.Id, // ⬅️ الآن الـ UserId موجود
+                    TeacherID = user.Id,
+                    Email = teacherCreateDto.Email,
+                    FirstName = teacherCreateDto.FirstName,
+                    LastName = teacherCreateDto.LastName,
+                    About = teacherCreateDto.About ?? "معلم في منصة أدرس",
+                    
+                    CreatedAt = DateTime.UtcNow,
+                    UpdatedAt = DateTime.UtcNow
+                };
+
+                _logger.LogInformation("👨‍🏫 إنشاء Teacher entity...");
+
+                // 7. حفظ Teacher في قاعدة البيانات
+                await _unitOfWork.Repository<Teacher>().AddAsync(teacher);
+                await _unitOfWork.CompleteAsync();
+
+                _logger.LogInformation("✅ تم إنشاء Teacher - ID: {TeacherId}", teacher.Id);
+
+                // 8. تحديث الـ ApplicationUser بالـ TeacherId
+                user.TeacherId = teacher.Id;
+                await _userManager.UpdateAsync(user);
+
+                _logger.LogInformation("🎉 تم إنشاء المعلم بنجاح!");
+                _logger.LogInformation("   📧 Email: {Email}", teacher.Email);
+                _logger.LogInformation("   🆔 Teacher ID: {TeacherId}", teacher.Id);
+                _logger.LogInformation("   🆔 User ID: {UserId}", user.Id);
+
+                return teacher;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "💥 فشل في إنشاء المعلم");
+
+                // محاولة التراجع إذا فشلنا
                 try
                 {
-<<<<<<< HEAD
-                    user.Photo = await FileManager.UploadFileAsync(dto.Photo, "Images/teachers");
-=======
-                    user.Photo = await FileManager.UploadFileAsync(dto.Photo, "teachers");
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-                    await _userManager.UpdateAsync(user);
+                    await _unitOfWork.RollbackAsync();
                 }
-                catch
-                {
-                    // متابعة بدون صورة إذا فشل الرفع
-                }
+                catch { }
+
+                throw new Exception($"فشل في إنشاء المعلم: {ex.Message}", ex);
             }
-
-            await _userManager.AddToRoleAsync(user, "Teacher");
-
-            var teacher = new Teacher
-            {
-                ApplicationUserId = user.Id,
-                Email = dto.Email,
-<<<<<<< HEAD
-                ProfilePictureUrl = user.Photo,
-=======
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-                FirstName = dto.FirstName,
-                LastName = dto.LastName,
-                About = dto.About ?? "معلم في منصة أدرس",
-                CreatedAt = DateTime.UtcNow,
-<<<<<<< HEAD
-                UpdatedAt = DateTime.UtcNow,
-                StageId = dto.StageId,
-                phoneNumber = dto.PhoneNumber,
-=======
-                UpdatedAt = DateTime.UtcNow
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-            };
-
-            await _unitOfWork.Repository<Teacher>().AddAsync(teacher);
-            await _unitOfWork.CompleteAsync();
-
-            return teacher;
         }
 
-        public async Task<Teacher?> UpdateTeacherAsync(Guid teacherId, TeacherUpdateDto dto)
+        public async Task<Teacher?> UpdateTeacherAsync(Guid teacherId, TeacherUpdateDto teacherUpdateDto)
         {
-            var spec = new TeacherSpecifications(null, null, 1, 1, teacherId);
-            var teacher = await _unitOfWork.Repository<Teacher>().GetEntityWithSpec(spec);
-            if (teacher == null) return null;
-
-            var user = await _userManager.FindByIdAsync(teacher.ApplicationUserId.ToString());
-            if (user == null) return null;
-
-            if (!string.IsNullOrEmpty(dto.Email))
+            try
             {
-                user.Email = dto.Email;
-                user.UserName = dto.Email;
+                _logger.LogInformation("Updating teacher with ID: {TeacherId}", teacherId);
+
+                var spec = new TeacherSpecifications(null, null, 1, 1, teacherId);
+                var teacher = await _unitOfWork.Repository<Teacher>().GetEntityWithSpec(spec);
+                if (teacher == null)
+                {
+                    _logger.LogWarning("Teacher with ID: {TeacherId} not found.", teacherId);
+                    return null;
+                }
+
+                var user = await _userManager.FindByIdAsync(teacher.ApplicationUserId.ToString());
+                if (user == null)
+                {
+                    _logger.LogWarning("Associated user for teacher ID: {TeacherId} not found.", teacherId);
+                    return null;
+                }
+
+                // Update user properties
+                if (!string.IsNullOrEmpty(teacherUpdateDto.Email))
+                {
+                    _logger.LogInformation("Updating email for teacher with ID: {TeacherId}", teacherId);
+                    user.Email = teacherUpdateDto.Email;
+                    user.UserName = teacherUpdateDto.Email;
+                }
+
+                if (!string.IsNullOrEmpty(teacherUpdateDto.About))
+                {
+                    _logger.LogInformation("Updating about for teacher with ID: {TeacherId}", teacherId);
+                    teacher.About = teacherUpdateDto.About;
+                }
+
+                if (teacherUpdateDto.Photo != null)
+                {
+                    _logger.LogInformation("Uploading new photo for teacher with ID: {TeacherId}", teacherId);
+                    user.Photo = await FileManager.UploadFileAsync(teacherUpdateDto.Photo, "teachers");
+                }
+
+                var updateResult = await _userManager.UpdateAsync(user);
+                if (!updateResult.Succeeded)
+                {
+                    _logger.LogWarning("Failed to update teacher with ID: {TeacherId}. Errors: {Errors}", teacherId, string.Join(", ", updateResult.Errors.Select(e => e.Description)));
+                    throw new ApplicationException("Failed to update teacher.");
+                }
+
+                _unitOfWork.Repository<Teacher>().Update(teacher);
+                await _unitOfWork.CompleteAsync();
+
+                //var teacherDto = _mapper.Map<TeacherEntityDto>(teacher);
+                //teacherDto.Email = user.Email;
+                //teacherDto.Photo = user.Photo;
+
+                //teacherDto.LessonCount = teacher.Lessons.Count;
+
+                _logger.LogInformation("Successfully updated teacher with ID: {TeacherId}", teacherId);
+
+                return teacher;
             }
-
-            if (!string.IsNullOrEmpty(dto.About))
-                teacher.About = dto.About;
-
-            if (dto.Photo != null)
-                user.Photo = await FileManager.UploadFileAsync(dto.Photo, "teachers");
-<<<<<<< HEAD
-                teacher.ProfilePictureUrl = user.Photo;
-            if (!string.IsNullOrEmpty(dto.FirstName))
+            catch (Exception ex)
             {
-                teacher.FirstName = dto.FirstName;
+                _logger.LogError(ex, "Error occurred while updating teacher with ID: {TeacherId}", teacherId);
+                throw;
             }
-            if (!string.IsNullOrEmpty(dto.LastName))
-            {
-                teacher.LastName = dto.LastName;
-            }
-            if (!string.IsNullOrEmpty(dto.StageId.ToString()))
-            {
-                teacher.StageId = dto.StageId;
-            }
-            teacher.IsActive = dto.IsActive;
-            teacher.phoneNumber = dto.PhoneNumber;
-=======
-
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-            var updateResult = await _userManager.UpdateAsync(user);
-            if (!updateResult.Succeeded)
-                throw new ApplicationException("فشل في تحديث المستخدم.");
-
-            _unitOfWork.Repository<Teacher>().Update(teacher);
-            await _unitOfWork.CompleteAsync();
-
-            return teacher;
         }
-
-<<<<<<< HEAD
-        //public async Task<bool> DeleteTeacherAsync(Guid teacherId)
-        //{
-        //    var spec = new TeacherSpecifications(null, null, 1, 1, teacherId);
-        //    var teacher = await _unitOfWork.Repository<Teacher>().GetEntityWithSpec(spec);
-        //    if (teacher == null) return false;
-
-        //    var user = await _userManager.FindByIdAsync(teacher.ApplicationUserId.ToString());
-        //    if (user == null) return false;
-
-        //    var result = await _userManager.DeleteAsync(user);
-        //    if (!result.Succeeded)
-        //        throw new ApplicationException("فشل في حذف المستخدم.");
-
-        //    _unitOfWork.Repository<Teacher>().Delete(teacher);
-        //    await _unitOfWork.CompleteAsync();
-
-        //    return true;
-        //}
 
         public async Task<bool> DeleteTeacherAsync(Guid teacherId)
         {
             try
             {
+                _logger.LogInformation("Deleting teacher with ID: {TeacherId}", teacherId);
+
                 var spec = new TeacherSpecifications(null, null, 1, 1, teacherId);
                 var teacher = await _unitOfWork.Repository<Teacher>().GetEntityWithSpec(spec);
-                if (teacher == null) return false;
+                if (teacher == null)
+                {
+                    _logger.LogWarning("Teacher with ID: {TeacherId} not found.", teacherId);
+                    return false;
+                }
 
                 var user = await _userManager.FindByIdAsync(teacher.ApplicationUserId.ToString());
-                if (user == null) return false;
+                if (user == null)
+                {
+                    _logger.LogWarning("Associated user for teacher ID: {TeacherId} not found.", teacherId);
+                    return false;
+                }
+
+                var result = await _userManager.DeleteAsync(user);
+                if (!result.Succeeded)
+                {
+                    _logger.LogWarning("Failed to delete teacher with ID: {TeacherId}. Errors: {Errors}", teacherId, string.Join(", ", result.Errors.Select(e => e.Description)));
+                    throw new ApplicationException("Failed to delete teacher.");
+                }
 
                 _unitOfWork.Repository<Teacher>().Delete(teacher);
                 await _unitOfWork.CompleteAsync();
 
-                var result = await _userManager.DeleteAsync(user);
-                if (!result.Succeeded)
-                    throw new Exception(string.Join(",", result.Errors.Select(e => e.Description)));
+                _logger.LogInformation("Successfully deleted teacher with ID: {TeacherId}", teacherId);
 
                 return true;
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error deleting teacher");
-                throw; // عشان تشوف السبب الحقيقي
+                _logger.LogError(ex, "Error occurred while deleting teacher with ID: {TeacherId}", teacherId);
+                throw;
             }
         }
 
-
-=======
-        public async Task<bool> DeleteTeacherAsync(Guid teacherId)
-        {
-            var spec = new TeacherSpecifications(null, null, 1, 1, teacherId);
-            var teacher = await _unitOfWork.Repository<Teacher>().GetEntityWithSpec(spec);
-            if (teacher == null) return false;
-
-            var user = await _userManager.FindByIdAsync(teacher.ApplicationUserId.ToString());
-            if (user == null) return false;
-
-            var result = await _userManager.DeleteAsync(user);
-            if (!result.Succeeded)
-                throw new ApplicationException("فشل في حذف المستخدم.");
-
-            _unitOfWork.Repository<Teacher>().Delete(teacher);
-            await _unitOfWork.CompleteAsync();
-
-            return true;
-        }
-
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
         public async Task<bool> ChangeTeacherPasswordAsync(Guid teacherId, string newPassword)
         {
-            var spec = new TeacherSpecifications(null, null, 1, 1, teacherId);
-            var teacher = await _unitOfWork.Repository<Teacher>().GetEntityWithSpec(spec);
-            if (teacher == null) return false;
+            try
+            {
+                _logger.LogInformation("Changing password for teacher with ID: {TeacherId}", teacherId);
 
-            var user = await _userManager.FindByIdAsync(teacher.ApplicationUserId.ToString());
-            if (user == null) return false;
+                var spec = new TeacherSpecifications(null, null, 1, 1, teacherId);
+                var teacher = await _unitOfWork.Repository<Teacher>().GetEntityWithSpec(spec);
+                if (teacher == null)
+                {
+                    _logger.LogWarning("Teacher with ID: {TeacherId} not found.", teacherId);
+                    return false;
+                }
 
-<<<<<<< HEAD
-            
+                var user = await _userManager.FindByIdAsync(teacher.ApplicationUserId.ToString());
+                if (user == null)
+                {
+                    _logger.LogWarning("Associated user for teacher ID: {TeacherId} not found.", teacherId);
+                    return false;
+                }
 
-=======
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-            var token = await _userManager.GeneratePasswordResetTokenAsync(user);
-            var result = await _userManager.ResetPasswordAsync(user, token, newPassword);
-            if (!result.Succeeded)
-                throw new ApplicationException("فشل في تغيير كلمة المرور.");
+                var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+                var result = await _userManager.ResetPasswordAsync(user, token, newPassword);
+                if (!result.Succeeded)
+                {
+                    _logger.LogWarning("Failed to change password for teacher with ID: {TeacherId}. Errors: {Errors}", teacherId, string.Join(", ", result.Errors.Select(e => e.Description)));
+                    throw new ApplicationException("Failed to change password.");
+                }
 
-            await _unitOfWork.CompleteAsync();
-            return true;
+                await _unitOfWork.CompleteAsync();
+
+                _logger.LogInformation("Successfully changed password for teacher with ID: {TeacherId}", teacherId);
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error occurred while changing password for teacher with ID: {TeacherId}", teacherId);
+                throw;
+            }
         }
 
         public async Task<bool> UpdateTeacherStatusAsync(Guid teacherId, bool isActive)
         {
-            var spec = new TeacherSpecifications(null, null, 1, 1, teacherId);
-            var teacher = await _unitOfWork.Repository<Teacher>().GetEntityWithSpec(spec);
-            if (teacher == null) return false;
+            try
+            {
+                _logger.LogInformation("Updating activation status for teacher with ID: {TeacherId} to {IsActive}", teacherId, isActive);
 
-            var user = await _userManager.FindByIdAsync(teacher.ApplicationUserId.ToString());
-            if (user == null) return false;
+                var spec = new TeacherSpecifications(null, null, 1, 1, teacherId);
+                var teacher = await _unitOfWork.Repository<Teacher>().GetEntityWithSpec(spec);
+                if (teacher == null)
+                {
+                    _logger.LogWarning("Teacher with ID: {TeacherId} not found.", teacherId);
+                    return false;
+                }
 
-            user.IsActive = isActive;
-            user.LockoutEnd = isActive ? null : DateTimeOffset.MaxValue;
+                var user = await _userManager.FindByIdAsync(teacher.ApplicationUserId.ToString());
+                if (user == null)
+                {
+                    _logger.LogWarning("Associated user for teacher ID: {TeacherId} not found.", teacherId);
+                    return false;
+                }
 
-            var result = await _userManager.UpdateAsync(user);
-            if (!result.Succeeded)
-                throw new ApplicationException("فشل في تحديث حالة المستخدم.");
+                user.IsActive = isActive;
+                if (!isActive)
+                {
+                    user.LockoutEnd = DateTimeOffset.MaxValue;
+                }
+                else
+                {
+                    user.LockoutEnd = null;
+                }
 
-            await _unitOfWork.CompleteAsync();
-            return true;
+                var result = await _userManager.UpdateAsync(user);
+                if (!result.Succeeded)
+                {
+                    _logger.LogWarning("Failed to update activation status for teacher with ID: {TeacherId}. Errors: {Errors}", teacherId, string.Join(", ", result.Errors.Select(e => e.Description)));
+                    throw new ApplicationException("Failed to update activation status.");
+                }
+
+                await _unitOfWork.CompleteAsync();
+
+                _logger.LogInformation("Successfully updated activation status for teacher with ID: {TeacherId} to {IsActive}", teacherId, isActive);
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error occurred while updating activation status for teacher with ID: {TeacherId}", teacherId);
+                throw;
+            }
         }
 
         public async Task<IReadOnlyList<ClientTeacherDto>> GetClientTeachersAsync()
         {
-            var spec = new TeacherSpecifications();
-            var teachers = await _unitOfWork.Repository<Teacher>().ListAsync(spec);
-            return _mapper.Map<IReadOnlyList<ClientTeacherDto>>(teachers);
+            try
+            {
+                _logger.LogInformation("Fetching client-facing teachers.");
+
+                var spec = new TeacherSpecifications();
+                var teachers = await _unitOfWork.Repository<Teacher>().ListAsync(spec);
+
+                var clientTeacherDtos = _mapper.Map<IReadOnlyList<ClientTeacherDto>>(teachers);
+
+                _logger.LogInformation("Successfully fetched {Count} client-facing teachers.", clientTeacherDtos.Count);
+
+                return clientTeacherDtos;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error occurred while fetching client-facing teachers.");
+                throw;
+            }
         }
     }
 }

@@ -11,8 +11,6 @@ using System.Net;
 
 namespace Adros.Apis.Controllers.Admin
 {
-    [ApiController]
-    [Route("api/[controller]")]
 
     public class StudentsController(IStudentService studentService,ILogger<StudentsController> logger) : BaseApiController
     {
@@ -54,19 +52,6 @@ namespace Adros.Apis.Controllers.Admin
                     statusCode: StatusCodes.Status500InternalServerError);
             }
         }
-<<<<<<< HEAD
-        [HttpDelete("{studentId}")]
-        public async Task<IActionResult> DeleteStudent(Guid studentId)
-        {
-            var result = await _studentService.DeleteStudentAsync(studentId);
-
-            if (!result)
-                return NotFound(new { message = "Student not found" });
-
-            return Ok(new { message = "Student and related data deleted successfully" });
-        }
-=======
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 
 
 

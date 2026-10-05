@@ -14,58 +14,34 @@ namespace Adros.Application.Mappings
     {
         public TeacherProfile()
         {
+            // Mapping for internal operations
             CreateMap<Teacher, TeacherEntityDto>()
-                .ForMember(d => d.TeacherID,
-                    o => o.MapFrom(s => s.Id))
+                .ForMember(dest => dest.TeacherId, opt => opt.MapFrom(src => src.Id))
+                .ForMember(dest => dest.Email, opt => opt.MapFrom(src => src.ApplicationUser.Email))
+                .ForMember(dest => dest.About, opt => opt.MapFrom(src => src.About))
+                .ForMember(dest => dest.Photo, opt => opt.MapFrom(src => src.ApplicationUser.Photo))
+                .ForMember(dest => dest.IsActive, opt => opt.MapFrom(src => src.ApplicationUser.IsActive))
+                .ForMember(dest => dest.LessonCount, opt => opt.MapFrom(src => src.Lessons.Count));
 
-                .ForMember(d => d.Email,
-                    o => o.MapFrom(s =>
-                        s.ApplicationUser != null
-                            ? s.ApplicationUser.Email
-                            : s.Email))
+            // Mapping for client-facing operations
+            CreateMap<Teacher, ClientTeacherDto>()
+                .ForMember(dest => dest.TeacherId, opt => opt.MapFrom(src => src.Id))
+                .ForMember(dest => dest.Email, opt => opt.MapFrom(src => src.ApplicationUser.Email))
+                .ForMember(dest => dest.About, opt => opt.MapFrom(src => src.About))
+                .ForMember(dest => dest.Photo, opt => opt.MapFrom(src => src.ApplicationUser.Photo))
+                .ForMember(dest => dest.LessonCount, opt => opt.MapFrom(src => src.Lessons.Count));
 
-                .ForMember(d => d.FirstName,
-                    o => o.MapFrom(s => s.FirstName))
+            // Mapping for creating ApplicationUser from TeacherCreateDto
+            CreateMap<TeacherCreateDto, ApplicationUser>()
+                .ForMember(dest => dest.Email, opt => opt.MapFrom(src => src.Email))
+                .ForMember(dest => dest.UserName, opt => opt.MapFrom(src => src.Email))
+                .ForMember(dest => dest.Photo, opt => opt.Ignore()); // Handled externally
 
-                .ForMember(d => d.LastName,
-                    o => o.MapFrom(s => s.LastName))
-
-                .ForMember(d => d.About,
-                    o => o.MapFrom(s => s.About))
-
-                .ForMember(d => d.ApplicationUserId,
-                    o => o.MapFrom(s => s.ApplicationUserId))
-
-                // ✅ IsActive جاية من ApplicationUser
-                .ForMember(d => d.IsActive,
-                    o => o.MapFrom(s =>
-<<<<<<< HEAD
-                        s.IsActive != null && s.IsActive))
-=======
-                        s.ApplicationUser != null && s.ApplicationUser.IsActive))
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-
-                // ✅ LessonCount محسوبة
-                .ForMember(d => d.LessonCount,
-                    o => o.MapFrom(s =>
-<<<<<<< HEAD
-                        s.Lessons != null ? s.Lessons.Count : 0))
-
-                .ForMember(d => d.ProfilePictureUrl,
-                        o => o.MapFrom(s =>
-                            s.ApplicationUser != null
-                                ? s.ApplicationUser.Photo
-                                : s.ProfilePictureUrl))
-            
-                .ForMember(d => d.StageId,
-                    o => o.MapFrom(s => s.StageId))
-
-                .ForMember(d => d.PhoneNumber, q => 
-                q.MapFrom(s => s.phoneNumber));
-=======
-                        s.Lessons != null ? s.Lessons.Count : 0));
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
+            // Mapping for updating ApplicationUser from TeacherUpdateDto
+            CreateMap<TeacherUpdateDto, ApplicationUser>()
+                .ForMember(dest => dest.Email, opt => opt.Condition(src => !string.IsNullOrEmpty(src.Email)))
+                .ForMember(dest => dest.UserName, opt => opt.Condition(src => !string.IsNullOrEmpty(src.Email)))
+                .ForMember(dest => dest.Photo, opt => opt.Ignore()); // Handled externally
         }
     }
-
 }

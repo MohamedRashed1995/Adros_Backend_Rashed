@@ -11,6 +11,5 @@ namespace Adros.Application.Interfaces.IService
         Task<SubjectDto> CreateSubjectAsync(SubjectInputDto dto);
         Task UpdateSubjectAsync(Guid id, SubjectInputDto dto);
         Task DeleteSubjectAsync(Guid id);
-        Task<IReadOnlyList<SubjectDto>> GetSubjectsByLevelIdAsync(Guid levelId);
     }
 }

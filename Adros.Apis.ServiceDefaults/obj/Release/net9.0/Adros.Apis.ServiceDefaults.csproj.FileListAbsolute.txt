@@ -1,8 +1,12 @@
-C:\Users\lenovo\Desktop\ADROS Mohamed Rashed\Adros-Backend-MohamedRashed\Adros-BackEnd-main\Adros.Apis.ServiceDefaults\obj\Release\net9.0\Adros.Apis.ServiceDefaults.csproj.AssemblyReference.cache
-C:\Users\lenovo\Desktop\ADROS Mohamed Rashed\Adros-Backend-MohamedRashed\Adros-BackEnd-main\Adros.Apis.ServiceDefaults\obj\Release\net9.0\rpswa.dswa.cache.json
-C:\Users\lenovo\Desktop\ADROS Mohamed Rashed\Adros-Backend-MohamedRashed\Adros-BackEnd-main\Adros.Apis.ServiceDefaults\obj\Release\net9.0\Adros.Apis.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\lenovo\Desktop\ADROS Mohamed Rashed\Adros-Backend-MohamedRashed\Adros-BackEnd-main\Adros.Apis.ServiceDefaults\obj\Release\net9.0\Adros.Apis.ServiceDefaults.AssemblyInfoInputs.cache
-C:\Users\lenovo\Desktop\ADROS Mohamed Rashed\Adros-Backend-MohamedRashed\Adros-BackEnd-main\Adros.Apis.ServiceDefaults\obj\Release\net9.0\Adros.Apis.ServiceDefaults.AssemblyInfo.cs
-C:\Users\lenovo\Desktop\ADROS Mohamed Rashed\Adros-Backend-MohamedRashed\Adros-BackEnd-main\Adros.Apis.ServiceDefaults\obj\Release\net9.0\Adros.Apis.ServiceDefaults.csproj.CoreCompileInputs.cache
-C:\Users\lenovo\Desktop\ADROS Mohamed Rashed\Adros-Backend-MohamedRashed\Adros-BackEnd-main\Adros.Apis.ServiceDefaults\obj\Release\net9.0\Adros.Apis.ServiceDefaults.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\lenovo\Desktop\ADROS Mohamed Rashed\Adros-Backend-MohamedRashed\Adros-BackEnd-main\Adros.Apis.ServiceDefaults\obj\Release\net9.0\Adros.Apis.ServiceDefaults.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\lenovo\Desktop\Adros-BackEnd-main\Adros.Apis.ServiceDefaults\bin\Release\net9.0\Adros.Apis.ServiceDefaults.deps.json
+C:\Users\lenovo\Desktop\Adros-BackEnd-main\Adros.Apis.ServiceDefaults\bin\Release\net9.0\Adros.Apis.ServiceDefaults.dll
+C:\Users\lenovo\Desktop\Adros-BackEnd-main\Adros.Apis.ServiceDefaults\bin\Release\net9.0\Adros.Apis.ServiceDefaults.pdb
+C:\Users\lenovo\Desktop\Adros-BackEnd-main\Adros.Apis.ServiceDefaults\obj\Release\net9.0\Adros.Apis.ServiceDefaults.csproj.AssemblyReference.cache
+C:\Users\lenovo\Desktop\Adros-BackEnd-main\Adros.Apis.ServiceDefaults\obj\Release\net9.0\Adros.Apis.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lenovo\Desktop\Adros-BackEnd-main\Adros.Apis.ServiceDefaults\obj\Release\net9.0\Adros.Apis.ServiceDefaults.AssemblyInfoInputs.cache
+C:\Users\lenovo\Desktop\Adros-BackEnd-main\Adros.Apis.ServiceDefaults\obj\Release\net9.0\Adros.Apis.ServiceDefaults.AssemblyInfo.cs
+C:\Users\lenovo\Desktop\Adros-BackEnd-main\Adros.Apis.ServiceDefaults\obj\Release\net9.0\Adros.Apis.ServiceDefaults.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Desktop\Adros-BackEnd-main\Adros.Apis.ServiceDefaults\obj\Release\net9.0\Adros.Apis.ServiceDefaults.dll
+C:\Users\lenovo\Desktop\Adros-BackEnd-main\Adros.Apis.ServiceDefaults\obj\Release\net9.0\refint\Adros.Apis.ServiceDefaults.dll
+C:\Users\lenovo\Desktop\Adros-BackEnd-main\Adros.Apis.ServiceDefaults\obj\Release\net9.0\Adros.Apis.ServiceDefaults.pdb
+C:\Users\lenovo\Desktop\Adros-BackEnd-main\Adros.Apis.ServiceDefaults\obj\Release\net9.0\ref\Adros.Apis.ServiceDefaults.dll

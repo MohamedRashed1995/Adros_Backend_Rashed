@@ -18,7 +18,7 @@ namespace Adros.Apis.DbIntializers
             await SeedUsersAsync(userManager);
         }
 
-        public static async Task SeedRolesAsync(RoleManager<IdentityRole<Guid>> roleManager)
+        private static async Task SeedRolesAsync(RoleManager<IdentityRole<Guid>> roleManager)
         {
             if (!await roleManager.RoleExistsAsync("Master"))
             {
@@ -55,18 +55,18 @@ namespace Adros.Apis.DbIntializers
             }
         }
 
-        public static async Task SeedUsersAsync(UserManager<ApplicationUser> userManager)
+        private static async Task SeedUsersAsync(UserManager<ApplicationUser> userManager)
         {
             if (!userManager.Users.Any())
             {
                 var user1 = new ApplicationUser
                 {
                     UserName = "Master@Adros.com",
-
                     Email = "Master@Adros.com",
                     EmailConfirmed = true,
-                    FirstName = "Admin",
-                    LastName = "User"
+                    FirstName = "Master",
+                    LastName = "Admin"
+
                 };
 
 

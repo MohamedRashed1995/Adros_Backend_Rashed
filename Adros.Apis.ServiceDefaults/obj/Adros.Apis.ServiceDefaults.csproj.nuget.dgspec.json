@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lenovo\\Desktop\\ADROS Mohamed Rashed\\Adros-Backend-MohamedRashed\\Adros-BackEnd-main\\Adros.Apis.ServiceDefaults\\Adros.Apis.ServiceDefaults.csproj": {}
+    "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Apis.ServiceDefaults\\Adros.Apis.ServiceDefaults.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lenovo\\Desktop\\ADROS Mohamed Rashed\\Adros-Backend-MohamedRashed\\Adros-BackEnd-main\\Adros.Apis.ServiceDefaults\\Adros.Apis.ServiceDefaults.csproj": {
+    "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Apis.ServiceDefaults\\Adros.Apis.ServiceDefaults.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenovo\\Desktop\\ADROS Mohamed Rashed\\Adros-Backend-MohamedRashed\\Adros-BackEnd-main\\Adros.Apis.ServiceDefaults\\Adros.Apis.ServiceDefaults.csproj",
+        "projectUniqueName": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Apis.ServiceDefaults\\Adros.Apis.ServiceDefaults.csproj",
         "projectName": "Adros.Apis.ServiceDefaults",
-        "projectPath": "C:\\Users\\lenovo\\Desktop\\ADROS Mohamed Rashed\\Adros-Backend-MohamedRashed\\Adros-BackEnd-main\\Adros.Apis.ServiceDefaults\\Adros.Apis.ServiceDefaults.csproj",
+        "projectPath": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Apis.ServiceDefaults\\Adros.Apis.ServiceDefaults.csproj",
         "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenovo\\Desktop\\ADROS Mohamed Rashed\\Adros-Backend-MohamedRashed\\Adros-BackEnd-main\\Adros.Apis.ServiceDefaults\\obj\\",
+        "outputPath": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Apis.ServiceDefaults\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,27 +50,49 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "Microsoft.Extensions.Http.Resilience": {
               "target": "Package",
               "version": "[9.0.0, )"
             },
-            "Microsoft.AspNetCore.OpenApi": {
+            "Microsoft.Extensions.ServiceDiscovery": {
               "target": "Package",
               "version": "[9.0.0, )"
             },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[1.9.0, )"
             },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
+            "OpenTelemetry.Extensions.Hosting": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[1.9.0, )"
+            },
+            "OpenTelemetry.Instrumentation.AspNetCore": {
+              "target": "Package",
+              "version": "[1.9.0, )"
+            },
+            "OpenTelemetry.Instrumentation.Http": {
+              "target": "Package",
+              "version": "[1.9.0, )"
+            },
+            "OpenTelemetry.Instrumentation.Runtime": {
+              "target": "Package",
+              "version": "[1.9.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[9.0.6, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[9.0.6, )"
             }
           },
           "imports": [
@@ -92,7 +114,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.318/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -9,26 +9,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-<<<<<<< HEAD
-namespace Adros.Core.Entities.Subscription  
-=======
 namespace Adros.Core.Entities.Subscription
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 {
     public class Subscription : BaseEntity
     {
         [Required]
-<<<<<<< HEAD
-        public string Name { get; set; } // Monthly, Annual, أو أي اسم
-        [Required]
-        public string Price { get; set; } // ممكن نخليه string عشان يظهر بالـ UI
-        [Required]
-        public string Duration { get; set; } // Monthly, Annually
-
-        public List<string> Benefits { get; set; } = new(); // List of benefits كـ string مفصولة بفواصل
-    }
-
-=======
         [ForeignKey("Student")]
         public Guid StudentId { get; set; }
 
@@ -84,5 +69,4 @@ namespace Adros.Core.Entities.Subscription
         //public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         //public DateTime? UpdatedAt { get; set; }
     }
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
 }

@@ -10,8 +10,6 @@ namespace Adros.Application.DTOs
         public string FirstName { get; set; }
         [Required]
         public string LastName { get; set; }
-        [Required]
-        public Guid LevelId { get; set; }
 
         [Required]
         [DataType(DataType.PhoneNumber)]

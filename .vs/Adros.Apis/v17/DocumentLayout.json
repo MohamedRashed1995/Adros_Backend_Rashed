@@ -1,395 +1,90 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\",
+  "WorkspaceRootPath": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\",
   "Documents": [
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\services\\usersservices\\teacherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\services\\usersservices\\teacherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.apis\\controllers\\admin\\teacherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|solutionrelative:adros.apis\\controllers\\admin\\teacherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\interfaces\\iservice\\iteacherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\interfaces\\iservice\\iteacherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\dtos\\teacher\\teacherchangepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\dtos\\teacher\\teacherchangepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\mappings\\teacherprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\mappings\\teacherprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.apis\\controllers\\videocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|solutionrelative:adros.apis\\controllers\\videocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\services\\homeservice\\calenderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\services\\homeservice\\calenderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\services\\coursessevices\\videoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\services\\coursessevices\\videoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.core\\entities\\course\\videoview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|solutionrelative:adros.core\\entities\\course\\videoview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\services\\coursessevices\\vimeoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\services\\coursessevices\\vimeoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\services\\usersservices\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\services\\usersservices\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.apis\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|solutionrelative:adros.apis\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\services\\security\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\services\\security\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\dtos\\subscription\\subscriptionswithstudentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\dtos\\subscription\\subscriptionswithstudentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\services\\usersservices\\subscriptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\services\\usersservices\\subscriptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\dtos\\attachment\\attachmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\dtos\\attachment\\attachmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.core\\entities\\course\\attachment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|solutionrelative:adros.core\\entities\\course\\attachment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.apis\\controllers\\admin\\lessonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|solutionrelative:adros.apis\\controllers\\admin\\lessonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260108132953_AddUnitIdToLessons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Adros.Persistence\\Migrations\\20260108132953_AddUnitIdToLessons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.core\\entities\\course\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|solutionrelative:adros.core\\entities\\course\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.core\\entities\\course\\unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|solutionrelative:adros.core\\entities\\course\\unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECF489B2-4966-49FE-86EA-9F289F724EF8}|Adros.Persistence\\Adros.Persistence.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.persistence\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECF489B2-4966-49FE-86EA-9F289F724EF8}|Adros.Persistence\\Adros.Persistence.csproj|solutionrelative:adros.persistence\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\dtos\\student\\studentprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\dtos\\student\\studentprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\interfaces\\iservice\\isubscriptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\interfaces\\iservice\\isubscriptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.apis\\controllers\\subscriptions\\subscriptionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|solutionrelative:adros.apis\\controllers\\subscriptions\\subscriptionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\dtos\\subscription\\subscriptiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\dtos\\subscription\\subscriptiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.core\\entities\\subscription\\subscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|solutionrelative:adros.core\\entities\\subscription\\subscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\services\\usersservices\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\services\\usersservices\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.apis\\controllers\\subscriptions\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|solutionrelative:adros.apis\\controllers\\subscriptions\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\services\\usersservices\\paymobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\services\\usersservices\\paymobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.apis\\controllers\\client\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|solutionrelative:adros.apis\\controllers\\client\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49127C1E-DDAB-402D-9FE8-BFA34AB9389D}|Adros.Shared\\Adros.Shared.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.shared\\helpers\\filemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49127C1E-DDAB-402D-9FE8-BFA34AB9389D}|Adros.Shared\\Adros.Shared.csproj|solutionrelative:adros.shared\\helpers\\filemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-=======
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\services\\homeservice\\lessonsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\services\\homeservice\\lessonsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\services\\homeservice\\attachmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\services\\homeservice\\attachmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.apis\\controllers\\admin\\attachmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|solutionrelative:adros.apis\\controllers\\admin\\attachmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.apis\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|c:\\users\\lenovo\\desktop\\adros-backend-main\\adros.apis\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|solutionrelative:adros.apis\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\interfaces\\iservice\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\interfaces\\iservice\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ECF489B2-4966-49FE-86EA-9F289F724EF8}|Adros.Persistence\\Adros.Persistence.csproj|c:\\users\\lenovo\\desktop\\adros-backend-main\\adros.persistence\\adros.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{ECF489B2-4966-49FE-86EA-9F289F724EF8}|Adros.Persistence\\Adros.Persistence.csproj|solutionrelative:adros.persistence\\adros.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\dtos\\payment\\paymobwebhookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\dtos\\payment\\paymobwebhookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|c:\\users\\lenovo\\desktop\\adros-backend-main\\adros.core\\adros.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|solutionrelative:adros.core\\adros.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.core\\entities\\subscription\\studentsubscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|solutionrelative:adros.core\\entities\\subscription\\studentsubscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\adros-backend-main\\application\\adros.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\adros.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\dtos\\payment\\paymobinitresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\dtos\\payment\\paymobinitresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{604CF11B-91F6-4EFE-9A82-93BCCF8FE90D}|Adros.Infrastructure\\Adros.Infrastructure.csproj|c:\\users\\lenovo\\desktop\\adros-backend-main\\adros.infrastructure\\adros.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{604CF11B-91F6-4EFE-9A82-93BCCF8FE90D}|Adros.Infrastructure\\Adros.Infrastructure.csproj|solutionrelative:adros.infrastructure\\adros.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\interfaces\\iservice\\ipaymobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\interfaces\\iservice\\ipaymobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{49127C1E-DDAB-402D-9FE8-BFA34AB9389D}|Adros.Shared\\Adros.Shared.csproj|c:\\users\\lenovo\\desktop\\adros-backend-main\\adros.shared\\adros.shared.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{49127C1E-DDAB-402D-9FE8-BFA34AB9389D}|Adros.Shared\\Adros.Shared.csproj|solutionrelative:adros.shared\\adros.shared.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\dtos\\teacher\\teachercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\dtos\\teacher\\teachercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|c:\\users\\lenovo\\desktop\\adros-backend-main\\adros.apis\\adros.apis.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|solutionrelative:adros.apis\\adros.apis.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.core\\entities\\users\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|solutionrelative:adros.core\\entities\\users\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.core\\specifications\\teacherspecifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|solutionrelative:adros.core\\specifications\\teacherspecifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.core\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|solutionrelative:adros.core\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\dtos\\teacher\\clientteacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\dtos\\teacher\\clientteacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\dtos\\teacher\\teacherentitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\dtos\\teacher\\teacherentitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\dtos\\teacher\\teacherupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\dtos\\teacher\\teacherupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\dtos\\home\\homeresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\dtos\\home\\homeresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.apis\\controllers\\admin\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|solutionrelative:adros.apis\\controllers\\admin\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\interfaces\\iservice\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\interfaces\\iservice\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.core\\entities\\users\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|solutionrelative:adros.core\\entities\\users\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\dtos\\student\\studentlistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\dtos\\student\\studentlistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.core\\specifications\\studentlistspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|solutionrelative:adros.core\\specifications\\studentlistspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.core\\specifications\\studentspecifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|solutionrelative:adros.core\\specifications\\studentspecifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.apis\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|c:\\users\\lenovo\\desktop\\adros-backend-main\\adros.apis\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|solutionrelative:adros.apis\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.core\\entities\\course\\studentprogress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|solutionrelative:adros.core\\entities\\course\\studentprogress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|c:\\users\\lenovo\\desktop\\adros-backend-main\\adros.core\\entities\\home\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|solutionrelative:adros.core\\entities\\home\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260201143522_KLKJ.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Adros.Persistence\\Migrations\\20260201143522_KLKJ.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ECF489B2-4966-49FE-86EA-9F289F724EF8}|Adros.Persistence\\Adros.Persistence.csproj|c:\\users\\lenovo\\desktop\\adros-backend-main\\adros.persistence\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECF489B2-4966-49FE-86EA-9F289F724EF8}|Adros.Persistence\\Adros.Persistence.csproj|solutionrelative:adros.persistence\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260201121113_AddIsSubscripedToStudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Adros.Persistence\\Migrations\\20260201121113_AddIsSubscripedToStudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{49127C1E-DDAB-402D-9FE8-BFA34AB9389D}|Adros.Shared\\Adros.Shared.csproj|c:\\users\\lenovo\\desktop\\adros-backend-main\\adros.shared\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49127C1E-DDAB-402D-9FE8-BFA34AB9389D}|Adros.Shared\\Adros.Shared.csproj|solutionrelative:adros.shared\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260201115836_RemoveSubscriptionPlanAndUpdateSubscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Adros.Persistence\\Migrations\\20260201115836_RemoveSubscriptionPlanAndUpdateSubscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|c:\\users\\lenovo\\desktop\\adros-backend-main\\adros.core\\entities\\home\\calender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|solutionrelative:adros.core\\entities\\home\\calender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\dtos\\lesson\\lessondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\dtos\\lesson\\lessondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|c:\\users\\lenovo\\desktop\\adros-backend-main\\adros.core\\entities\\home\\banner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|solutionrelative:adros.core\\entities\\home\\banner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\dtos\\lesson\\lessonvideodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\dtos\\lesson\\lessonvideodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\adros-backend-main\\application\\interfaces\\iservice\\ibannerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\interfaces\\iservice\\ibannerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\interfaces\\iservice\\ivimeoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\interfaces\\iservice\\ivimeoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\adros-backend-main\\application\\mappings\\bannerprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\mappings\\bannerprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.core\\entities\\course\\video.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|solutionrelative:adros.core\\entities\\course\\video.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\mappings\\videoprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\mappings\\videoprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\interfaces\\iservice\\ivideoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\interfaces\\iservice\\ivideoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\dtos\\level\\levelentitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\dtos\\level\\levelentitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.apis\\controllers\\admin\\skillscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|solutionrelative:adros.apis\\controllers\\admin\\skillscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\mappings\\skillsprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\mappings\\skillsprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\services\\homeservice\\skillsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\services\\homeservice\\skillsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\dtos\\skills\\skillshowdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\dtos\\skills\\skillshowdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\dtos\\skills\\skilldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\dtos\\skills\\skilldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260125162037_FixVideoWatchLaterNavigation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Adros.Persistence\\Migrations\\20260125162037_FixVideoWatchLaterNavigation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260125124332_UpdateWatchLaterEntity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Adros.Persistence\\Migrations\\20260125124332_UpdateWatchLaterEntity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.core\\entities\\course\\watchlater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|solutionrelative:adros.core\\entities\\course\\watchlater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\interfaces\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\interfaces\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\services\\homeservice\\bannerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\adros-backend-main\\application\\services\\homeservice\\bannerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\services\\homeservice\\bannerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.apis\\controllers\\admin\\bannerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\adros-backend-main\\application\\dtos\\banner\\clientbannerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\dtos\\banner\\clientbannerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\adros-backend-main\\application\\dtos\\banner\\bannerupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\dtos\\banner\\bannerupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\adros-backend-main\\application\\dtos\\banner\\bannerentitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\dtos\\banner\\bannerentitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\adros-backend-main\\application\\dtos\\banner\\bannercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\dtos\\banner\\bannercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|c:\\users\\lenovo\\desktop\\adros-backend-main\\adros.apis\\controllers\\admin\\bannerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|solutionrelative:adros.apis\\controllers\\admin\\bannerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.apis\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6F278F4F-DD9D-43C7-A4DC-DD61F8FEF9E6}|Adros.Apis\\Adros.Apis.csproj|solutionrelative:adros.apis\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECF489B2-4966-49FE-86EA-9F289F724EF8}|Adros.Persistence\\Adros.Persistence.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.persistence\\migrations\\20260210123542_addpendingtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECF489B2-4966-49FE-86EA-9F289F724EF8}|Adros.Persistence\\Adros.Persistence.csproj|solutionrelative:adros.persistence\\migrations\\20260210123542_addpendingtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECF489B2-4966-49FE-86EA-9F289F724EF8}|Adros.Persistence\\Adros.Persistence.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.persistence\\migrations\\20260210101553_kkkkkkkkkkkk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECF489B2-4966-49FE-86EA-9F289F724EF8}|Adros.Persistence\\Adros.Persistence.csproj|solutionrelative:adros.persistence\\migrations\\20260210101553_kkkkkkkkkkkk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECF489B2-4966-49FE-86EA-9F289F724EF8}|Adros.Persistence\\Adros.Persistence.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.persistence\\migrations\\20260209132602_changefrominttostring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECF489B2-4966-49FE-86EA-9F289F724EF8}|Adros.Persistence\\Adros.Persistence.csproj|solutionrelative:adros.persistence\\migrations\\20260209132602_changefrominttostring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECF489B2-4966-49FE-86EA-9F289F724EF8}|Adros.Persistence\\Adros.Persistence.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.persistence\\migrations\\20260209125928_changeidtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECF489B2-4966-49FE-86EA-9F289F724EF8}|Adros.Persistence\\Adros.Persistence.csproj|solutionrelative:adros.persistence\\migrations\\20260209125928_changeidtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECF489B2-4966-49FE-86EA-9F289F724EF8}|Adros.Persistence\\Adros.Persistence.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.persistence\\migrations\\20260209100722_addphonenumbertoteacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECF489B2-4966-49FE-86EA-9F289F724EF8}|Adros.Persistence\\Adros.Persistence.csproj|solutionrelative:adros.persistence\\migrations\\20260209100722_addphonenumbertoteacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECF489B2-4966-49FE-86EA-9F289F724EF8}|Adros.Persistence\\Adros.Persistence.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.persistence\\migrations\\20260205123015_addstagetoteacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECF489B2-4966-49FE-86EA-9F289F724EF8}|Adros.Persistence\\Adros.Persistence.csproj|solutionrelative:adros.persistence\\migrations\\20260205123015_addstagetoteacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECF489B2-4966-49FE-86EA-9F289F724EF8}|Adros.Persistence\\Adros.Persistence.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.persistence\\migrations\\20260205101219_addphonenumbertostudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECF489B2-4966-49FE-86EA-9F289F724EF8}|Adros.Persistence\\Adros.Persistence.csproj|solutionrelative:adros.persistence\\migrations\\20260205101219_addphonenumbertostudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECF489B2-4966-49FE-86EA-9F289F724EF8}|Adros.Persistence\\Adros.Persistence.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.persistence\\migrations\\20260204135943_makeacloumnnullable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECF489B2-4966-49FE-86EA-9F289F724EF8}|Adros.Persistence\\Adros.Persistence.csproj|solutionrelative:adros.persistence\\migrations\\20260204135943_makeacloumnnullable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECF489B2-4966-49FE-86EA-9F289F724EF8}|Adros.Persistence\\Adros.Persistence.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.persistence\\migrations\\20260204104539_addstudenttable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECF489B2-4966-49FE-86EA-9F289F724EF8}|Adros.Persistence\\Adros.Persistence.csproj|solutionrelative:adros.persistence\\migrations\\20260204104539_addstudenttable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECF489B2-4966-49FE-86EA-9F289F724EF8}|Adros.Persistence\\Adros.Persistence.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.persistence\\migrations\\20260201150340_hagsdhjgasdj.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECF489B2-4966-49FE-86EA-9F289F724EF8}|Adros.Persistence\\Adros.Persistence.csproj|solutionrelative:adros.persistence\\migrations\\20260201150340_hagsdhjgasdj.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECF489B2-4966-49FE-86EA-9F289F724EF8}|Adros.Persistence\\Adros.Persistence.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.persistence\\migrations\\20260201134304_lllllllllll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECF489B2-4966-49FE-86EA-9F289F724EF8}|Adros.Persistence\\Adros.Persistence.csproj|solutionrelative:adros.persistence\\migrations\\20260201134304_lllllllllll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECF489B2-4966-49FE-86EA-9F289F724EF8}|Adros.Persistence\\Adros.Persistence.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.persistence\\migrations\\20260201133425_newmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECF489B2-4966-49FE-86EA-9F289F724EF8}|Adros.Persistence\\Adros.Persistence.csproj|solutionrelative:adros.persistence\\migrations\\20260201133425_newmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-      "AbsoluteMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.core\\specifications\\lessonspecifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|solutionrelative:adros.core\\specifications\\lessonspecifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\adros.core\\specifications\\lessonbyunitspecifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39C84F1A-2B4B-47A3-B9D5-D70A065F416A}|Adros.Core\\Adros.Core.csproj|solutionrelative:adros.core\\specifications\\lessonbyunitspecifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\dtos\\lesson\\lessoncreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\dtos\\lesson\\lessoncreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\dtos\\unit\\unitcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\dtos\\unit\\unitcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|c:\\users\\lenovo\\desktop\\========= adrs =========\\adros_backend_rashed-main\\adros_backend_rashed-main\\application\\dtos\\unit\\unitupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9EA867-52C1-4D25-9926-4252B01CE6AC}|Application\\Adros.Application.csproj|solutionrelative:application\\dtos\\unit\\unitupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
     }
   ],
   "DocumentGroupContainers": [
@@ -399,422 +94,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TeacherChangePasswordDto.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Teacher\\TeacherChangePasswordDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\Teacher\\TeacherChangePasswordDto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Teacher\\TeacherChangePasswordDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\Teacher\\TeacherChangePasswordDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T15:32:48.455Z",
-=======
-          "SelectedChildIndex": 4,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Attachment.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Entities\\Course\\Attachment.cs",
-              "RelativeDocumentMoniker": "Adros.Core\\Entities\\Course\\Attachment.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Entities\\Course\\Attachment.cs",
-              "RelativeToolTip": "Adros.Core\\Entities\\Course\\Attachment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T14:10:04.423Z",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 2,
-              "Title": "ITeacherService.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Interfaces\\IService\\ITeacherService.cs",
-              "RelativeDocumentMoniker": "Application\\Interfaces\\IService\\ITeacherService.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Interfaces\\IService\\ITeacherService.cs",
-              "RelativeToolTip": "Application\\Interfaces\\IService\\ITeacherService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T15:17:32.561Z",
-=======
-              "DocumentIndex": 3,
-              "Title": "20260108132953_AddUnitIdToLessons.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260108132953_AddUnitIdToLessons.cs",
-              "RelativeDocumentMoniker": "Adros.Persistence\\Migrations\\20260108132953_AddUnitIdToLessons.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260108132953_AddUnitIdToLessons.cs",
-              "RelativeToolTip": "Adros.Persistence\\Migrations\\20260108132953_AddUnitIdToLessons.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAIwDMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T13:29:53.952Z",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
-<<<<<<< HEAD
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TeacherService.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Services\\UsersServices\\TeacherService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\UsersServices\\TeacherService.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Services\\UsersServices\\TeacherService.cs",
-              "RelativeToolTip": "Application\\Services\\UsersServices\\TeacherService.cs",
-              "ViewState": "AgIAAAEBAAAAAAAAAAAAAA0BAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T12:11:22.886Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TeachersController.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Apis\\Controllers\\Admin\\TeachersController.cs",
-              "RelativeDocumentMoniker": "Adros.Apis\\Controllers\\Admin\\TeachersController.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Apis\\Controllers\\Admin\\TeachersController.cs",
-              "RelativeToolTip": "Adros.Apis\\Controllers\\Admin\\TeachersController.cs",
-              "ViewState": "AgIAAIYAAAAAAAAAAAAAAKIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T09:39:27.335Z",
-              "EditorCaption": ""
-=======
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-<<<<<<< HEAD
-              "Title": "TeacherProfile.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Mappings\\TeacherProfile.cs",
-              "RelativeDocumentMoniker": "Application\\Mappings\\TeacherProfile.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Mappings\\TeacherProfile.cs",
-              "RelativeToolTip": "Application\\Mappings\\TeacherProfile.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAowC4AAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T10:00:34.662Z",
-=======
-              "Title": "Lesson.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Entities\\Course\\Lesson.cs",
-              "RelativeDocumentMoniker": "Adros.Core\\Entities\\Course\\Lesson.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Entities\\Course\\Lesson.cs",
-              "RelativeToolTip": "Adros.Core\\Entities\\Course\\Lesson.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAQwBEAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T08:34:50.885Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AttachmentDto.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Attachment\\AttachmentDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\Attachment\\AttachmentDto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Attachment\\AttachmentDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\Attachment\\AttachmentDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T12:45:22.659Z",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-<<<<<<< HEAD
-              "Title": "VideoController.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Apis\\Controllers\\VideoController.cs",
-              "RelativeDocumentMoniker": "Adros.Apis\\Controllers\\VideoController.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Apis\\Controllers\\VideoController.cs",
-              "RelativeToolTip": "Adros.Apis\\Controllers\\VideoController.cs",
-              "ViewState": "AgIAAFcBAAAAAAAAAAAowHoBAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T11:58:55.872Z",
-=======
-              "Title": "Unit.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Entities\\Course\\Unit.cs",
-              "RelativeDocumentMoniker": "Adros.Core\\Entities\\Course\\Unit.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Entities\\Course\\Unit.cs",
-              "RelativeToolTip": "Adros.Core\\Entities\\Course\\Unit.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T08:56:42.881Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LessonsController.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Apis\\Controllers\\Admin\\LessonsController.cs",
-              "RelativeDocumentMoniker": "Adros.Apis\\Controllers\\Admin\\LessonsController.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Apis\\Controllers\\Admin\\LessonsController.cs",
-              "RelativeToolTip": "Adros.Apis\\Controllers\\Admin\\LessonsController.cs",
-              "ViewState": "AgIAAMUAAAAAAAAAAAA6wNoAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T09:02:00.684Z",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-<<<<<<< HEAD
-              "Title": "CalenderService.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Services\\HomeService\\CalenderService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\HomeService\\CalenderService.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Services\\HomeService\\CalenderService.cs",
-              "RelativeToolTip": "Application\\Services\\HomeService\\CalenderService.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAAAFEAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T13:56:11.356Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "VideoService.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Services\\CoursesSevices\\VideoService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\CoursesSevices\\VideoService.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Services\\CoursesSevices\\VideoService.cs",
-              "RelativeToolTip": "Application\\Services\\CoursesSevices\\VideoService.cs",
-              "ViewState": "AgIAAKYBAAAAAAAAAAAowLkBAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T09:17:26.565Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "StudentService.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Services\\UsersServices\\StudentService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\UsersServices\\StudentService.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Services\\UsersServices\\StudentService.cs",
-              "RelativeToolTip": "Application\\Services\\UsersServices\\StudentService.cs",
-              "ViewState": "AgIAAO8AAAAAAAAAAAAAAP8AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T09:29:12.392Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "VimeoService.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Services\\CoursesSevices\\VimeoService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\CoursesSevices\\VimeoService.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Services\\CoursesSevices\\VimeoService.cs",
-              "RelativeToolTip": "Application\\Services\\CoursesSevices\\VimeoService.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T12:10:22.541Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Services\\Security\\TokenService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\Security\\TokenService.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Services\\Security\\TokenService.cs",
-              "RelativeToolTip": "Application\\Services\\Security\\TokenService.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAAAHMAAABoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T09:58:58.48Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "VideoView.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Entities\\Course\\VideoView.cs",
-              "RelativeDocumentMoniker": "Adros.Core\\Entities\\Course\\VideoView.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Entities\\Course\\VideoView.cs",
-              "RelativeToolTip": "Adros.Core\\Entities\\Course\\VideoView.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-24T20:51:44.947Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "SubscriptionsWithStudentDto.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Subscription\\SubscriptionsWithStudentDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\Subscription\\SubscriptionsWithStudentDto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Subscription\\SubscriptionsWithStudentDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\Subscription\\SubscriptionsWithStudentDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T09:22:49.197Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "SubscriptionService.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Services\\UsersServices\\SubscriptionService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\UsersServices\\SubscriptionService.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Services\\UsersServices\\SubscriptionService.cs",
-              "RelativeToolTip": "Application\\Services\\UsersServices\\SubscriptionService.cs",
-              "ViewState": "AgIAAG0AAAAAAAAAAAAQwI4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T13:03:04.676Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Apis\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Adros.Apis\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Apis\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Adros.Apis\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAJwBAAAAAAAAAAAAAJ4BAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T10:22:07.687Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ISubscriptionService.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Interfaces\\IService\\ISubscriptionService.cs",
-              "RelativeDocumentMoniker": "Application\\Interfaces\\IService\\ISubscriptionService.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Interfaces\\IService\\ISubscriptionService.cs",
-              "RelativeToolTip": "Application\\Interfaces\\IService\\ISubscriptionService.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAAA0AAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T10:56:59.361Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "PaymentsController.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Apis\\Controllers\\Subscriptions\\PaymentsController.cs",
-              "RelativeDocumentMoniker": "Adros.Apis\\Controllers\\Subscriptions\\PaymentsController.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Apis\\Controllers\\Subscriptions\\PaymentsController.cs",
-              "RelativeToolTip": "Adros.Apis\\Controllers\\Subscriptions\\PaymentsController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAAC0AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T12:32:33.404Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "SubscriptionsController.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Apis\\Controllers\\Subscriptions\\SubscriptionsController.cs",
-              "RelativeDocumentMoniker": "Adros.Apis\\Controllers\\Subscriptions\\SubscriptionsController.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Apis\\Controllers\\Subscriptions\\SubscriptionsController.cs",
-              "RelativeToolTip": "Adros.Apis\\Controllers\\Subscriptions\\SubscriptionsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T14:02:56.899Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-=======
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Contexts\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Adros.Persistence\\Contexts\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Contexts\\AppDbContext.cs",
-              "RelativeToolTip": "Adros.Persistence\\Contexts\\AppDbContext.cs",
-<<<<<<< HEAD
-              "ViewState": "AgIAAHUAAAAAAAAAAAAuwJAAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T09:17:52.322Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "StudentProfileDto.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Student\\StudentProfileDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\Student\\StudentProfileDto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Student\\StudentProfileDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\Student\\StudentProfileDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T09:09:59.764Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "SubscriptionDto.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Subscription\\SubscriptionDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\Subscription\\SubscriptionDto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Subscription\\SubscriptionDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\Subscription\\SubscriptionDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T14:04:20.305Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "PaymentService.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Services\\UsersServices\\PaymentService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\UsersServices\\PaymentService.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Services\\UsersServices\\PaymentService.cs",
-              "RelativeToolTip": "Application\\Services\\UsersServices\\PaymentService.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAAAC8AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T12:29:15.994Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Subscription.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Entities\\Subscription\\Subscription.cs",
-              "RelativeDocumentMoniker": "Adros.Core\\Entities\\Subscription\\Subscription.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Entities\\Subscription\\Subscription.cs",
-              "RelativeToolTip": "Adros.Core\\Entities\\Subscription\\Subscription.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T08:44:20.787Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "PaymobService.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Services\\UsersServices\\PaymobService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\UsersServices\\PaymobService.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Services\\UsersServices\\PaymobService.cs",
-              "RelativeToolTip": "Application\\Services\\UsersServices\\PaymobService.cs",
-              "ViewState": "AgIAAKAAAAAAAAAAAAAowLQAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T12:43:32.093Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Apis\\Controllers\\Client\\HomeController.cs",
-              "RelativeDocumentMoniker": "Adros.Apis\\Controllers\\Client\\HomeController.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Apis\\Controllers\\Client\\HomeController.cs",
-              "RelativeToolTip": "Adros.Apis\\Controllers\\Client\\HomeController.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAowGAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T09:29:51.933Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-=======
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAAHMAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T12:55:43.209Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Apis\\appsettings.json",
+              "RelativeDocumentMoniker": "Adros.Apis\\appsettings.json",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Apis\\appsettings.json",
+              "RelativeToolTip": "Adros.Apis\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-05T07:29:05.98Z",
               "EditorCaption": ""
             },
             {
@@ -823,800 +119,250 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Adros.Persistence",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Persistence\\Adros.Persistence.csproj",
+              "RelativeDocumentMoniker": "Adros.Persistence\\Adros.Persistence.csproj",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Persistence\\Adros.Persistence.csproj",
+              "RelativeToolTip": "Adros.Persistence\\Adros.Persistence.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-05T07:15:41.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Adros.Application",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Application\\Adros.Application.csproj",
+              "RelativeDocumentMoniker": "Application\\Adros.Application.csproj",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Application\\Adros.Application.csproj",
+              "RelativeToolTip": "Application\\Adros.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-05T07:15:34.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Adros.Core",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Core\\Adros.Core.csproj",
+              "RelativeDocumentMoniker": "Adros.Core\\Adros.Core.csproj",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Core\\Adros.Core.csproj",
+              "RelativeToolTip": "Adros.Core\\Adros.Core.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-05T07:15:18.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Adros.Infrastructure",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Infrastructure\\Adros.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "Adros.Infrastructure\\Adros.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Infrastructure\\Adros.Infrastructure.csproj",
+              "RelativeToolTip": "Adros.Infrastructure\\Adros.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-05T07:15:12.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Adros.Shared",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Shared\\Adros.Shared.csproj",
+              "RelativeDocumentMoniker": "Adros.Shared\\Adros.Shared.csproj",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Shared\\Adros.Shared.csproj",
+              "RelativeToolTip": "Adros.Shared\\Adros.Shared.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-05T07:14:44.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Adros.Apis",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Apis\\Adros.Apis.csproj",
+              "RelativeDocumentMoniker": "Adros.Apis\\Adros.Apis.csproj",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Apis\\Adros.Apis.csproj",
+              "RelativeToolTip": "Adros.Apis\\Adros.Apis.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-05T07:14:29.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-              "Title": "LessonsService.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Services\\HomeService\\LessonsService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\HomeService\\LessonsService.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Services\\HomeService\\LessonsService.cs",
-              "RelativeToolTip": "Application\\Services\\HomeService\\LessonsService.cs",
-<<<<<<< HEAD
-              "ViewState": "AgIAANoAAAAAAAAAAAAowPoAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T11:53:56.037Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "AttachmentController.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Apis\\Controllers\\Admin\\AttachmentController.cs",
-              "RelativeDocumentMoniker": "Adros.Apis\\Controllers\\Admin\\AttachmentController.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Apis\\Controllers\\Admin\\AttachmentController.cs",
-              "RelativeToolTip": "Adros.Apis\\Controllers\\Admin\\AttachmentController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAQwEwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T11:52:43.791Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Apis\\appsettings.json",
-              "RelativeDocumentMoniker": "Adros.Apis\\appsettings.json",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Apis\\appsettings.json",
-              "RelativeToolTip": "Adros.Apis\\appsettings.json",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwDAAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-10T16:09:48.473Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "FileManager.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Shared\\Helpers\\FileManager.cs",
-              "RelativeDocumentMoniker": "Adros.Shared\\Helpers\\FileManager.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Shared\\Helpers\\FileManager.cs",
-              "RelativeToolTip": "Adros.Shared\\Helpers\\FileManager.cs",
-              "ViewState": "AgIAAGIBAAAAAAAAAAAAAHQBAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-21T16:15:28.055Z",
-=======
-              "ViewState": "AgIAAHEAAAAAAAAAAAAawIcAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T09:19:51.014Z",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 27,
-              "Title": "AttachmentService.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Services\\HomeService\\AttachmentService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\HomeService\\AttachmentService.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Services\\HomeService\\AttachmentService.cs",
-              "RelativeToolTip": "Application\\Services\\HomeService\\AttachmentService.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAACwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-22T15:49:04.788Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "IPaymentService.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Interfaces\\IService\\IPaymentService.cs",
-              "RelativeDocumentMoniker": "Application\\Interfaces\\IService\\IPaymentService.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Interfaces\\IService\\IPaymentService.cs",
-              "RelativeToolTip": "Application\\Interfaces\\IService\\IPaymentService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T14:13:52.06Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "PaymobWebhookDto.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Payment\\PaymobWebhookDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\Payment\\PaymobWebhookDto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Payment\\PaymobWebhookDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\Payment\\PaymobWebhookDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T12:17:32.963Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "StudentSubscription.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Entities\\Subscription\\StudentSubscription.cs",
-              "RelativeDocumentMoniker": "Adros.Core\\Entities\\Subscription\\StudentSubscription.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Entities\\Subscription\\StudentSubscription.cs",
-              "RelativeToolTip": "Adros.Core\\Entities\\Subscription\\StudentSubscription.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-10T10:14:20.137Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 73,
-              "Title": "20260210123542_AddPendingTable.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260210123542_AddPendingTable.cs",
-              "RelativeDocumentMoniker": "Adros.Persistence\\Migrations\\20260210123542_AddPendingTable.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260210123542_AddPendingTable.cs",
-              "RelativeToolTip": "Adros.Persistence\\Migrations\\20260210123542_AddPendingTable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-10T12:35:42.71Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 74,
-              "Title": "20260210101553_KKKKKKKKKKKK.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260210101553_KKKKKKKKKKKK.cs",
-              "RelativeDocumentMoniker": "Adros.Persistence\\Migrations\\20260210101553_KKKKKKKKKKKK.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260210101553_KKKKKKKKKKKK.cs",
-              "RelativeToolTip": "Adros.Persistence\\Migrations\\20260210101553_KKKKKKKKKKKK.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-10T10:15:53.416Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "PaymobInitResponse.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Payment\\PaymobInitResponse.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\Payment\\PaymobInitResponse.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Payment\\PaymobInitResponse.cs",
-              "RelativeToolTip": "Application\\DTOs\\Payment\\PaymobInitResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T14:37:27.639Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "IPaymobService.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Interfaces\\IService\\IPaymobService.cs",
-              "RelativeDocumentMoniker": "Application\\Interfaces\\IService\\IPaymobService.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Interfaces\\IService\\IPaymobService.cs",
-              "RelativeToolTip": "Application\\Interfaces\\IService\\IPaymobService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T14:15:53.123Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 75,
-              "Title": "20260209132602_changefrominttostring.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260209132602_changefrominttostring.cs",
-              "RelativeDocumentMoniker": "Adros.Persistence\\Migrations\\20260209132602_changefrominttostring.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260209132602_changefrominttostring.cs",
-              "RelativeToolTip": "Adros.Persistence\\Migrations\\20260209132602_changefrominttostring.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T13:26:02.603Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 76,
-              "Title": "20260209125928_Changeidtype.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260209125928_Changeidtype.cs",
-              "RelativeDocumentMoniker": "Adros.Persistence\\Migrations\\20260209125928_Changeidtype.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260209125928_Changeidtype.cs",
-              "RelativeToolTip": "Adros.Persistence\\Migrations\\20260209125928_Changeidtype.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T12:59:29.192Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 77,
-              "Title": "20260209100722_AddPhoneNumbertoTeacher.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260209100722_AddPhoneNumbertoTeacher.cs",
-              "RelativeDocumentMoniker": "Adros.Persistence\\Migrations\\20260209100722_AddPhoneNumbertoTeacher.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260209100722_AddPhoneNumbertoTeacher.cs",
-              "RelativeToolTip": "Adros.Persistence\\Migrations\\20260209100722_AddPhoneNumbertoTeacher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T10:07:25.224Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "Teacher.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Entities\\Users\\Teacher.cs",
-              "RelativeDocumentMoniker": "Adros.Core\\Entities\\Users\\Teacher.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Entities\\Users\\Teacher.cs",
-              "RelativeToolTip": "Adros.Core\\Entities\\Users\\Teacher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T09:40:20.275Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "TeacherCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Teacher\\TeacherCreateDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\Teacher\\TeacherCreateDto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Teacher\\TeacherCreateDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\Teacher\\TeacherCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T09:55:55.318Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "TeacherSpecifications.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Specifications\\TeacherSpecifications.cs",
-              "RelativeDocumentMoniker": "Adros.Core\\Specifications\\TeacherSpecifications.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Specifications\\TeacherSpecifications.cs",
-              "RelativeToolTip": "Adros.Core\\Specifications\\TeacherSpecifications.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAgwDIAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T11:41:46.471Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Entities\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "Adros.Core\\Entities\\ApplicationUser.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Entities\\ApplicationUser.cs",
-              "RelativeToolTip": "Adros.Core\\Entities\\ApplicationUser.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAIwA4AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T09:59:56.535Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "ClientTeacherDto.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Teacher\\ClientTeacherDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\Teacher\\ClientTeacherDto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Teacher\\ClientTeacherDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\Teacher\\ClientTeacherDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T09:57:28.75Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "TeacherEntityDto.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Teacher\\TeacherEntityDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\Teacher\\TeacherEntityDto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Teacher\\TeacherEntityDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\Teacher\\TeacherEntityDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T09:56:47.943Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "TeacherUpdateDto.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Teacher\\TeacherUpdateDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\Teacher\\TeacherUpdateDto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Teacher\\TeacherUpdateDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\Teacher\\TeacherUpdateDto.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAswB0AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T11:31:55.508Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "HomeResponseDto.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Home\\HomeResponseDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\Home\\HomeResponseDto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Home\\HomeResponseDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\Home\\HomeResponseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T08:18:32.674Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Entities\\Users\\Student.cs",
-              "RelativeDocumentMoniker": "Adros.Core\\Entities\\Users\\Student.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Entities\\Users\\Student.cs",
-              "RelativeToolTip": "Adros.Core\\Entities\\Users\\Student.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAwwAkAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T10:46:08.99Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 78,
-              "Title": "20260205123015_AddStagetoTeacher.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260205123015_AddStagetoTeacher.cs",
-              "RelativeDocumentMoniker": "Adros.Persistence\\Migrations\\20260205123015_AddStagetoTeacher.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260205123015_AddStagetoTeacher.cs",
-              "RelativeToolTip": "Adros.Persistence\\Migrations\\20260205123015_AddStagetoTeacher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T12:30:15.335Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "StudentsController.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Apis\\Controllers\\Admin\\StudentsController.cs",
-              "RelativeDocumentMoniker": "Adros.Apis\\Controllers\\Admin\\StudentsController.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Apis\\Controllers\\Admin\\StudentsController.cs",
-              "RelativeToolTip": "Adros.Apis\\Controllers\\Admin\\StudentsController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T09:59:47.419Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "IStudentService.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Interfaces\\IService\\IStudentService.cs",
-              "RelativeDocumentMoniker": "Application\\Interfaces\\IService\\IStudentService.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Interfaces\\IService\\IStudentService.cs",
-              "RelativeToolTip": "Application\\Interfaces\\IService\\IStudentService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T10:29:41.375Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "StudentListDto.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Student\\StudentListDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\Student\\StudentListDto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Student\\StudentListDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\Student\\StudentListDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T10:14:34.7Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "StudentListSpecification.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Specifications\\StudentListSpecification.cs",
-              "RelativeDocumentMoniker": "Adros.Core\\Specifications\\StudentListSpecification.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Specifications\\StudentListSpecification.cs",
-              "RelativeToolTip": "Adros.Core\\Specifications\\StudentListSpecification.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T11:20:11.723Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "StudentSpecifications.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Specifications\\StudentSpecifications.cs",
-              "RelativeDocumentMoniker": "Adros.Core\\Specifications\\StudentSpecifications.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Specifications\\StudentSpecifications.cs",
-              "RelativeToolTip": "Adros.Core\\Specifications\\StudentSpecifications.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAQwGUAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T10:21:20.69Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 79,
-              "Title": "20260205101219_AddPhoneNumberToStudent.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260205101219_AddPhoneNumberToStudent.cs",
-              "RelativeDocumentMoniker": "Adros.Persistence\\Migrations\\20260205101219_AddPhoneNumberToStudent.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260205101219_AddPhoneNumberToStudent.cs",
-              "RelativeToolTip": "Adros.Persistence\\Migrations\\20260205101219_AddPhoneNumberToStudent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T10:12:19.379Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 80,
-              "Title": "20260204135943_MakeAcloumnnullable.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260204135943_MakeAcloumnnullable.cs",
-              "RelativeDocumentMoniker": "Adros.Persistence\\Migrations\\20260204135943_MakeAcloumnnullable.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260204135943_MakeAcloumnnullable.cs",
-              "RelativeToolTip": "Adros.Persistence\\Migrations\\20260204135943_MakeAcloumnnullable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T13:59:43.575Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Apis\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Apis\\Program.cs",
               "RelativeDocumentMoniker": "Adros.Apis\\Program.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Apis\\Program.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Apis\\Program.cs",
               "RelativeToolTip": "Adros.Apis\\Program.cs",
-              "ViewState": "AgIAABoEAAAAAAAAAAAgwCsEAABCAAAAAAAAAA==",
+              "ViewState": "AgIAALMAAAAAAAAAAAAcwNEAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T09:06:58.949Z",
-=======
-              "DocumentIndex": 10,
-              "Title": "LessonCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Lesson\\LessonCreateDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\Lesson\\LessonCreateDto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Lesson\\LessonCreateDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\Lesson\\LessonCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T12:47:47.651Z",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
+              "WhenOpened": "2026-01-01T10:48:40.158Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 81,
-              "Title": "20260204104539_AddStudentTable.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260204104539_AddStudentTable.cs",
-              "RelativeDocumentMoniker": "Adros.Persistence\\Migrations\\20260204104539_AddStudentTable.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260204104539_AddStudentTable.cs",
-              "RelativeToolTip": "Adros.Persistence\\Migrations\\20260204104539_AddStudentTable.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAAAHYAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T10:45:39.597Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "StudentProgress.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Entities\\Course\\StudentProgress.cs",
-              "RelativeDocumentMoniker": "Adros.Core\\Entities\\Course\\StudentProgress.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Entities\\Course\\StudentProgress.cs",
-              "RelativeToolTip": "Adros.Core\\Entities\\Course\\StudentProgress.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T09:21:08.317Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 82,
-              "Title": "20260201150340_hagsdhjgasdj.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260201150340_hagsdhjgasdj.cs",
-              "RelativeDocumentMoniker": "Adros.Persistence\\Migrations\\20260201150340_hagsdhjgasdj.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260201150340_hagsdhjgasdj.cs",
-              "RelativeToolTip": "Adros.Persistence\\Migrations\\20260201150340_hagsdhjgasdj.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAABsAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T15:03:41.153Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "20260201143522_KLKJ.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260201143522_KLKJ.cs",
-              "RelativeDocumentMoniker": "Adros.Persistence\\Migrations\\20260201143522_KLKJ.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260201143522_KLKJ.cs",
-              "RelativeToolTip": "Adros.Persistence\\Migrations\\20260201143522_KLKJ.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T14:35:22.721Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 83,
-              "Title": "20260201134304_LLLLLLLLLLL.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260201134304_LLLLLLLLLLL.cs",
-              "RelativeDocumentMoniker": "Adros.Persistence\\Migrations\\20260201134304_LLLLLLLLLLL.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260201134304_LLLLLLLLLLL.cs",
-              "RelativeToolTip": "Adros.Persistence\\Migrations\\20260201134304_LLLLLLLLLLL.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAowDkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T13:43:04.161Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 84,
-              "Title": "20260201133425_NewMigration.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260201133425_NewMigration.cs",
-              "RelativeDocumentMoniker": "Adros.Persistence\\Migrations\\20260201133425_NewMigration.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260201133425_NewMigration.cs",
-              "RelativeToolTip": "Adros.Persistence\\Migrations\\20260201133425_NewMigration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T13:34:25.415Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "20260201121113_AddIsSubscripedToStudent.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260201121113_AddIsSubscripedToStudent.cs",
-              "RelativeDocumentMoniker": "Adros.Persistence\\Migrations\\20260201121113_AddIsSubscripedToStudent.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260201121113_AddIsSubscripedToStudent.cs",
-              "RelativeToolTip": "Adros.Persistence\\Migrations\\20260201121113_AddIsSubscripedToStudent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T12:11:13.331Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "20260201115836_RemoveSubscriptionPlanAndUpdateSubscription.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260201115836_RemoveSubscriptionPlanAndUpdateSubscription.cs",
-              "RelativeDocumentMoniker": "Adros.Persistence\\Migrations\\20260201115836_RemoveSubscriptionPlanAndUpdateSubscription.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260201115836_RemoveSubscriptionPlanAndUpdateSubscription.cs",
-              "RelativeToolTip": "Adros.Persistence\\Migrations\\20260201115836_RemoveSubscriptionPlanAndUpdateSubscription.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAowEsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T11:58:36.284Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "LessonDto.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Lesson\\LessonDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\Lesson\\LessonDto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Lesson\\LessonDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\Lesson\\LessonDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T14:47:57.093Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "LessonVideoDto.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Lesson\\LessonVideoDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\Lesson\\LessonVideoDto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Lesson\\LessonVideoDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\Lesson\\LessonVideoDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T09:39:30.736Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
-              "Title": "IVimeoService.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Interfaces\\IService\\IVimeoService.cs",
-              "RelativeDocumentMoniker": "Application\\Interfaces\\IService\\IVimeoService.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Interfaces\\IService\\IVimeoService.cs",
-              "RelativeToolTip": "Application\\Interfaces\\IService\\IVimeoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T13:28:45.642Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 57,
-              "Title": "Video.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Entities\\Course\\Video.cs",
-              "RelativeDocumentMoniker": "Adros.Core\\Entities\\Course\\Video.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Entities\\Course\\Video.cs",
-              "RelativeToolTip": "Adros.Core\\Entities\\Course\\Video.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA0wA0AAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T11:59:22.496Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 58,
-              "Title": "VideoProfile.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Mappings\\VideoProfile.cs",
-              "RelativeDocumentMoniker": "Application\\Mappings\\VideoProfile.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Mappings\\VideoProfile.cs",
-              "RelativeToolTip": "Application\\Mappings\\VideoProfile.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAowEIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-22T09:11:00.888Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 59,
-              "Title": "IVideoService.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Interfaces\\IService\\IVideoService.cs",
-              "RelativeDocumentMoniker": "Application\\Interfaces\\IService\\IVideoService.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Interfaces\\IService\\IVideoService.cs",
-              "RelativeToolTip": "Application\\Interfaces\\IService\\IVideoService.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBMAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-22T09:37:02.73Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 60,
-              "Title": "LevelEntityDto.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Level\\LevelEntityDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\Level\\LevelEntityDto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Level\\LevelEntityDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\Level\\LevelEntityDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T10:35:06.186Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 62,
-              "Title": "SkillsProfile.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Mappings\\SkillsProfile.cs",
-              "RelativeDocumentMoniker": "Application\\Mappings\\SkillsProfile.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Mappings\\SkillsProfile.cs",
-              "RelativeToolTip": "Application\\Mappings\\SkillsProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T10:13:56.357Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 63,
-              "Title": "SkillsService.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Services\\HomeService\\SkillsService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\HomeService\\SkillsService.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Services\\HomeService\\SkillsService.cs",
-              "RelativeToolTip": "Application\\Services\\HomeService\\SkillsService.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAEsAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T09:52:13.731Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 64,
-              "Title": "SkillShowDto.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Skills\\SkillShowDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\Skills\\SkillShowDto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Skills\\SkillShowDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\Skills\\SkillShowDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T10:12:21.46Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 61,
-              "Title": "SkillsController.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Apis\\Controllers\\Admin\\SkillsController.cs",
-              "RelativeDocumentMoniker": "Adros.Apis\\Controllers\\Admin\\SkillsController.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Apis\\Controllers\\Admin\\SkillsController.cs",
-              "RelativeToolTip": "Adros.Apis\\Controllers\\Admin\\SkillsController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAiwCgAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T09:52:06.086Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 65,
-              "Title": "SkillDto.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Skills\\SkillDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\Skills\\SkillDto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Skills\\SkillDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\Skills\\SkillDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T10:13:33.319Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 66,
-              "Title": "20260125162037_FixVideoWatchLaterNavigation.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260125162037_FixVideoWatchLaterNavigation.cs",
-              "RelativeDocumentMoniker": "Adros.Persistence\\Migrations\\20260125162037_FixVideoWatchLaterNavigation.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260125162037_FixVideoWatchLaterNavigation.cs",
-              "RelativeToolTip": "Adros.Persistence\\Migrations\\20260125162037_FixVideoWatchLaterNavigation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T16:20:38.303Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 67,
-              "Title": "20260125124332_UpdateWatchLaterEntity.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260125124332_UpdateWatchLaterEntity.cs",
-              "RelativeDocumentMoniker": "Adros.Persistence\\Migrations\\20260125124332_UpdateWatchLaterEntity.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Persistence\\Migrations\\20260125124332_UpdateWatchLaterEntity.cs",
-              "RelativeToolTip": "Adros.Persistence\\Migrations\\20260125124332_UpdateWatchLaterEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T12:43:32.563Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 69,
-              "Title": "IGenericRepository.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Interfaces\\IGenericRepository.cs",
-              "RelativeDocumentMoniker": "Application\\Interfaces\\IGenericRepository.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Interfaces\\IGenericRepository.cs",
-              "RelativeToolTip": "Application\\Interfaces\\IGenericRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T12:39:55.506Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 68,
-              "Title": "WatchLater.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Entities\\Course\\WatchLater.cs",
-              "RelativeDocumentMoniker": "Adros.Core\\Entities\\Course\\WatchLater.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Entities\\Course\\WatchLater.cs",
-              "RelativeToolTip": "Adros.Core\\Entities\\Course\\WatchLater.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T10:05:01.993Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 71,
-              "Title": "BannersController.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Apis\\Controllers\\Admin\\BannersController.cs",
-              "RelativeDocumentMoniker": "Adros.Apis\\Controllers\\Admin\\BannersController.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Apis\\Controllers\\Admin\\BannersController.cs",
-              "RelativeToolTip": "Adros.Apis\\Controllers\\Admin\\BannersController.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAAAE4AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-24T17:36:52.79Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 70,
-              "Title": "BannerService.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Services\\HomeService\\BannerService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\HomeService\\BannerService.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\Services\\HomeService\\BannerService.cs",
-              "RelativeToolTip": "Application\\Services\\HomeService\\BannerService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAACAAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-21T15:55:59.415Z",
-=======
               "DocumentIndex": 9,
-              "Title": "LessonByUnitSpecifications.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Specifications\\LessonByUnitSpecifications.cs",
-              "RelativeDocumentMoniker": "Adros.Core\\Specifications\\LessonByUnitSpecifications.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Specifications\\LessonByUnitSpecifications.cs",
-              "RelativeToolTip": "Adros.Core\\Specifications\\LessonByUnitSpecifications.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Persistence\\Contexts\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Adros.Persistence\\Contexts\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Persistence\\Contexts\\AppDbContext.cs",
+              "RelativeToolTip": "Adros.Persistence\\Contexts\\AppDbContext.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAAAFwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T09:19:40.991Z",
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-01T10:48:13.406Z"
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 72,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Apis\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "Adros.Apis\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Apis\\appsettings.Development.json",
-              "RelativeToolTip": "Adros.Apis\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-21T15:51:55.033Z"
-=======
-              "DocumentIndex": 8,
-              "Title": "LessonSpecifications.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Specifications\\LessonSpecifications.cs",
-              "RelativeDocumentMoniker": "Adros.Core\\Specifications\\LessonSpecifications.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Adros.Core\\Specifications\\LessonSpecifications.cs",
-              "RelativeToolTip": "Adros.Core\\Specifications\\LessonSpecifications.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAfAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Shared\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "Adros.Shared\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Shared\\BaseEntity.cs",
+              "RelativeToolTip": "Adros.Shared\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T09:19:30.266Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UnitUpdateDto.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Unit\\UnitUpdateDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\Unit\\UnitUpdateDto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Unit\\UnitUpdateDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\Unit\\UnitUpdateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T09:06:38.696Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-01T10:44:42.993Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "UnitCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Unit\\UnitCreateDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\Unit\\UnitCreateDto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\========= ADRS =========\\Adros_Backend_Rashed-main\\Adros_Backend_Rashed-main\\Application\\DTOs\\Unit\\UnitCreateDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\Unit\\UnitCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Calender.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Core\\Entities\\Home\\Calender.cs",
+              "RelativeDocumentMoniker": "Adros.Core\\Entities\\Home\\Calender.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Core\\Entities\\Home\\Calender.cs",
+              "RelativeToolTip": "Adros.Core\\Entities\\Home\\Calender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T09:05:46.076Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-01T10:44:28.387Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
->>>>>>> bace433368d0dd0f17a3b5e1ab6c1620bd5ce99a
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Skill.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Core\\Entities\\Home\\Skill.cs",
+              "RelativeDocumentMoniker": "Adros.Core\\Entities\\Home\\Skill.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Core\\Entities\\Home\\Skill.cs",
+              "RelativeToolTip": "Adros.Core\\Entities\\Home\\Skill.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T10:43:17.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IBannerService.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Application\\Interfaces\\IService\\IBannerService.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\IService\\IBannerService.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Application\\Interfaces\\IService\\IBannerService.cs",
+              "RelativeToolTip": "Application\\Interfaces\\IService\\IBannerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T06:17:59.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ClientBannerDto.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Application\\DTOs\\Banner\\ClientBannerDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Banner\\ClientBannerDto.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Application\\DTOs\\Banner\\ClientBannerDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\Banner\\ClientBannerDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T05:56:19.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BannerEntityDto.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Application\\DTOs\\Banner\\BannerEntityDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Banner\\BannerEntityDto.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Application\\DTOs\\Banner\\BannerEntityDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\Banner\\BannerEntityDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T05:56:02.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BannerCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Application\\DTOs\\Banner\\BannerCreateDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Banner\\BannerCreateDto.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Application\\DTOs\\Banner\\BannerCreateDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\Banner\\BannerCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T05:55:55.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Banner.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Core\\Entities\\Home\\Banner.cs",
+              "RelativeDocumentMoniker": "Adros.Core\\Entities\\Home\\Banner.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Core\\Entities\\Home\\Banner.cs",
+              "RelativeToolTip": "Adros.Core\\Entities\\Home\\Banner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T05:50:33.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BannerProfile.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Application\\Mappings\\BannerProfile.cs",
+              "RelativeDocumentMoniker": "Application\\Mappings\\BannerProfile.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Application\\Mappings\\BannerProfile.cs",
+              "RelativeToolTip": "Application\\Mappings\\BannerProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T22:16:13.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BannerService.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Application\\Services\\HomeService\\BannerService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\HomeService\\BannerService.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Application\\Services\\HomeService\\BannerService.cs",
+              "RelativeToolTip": "Application\\Services\\HomeService\\BannerService.cs",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAAAKIAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T22:15:12.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BannerUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Application\\DTOs\\Banner\\BannerUpdateDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Banner\\BannerUpdateDto.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Application\\DTOs\\Banner\\BannerUpdateDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\Banner\\BannerUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T05:56:08.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BannersController.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Apis\\Controllers\\Admin\\BannersController.cs",
+              "RelativeDocumentMoniker": "Adros.Apis\\Controllers\\Admin\\BannersController.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Adros-BackEnd-main\\Adros.Apis\\Controllers\\Admin\\BannersController.cs",
+              "RelativeToolTip": "Adros.Apis\\Controllers\\Admin\\BannersController.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAAAL8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T21:10:38.909Z"
             }
           ]
         }
